@@ -30,7 +30,14 @@ function extractAttributes($) {
             return true;
         }
 
-        attributes[attribute] = {
+        let attributeName = attribute;
+
+        // Rename `class` to `className`
+        if (attributeName === 'class') {
+            attributeName = 'className';
+        }
+
+        attributes[attributeName] = {
             elements,
             description
         };
