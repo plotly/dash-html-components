@@ -20,7 +20,11 @@ function upperCase(str) {
 }
 
 function generatePropTypes(element, attributes) {
-    const supportedAttributes = attributes.elements[element] || attributes.elements.Globalattribute;
+    const elements = attributes.elements;
+    // Always add the list of global attributes.
+    const supportedAttributes = elements[element] ?
+        elements[element].concat(elements.Globalattribute) :
+        elements.Globalattribute;
     const numAttributes = supportedAttributes.length;
 
     return supportedAttributes.reduce((propTypes, attributeName, index) => {

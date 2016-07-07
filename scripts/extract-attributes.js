@@ -34,16 +34,19 @@ function extractAttributes($) {
         }
 
         // Trim attribute, and convert e.g. `accept-charset` to `acceptCharset`.
-        let attributeName = S(attribute)
+        const attributeName = S(attribute)
             .trim()
             .camelize()
-            .toString();
-
-        attributeName = attributeName
+            .toString()
             // Rename `class` to `className`
             .replace(/^class$/, 'className')
             // Rename `for` to `htmlFor`
             .replace(/^for$/, 'htmlFor');
+
+        // Skip `data-*` attributes
+        if (attributeName.indexOf('data') === 0) {
+            return true;
+        }
 
         attributes[attributeName] = {
             elements,
