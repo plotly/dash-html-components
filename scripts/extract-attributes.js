@@ -112,6 +112,8 @@ request(htmlURL, (error, response, html) => {
         elements
     };
 
-    fs.writeFileSync(dataPath, JSON.stringify(out));
+    // Print out JSON with 4-space indentation formatting.
+    // http://stackoverflow.com/a/11276104
+    fs.writeFileSync(dataPath, JSON.stringify(out, null, 4));
 });
 
