@@ -19,6 +19,15 @@ function upperCase(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
+function nameComponent(elementName) {
+    const reservedWords = {
+        'object': 'ObjectEl',
+        'map': 'MapEl'
+    };
+
+    return reservedWords[elementName] || upperCase(elementName);
+}
+
 function generatePropTypes(element, attributes) {
     const elements = attributes.elements;
     // Always add the list of global attributes.
@@ -64,8 +73,11 @@ export default ${Component};
  */
 function generateComponents(list, attributes) {
     return list.reduce((componentMap, element) => {
-        const Component = upperCase(element);
-        componentMap[Component] = generateComponent(Component, element, attributes);
+        const componentName = nameComponent(element);
+        const Component = generateComponent(componentName, element, attributes);
+
+        componentMap[componentName] = Component;
+
         return componentMap;
     }, {});
 }
