@@ -33,10 +33,9 @@ function generatePropTypes(element, attributes) {
         return propTypes + `
 
     /**
-     * ${attribute.description}
+     *${attribute.description ? ' ' + attribute.description : ''}
      */
-    '${attributeName}': PropTypes.string${index < numAttributes - 1 ? ',' : ''}
-        `;
+    '${attributeName}': PropTypes.string${index < numAttributes - 1 ? ',' : ''}`;
     }, '');
 }
 
@@ -56,7 +55,7 @@ ${Component}.propTypes = {${propTypes}
 };
 
 export default ${Component};
-    `;
+`;
 }
 
 /**

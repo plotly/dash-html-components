@@ -8,6 +8,28 @@ const S = require('string');
 const htmlURL = 'https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes';
 const dataPath = './data/attributes.json';
 
+// From https://facebook.github.io/react/docs/tags-and-attributes.html#supported-attributes
+// less the `data` attribute
+const supportedAttributes = ['accept', 'acceptCharset', 'accessKey', 'action',
+'allowFullScreen', 'allowTransparency', 'alt', 'async', 'autoComplete',
+'autoFocus', 'autoPlay', 'capture', 'cellPadding', 'cellSpacing', 'challenge',
+'charSet', 'checked', 'cite', 'classID', 'className', 'colSpan', 'cols',
+'content', 'contentEditable', 'contextMenu', 'controls', 'coords',
+'crossOrigin', 'dateTime', 'default', 'defer', 'dir', 'disabled',
+'download', 'draggable', 'encType', 'form', 'formAction', 'formEncType',
+'formMethod', 'formNoValidate', 'formTarget', 'frameBorder', 'headers',
+'height', 'hidden', 'high', 'href', 'hrefLang', 'htmlFor', 'httpEquiv', 'icon',
+'id', 'inputMode', 'integrity', 'is', 'keyParams', 'keyType', 'kind', 'label',
+'lang', 'list', 'loop', 'low', 'manifest', 'marginHeight', 'marginWidth', 'max',
+'maxLength', 'media', 'mediaGroup', 'method', 'min', 'minLength', 'multiple',
+'muted', 'name', 'noValidate', 'nonce', 'open', 'optimum', 'pattern',
+'placeholder', 'poster', 'preload', 'profile', 'radioGroup', 'readOnly', 'rel',
+'required', 'reversed', 'role', 'rowSpan', 'rows', 'sandbox', 'scope', 'scoped',
+'scrolling', 'seamless', 'selected', 'shape', 'size', 'sizes', 'span',
+'spellCheck', 'src', 'srcDoc', 'srcLang', 'srcSet', 'start', 'step', 'style',
+'summary', 'tabIndex', 'target', 'title', 'type', 'useMap', 'value', 'width',
+'wmode', 'wrap'];
+
 /**
  * From the MDN attributes reference, extract a map of attributes with
  * descriptions and supported elements.
@@ -28,11 +50,6 @@ function extractAttributes($) {
             .replace(' ', ' ')
             .trim();
 
-        // Skip `data-*` attributes
-        if (attribute.indexOf('data') === 0) {
-            return true;
-        }
-
         // Trim attribute, and convert e.g. `accept-charset` to `acceptCharset`.
         const attributeName = S(attribute)
             .trim()
@@ -45,6 +62,11 @@ function extractAttributes($) {
 
         // Skip `data-*` attributes
         if (attributeName.indexOf('data') === 0) {
+            return true;
+        }
+
+        // Ensure attribute is supported by React
+        if (supportedAttributes.indexOf(attributeName) === -1) {
             return true;
         }
 
