@@ -28,12 +28,12 @@
   },
   "dependencies": {
     "builder": "2.10.1",
-    "dash-components-archetype": "^0.1.3",
+    "dash-components-archetype": "^0.2.1",
     "react": "^15.1.0"
   },
   "devDependencies": {
     "cheerio": "^0.20.0",
-    "dash-components-archetype-dev": "^0.1.3",
+    "dash-components-archetype-dev": "^0.2.1",
     "request": "^2.72.0",
     "string": "^3.3.1"
   }
