@@ -17,7 +17,7 @@
     "clean-src": "rm -rf src/* && mkdir -p src/components",
     "clean": "npm run clean-lib && npm run clean-src",
     "generate-components": "cd scripts && sh generate-all.sh && cd -",
-    "install-local": "npm run prepublish && python setup.py install",
+    "install-local": "python setup.py install",
     "prepublish": "npm run clean && npm run generate-components && npm test && builder run build-dist",
     "publish-pypi": "npm run prepublish && python setup.py sdist upload",
     "publish-all": "npm publish && python setup.py sdist upload",
