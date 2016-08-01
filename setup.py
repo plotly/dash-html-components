@@ -8,6 +8,6 @@ setup(
     packages=['dash_html_components'],
     include_package_data=True,
     license='MIT',
-    description='Dash UI component suite',
+    description='Dash UI HTML component suite',
     install_requires=['flask', 'plotly', 'flask-cors', 'dash.ly']
 )
