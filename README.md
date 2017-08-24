@@ -1,5 +1,7 @@
 # dash-html-components
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/plotly/dash-html-components.svg)](https://greenkeeper.io/)
+
 Vanilla HTML components for [Dash][]
 
 
