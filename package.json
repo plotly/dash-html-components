@@ -29,12 +29,12 @@
   "author": "Chris Parmer <chris@plot.ly>",
   "license": "MIT",
   "dependencies": {
-    "builder": "3.2.1",
+    "builder": "3.2.2",
     "dash-components-archetype": "^0.2.4",
     "react": "^15.1.0"
   },
   "devDependencies": {
-    "cheerio": "^0.20.0",
+    "cheerio": "^0.22.0",
     "dash-components-archetype-dev": "^0.2.4",
     "request": "^2.72.0",
     "string": "^3.3.1"
