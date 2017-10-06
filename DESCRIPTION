@@ -1,0 +1,16 @@
+Package: dashHtmlComponents
+Title: Vanilla HTML components for Dash
+Version: 0.0.1
+Authors@R: c(
+  person(family = "plotly", role = c("aut", "cre"), email = "chris@plot.ly"),
+  person("Carson", "Sievert", role = "aut"))
+Description: Vanilla HTML components for Dash
+Suggests: 
+	testthat,
+	roxygen2
+License: MIT + file LICENSE
+URL: https://github.com/plotly/dash-html-components
+BugReports: https://github.com/plotly/dash-html-components/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
