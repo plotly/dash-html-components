@@ -1,7 +1,5 @@
-base
 link
 meta
-title
 address
 article
 aside
@@ -115,6 +113,7 @@ element
 font
 frame
 frameset
+image
 isindex
 keygen
 listing

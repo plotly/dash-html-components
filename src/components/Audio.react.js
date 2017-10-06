@@ -75,6 +75,11 @@ Audio.propTypes = {
     'loop': PropTypes.string,
 
     /**
+     * Indicates whether the audio will be initially silenced on page load.
+     */
+    'muted': PropTypes.string,
+
+    /**
      * Indicates whether the whole resource, parts of it or nothing should be preloaded.
      */
     'preload': PropTypes.string,
