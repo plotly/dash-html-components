@@ -29,7 +29,7 @@
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-a <- function(..., id = NULL, n_clicks = 0, key = NULL, download = NULL, href = NULL, hrefLang = NULL, media = NULL, rel = NULL, shape = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_a <- function(..., id = NULL, n_clicks = 0, key = NULL, download = NULL, href = NULL, hrefLang = NULL, media = NULL, rel = NULL, shape = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -118,7 +118,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-abbr <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_abbr <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -200,7 +200,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-acronym <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_acronym <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -282,7 +282,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-address <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_address <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -365,7 +365,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-applet <- function(..., id = NULL, n_clicks = 0, key = NULL, alt = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_applet <- function(..., id = NULL, n_clicks = 0, key = NULL, alt = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -457,7 +457,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-area <- function(..., id = NULL, n_clicks = 0, key = NULL, alt = NULL, coords = NULL, download = NULL, href = NULL, hrefLang = NULL, media = NULL, rel = NULL, shape = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_area <- function(..., id = NULL, n_clicks = 0, key = NULL, alt = NULL, coords = NULL, download = NULL, href = NULL, hrefLang = NULL, media = NULL, rel = NULL, shape = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -548,7 +548,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-article <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_article <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -630,7 +630,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-aside <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_aside <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -718,7 +718,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-audio <- function(..., id = NULL, n_clicks = 0, key = NULL, autoPlay = NULL, controls = NULL, crossOrigin = NULL, loop = NULL, preload = NULL, src = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_audio <- function(..., id = NULL, n_clicks = 0, key = NULL, autoPlay = NULL, controls = NULL, crossOrigin = NULL, loop = NULL, preload = NULL, src = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -806,7 +806,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-b <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_b <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -890,7 +890,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-base <- function(..., id = NULL, n_clicks = 0, key = NULL, href = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_base <- function(..., id = NULL, n_clicks = 0, key = NULL, href = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -974,7 +974,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-basefont <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_basefont <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -1056,7 +1056,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-bdi <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_bdi <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -1138,7 +1138,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-bdo <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_bdo <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -1220,7 +1220,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-big <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_big <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -1302,7 +1302,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-blink <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_blink <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -1385,7 +1385,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-blockquote <- function(..., id = NULL, n_clicks = 0, key = NULL, cite = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_blockquote <- function(..., id = NULL, n_clicks = 0, key = NULL, cite = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -1468,7 +1468,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-br <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_br <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -1557,7 +1557,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-button <- function(..., id = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, disabled = NULL, form = NULL, formAction = NULL, name = NULL, type = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_button <- function(..., id = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, disabled = NULL, form = NULL, formAction = NULL, name = NULL, type = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -1648,7 +1648,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-canvas <- function(..., id = NULL, n_clicks = 0, key = NULL, height = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_canvas <- function(..., id = NULL, n_clicks = 0, key = NULL, height = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -1732,7 +1732,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-caption <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_caption <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -1814,7 +1814,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-center <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_center <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -1896,7 +1896,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-cite <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_cite <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -1978,7 +1978,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-code <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_code <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -2061,7 +2061,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-col <- function(..., id = NULL, n_clicks = 0, key = NULL, span = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_col <- function(..., id = NULL, n_clicks = 0, key = NULL, span = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -2145,7 +2145,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-colgroup <- function(..., id = NULL, n_clicks = 0, key = NULL, span = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_colgroup <- function(..., id = NULL, n_clicks = 0, key = NULL, span = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -2233,7 +2233,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-command <- function(..., id = NULL, n_clicks = 0, key = NULL, checked = NULL, disabled = NULL, icon = NULL, radioGroup = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_command <- function(..., id = NULL, n_clicks = 0, key = NULL, checked = NULL, disabled = NULL, icon = NULL, radioGroup = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -2320,7 +2320,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-content <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_content <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -2402,7 +2402,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-data <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_data <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -2484,7 +2484,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-datalist <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_datalist <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -2566,7 +2566,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-dd <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_dd <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -2650,7 +2650,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-del <- function(..., id = NULL, n_clicks = 0, key = NULL, cite = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_del <- function(..., id = NULL, n_clicks = 0, key = NULL, cite = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -2735,7 +2735,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-details <- function(..., id = NULL, n_clicks = 0, key = NULL, open = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_details <- function(..., id = NULL, n_clicks = 0, key = NULL, open = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -2818,7 +2818,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-dfn <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_dfn <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -2900,7 +2900,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-dialog <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_dialog <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -2982,7 +2982,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-dir <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_dir <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -3064,7 +3064,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-div <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_div <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -3146,7 +3146,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-dl <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_dl <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -3228,7 +3228,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-dt <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_dt <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -3310,7 +3310,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-element <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_element <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -3392,7 +3392,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-em <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_em <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -3478,7 +3478,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-embed <- function(..., id = NULL, n_clicks = 0, key = NULL, height = NULL, src = NULL, type = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_embed <- function(..., id = NULL, n_clicks = 0, key = NULL, height = NULL, src = NULL, type = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -3567,7 +3567,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-fieldset <- function(..., id = NULL, n_clicks = 0, key = NULL, disabled = NULL, form = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_fieldset <- function(..., id = NULL, n_clicks = 0, key = NULL, disabled = NULL, form = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -3652,7 +3652,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-figcaption <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_figcaption <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -3734,7 +3734,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-figure <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_figure <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -3816,7 +3816,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-font <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_font <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -3898,7 +3898,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-footer <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_footer <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -3989,7 +3989,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-form <- function(..., id = NULL, n_clicks = 0, key = NULL, accept = NULL, acceptCharset = NULL, action = NULL, autoComplete = NULL, encType = NULL, method = NULL, name = NULL, noValidate = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_form <- function(..., id = NULL, n_clicks = 0, key = NULL, accept = NULL, acceptCharset = NULL, action = NULL, autoComplete = NULL, encType = NULL, method = NULL, name = NULL, noValidate = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -4080,7 +4080,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-frame <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_frame <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -4162,7 +4162,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-frameset <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_frameset <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -4244,7 +4244,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-h1 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_h1 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -4326,7 +4326,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-h2 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_h2 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -4408,7 +4408,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-h3 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_h3 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -4490,7 +4490,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-h4 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_h4 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -4572,7 +4572,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-h5 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_h5 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -4654,7 +4654,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-h6 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_h6 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -4736,7 +4736,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-header <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_header <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -4818,7 +4818,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-hgroup <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_hgroup <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -4900,7 +4900,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-hr <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_hr <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -4982,7 +4982,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-i <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_i <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -5071,7 +5071,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-iframe <- function(..., id = NULL, n_clicks = 0, key = NULL, height = NULL, name = NULL, sandbox = NULL, seamless = NULL, src = NULL, srcDoc = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_iframe <- function(..., id = NULL, n_clicks = 0, key = NULL, height = NULL, name = NULL, sandbox = NULL, seamless = NULL, src = NULL, srcDoc = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -5168,7 +5168,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-img <- function(..., id = NULL, n_clicks = 0, key = NULL, alt = NULL, crossOrigin = NULL, height = NULL, sizes = NULL, src = NULL, srcSet = NULL, useMap = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_img <- function(..., id = NULL, n_clicks = 0, key = NULL, alt = NULL, crossOrigin = NULL, height = NULL, sizes = NULL, src = NULL, srcSet = NULL, useMap = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -5260,7 +5260,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-ins <- function(..., id = NULL, n_clicks = 0, key = NULL, cite = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_ins <- function(..., id = NULL, n_clicks = 0, key = NULL, cite = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -5344,7 +5344,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-isindex <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_isindex <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -5426,7 +5426,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-kbd <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_kbd <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -5514,7 +5514,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-keygen <- function(..., id = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, challenge = NULL, disabled = NULL, form = NULL, keyType = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_keygen <- function(..., id = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, challenge = NULL, disabled = NULL, form = NULL, keyType = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -5604,7 +5604,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-label <- function(..., id = NULL, n_clicks = 0, key = NULL, htmlFor = NULL, form = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_label <- function(..., id = NULL, n_clicks = 0, key = NULL, htmlFor = NULL, form = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -5688,7 +5688,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-legend <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_legend <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -5771,7 +5771,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-li <- function(..., id = NULL, n_clicks = 0, key = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_li <- function(..., id = NULL, n_clicks = 0, key = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -5861,7 +5861,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-link <- function(..., id = NULL, n_clicks = 0, key = NULL, crossOrigin = NULL, href = NULL, hrefLang = NULL, integrity = NULL, media = NULL, rel = NULL, sizes = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_link <- function(..., id = NULL, n_clicks = 0, key = NULL, crossOrigin = NULL, href = NULL, hrefLang = NULL, integrity = NULL, media = NULL, rel = NULL, sizes = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -5950,7 +5950,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-listing <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_listing <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -6032,7 +6032,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-main <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_main <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -6115,7 +6115,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-mapel <- function(..., id = NULL, n_clicks = 0, key = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_mapel <- function(..., id = NULL, n_clicks = 0, key = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -6198,7 +6198,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-mark <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_mark <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -6281,7 +6281,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-marquee <- function(..., id = NULL, n_clicks = 0, key = NULL, loop = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_marquee <- function(..., id = NULL, n_clicks = 0, key = NULL, loop = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -6365,7 +6365,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-menu <- function(..., id = NULL, n_clicks = 0, key = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_menu <- function(..., id = NULL, n_clicks = 0, key = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -6448,7 +6448,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-menuitem <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_menuitem <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -6534,7 +6534,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-meta <- function(..., id = NULL, n_clicks = 0, key = NULL, charSet = NULL, content = NULL, httpEquiv = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_meta <- function(..., id = NULL, n_clicks = 0, key = NULL, charSet = NULL, content = NULL, httpEquiv = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -6627,7 +6627,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-meter <- function(..., id = NULL, n_clicks = 0, key = NULL, form = NULL, high = NULL, low = NULL, max = NULL, min = NULL, optimum = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_meter <- function(..., id = NULL, n_clicks = 0, key = NULL, form = NULL, high = NULL, low = NULL, max = NULL, min = NULL, optimum = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -6716,7 +6716,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-multicol <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_multicol <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -6798,7 +6798,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-nav <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_nav <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -6880,7 +6880,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-nextid <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_nextid <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -6962,7 +6962,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-noembed <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_noembed <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -7044,7 +7044,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-noscript <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_noscript <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -7132,7 +7132,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-objectel <- function(..., id = NULL, n_clicks = 0, key = NULL, form = NULL, height = NULL, name = NULL, type = NULL, useMap = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_objectel <- function(..., id = NULL, n_clicks = 0, key = NULL, form = NULL, height = NULL, name = NULL, type = NULL, useMap = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -7222,7 +7222,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-ol <- function(..., id = NULL, n_clicks = 0, key = NULL, reversed = NULL, start = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_ol <- function(..., id = NULL, n_clicks = 0, key = NULL, reversed = NULL, start = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -7307,7 +7307,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-optgroup <- function(..., id = NULL, n_clicks = 0, key = NULL, disabled = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_optgroup <- function(..., id = NULL, n_clicks = 0, key = NULL, disabled = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -7393,7 +7393,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-option <- function(..., id = NULL, n_clicks = 0, key = NULL, disabled = NULL, selected = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_option <- function(..., id = NULL, n_clicks = 0, key = NULL, disabled = NULL, selected = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -7481,7 +7481,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-output <- function(..., id = NULL, n_clicks = 0, key = NULL, htmlFor = NULL, form = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_output <- function(..., id = NULL, n_clicks = 0, key = NULL, htmlFor = NULL, form = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -7566,7 +7566,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-p <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_p <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -7650,7 +7650,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-param <- function(..., id = NULL, n_clicks = 0, key = NULL, name = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_param <- function(..., id = NULL, n_clicks = 0, key = NULL, name = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -7734,7 +7734,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-plaintext <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_plaintext <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -7816,7 +7816,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-pre <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_pre <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -7901,7 +7901,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-progress <- function(..., id = NULL, n_clicks = 0, key = NULL, form = NULL, max = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_progress <- function(..., id = NULL, n_clicks = 0, key = NULL, form = NULL, max = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -7987,7 +7987,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-q <- function(..., id = NULL, n_clicks = 0, key = NULL, cite = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_q <- function(..., id = NULL, n_clicks = 0, key = NULL, cite = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -8070,7 +8070,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-rp <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_rp <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -8152,7 +8152,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-rt <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_rt <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -8234,7 +8234,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-rtc <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_rtc <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -8316,7 +8316,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-ruby <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_ruby <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -8398,7 +8398,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-s <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_s <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -8480,7 +8480,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-samp <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_samp <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -8569,7 +8569,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-script <- function(..., id = NULL, n_clicks = 0, key = NULL, async = NULL, charSet = NULL, crossOrigin = NULL, defer = NULL, integrity = NULL, src = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_script <- function(..., id = NULL, n_clicks = 0, key = NULL, async = NULL, charSet = NULL, crossOrigin = NULL, defer = NULL, integrity = NULL, src = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -8658,7 +8658,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-section <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_section <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -8747,7 +8747,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-select <- function(..., id = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, disabled = NULL, form = NULL, multiple = NULL, name = NULL, required = NULL, size = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_select <- function(..., id = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, disabled = NULL, form = NULL, multiple = NULL, name = NULL, required = NULL, size = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -8836,7 +8836,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-shadow <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_shadow <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -8918,7 +8918,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-slot <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_slot <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -9000,7 +9000,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-small <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_small <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -9086,7 +9086,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-source <- function(..., id = NULL, n_clicks = 0, key = NULL, media = NULL, sizes = NULL, src = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_source <- function(..., id = NULL, n_clicks = 0, key = NULL, media = NULL, sizes = NULL, src = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -9172,7 +9172,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-spacer <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_spacer <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -9254,7 +9254,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-span <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_span <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -9336,7 +9336,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-strike <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_strike <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -9418,7 +9418,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-strong <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_strong <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -9500,7 +9500,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-sub <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_sub <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -9582,7 +9582,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-summary <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_summary <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -9664,7 +9664,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-sup <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_sup <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -9747,7 +9747,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-table <- function(..., id = NULL, n_clicks = 0, key = NULL, summary = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_table <- function(..., id = NULL, n_clicks = 0, key = NULL, summary = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -9830,7 +9830,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-tbody <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_tbody <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -9915,7 +9915,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-td <- function(..., id = NULL, n_clicks = 0, key = NULL, colSpan = NULL, headers = NULL, rowSpan = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_td <- function(..., id = NULL, n_clicks = 0, key = NULL, colSpan = NULL, headers = NULL, rowSpan = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -10000,7 +10000,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-template <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_template <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -10094,7 +10094,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-textarea <- function(..., id = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, cols = NULL, disabled = NULL, form = NULL, maxLength = NULL, minLength = NULL, name = NULL, placeholder = NULL, readOnly = NULL, required = NULL, rows = NULL, wrap = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_textarea <- function(..., id = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, cols = NULL, disabled = NULL, form = NULL, maxLength = NULL, minLength = NULL, name = NULL, placeholder = NULL, readOnly = NULL, required = NULL, rows = NULL, wrap = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -10188,7 +10188,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-tfoot <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_tfoot <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -10274,7 +10274,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-th <- function(..., id = NULL, n_clicks = 0, key = NULL, colSpan = NULL, headers = NULL, rowSpan = NULL, scope = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_th <- function(..., id = NULL, n_clicks = 0, key = NULL, colSpan = NULL, headers = NULL, rowSpan = NULL, scope = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -10360,7 +10360,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-thead <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_thead <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -10443,7 +10443,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-time <- function(..., id = NULL, n_clicks = 0, key = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_time <- function(..., id = NULL, n_clicks = 0, key = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -10526,7 +10526,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-title <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_title <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -10608,7 +10608,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-tr <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_tr <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -10695,7 +10695,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-track <- function(..., id = NULL, n_clicks = 0, key = NULL, default = NULL, kind = NULL, label = NULL, src = NULL, srcLang = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_track <- function(..., id = NULL, n_clicks = 0, key = NULL, default = NULL, kind = NULL, label = NULL, src = NULL, srcLang = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -10782,7 +10782,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-tt <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_tt <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -10864,7 +10864,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-u <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_u <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -10946,7 +10946,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-ul <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_ul <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -11028,7 +11028,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-var <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_var <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -11120,7 +11120,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-video <- function(..., id = NULL, n_clicks = 0, key = NULL, autoPlay = NULL, controls = NULL, crossOrigin = NULL, height = NULL, loop = NULL, muted = NULL, poster = NULL, preload = NULL, src = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_video <- function(..., id = NULL, n_clicks = 0, key = NULL, autoPlay = NULL, controls = NULL, crossOrigin = NULL, height = NULL, loop = NULL, muted = NULL, poster = NULL, preload = NULL, src = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -11212,7 +11212,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-wbr <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_wbr <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
@@ -11294,7 +11294,7 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-xmp <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_xmp <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
