@@ -4,7 +4,7 @@
 \alias{html_textarea}
 \title{Textarea dash-html-components component}
 \usage{
-html_textarea(..., id = NULL, n_clicks = 0, key = NULL,
+html_textarea(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
   autoFocus = NULL, cols = NULL, disabled = NULL, form = NULL,
   maxLength = NULL, minLength = NULL, name = NULL, placeholder = NULL,
   readOnly = NULL, required = NULL, rows = NULL, wrap = NULL,
@@ -14,9 +14,11 @@ html_textarea(..., id = NULL, n_clicks = 0, key = NULL,
   title = NULL, fireEvent = NULL, dashEvents = NULL)
 }
 \arguments{
-\item{...}{children of the component.}
+\item{...}{(implicit) children of this component, which are combined with the more explicit `children` (a list of components)}
 
 \item{id}{The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app.}
+
+\item{children}{The children of this component}
 
 \item{n_clicks}{An integer that represents the number of times that this element has been clicked on.}
 

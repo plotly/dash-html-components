@@ -4,19 +4,21 @@
 \alias{html_video}
 \title{Video dash-html-components component}
 \usage{
-html_video(..., id = NULL, n_clicks = 0, key = NULL, autoPlay = NULL,
-  controls = NULL, crossOrigin = NULL, height = NULL, loop = NULL,
-  muted = NULL, poster = NULL, preload = NULL, src = NULL,
-  width = NULL, accessKey = NULL, className = NULL,
+html_video(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
+  autoPlay = NULL, controls = NULL, crossOrigin = NULL, height = NULL,
+  loop = NULL, muted = NULL, poster = NULL, preload = NULL,
+  src = NULL, width = NULL, accessKey = NULL, className = NULL,
   contentEditable = NULL, contextMenu = NULL, dir = NULL,
   draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL,
   style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL,
   dashEvents = NULL)
 }
 \arguments{
-\item{...}{children of the component.}
+\item{...}{(implicit) children of this component, which are combined with the more explicit `children` (a list of components)}
 
 \item{id}{The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app.}
+
+\item{children}{The children of this component}
 
 \item{n_clicks}{An integer that represents the number of times that this element has been clicked on.}
 

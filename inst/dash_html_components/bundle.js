@@ -1,1 +1,1 @@
-dash_html_components/bundle.js
+../../dash_html_components/bundle.js

@@ -3,8 +3,9 @@
 #' A dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param download Indicates that the hyperlink is to be used for downloading a resource. 
@@ -29,11 +30,12 @@
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_a <- function(..., id = NULL, n_clicks = 0, key = NULL, download = NULL, href = NULL, hrefLang = NULL, media = NULL, rel = NULL, shape = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_a <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, download = NULL, href = NULL, hrefLang = NULL, media = NULL, rel = NULL, shape = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				download=download, 
@@ -60,7 +62,7 @@ component <- list(
   ),
   type = 'A',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'download', 'href', 'hrefLang', 'media', 'rel', 'shape', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'download', 'href', 'hrefLang', 'media', 'rel', 'shape', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -99,8 +101,9 @@ assert_no_names <- function(x) {
 #' Abbr dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -118,11 +121,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_abbr <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_abbr <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -142,7 +146,7 @@ component <- list(
   ),
   type = 'Abbr',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -181,8 +185,9 @@ assert_no_names <- function(x) {
 #' Acronym dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/acronym>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -200,11 +205,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_acronym <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_acronym <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -224,7 +230,7 @@ component <- list(
   ),
   type = 'Acronym',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -263,8 +269,9 @@ assert_no_names <- function(x) {
 #' Address dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -282,11 +289,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_address <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_address <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -306,7 +314,7 @@ component <- list(
   ),
   type = 'Address',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -345,8 +353,9 @@ assert_no_names <- function(x) {
 #' Applet dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/applet>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param alt Alternative text in case an image can't be displayed. 
@@ -365,11 +374,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_applet <- function(..., id = NULL, n_clicks = 0, key = NULL, alt = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_applet <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, alt = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				alt=alt, 
@@ -390,7 +400,7 @@ component <- list(
   ),
   type = 'Applet',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'alt', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'alt', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -429,8 +439,9 @@ assert_no_names <- function(x) {
 #' Area dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param alt Alternative text in case an image can't be displayed. 
@@ -457,11 +468,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_area <- function(..., id = NULL, n_clicks = 0, key = NULL, alt = NULL, coords = NULL, download = NULL, href = NULL, hrefLang = NULL, media = NULL, rel = NULL, shape = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_area <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, alt = NULL, coords = NULL, download = NULL, href = NULL, hrefLang = NULL, media = NULL, rel = NULL, shape = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				alt=alt, 
@@ -490,7 +502,7 @@ component <- list(
   ),
   type = 'Area',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'alt', 'coords', 'download', 'href', 'hrefLang', 'media', 'rel', 'shape', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'alt', 'coords', 'download', 'href', 'hrefLang', 'media', 'rel', 'shape', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -529,8 +541,9 @@ assert_no_names <- function(x) {
 #' Article dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -548,11 +561,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_article <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_article <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -572,7 +586,7 @@ component <- list(
   ),
   type = 'Article',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -611,8 +625,9 @@ assert_no_names <- function(x) {
 #' Aside dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -630,11 +645,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_aside <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_aside <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -654,7 +670,7 @@ component <- list(
   ),
   type = 'Aside',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -693,14 +709,16 @@ assert_no_names <- function(x) {
 #' Audio dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param autoPlay The audio or video should play as soon as possible. 
 #' @param controls Indicates whether the browser should show playback controls to the user. 
 #' @param crossOrigin How the element handles cross-origin requests 
 #' @param loop Indicates whether the media should start playing from the start when it's finished. 
+#' @param muted Indicates whether the audio will be initially silenced on page load. 
 #' @param preload Indicates whether the whole resource, parts of it or nothing should be preloaded. 
 #' @param src The URL of the embeddable content. 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -718,17 +736,19 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_audio <- function(..., id = NULL, n_clicks = 0, key = NULL, autoPlay = NULL, controls = NULL, crossOrigin = NULL, loop = NULL, preload = NULL, src = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_audio <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, autoPlay = NULL, controls = NULL, crossOrigin = NULL, loop = NULL, muted = NULL, preload = NULL, src = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				autoPlay=autoPlay, 
 				controls=controls, 
 				crossOrigin=crossOrigin, 
 				loop=loop, 
+				muted=muted, 
 				preload=preload, 
 				src=src, 
 				accessKey=accessKey, 
@@ -748,7 +768,7 @@ component <- list(
   ),
   type = 'Audio',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'autoPlay', 'controls', 'crossOrigin', 'loop', 'preload', 'src', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'autoPlay', 'controls', 'crossOrigin', 'loop', 'muted', 'preload', 'src', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -787,8 +807,9 @@ assert_no_names <- function(x) {
 #' B dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -806,11 +827,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_b <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_b <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -830,93 +852,7 @@ component <- list(
   ),
   type = 'B',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
-  package = 'dashHtmlComponents'
-)
-
-component$props <- filter_null(component$props)
-
-structure(component, class = c('dash_component', 'list'))
-}
-
-
-filter_null <- function(x) {
-  if (length(x) == 0 || !is.list(x)) return(x)
-  x[!vapply(x, is.null, logical(1))]
-}
-
-assert_valid_children <- function(...) {
-  kids <- list(...)
-  if (length(kids) == 0) return(NULL)
-  assert_no_names(kids)
-}
-
-assert_no_names <- function(x) {
-  nms <- names(x)
-  if (!is.null(nms)) {
-    stop(
-      sprintf(
-        "Didn't recognize the following named arguments: '%s'",
-         paste(nms, collapse = "', '")
-       ), call. = FALSE
-    )
-  }
-  names(x) <- NULL
-  x
-}
-# Auto-generated by dashTranspileR -- do not edit by hand
-
-#' Base dash-html-components component
-#' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base>
-#' @export
-#' @param ... children of the component.
-#' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
-#' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
-#' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
-#' @param href The URL of a linked resource. 
-#' @param target  
-#' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
-#' @param className Often used with CSS to style elements with common properties. 
-#' @param contentEditable Indicates whether the element's content is editable. 
-#' @param contextMenu Defines the ID of a <menu> element which will serve as the element's context menu. 
-#' @param dir Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left) 
-#' @param draggable Defines whether the element can be dragged. 
-#' @param hidden Prevents rendering of given element, while keeping child elements, e.g. script elements, active. 
-#' @param lang Defines the language used in the element. 
-#' @param spellCheck Indicates whether spell checking is allowed for the element. 
-#' @param style Defines CSS styles which will override styles previously set. 
-#' @param tabIndex Overrides the browser's default tab order and follows the one specified instead. 
-#' @param title Text to be displayed in a tooltip when hovering over the element. 
-#' @param fireEvent A callback for firing events to dash. 
-#' @param dashEvents  
-
-html_base <- function(..., id = NULL, n_clicks = 0, key = NULL, href = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
-
-component <- list(
-  props = list(
-    children = assert_valid_children(...), id=id, 
-				n_clicks=n_clicks, 
-				key=key, 
-				href=href, 
-				target=target, 
-				accessKey=accessKey, 
-				className=className, 
-				contentEditable=contentEditable, 
-				contextMenu=contextMenu, 
-				dir=dir, 
-				draggable=draggable, 
-				hidden=hidden, 
-				lang=lang, 
-				spellCheck=spellCheck, 
-				style=style, 
-				tabIndex=tabIndex, 
-				title=title, 
-				fireEvent=fireEvent, 
-				dashEvents=dashEvents
-  ),
-  type = 'Base',
-  namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'href', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -955,8 +891,9 @@ assert_no_names <- function(x) {
 #' Basefont dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/basefont>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -974,11 +911,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_basefont <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_basefont <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -998,7 +936,7 @@ component <- list(
   ),
   type = 'Basefont',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1037,8 +975,9 @@ assert_no_names <- function(x) {
 #' Bdi dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1056,11 +995,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_bdi <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_bdi <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -1080,7 +1020,7 @@ component <- list(
   ),
   type = 'Bdi',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1119,8 +1059,9 @@ assert_no_names <- function(x) {
 #' Bdo dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1138,11 +1079,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_bdo <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_bdo <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -1162,7 +1104,7 @@ component <- list(
   ),
   type = 'Bdo',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1201,8 +1143,9 @@ assert_no_names <- function(x) {
 #' Big dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/big>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1220,11 +1163,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_big <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_big <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -1244,7 +1188,7 @@ component <- list(
   ),
   type = 'Big',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1283,8 +1227,9 @@ assert_no_names <- function(x) {
 #' Blink dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1302,11 +1247,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_blink <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_blink <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -1326,7 +1272,7 @@ component <- list(
   ),
   type = 'Blink',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1365,8 +1311,9 @@ assert_no_names <- function(x) {
 #' Blockquote dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param cite Contains a URI which points to the source of the quote or change. 
@@ -1385,11 +1332,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_blockquote <- function(..., id = NULL, n_clicks = 0, key = NULL, cite = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_blockquote <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, cite = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				cite=cite, 
@@ -1410,7 +1358,7 @@ component <- list(
   ),
   type = 'Blockquote',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'cite', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'cite', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1449,8 +1397,9 @@ assert_no_names <- function(x) {
 #' Br dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1468,11 +1417,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_br <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_br <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -1492,7 +1442,7 @@ component <- list(
   ),
   type = 'Br',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1531,8 +1481,9 @@ assert_no_names <- function(x) {
 #' Button dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param autoFocus The element should be automatically focused after the page loaded. 
@@ -1557,11 +1508,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_button <- function(..., id = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, disabled = NULL, form = NULL, formAction = NULL, name = NULL, type = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_button <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, disabled = NULL, form = NULL, formAction = NULL, name = NULL, type = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				autoFocus=autoFocus, 
@@ -1588,7 +1540,7 @@ component <- list(
   ),
   type = 'Button',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'autoFocus', 'disabled', 'form', 'formAction', 'name', 'type', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'autoFocus', 'disabled', 'form', 'formAction', 'name', 'type', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1627,8 +1579,9 @@ assert_no_names <- function(x) {
 #' Canvas dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param height Specifies the height of elements listed here. For all other elements, use the CSS height property.        Note: In some instances, such as <div>, this is a legacy attribute, in which case the CSS height property should be used instead. 
@@ -1648,11 +1601,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_canvas <- function(..., id = NULL, n_clicks = 0, key = NULL, height = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_canvas <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, height = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				height=height, 
@@ -1674,7 +1628,7 @@ component <- list(
   ),
   type = 'Canvas',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'height', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'height', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1713,8 +1667,9 @@ assert_no_names <- function(x) {
 #' Caption dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1732,11 +1687,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_caption <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_caption <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -1756,7 +1712,7 @@ component <- list(
   ),
   type = 'Caption',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1795,8 +1751,9 @@ assert_no_names <- function(x) {
 #' Center dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1814,11 +1771,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_center <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_center <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -1838,7 +1796,7 @@ component <- list(
   ),
   type = 'Center',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1877,8 +1835,9 @@ assert_no_names <- function(x) {
 #' Cite dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1896,11 +1855,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_cite <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_cite <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -1920,7 +1880,7 @@ component <- list(
   ),
   type = 'Cite',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1959,8 +1919,9 @@ assert_no_names <- function(x) {
 #' Code dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1978,11 +1939,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_code <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_code <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -2002,7 +1964,7 @@ component <- list(
   ),
   type = 'Code',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2041,8 +2003,9 @@ assert_no_names <- function(x) {
 #' Col dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param span  
@@ -2061,11 +2024,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_col <- function(..., id = NULL, n_clicks = 0, key = NULL, span = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_col <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, span = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				span=span, 
@@ -2086,7 +2050,7 @@ component <- list(
   ),
   type = 'Col',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'span', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'span', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2125,8 +2089,9 @@ assert_no_names <- function(x) {
 #' Colgroup dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param span  
@@ -2145,11 +2110,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_colgroup <- function(..., id = NULL, n_clicks = 0, key = NULL, span = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_colgroup <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, span = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				span=span, 
@@ -2170,7 +2136,7 @@ component <- list(
   ),
   type = 'Colgroup',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'span', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'span', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2209,8 +2175,9 @@ assert_no_names <- function(x) {
 #' Command dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/command>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param checked Indicates whether the element should be checked on page load. 
@@ -2233,11 +2200,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_command <- function(..., id = NULL, n_clicks = 0, key = NULL, checked = NULL, disabled = NULL, icon = NULL, radioGroup = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_command <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, checked = NULL, disabled = NULL, icon = NULL, radioGroup = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				checked=checked, 
@@ -2262,7 +2230,7 @@ component <- list(
   ),
   type = 'Command',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'checked', 'disabled', 'icon', 'radioGroup', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'checked', 'disabled', 'icon', 'radioGroup', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2301,8 +2269,9 @@ assert_no_names <- function(x) {
 #' Content dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/content>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2320,11 +2289,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_content <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_content <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -2344,7 +2314,7 @@ component <- list(
   ),
   type = 'Content',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2383,8 +2353,9 @@ assert_no_names <- function(x) {
 #' Data dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2402,11 +2373,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_data <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_data <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -2426,7 +2398,7 @@ component <- list(
   ),
   type = 'Data',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2465,8 +2437,9 @@ assert_no_names <- function(x) {
 #' Datalist dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2484,11 +2457,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_datalist <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_datalist <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -2508,7 +2482,7 @@ component <- list(
   ),
   type = 'Datalist',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2547,8 +2521,9 @@ assert_no_names <- function(x) {
 #' Dd dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2566,11 +2541,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_dd <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_dd <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -2590,7 +2566,7 @@ component <- list(
   ),
   type = 'Dd',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2629,8 +2605,9 @@ assert_no_names <- function(x) {
 #' Del dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param cite Contains a URI which points to the source of the quote or change. 
@@ -2650,11 +2627,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_del <- function(..., id = NULL, n_clicks = 0, key = NULL, cite = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_del <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, cite = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				cite=cite, 
@@ -2676,7 +2654,7 @@ component <- list(
   ),
   type = 'Del',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'cite', 'dateTime', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'cite', 'dateTime', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2715,8 +2693,9 @@ assert_no_names <- function(x) {
 #' Details dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param open Indicates whether the details will be shown on page load. 
@@ -2735,11 +2714,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_details <- function(..., id = NULL, n_clicks = 0, key = NULL, open = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_details <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, open = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				open=open, 
@@ -2760,7 +2740,7 @@ component <- list(
   ),
   type = 'Details',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'open', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'open', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2799,8 +2779,9 @@ assert_no_names <- function(x) {
 #' Dfn dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2818,11 +2799,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_dfn <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_dfn <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -2842,7 +2824,7 @@ component <- list(
   ),
   type = 'Dfn',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2881,8 +2863,9 @@ assert_no_names <- function(x) {
 #' Dialog dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2900,11 +2883,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_dialog <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_dialog <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -2924,7 +2908,7 @@ component <- list(
   ),
   type = 'Dialog',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2963,8 +2947,9 @@ assert_no_names <- function(x) {
 #' Dir dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dir>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2982,11 +2967,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_dir <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_dir <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -3006,7 +2992,7 @@ component <- list(
   ),
   type = 'Dir',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3045,8 +3031,9 @@ assert_no_names <- function(x) {
 #' Div dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3064,11 +3051,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_div <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_div <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -3088,7 +3076,7 @@ component <- list(
   ),
   type = 'Div',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3127,8 +3115,9 @@ assert_no_names <- function(x) {
 #' Dl dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3146,11 +3135,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_dl <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_dl <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -3170,7 +3160,7 @@ component <- list(
   ),
   type = 'Dl',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3209,8 +3199,9 @@ assert_no_names <- function(x) {
 #' Dt dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3228,11 +3219,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_dt <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_dt <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -3252,7 +3244,7 @@ component <- list(
   ),
   type = 'Dt',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3291,8 +3283,9 @@ assert_no_names <- function(x) {
 #' Element dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/element>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3310,11 +3303,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_element <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_element <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -3334,7 +3328,7 @@ component <- list(
   ),
   type = 'Element',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3373,8 +3367,9 @@ assert_no_names <- function(x) {
 #' Em dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3392,11 +3387,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_em <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_em <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -3416,7 +3412,7 @@ component <- list(
   ),
   type = 'Em',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3455,8 +3451,9 @@ assert_no_names <- function(x) {
 #' Embed dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param height Specifies the height of elements listed here. For all other elements, use the CSS height property.        Note: In some instances, such as <div>, this is a legacy attribute, in which case the CSS height property should be used instead. 
@@ -3478,11 +3475,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_embed <- function(..., id = NULL, n_clicks = 0, key = NULL, height = NULL, src = NULL, type = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_embed <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, height = NULL, src = NULL, type = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				height=height, 
@@ -3506,7 +3504,7 @@ component <- list(
   ),
   type = 'Embed',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'height', 'src', 'type', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'height', 'src', 'type', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3545,8 +3543,9 @@ assert_no_names <- function(x) {
 #' Fieldset dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param disabled Indicates whether the user can interact with the element. 
@@ -3567,11 +3566,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_fieldset <- function(..., id = NULL, n_clicks = 0, key = NULL, disabled = NULL, form = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_fieldset <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, disabled = NULL, form = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				disabled=disabled, 
@@ -3594,7 +3594,7 @@ component <- list(
   ),
   type = 'Fieldset',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'disabled', 'form', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'disabled', 'form', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3633,8 +3633,9 @@ assert_no_names <- function(x) {
 #' Figcaption dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3652,11 +3653,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_figcaption <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_figcaption <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -3676,7 +3678,7 @@ component <- list(
   ),
   type = 'Figcaption',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3715,8 +3717,9 @@ assert_no_names <- function(x) {
 #' Figure dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3734,11 +3737,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_figure <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_figure <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -3758,7 +3762,7 @@ component <- list(
   ),
   type = 'Figure',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3797,8 +3801,9 @@ assert_no_names <- function(x) {
 #' Font dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3816,11 +3821,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_font <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_font <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -3840,7 +3846,7 @@ component <- list(
   ),
   type = 'Font',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3879,8 +3885,9 @@ assert_no_names <- function(x) {
 #' Footer dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3898,11 +3905,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_footer <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_footer <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -3922,7 +3930,7 @@ component <- list(
   ),
   type = 'Footer',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3961,8 +3969,9 @@ assert_no_names <- function(x) {
 #' Form dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accept List of types the server accepts, typically a file type. 
@@ -3989,11 +3998,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_form <- function(..., id = NULL, n_clicks = 0, key = NULL, accept = NULL, acceptCharset = NULL, action = NULL, autoComplete = NULL, encType = NULL, method = NULL, name = NULL, noValidate = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_form <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accept = NULL, acceptCharset = NULL, action = NULL, autoComplete = NULL, encType = NULL, method = NULL, name = NULL, noValidate = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accept=accept, 
@@ -4022,7 +4032,7 @@ component <- list(
   ),
   type = 'Form',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accept', 'acceptCharset', 'action', 'autoComplete', 'encType', 'method', 'name', 'noValidate', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accept', 'acceptCharset', 'action', 'autoComplete', 'encType', 'method', 'name', 'noValidate', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4061,8 +4071,9 @@ assert_no_names <- function(x) {
 #' Frame dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frame>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4080,11 +4091,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_frame <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_frame <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -4104,7 +4116,7 @@ component <- list(
   ),
   type = 'Frame',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4143,8 +4155,9 @@ assert_no_names <- function(x) {
 #' Frameset dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frameset>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4162,11 +4175,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_frameset <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_frameset <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -4186,7 +4200,7 @@ component <- list(
   ),
   type = 'Frameset',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4225,8 +4239,9 @@ assert_no_names <- function(x) {
 #' H1 dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4244,11 +4259,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_h1 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_h1 <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -4268,7 +4284,7 @@ component <- list(
   ),
   type = 'H1',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4307,8 +4323,9 @@ assert_no_names <- function(x) {
 #' H2 dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h2>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4326,11 +4343,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_h2 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_h2 <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -4350,7 +4368,7 @@ component <- list(
   ),
   type = 'H2',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4389,8 +4407,9 @@ assert_no_names <- function(x) {
 #' H3 dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h3>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4408,11 +4427,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_h3 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_h3 <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -4432,7 +4452,7 @@ component <- list(
   ),
   type = 'H3',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4471,8 +4491,9 @@ assert_no_names <- function(x) {
 #' H4 dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h4>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4490,11 +4511,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_h4 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_h4 <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -4514,7 +4536,7 @@ component <- list(
   ),
   type = 'H4',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4553,8 +4575,9 @@ assert_no_names <- function(x) {
 #' H5 dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h5>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4572,11 +4595,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_h5 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_h5 <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -4596,7 +4620,7 @@ component <- list(
   ),
   type = 'H5',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4635,8 +4659,9 @@ assert_no_names <- function(x) {
 #' H6 dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h6>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4654,11 +4679,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_h6 <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_h6 <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -4678,7 +4704,7 @@ component <- list(
   ),
   type = 'H6',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4717,8 +4743,9 @@ assert_no_names <- function(x) {
 #' Header dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4736,11 +4763,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_header <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_header <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -4760,7 +4788,7 @@ component <- list(
   ),
   type = 'Header',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4799,8 +4827,9 @@ assert_no_names <- function(x) {
 #' Hgroup dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4818,11 +4847,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_hgroup <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_hgroup <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -4842,7 +4872,7 @@ component <- list(
   ),
   type = 'Hgroup',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4881,8 +4911,9 @@ assert_no_names <- function(x) {
 #' Hr dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4900,11 +4931,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_hr <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_hr <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -4924,7 +4956,7 @@ component <- list(
   ),
   type = 'Hr',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4963,8 +4995,9 @@ assert_no_names <- function(x) {
 #' I dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4982,11 +5015,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_i <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_i <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -5006,7 +5040,7 @@ component <- list(
   ),
   type = 'I',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5045,8 +5079,9 @@ assert_no_names <- function(x) {
 #' Iframe dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param height Specifies the height of elements listed here. For all other elements, use the CSS height property.        Note: In some instances, such as <div>, this is a legacy attribute, in which case the CSS height property should be used instead. 
@@ -5071,11 +5106,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_iframe <- function(..., id = NULL, n_clicks = 0, key = NULL, height = NULL, name = NULL, sandbox = NULL, seamless = NULL, src = NULL, srcDoc = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_iframe <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, height = NULL, name = NULL, sandbox = NULL, seamless = NULL, src = NULL, srcDoc = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				height=height, 
@@ -5102,7 +5138,91 @@ component <- list(
   ),
   type = 'Iframe',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'height', 'name', 'sandbox', 'seamless', 'src', 'srcDoc', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'height', 'name', 'sandbox', 'seamless', 'src', 'srcDoc', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  package = 'dashHtmlComponents'
+)
+
+component$props <- filter_null(component$props)
+
+structure(component, class = c('dash_component', 'list'))
+}
+
+
+filter_null <- function(x) {
+  if (length(x) == 0 || !is.list(x)) return(x)
+  x[!vapply(x, is.null, logical(1))]
+}
+
+assert_valid_children <- function(...) {
+  kids <- list(...)
+  if (length(kids) == 0) return(NULL)
+  assert_no_names(kids)
+}
+
+assert_no_names <- function(x) {
+  nms <- names(x)
+  if (!is.null(nms)) {
+    stop(
+      sprintf(
+        "Didn't recognize the following named arguments: '%s'",
+         paste(nms, collapse = "', '")
+       ), call. = FALSE
+    )
+  }
+  names(x) <- NULL
+  x
+}
+# Auto-generated by dashTranspileR -- do not edit by hand
+
+#' Image dash-html-components component
+#' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/image>
+#' @export
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
+#' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
+#' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
+#' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
+#' @param className Often used with CSS to style elements with common properties. 
+#' @param contentEditable Indicates whether the element's content is editable. 
+#' @param contextMenu Defines the ID of a <menu> element which will serve as the element's context menu. 
+#' @param dir Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left) 
+#' @param draggable Defines whether the element can be dragged. 
+#' @param hidden Prevents rendering of given element, while keeping child elements, e.g. script elements, active. 
+#' @param lang Defines the language used in the element. 
+#' @param spellCheck Indicates whether spell checking is allowed for the element. 
+#' @param style Defines CSS styles which will override styles previously set. 
+#' @param tabIndex Overrides the browser's default tab order and follows the one specified instead. 
+#' @param title Text to be displayed in a tooltip when hovering over the element. 
+#' @param fireEvent A callback for firing events to dash. 
+#' @param dashEvents  
+
+html_image <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+
+component <- list(
+  props = list(
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
+				n_clicks=n_clicks, 
+				key=key, 
+				accessKey=accessKey, 
+				className=className, 
+				contentEditable=contentEditable, 
+				contextMenu=contextMenu, 
+				dir=dir, 
+				draggable=draggable, 
+				hidden=hidden, 
+				lang=lang, 
+				spellCheck=spellCheck, 
+				style=style, 
+				tabIndex=tabIndex, 
+				title=title, 
+				fireEvent=fireEvent, 
+				dashEvents=dashEvents
+  ),
+  type = 'Image',
+  namespace = 'dash_html_components',
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5141,8 +5261,9 @@ assert_no_names <- function(x) {
 #' Img dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param alt Alternative text in case an image can't be displayed. 
@@ -5168,11 +5289,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_img <- function(..., id = NULL, n_clicks = 0, key = NULL, alt = NULL, crossOrigin = NULL, height = NULL, sizes = NULL, src = NULL, srcSet = NULL, useMap = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_img <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, alt = NULL, crossOrigin = NULL, height = NULL, sizes = NULL, src = NULL, srcSet = NULL, useMap = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				alt=alt, 
@@ -5200,7 +5322,7 @@ component <- list(
   ),
   type = 'Img',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'alt', 'crossOrigin', 'height', 'sizes', 'src', 'srcSet', 'useMap', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'alt', 'crossOrigin', 'height', 'sizes', 'src', 'srcSet', 'useMap', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5239,8 +5361,9 @@ assert_no_names <- function(x) {
 #' Ins dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param cite Contains a URI which points to the source of the quote or change. 
@@ -5260,11 +5383,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_ins <- function(..., id = NULL, n_clicks = 0, key = NULL, cite = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_ins <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, cite = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				cite=cite, 
@@ -5286,7 +5410,7 @@ component <- list(
   ),
   type = 'Ins',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'cite', 'dateTime', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'cite', 'dateTime', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5325,8 +5449,9 @@ assert_no_names <- function(x) {
 #' Isindex dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/isindex>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -5344,11 +5469,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_isindex <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_isindex <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -5368,7 +5494,7 @@ component <- list(
   ),
   type = 'Isindex',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5407,8 +5533,9 @@ assert_no_names <- function(x) {
 #' Kbd dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -5426,11 +5553,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_kbd <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_kbd <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -5450,7 +5578,7 @@ component <- list(
   ),
   type = 'Kbd',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5489,8 +5617,9 @@ assert_no_names <- function(x) {
 #' Keygen dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/keygen>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param autoFocus The element should be automatically focused after the page loaded. 
@@ -5514,11 +5643,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_keygen <- function(..., id = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, challenge = NULL, disabled = NULL, form = NULL, keyType = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_keygen <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, challenge = NULL, disabled = NULL, form = NULL, keyType = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				autoFocus=autoFocus, 
@@ -5544,7 +5674,7 @@ component <- list(
   ),
   type = 'Keygen',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'autoFocus', 'challenge', 'disabled', 'form', 'keyType', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'autoFocus', 'challenge', 'disabled', 'form', 'keyType', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5583,8 +5713,9 @@ assert_no_names <- function(x) {
 #' Label dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param htmlFor Describes elements which belongs to this one. 
@@ -5604,11 +5735,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_label <- function(..., id = NULL, n_clicks = 0, key = NULL, htmlFor = NULL, form = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_label <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, htmlFor = NULL, form = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				htmlFor=htmlFor, 
@@ -5630,7 +5762,7 @@ component <- list(
   ),
   type = 'Label',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'htmlFor', 'form', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'htmlFor', 'form', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5669,8 +5801,9 @@ assert_no_names <- function(x) {
 #' Legend dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -5688,11 +5821,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_legend <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_legend <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -5712,7 +5846,7 @@ component <- list(
   ),
   type = 'Legend',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5751,8 +5885,9 @@ assert_no_names <- function(x) {
 #' Li dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param value Defines a default value which will be displayed in the element on page load. 
@@ -5771,11 +5906,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_li <- function(..., id = NULL, n_clicks = 0, key = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_li <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				value=value, 
@@ -5796,7 +5932,7 @@ component <- list(
   ),
   type = 'Li',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5835,8 +5971,9 @@ assert_no_names <- function(x) {
 #' Link dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param crossOrigin How the element handles cross-origin requests 
@@ -5861,11 +5998,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_link <- function(..., id = NULL, n_clicks = 0, key = NULL, crossOrigin = NULL, href = NULL, hrefLang = NULL, integrity = NULL, media = NULL, rel = NULL, sizes = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_link <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, crossOrigin = NULL, href = NULL, hrefLang = NULL, integrity = NULL, media = NULL, rel = NULL, sizes = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				crossOrigin=crossOrigin, 
@@ -5892,7 +6030,7 @@ component <- list(
   ),
   type = 'Link',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'crossOrigin', 'href', 'hrefLang', 'integrity', 'media', 'rel', 'sizes', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'crossOrigin', 'href', 'hrefLang', 'integrity', 'media', 'rel', 'sizes', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5931,8 +6069,9 @@ assert_no_names <- function(x) {
 #' Listing dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/listing>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -5950,11 +6089,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_listing <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_listing <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -5974,7 +6114,7 @@ component <- list(
   ),
   type = 'Listing',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6013,8 +6153,9 @@ assert_no_names <- function(x) {
 #' Main dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6032,11 +6173,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_main <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_main <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -6056,7 +6198,7 @@ component <- list(
   ),
   type = 'Main',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6095,8 +6237,9 @@ assert_no_names <- function(x) {
 #' MapEl dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mapel>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param name Name of the element. For example used by the server to identify the fields in form submits. 
@@ -6115,11 +6258,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_mapel <- function(..., id = NULL, n_clicks = 0, key = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_mapel <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				name=name, 
@@ -6140,7 +6284,7 @@ component <- list(
   ),
   type = 'MapEl',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6179,8 +6323,9 @@ assert_no_names <- function(x) {
 #' Mark dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6198,11 +6343,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_mark <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_mark <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -6222,7 +6368,7 @@ component <- list(
   ),
   type = 'Mark',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6261,8 +6407,9 @@ assert_no_names <- function(x) {
 #' Marquee dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param loop Indicates whether the media should start playing from the start when it's finished. 
@@ -6281,11 +6428,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_marquee <- function(..., id = NULL, n_clicks = 0, key = NULL, loop = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_marquee <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, loop = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				loop=loop, 
@@ -6306,7 +6454,7 @@ component <- list(
   ),
   type = 'Marquee',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'loop', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'loop', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6345,8 +6493,9 @@ assert_no_names <- function(x) {
 #' Menu dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param type Defines the type of the element. 
@@ -6365,11 +6514,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_menu <- function(..., id = NULL, n_clicks = 0, key = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_menu <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				type=type, 
@@ -6390,7 +6540,7 @@ component <- list(
   ),
   type = 'Menu',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6429,8 +6579,9 @@ assert_no_names <- function(x) {
 #' Menuitem dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menuitem>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6448,11 +6599,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_menuitem <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_menuitem <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -6472,7 +6624,7 @@ component <- list(
   ),
   type = 'Menuitem',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6511,8 +6663,9 @@ assert_no_names <- function(x) {
 #' Meta dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param charSet Declares the character encoding of the page or script. 
@@ -6534,11 +6687,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_meta <- function(..., id = NULL, n_clicks = 0, key = NULL, charSet = NULL, content = NULL, httpEquiv = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_meta <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, charSet = NULL, content = NULL, httpEquiv = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				charSet=charSet, 
@@ -6562,7 +6716,7 @@ component <- list(
   ),
   type = 'Meta',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'charSet', 'content', 'httpEquiv', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'charSet', 'content', 'httpEquiv', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6601,8 +6755,9 @@ assert_no_names <- function(x) {
 #' Meter dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param form Indicates the form that is the owner of the element. 
@@ -6627,11 +6782,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_meter <- function(..., id = NULL, n_clicks = 0, key = NULL, form = NULL, high = NULL, low = NULL, max = NULL, min = NULL, optimum = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_meter <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, form = NULL, high = NULL, low = NULL, max = NULL, min = NULL, optimum = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				form=form, 
@@ -6658,7 +6814,7 @@ component <- list(
   ),
   type = 'Meter',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'form', 'high', 'low', 'max', 'min', 'optimum', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'form', 'high', 'low', 'max', 'min', 'optimum', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6697,8 +6853,9 @@ assert_no_names <- function(x) {
 #' Multicol dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/multicol>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6716,11 +6873,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_multicol <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_multicol <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -6740,7 +6898,7 @@ component <- list(
   ),
   type = 'Multicol',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6779,8 +6937,9 @@ assert_no_names <- function(x) {
 #' Nav dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6798,11 +6957,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_nav <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_nav <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -6822,7 +6982,7 @@ component <- list(
   ),
   type = 'Nav',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6861,8 +7021,9 @@ assert_no_names <- function(x) {
 #' Nextid dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nextid>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6880,11 +7041,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_nextid <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_nextid <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -6904,7 +7066,7 @@ component <- list(
   ),
   type = 'Nextid',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6943,8 +7105,9 @@ assert_no_names <- function(x) {
 #' Noembed dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noembed>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6962,11 +7125,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_noembed <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_noembed <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -6986,7 +7150,7 @@ component <- list(
   ),
   type = 'Noembed',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7025,8 +7189,9 @@ assert_no_names <- function(x) {
 #' Noscript dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -7044,11 +7209,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_noscript <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_noscript <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -7068,7 +7234,7 @@ component <- list(
   ),
   type = 'Noscript',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7107,8 +7273,9 @@ assert_no_names <- function(x) {
 #' ObjectEl dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/objectel>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param form Indicates the form that is the owner of the element. 
@@ -7132,11 +7299,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_objectel <- function(..., id = NULL, n_clicks = 0, key = NULL, form = NULL, height = NULL, name = NULL, type = NULL, useMap = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_objectel <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, form = NULL, height = NULL, name = NULL, type = NULL, useMap = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				form=form, 
@@ -7162,7 +7330,7 @@ component <- list(
   ),
   type = 'ObjectEl',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'form', 'height', 'name', 'type', 'useMap', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'form', 'height', 'name', 'type', 'useMap', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7201,8 +7369,9 @@ assert_no_names <- function(x) {
 #' Ol dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param reversed Indicates whether the list should be displayed in a descending order instead of a ascending. 
@@ -7222,11 +7391,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_ol <- function(..., id = NULL, n_clicks = 0, key = NULL, reversed = NULL, start = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_ol <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, reversed = NULL, start = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				reversed=reversed, 
@@ -7248,7 +7418,7 @@ component <- list(
   ),
   type = 'Ol',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'reversed', 'start', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'reversed', 'start', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7287,8 +7457,9 @@ assert_no_names <- function(x) {
 #' Optgroup dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param disabled Indicates whether the user can interact with the element. 
@@ -7307,11 +7478,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_optgroup <- function(..., id = NULL, n_clicks = 0, key = NULL, disabled = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_optgroup <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, disabled = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				disabled=disabled, 
@@ -7332,7 +7504,7 @@ component <- list(
   ),
   type = 'Optgroup',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'disabled', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'disabled', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7371,8 +7543,9 @@ assert_no_names <- function(x) {
 #' Option dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param disabled Indicates whether the user can interact with the element. 
@@ -7393,11 +7566,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_option <- function(..., id = NULL, n_clicks = 0, key = NULL, disabled = NULL, selected = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_option <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, disabled = NULL, selected = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				disabled=disabled, 
@@ -7420,7 +7594,7 @@ component <- list(
   ),
   type = 'Option',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'disabled', 'selected', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'disabled', 'selected', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7459,8 +7633,9 @@ assert_no_names <- function(x) {
 #' Output dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param htmlFor Describes elements which belongs to this one. 
@@ -7481,11 +7656,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_output <- function(..., id = NULL, n_clicks = 0, key = NULL, htmlFor = NULL, form = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_output <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, htmlFor = NULL, form = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				htmlFor=htmlFor, 
@@ -7508,7 +7684,7 @@ component <- list(
   ),
   type = 'Output',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'htmlFor', 'form', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'htmlFor', 'form', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7547,8 +7723,9 @@ assert_no_names <- function(x) {
 #' P dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -7566,11 +7743,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_p <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_p <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -7590,7 +7768,7 @@ component <- list(
   ),
   type = 'P',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7629,8 +7807,9 @@ assert_no_names <- function(x) {
 #' Param dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param name Name of the element. For example used by the server to identify the fields in form submits. 
@@ -7650,11 +7829,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_param <- function(..., id = NULL, n_clicks = 0, key = NULL, name = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_param <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, name = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				name=name, 
@@ -7676,7 +7856,7 @@ component <- list(
   ),
   type = 'Param',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'name', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'name', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7715,8 +7895,9 @@ assert_no_names <- function(x) {
 #' Plaintext dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/plaintext>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -7734,11 +7915,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_plaintext <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_plaintext <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -7758,7 +7940,7 @@ component <- list(
   ),
   type = 'Plaintext',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7797,8 +7979,9 @@ assert_no_names <- function(x) {
 #' Pre dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -7816,11 +7999,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_pre <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_pre <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -7840,7 +8024,7 @@ component <- list(
   ),
   type = 'Pre',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7879,8 +8063,9 @@ assert_no_names <- function(x) {
 #' Progress dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param form Indicates the form that is the owner of the element. 
@@ -7901,11 +8086,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_progress <- function(..., id = NULL, n_clicks = 0, key = NULL, form = NULL, max = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_progress <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, form = NULL, max = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				form=form, 
@@ -7928,7 +8114,7 @@ component <- list(
   ),
   type = 'Progress',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'form', 'max', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'form', 'max', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7967,8 +8153,9 @@ assert_no_names <- function(x) {
 #' Q dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param cite Contains a URI which points to the source of the quote or change. 
@@ -7987,11 +8174,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_q <- function(..., id = NULL, n_clicks = 0, key = NULL, cite = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_q <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, cite = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				cite=cite, 
@@ -8012,7 +8200,7 @@ component <- list(
   ),
   type = 'Q',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'cite', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'cite', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8051,8 +8239,9 @@ assert_no_names <- function(x) {
 #' Rp dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -8070,11 +8259,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_rp <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_rp <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -8094,7 +8284,7 @@ component <- list(
   ),
   type = 'Rp',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8133,8 +8323,9 @@ assert_no_names <- function(x) {
 #' Rt dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rt>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -8152,11 +8343,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_rt <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_rt <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -8176,7 +8368,7 @@ component <- list(
   ),
   type = 'Rt',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8215,8 +8407,9 @@ assert_no_names <- function(x) {
 #' Rtc dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rtc>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -8234,11 +8427,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_rtc <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_rtc <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -8258,7 +8452,7 @@ component <- list(
   ),
   type = 'Rtc',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8297,8 +8491,9 @@ assert_no_names <- function(x) {
 #' Ruby dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -8316,11 +8511,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_ruby <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_ruby <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -8340,7 +8536,7 @@ component <- list(
   ),
   type = 'Ruby',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8379,8 +8575,9 @@ assert_no_names <- function(x) {
 #' S dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -8398,11 +8595,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_s <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_s <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -8422,7 +8620,7 @@ component <- list(
   ),
   type = 'S',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8461,8 +8659,9 @@ assert_no_names <- function(x) {
 #' Samp dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -8480,11 +8679,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_samp <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_samp <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -8504,7 +8704,7 @@ component <- list(
   ),
   type = 'Samp',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8543,8 +8743,9 @@ assert_no_names <- function(x) {
 #' Script dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param async Indicates that the script should be executed asynchronously. 
@@ -8569,11 +8770,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_script <- function(..., id = NULL, n_clicks = 0, key = NULL, async = NULL, charSet = NULL, crossOrigin = NULL, defer = NULL, integrity = NULL, src = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_script <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, async = NULL, charSet = NULL, crossOrigin = NULL, defer = NULL, integrity = NULL, src = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				async=async, 
@@ -8600,7 +8802,7 @@ component <- list(
   ),
   type = 'Script',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'async', 'charSet', 'crossOrigin', 'defer', 'integrity', 'src', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'async', 'charSet', 'crossOrigin', 'defer', 'integrity', 'src', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8639,8 +8841,9 @@ assert_no_names <- function(x) {
 #' Section dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -8658,11 +8861,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_section <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_section <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -8682,7 +8886,7 @@ component <- list(
   ),
   type = 'Section',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8721,8 +8925,9 @@ assert_no_names <- function(x) {
 #' Select dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param autoFocus The element should be automatically focused after the page loaded. 
@@ -8747,11 +8952,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_select <- function(..., id = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, disabled = NULL, form = NULL, multiple = NULL, name = NULL, required = NULL, size = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_select <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, disabled = NULL, form = NULL, multiple = NULL, name = NULL, required = NULL, size = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				autoFocus=autoFocus, 
@@ -8778,7 +8984,7 @@ component <- list(
   ),
   type = 'Select',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'autoFocus', 'disabled', 'form', 'multiple', 'name', 'required', 'size', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'autoFocus', 'disabled', 'form', 'multiple', 'name', 'required', 'size', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8817,8 +9023,9 @@ assert_no_names <- function(x) {
 #' Shadow dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/shadow>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -8836,11 +9043,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_shadow <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_shadow <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -8860,7 +9068,7 @@ component <- list(
   ),
   type = 'Shadow',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8899,8 +9107,9 @@ assert_no_names <- function(x) {
 #' Slot dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -8918,11 +9127,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_slot <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_slot <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -8942,7 +9152,7 @@ component <- list(
   ),
   type = 'Slot',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8981,8 +9191,9 @@ assert_no_names <- function(x) {
 #' Small dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -9000,11 +9211,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_small <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_small <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -9024,7 +9236,7 @@ component <- list(
   ),
   type = 'Small',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -9063,8 +9275,9 @@ assert_no_names <- function(x) {
 #' Source dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param media Specifies a hint of the media for which the linked resource was designed. 
@@ -9086,11 +9299,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_source <- function(..., id = NULL, n_clicks = 0, key = NULL, media = NULL, sizes = NULL, src = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_source <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, media = NULL, sizes = NULL, src = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				media=media, 
@@ -9114,7 +9328,7 @@ component <- list(
   ),
   type = 'Source',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'media', 'sizes', 'src', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'media', 'sizes', 'src', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -9153,8 +9367,9 @@ assert_no_names <- function(x) {
 #' Spacer dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/spacer>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -9172,11 +9387,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_spacer <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_spacer <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -9196,7 +9412,7 @@ component <- list(
   ),
   type = 'Spacer',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -9235,8 +9451,9 @@ assert_no_names <- function(x) {
 #' Span dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -9254,11 +9471,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_span <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_span <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -9278,7 +9496,7 @@ component <- list(
   ),
   type = 'Span',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -9317,8 +9535,9 @@ assert_no_names <- function(x) {
 #' Strike dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -9336,11 +9555,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_strike <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_strike <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -9360,7 +9580,7 @@ component <- list(
   ),
   type = 'Strike',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -9399,8 +9619,9 @@ assert_no_names <- function(x) {
 #' Strong dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -9418,11 +9639,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_strong <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_strong <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -9442,7 +9664,7 @@ component <- list(
   ),
   type = 'Strong',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -9481,8 +9703,9 @@ assert_no_names <- function(x) {
 #' Sub dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -9500,11 +9723,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_sub <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_sub <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -9524,7 +9748,7 @@ component <- list(
   ),
   type = 'Sub',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -9563,8 +9787,9 @@ assert_no_names <- function(x) {
 #' Summary dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -9582,11 +9807,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_summary <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_summary <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -9606,7 +9832,7 @@ component <- list(
   ),
   type = 'Summary',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -9645,8 +9871,9 @@ assert_no_names <- function(x) {
 #' Sup dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -9664,11 +9891,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_sup <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_sup <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -9688,7 +9916,7 @@ component <- list(
   ),
   type = 'Sup',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -9727,8 +9955,9 @@ assert_no_names <- function(x) {
 #' Table dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param summary  
@@ -9747,11 +9976,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_table <- function(..., id = NULL, n_clicks = 0, key = NULL, summary = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_table <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, summary = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				summary=summary, 
@@ -9772,7 +10002,7 @@ component <- list(
   ),
   type = 'Table',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'summary', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'summary', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -9811,8 +10041,9 @@ assert_no_names <- function(x) {
 #' Tbody dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -9830,11 +10061,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_tbody <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_tbody <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -9854,7 +10086,7 @@ component <- list(
   ),
   type = 'Tbody',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -9893,8 +10125,9 @@ assert_no_names <- function(x) {
 #' Td dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param colSpan The colspan attribute defines the number of columns a cell should span. 
@@ -9915,11 +10148,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_td <- function(..., id = NULL, n_clicks = 0, key = NULL, colSpan = NULL, headers = NULL, rowSpan = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_td <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, colSpan = NULL, headers = NULL, rowSpan = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				colSpan=colSpan, 
@@ -9942,7 +10176,7 @@ component <- list(
   ),
   type = 'Td',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'colSpan', 'headers', 'rowSpan', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'colSpan', 'headers', 'rowSpan', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -9981,8 +10215,9 @@ assert_no_names <- function(x) {
 #' Template dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -10000,11 +10235,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_template <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_template <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -10024,7 +10260,7 @@ component <- list(
   ),
   type = 'Template',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -10063,8 +10299,9 @@ assert_no_names <- function(x) {
 #' Textarea dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param autoFocus The element should be automatically focused after the page loaded. 
@@ -10094,11 +10331,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_textarea <- function(..., id = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, cols = NULL, disabled = NULL, form = NULL, maxLength = NULL, minLength = NULL, name = NULL, placeholder = NULL, readOnly = NULL, required = NULL, rows = NULL, wrap = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_textarea <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, autoFocus = NULL, cols = NULL, disabled = NULL, form = NULL, maxLength = NULL, minLength = NULL, name = NULL, placeholder = NULL, readOnly = NULL, required = NULL, rows = NULL, wrap = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				autoFocus=autoFocus, 
@@ -10130,7 +10368,7 @@ component <- list(
   ),
   type = 'Textarea',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'autoFocus', 'cols', 'disabled', 'form', 'maxLength', 'minLength', 'name', 'placeholder', 'readOnly', 'required', 'rows', 'wrap', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'autoFocus', 'cols', 'disabled', 'form', 'maxLength', 'minLength', 'name', 'placeholder', 'readOnly', 'required', 'rows', 'wrap', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -10169,8 +10407,9 @@ assert_no_names <- function(x) {
 #' Tfoot dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -10188,11 +10427,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_tfoot <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_tfoot <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -10212,7 +10452,7 @@ component <- list(
   ),
   type = 'Tfoot',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -10251,8 +10491,9 @@ assert_no_names <- function(x) {
 #' Th dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param colSpan The colspan attribute defines the number of columns a cell should span. 
@@ -10274,11 +10515,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_th <- function(..., id = NULL, n_clicks = 0, key = NULL, colSpan = NULL, headers = NULL, rowSpan = NULL, scope = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_th <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, colSpan = NULL, headers = NULL, rowSpan = NULL, scope = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				colSpan=colSpan, 
@@ -10302,7 +10544,7 @@ component <- list(
   ),
   type = 'Th',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'colSpan', 'headers', 'rowSpan', 'scope', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'colSpan', 'headers', 'rowSpan', 'scope', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -10341,8 +10583,9 @@ assert_no_names <- function(x) {
 #' Thead dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -10360,11 +10603,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_thead <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_thead <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -10384,7 +10628,7 @@ component <- list(
   ),
   type = 'Thead',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -10423,8 +10667,9 @@ assert_no_names <- function(x) {
 #' Time dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param dateTime Indicates the date and time associated with the element. 
@@ -10443,11 +10688,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_time <- function(..., id = NULL, n_clicks = 0, key = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_time <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				dateTime=dateTime, 
@@ -10468,89 +10714,7 @@ component <- list(
   ),
   type = 'Time',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'dateTime', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
-  package = 'dashHtmlComponents'
-)
-
-component$props <- filter_null(component$props)
-
-structure(component, class = c('dash_component', 'list'))
-}
-
-
-filter_null <- function(x) {
-  if (length(x) == 0 || !is.list(x)) return(x)
-  x[!vapply(x, is.null, logical(1))]
-}
-
-assert_valid_children <- function(...) {
-  kids <- list(...)
-  if (length(kids) == 0) return(NULL)
-  assert_no_names(kids)
-}
-
-assert_no_names <- function(x) {
-  nms <- names(x)
-  if (!is.null(nms)) {
-    stop(
-      sprintf(
-        "Didn't recognize the following named arguments: '%s'",
-         paste(nms, collapse = "', '")
-       ), call. = FALSE
-    )
-  }
-  names(x) <- NULL
-  x
-}
-# Auto-generated by dashTranspileR -- do not edit by hand
-
-#' Title dash-html-components component
-#' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title>
-#' @export
-#' @param ... children of the component.
-#' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
-#' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
-#' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
-#' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
-#' @param className Often used with CSS to style elements with common properties. 
-#' @param contentEditable Indicates whether the element's content is editable. 
-#' @param contextMenu Defines the ID of a <menu> element which will serve as the element's context menu. 
-#' @param dir Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left) 
-#' @param draggable Defines whether the element can be dragged. 
-#' @param hidden Prevents rendering of given element, while keeping child elements, e.g. script elements, active. 
-#' @param lang Defines the language used in the element. 
-#' @param spellCheck Indicates whether spell checking is allowed for the element. 
-#' @param style Defines CSS styles which will override styles previously set. 
-#' @param tabIndex Overrides the browser's default tab order and follows the one specified instead. 
-#' @param title Text to be displayed in a tooltip when hovering over the element. 
-#' @param fireEvent A callback for firing events to dash. 
-#' @param dashEvents  
-
-html_title <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
-
-component <- list(
-  props = list(
-    children = assert_valid_children(...), id=id, 
-				n_clicks=n_clicks, 
-				key=key, 
-				accessKey=accessKey, 
-				className=className, 
-				contentEditable=contentEditable, 
-				contextMenu=contextMenu, 
-				dir=dir, 
-				draggable=draggable, 
-				hidden=hidden, 
-				lang=lang, 
-				spellCheck=spellCheck, 
-				style=style, 
-				tabIndex=tabIndex, 
-				title=title, 
-				fireEvent=fireEvent, 
-				dashEvents=dashEvents
-  ),
-  type = 'Title',
-  namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'dateTime', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -10589,8 +10753,9 @@ assert_no_names <- function(x) {
 #' Tr dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -10608,11 +10773,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_tr <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_tr <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -10632,7 +10798,7 @@ component <- list(
   ),
   type = 'Tr',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -10671,8 +10837,9 @@ assert_no_names <- function(x) {
 #' Track dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param default Indicates that the track should be enabled unless the user's preferences indicate something different. 
@@ -10695,11 +10862,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_track <- function(..., id = NULL, n_clicks = 0, key = NULL, default = NULL, kind = NULL, label = NULL, src = NULL, srcLang = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_track <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, default = NULL, kind = NULL, label = NULL, src = NULL, srcLang = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				default=default, 
@@ -10724,7 +10892,7 @@ component <- list(
   ),
   type = 'Track',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'default', 'kind', 'label', 'src', 'srcLang', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'default', 'kind', 'label', 'src', 'srcLang', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -10763,8 +10931,9 @@ assert_no_names <- function(x) {
 #' Tt dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tt>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -10782,11 +10951,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_tt <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_tt <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -10806,7 +10976,7 @@ component <- list(
   ),
   type = 'Tt',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -10845,8 +11015,9 @@ assert_no_names <- function(x) {
 #' U dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -10864,11 +11035,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_u <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_u <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -10888,7 +11060,7 @@ component <- list(
   ),
   type = 'U',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -10927,8 +11099,9 @@ assert_no_names <- function(x) {
 #' Ul dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -10946,11 +11119,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_ul <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_ul <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -10970,7 +11144,7 @@ component <- list(
   ),
   type = 'Ul',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -11009,8 +11183,9 @@ assert_no_names <- function(x) {
 #' Var dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -11028,11 +11203,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_var <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_var <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -11052,7 +11228,7 @@ component <- list(
   ),
   type = 'Var',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -11091,8 +11267,9 @@ assert_no_names <- function(x) {
 #' Video dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param autoPlay The audio or video should play as soon as possible. 
@@ -11120,11 +11297,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_video <- function(..., id = NULL, n_clicks = 0, key = NULL, autoPlay = NULL, controls = NULL, crossOrigin = NULL, height = NULL, loop = NULL, muted = NULL, poster = NULL, preload = NULL, src = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_video <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, autoPlay = NULL, controls = NULL, crossOrigin = NULL, height = NULL, loop = NULL, muted = NULL, poster = NULL, preload = NULL, src = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				autoPlay=autoPlay, 
@@ -11154,7 +11332,7 @@ component <- list(
   ),
   type = 'Video',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'autoPlay', 'controls', 'crossOrigin', 'height', 'loop', 'muted', 'poster', 'preload', 'src', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'autoPlay', 'controls', 'crossOrigin', 'height', 'loop', 'muted', 'poster', 'preload', 'src', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -11193,8 +11371,9 @@ assert_no_names <- function(x) {
 #' Wbr dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -11212,11 +11391,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_wbr <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_wbr <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -11236,7 +11416,7 @@ component <- list(
   ),
   type = 'Wbr',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -11275,8 +11455,9 @@ assert_no_names <- function(x) {
 #' Xmp dash-html-components component
 #' @description See <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp>
 #' @export
-#' @param ... children of the component.
+#' @param ... (implicit) children of this component, which are combined with the more explicit `children` (a list of components)
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
+#' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -11294,11 +11475,12 @@ assert_no_names <- function(x) {
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-html_xmp <- function(..., id = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+html_xmp <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
-    children = assert_valid_children(...), id=id, 
+    id=id, 
+				children=c(children, assert_valid_children(...)), 
 				n_clicks=n_clicks, 
 				key=key, 
 				accessKey=accessKey, 
@@ -11318,7 +11500,7 @@ component <- list(
   ),
   type = 'Xmp',
   namespace = 'dash_html_components',
-  propNames = c('children', 'id', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'key', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
