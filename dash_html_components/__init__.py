@@ -2,6 +2,7 @@ import os as _os
 import dash as _dash
 import sys as _sys
 from .version import __version__
+from ._to_html5 import _to_html5
 
 _current_path = _os.path.dirname(_os.path.abspath(__file__))
 
@@ -24,3 +25,4 @@ _js_dist = [{
 for component in _components:
     setattr(_this_module, component.__name__, component)
     setattr(component, '_js_dist', _js_dist)
+    setattr(component, 'to_html5', _to_html5)
