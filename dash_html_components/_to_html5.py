@@ -1,10 +1,32 @@
 import collections
 from dash.development.base_component import Component
+import re
 
 _VOID_ELEMENTS = [
     'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'keygen',
     'link', 'meta', 'param', 'source', 'track', 'wbr'
 ]
+
+_CAMELCASE_REGEX = re.compile('([a-z0-9])([A-Z])')
+
+
+def _camel_case_to_css_case(name):
+    return _CAMELCASE_REGEX.sub(r'\1-\2', name).lower()
+
+
+def _attribute(name, value):
+    if name == 'className':
+        return ('class', value,)
+    elif name == 'style':
+        # Dash CSS is camel-cased but CSS is hyphenated
+        # convert e.g. fontColor to font-color
+        inline_style = '; '.join([
+            '='.join([_camel_case_to_css_case(k), v])
+            for (k, v) in value.iteritems()
+        ])
+        return (name, inline_style,)
+    else:
+        return (name, value,)
 
 
 def _to_html5(self):
@@ -32,8 +54,8 @@ def _to_html5(self):
         return '<{type}{properties}>{children}{closing}'.format(
             type=component_type,
             properties=''.join([
-                ' {name}="{value}"'.format(
-                    name=p, value=getattr(component, p))
+                ' {}="{}"'.format(
+                    _attribute(p, getattr(component, p)))
                 for p in component._prop_names
                 if (hasattr(component, p) and p is not 'children')
             ]),
