@@ -11,13 +11,13 @@ const Keygen = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </keygen>
         );
     } else {
         return (
             <keygen {...props}>
-                {props.children}
+                {props.render(props.children)}
             </keygen>
         );
     }

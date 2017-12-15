@@ -11,13 +11,13 @@ const Multicol = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </multicol>
         );
     } else {
         return (
             <multicol {...props}>
-                {props.children}
+                {props.render(props.children)}
             </multicol>
         );
     }

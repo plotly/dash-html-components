@@ -11,13 +11,13 @@ const Isindex = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </isindex>
         );
     } else {
         return (
             <isindex {...props}>
-                {props.children}
+                {props.render(props.children)}
             </isindex>
         );
     }

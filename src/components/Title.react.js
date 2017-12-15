@@ -11,13 +11,13 @@ const Title = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </title>
         );
     } else {
         return (
             <title {...props}>
-                {props.children}
+                {props.render(props.children)}
             </title>
         );
     }

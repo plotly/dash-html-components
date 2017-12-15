@@ -11,13 +11,13 @@ const Tfoot = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </tfoot>
         );
     } else {
         return (
             <tfoot {...props}>
-                {props.children}
+                {props.render(props.children)}
             </tfoot>
         );
     }

@@ -11,13 +11,13 @@ const Font = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </font>
         );
     } else {
         return (
             <font {...props}>
-                {props.children}
+                {props.render(props.children)}
             </font>
         );
     }

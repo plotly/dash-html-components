@@ -11,13 +11,13 @@ const Blockquote = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </blockquote>
         );
     } else {
         return (
             <blockquote {...props}>
-                {props.children}
+                {props.render(props.children)}
             </blockquote>
         );
     }

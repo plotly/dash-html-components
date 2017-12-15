@@ -11,13 +11,13 @@ const Plaintext = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </plaintext>
         );
     } else {
         return (
             <plaintext {...props}>
-                {props.children}
+                {props.render(props.children)}
             </plaintext>
         );
     }

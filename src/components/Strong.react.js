@@ -11,13 +11,13 @@ const Strong = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </strong>
         );
     } else {
         return (
             <strong {...props}>
-                {props.children}
+                {props.render(props.children)}
             </strong>
         );
     }

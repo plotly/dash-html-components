@@ -11,13 +11,13 @@ const Canvas = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </canvas>
         );
     } else {
         return (
             <canvas {...props}>
-                {props.children}
+                {props.render(props.children)}
             </canvas>
         );
     }

@@ -11,13 +11,13 @@ const Meter = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </meter>
         );
     } else {
         return (
             <meter {...props}>
-                {props.children}
+                {props.render(props.children)}
             </meter>
         );
     }

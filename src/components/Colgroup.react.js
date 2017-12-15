@@ -11,13 +11,13 @@ const Colgroup = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </colgroup>
         );
     } else {
         return (
             <colgroup {...props}>
-                {props.children}
+                {props.render(props.children)}
             </colgroup>
         );
     }

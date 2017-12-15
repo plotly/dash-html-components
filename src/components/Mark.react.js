@@ -11,13 +11,13 @@ const Mark = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </mark>
         );
     } else {
         return (
             <mark {...props}>
-                {props.children}
+                {props.render(props.children)}
             </mark>
         );
     }

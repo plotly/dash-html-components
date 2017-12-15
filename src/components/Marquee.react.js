@@ -11,13 +11,13 @@ const Marquee = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </marquee>
         );
     } else {
         return (
             <marquee {...props}>
-                {props.children}
+                {props.render(props.children)}
             </marquee>
         );
     }

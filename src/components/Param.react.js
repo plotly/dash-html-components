@@ -11,13 +11,13 @@ const Param = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </param>
         );
     } else {
         return (
             <param {...props}>
-                {props.children}
+                {props.render(props.children)}
             </param>
         );
     }

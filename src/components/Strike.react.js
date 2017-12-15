@@ -11,13 +11,13 @@ const Strike = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </strike>
         );
     } else {
         return (
             <strike {...props}>
-                {props.children}
+                {props.render(props.children)}
             </strike>
         );
     }

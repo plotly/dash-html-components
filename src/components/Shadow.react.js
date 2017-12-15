@@ -11,13 +11,13 @@ const Shadow = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </shadow>
         );
     } else {
         return (
             <shadow {...props}>
-                {props.children}
+                {props.render(props.children)}
             </shadow>
         );
     }

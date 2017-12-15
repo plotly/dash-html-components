@@ -11,13 +11,13 @@ const Video = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </video>
         );
     } else {
         return (
             <video {...props}>
-                {props.children}
+                {props.render(props.children)}
             </video>
         );
     }

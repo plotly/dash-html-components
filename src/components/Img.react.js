@@ -11,13 +11,13 @@ const Img = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </img>
         );
     } else {
         return (
             <img {...props}>
-                {props.children}
+                {props.render(props.children)}
             </img>
         );
     }

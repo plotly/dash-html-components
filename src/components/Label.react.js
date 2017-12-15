@@ -11,13 +11,13 @@ const Label = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </label>
         );
     } else {
         return (
             <label {...props}>
-                {props.children}
+                {props.render(props.children)}
             </label>
         );
     }

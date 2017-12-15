@@ -11,13 +11,13 @@ const Time = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </time>
         );
     } else {
         return (
             <time {...props}>
-                {props.children}
+                {props.render(props.children)}
             </time>
         );
     }

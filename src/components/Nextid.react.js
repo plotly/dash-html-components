@@ -11,13 +11,13 @@ const Nextid = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </nextid>
         );
     } else {
         return (
             <nextid {...props}>
-                {props.children}
+                {props.render(props.children)}
             </nextid>
         );
     }

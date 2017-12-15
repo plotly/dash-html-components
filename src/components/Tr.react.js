@@ -11,13 +11,13 @@ const Tr = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </tr>
         );
     } else {
         return (
             <tr {...props}>
-                {props.children}
+                {props.render(props.children)}
             </tr>
         );
     }

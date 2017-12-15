@@ -11,13 +11,13 @@ const Thead = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </thead>
         );
     } else {
         return (
             <thead {...props}>
-                {props.children}
+                {props.render(props.children)}
             </thead>
         );
     }

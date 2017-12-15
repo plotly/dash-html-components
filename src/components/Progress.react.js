@@ -11,13 +11,13 @@ const Progress = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </progress>
         );
     } else {
         return (
             <progress {...props}>
-                {props.children}
+                {props.render(props.children)}
             </progress>
         );
     }

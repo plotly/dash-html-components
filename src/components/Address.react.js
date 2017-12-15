@@ -11,13 +11,13 @@ const Address = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </address>
         );
     } else {
         return (
             <address {...props}>
-                {props.children}
+                {props.render(props.children)}
             </address>
         );
     }

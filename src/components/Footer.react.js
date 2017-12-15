@@ -11,13 +11,13 @@ const Footer = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </footer>
         );
     } else {
         return (
             <footer {...props}>
-                {props.children}
+                {props.render(props.children)}
             </footer>
         );
     }

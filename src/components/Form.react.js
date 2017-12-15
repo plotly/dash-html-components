@@ -11,13 +11,13 @@ const Form = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </form>
         );
     } else {
         return (
             <form {...props}>
-                {props.children}
+                {props.render(props.children)}
             </form>
         );
     }

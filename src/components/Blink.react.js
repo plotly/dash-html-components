@@ -11,13 +11,13 @@ const Blink = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </blink>
         );
     } else {
         return (
             <blink {...props}>
-                {props.children}
+                {props.render(props.children)}
             </blink>
         );
     }

@@ -11,13 +11,13 @@ const Xmp = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </xmp>
         );
     } else {
         return (
             <xmp {...props}>
-                {props.children}
+                {props.render(props.children)}
             </xmp>
         );
     }

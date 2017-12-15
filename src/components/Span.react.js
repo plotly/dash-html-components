@@ -11,13 +11,13 @@ const Span = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </span>
         );
     } else {
         return (
             <span {...props}>
-                {props.children}
+                {props.render(props.children)}
             </span>
         );
     }

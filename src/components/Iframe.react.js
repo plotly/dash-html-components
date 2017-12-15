@@ -11,13 +11,13 @@ const Iframe = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </iframe>
         );
     } else {
         return (
             <iframe {...props}>
-                {props.children}
+                {props.render(props.children)}
             </iframe>
         );
     }

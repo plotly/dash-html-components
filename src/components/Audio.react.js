@@ -11,13 +11,13 @@ const Audio = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </audio>
         );
     } else {
         return (
             <audio {...props}>
-                {props.children}
+                {props.render(props.children)}
             </audio>
         );
     }

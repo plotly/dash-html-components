@@ -11,13 +11,13 @@ const Applet = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </applet>
         );
     } else {
         return (
             <applet {...props}>
-                {props.children}
+                {props.render(props.children)}
             </applet>
         );
     }

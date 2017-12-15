@@ -11,13 +11,13 @@ const Kbd = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </kbd>
         );
     } else {
         return (
             <kbd {...props}>
-                {props.children}
+                {props.render(props.children)}
             </kbd>
         );
     }

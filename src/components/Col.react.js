@@ -11,13 +11,13 @@ const Col = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </col>
         );
     } else {
         return (
             <col {...props}>
-                {props.children}
+                {props.render(props.children)}
             </col>
         );
     }

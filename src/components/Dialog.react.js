@@ -11,13 +11,13 @@ const Dialog = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </dialog>
         );
     } else {
         return (
             <dialog {...props}>
-                {props.children}
+                {props.render(props.children)}
             </dialog>
         );
     }

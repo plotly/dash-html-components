@@ -11,13 +11,13 @@ const Del = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </del>
         );
     } else {
         return (
             <del {...props}>
-                {props.children}
+                {props.render(props.children)}
             </del>
         );
     }

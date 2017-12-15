@@ -11,13 +11,13 @@ const Cite = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </cite>
         );
     } else {
         return (
             <cite {...props}>
-                {props.children}
+                {props.render(props.children)}
             </cite>
         );
     }

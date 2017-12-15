@@ -11,13 +11,13 @@ const Small = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </small>
         );
     } else {
         return (
             <small {...props}>
-                {props.children}
+                {props.render(props.children)}
             </small>
         );
     }

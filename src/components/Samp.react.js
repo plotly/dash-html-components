@@ -11,13 +11,13 @@ const Samp = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </samp>
         );
     } else {
         return (
             <samp {...props}>
-                {props.children}
+                {props.render(props.children)}
             </samp>
         );
     }

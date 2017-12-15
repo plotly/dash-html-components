@@ -11,13 +11,13 @@ const Meta = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </meta>
         );
     } else {
         return (
             <meta {...props}>
-                {props.children}
+                {props.render(props.children)}
             </meta>
         );
     }

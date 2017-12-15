@@ -11,13 +11,13 @@ const MapEl = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </map>
         );
     } else {
         return (
             <map {...props}>
-                {props.children}
+                {props.render(props.children)}
             </map>
         );
     }

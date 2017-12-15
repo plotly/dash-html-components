@@ -11,13 +11,13 @@ const Menu = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </menu>
         );
     } else {
         return (
             <menu {...props}>
-                {props.children}
+                {props.render(props.children)}
             </menu>
         );
     }

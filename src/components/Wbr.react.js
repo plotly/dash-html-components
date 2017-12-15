@@ -11,13 +11,13 @@ const Wbr = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </wbr>
         );
     } else {
         return (
             <wbr {...props}>
-                {props.children}
+                {props.render(props.children)}
             </wbr>
         );
     }

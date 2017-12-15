@@ -11,13 +11,13 @@ const Figcaption = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </figcaption>
         );
     } else {
         return (
             <figcaption {...props}>
-                {props.children}
+                {props.render(props.children)}
             </figcaption>
         );
     }

@@ -11,13 +11,13 @@ const Noscript = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </noscript>
         );
     } else {
         return (
             <noscript {...props}>
-                {props.children}
+                {props.render(props.children)}
             </noscript>
         );
     }

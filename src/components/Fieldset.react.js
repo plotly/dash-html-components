@@ -11,13 +11,13 @@ const Fieldset = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </fieldset>
         );
     } else {
         return (
             <fieldset {...props}>
-                {props.children}
+                {props.render(props.children)}
             </fieldset>
         );
     }

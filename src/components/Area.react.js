@@ -11,13 +11,13 @@ const Area = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </area>
         );
     } else {
         return (
             <area {...props}>
-                {props.children}
+                {props.render(props.children)}
             </area>
         );
     }

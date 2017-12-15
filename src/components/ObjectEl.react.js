@@ -11,13 +11,13 @@ const ObjectEl = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </object>
         );
     } else {
         return (
             <object {...props}>
-                {props.children}
+                {props.render(props.children)}
             </object>
         );
     }

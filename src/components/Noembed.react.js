@@ -11,13 +11,13 @@ const Noembed = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </noembed>
         );
     } else {
         return (
             <noembed {...props}>
-                {props.children}
+                {props.render(props.children)}
             </noembed>
         );
     }

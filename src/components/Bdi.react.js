@@ -11,13 +11,13 @@ const Bdi = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </bdi>
         );
     } else {
         return (
             <bdi {...props}>
-                {props.children}
+                {props.render(props.children)}
             </bdi>
         );
     }

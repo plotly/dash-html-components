@@ -11,13 +11,13 @@ const H4 = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </h4>
         );
     } else {
         return (
             <h4 {...props}>
-                {props.children}
+                {props.render(props.children)}
             </h4>
         );
     }

@@ -11,13 +11,13 @@ const Bdo = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </bdo>
         );
     } else {
         return (
             <bdo {...props}>
-                {props.children}
+                {props.render(props.children)}
             </bdo>
         );
     }

@@ -11,13 +11,13 @@ const Caption = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </caption>
         );
     } else {
         return (
             <caption {...props}>
-                {props.children}
+                {props.render(props.children)}
             </caption>
         );
     }

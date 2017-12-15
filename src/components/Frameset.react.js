@@ -11,13 +11,13 @@ const Frameset = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </frameset>
         );
     } else {
         return (
             <frameset {...props}>
-                {props.children}
+                {props.render(props.children)}
             </frameset>
         );
     }

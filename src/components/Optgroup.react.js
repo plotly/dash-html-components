@@ -11,13 +11,13 @@ const Optgroup = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </optgroup>
         );
     } else {
         return (
             <optgroup {...props}>
-                {props.children}
+                {props.render(props.children)}
             </optgroup>
         );
     }

@@ -11,13 +11,13 @@ const Acronym = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </acronym>
         );
     } else {
         return (
             <acronym {...props}>
-                {props.children}
+                {props.render(props.children)}
             </acronym>
         );
     }

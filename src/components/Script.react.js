@@ -11,13 +11,13 @@ const Script = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </script>
         );
     } else {
         return (
             <script {...props}>
-                {props.children}
+                {props.render(props.children)}
             </script>
         );
     }

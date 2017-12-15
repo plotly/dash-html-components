@@ -11,13 +11,13 @@ const Select = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </select>
         );
     } else {
         return (
             <select {...props}>
-                {props.children}
+                {props.render(props.children)}
             </select>
         );
     }

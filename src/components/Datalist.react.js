@@ -11,13 +11,13 @@ const Datalist = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </datalist>
         );
     } else {
         return (
             <datalist {...props}>
-                {props.children}
+                {props.render(props.children)}
             </datalist>
         );
     }

@@ -11,13 +11,13 @@ const Spacer = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </spacer>
         );
     } else {
         return (
             <spacer {...props}>
-                {props.children}
+                {props.render(props.children)}
             </spacer>
         );
     }

@@ -11,13 +11,13 @@ const Legend = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </legend>
         );
     } else {
         return (
             <legend {...props}>
-                {props.children}
+                {props.render(props.children)}
             </legend>
         );
     }

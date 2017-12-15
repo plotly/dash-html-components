@@ -11,13 +11,13 @@ const Nav = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </nav>
         );
     } else {
         return (
             <nav {...props}>
-                {props.children}
+                {props.render(props.children)}
             </nav>
         );
     }

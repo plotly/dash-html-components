@@ -11,13 +11,13 @@ const Ruby = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </ruby>
         );
     } else {
         return (
             <ruby {...props}>
-                {props.children}
+                {props.render(props.children)}
             </ruby>
         );
     }

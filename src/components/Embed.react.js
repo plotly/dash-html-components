@@ -11,13 +11,13 @@ const Embed = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </embed>
         );
     } else {
         return (
             <embed {...props}>
-                {props.children}
+                {props.render(props.children)}
             </embed>
         );
     }

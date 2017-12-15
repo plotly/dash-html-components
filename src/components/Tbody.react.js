@@ -11,13 +11,13 @@ const Tbody = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </tbody>
         );
     } else {
         return (
             <tbody {...props}>
-                {props.children}
+                {props.render(props.children)}
             </tbody>
         );
     }

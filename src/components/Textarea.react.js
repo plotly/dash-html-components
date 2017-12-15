@@ -11,13 +11,13 @@ const Textarea = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </textarea>
         );
     } else {
         return (
             <textarea {...props}>
-                {props.children}
+                {props.render(props.children)}
             </textarea>
         );
     }

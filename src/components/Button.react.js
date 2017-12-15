@@ -11,13 +11,13 @@ const Button = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </button>
         );
     } else {
         return (
             <button {...props}>
-                {props.children}
+                {props.render(props.children)}
             </button>
         );
     }

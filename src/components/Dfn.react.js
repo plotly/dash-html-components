@@ -11,13 +11,13 @@ const Dfn = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </dfn>
         );
     } else {
         return (
             <dfn {...props}>
-                {props.children}
+                {props.render(props.children)}
             </dfn>
         );
     }

@@ -11,13 +11,13 @@ const Option = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </option>
         );
     } else {
         return (
             <option {...props}>
-                {props.children}
+                {props.render(props.children)}
             </option>
         );
     }

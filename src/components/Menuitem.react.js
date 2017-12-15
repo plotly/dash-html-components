@@ -11,13 +11,13 @@ const Menuitem = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </menuitem>
         );
     } else {
         return (
             <menuitem {...props}>
-                {props.children}
+                {props.render(props.children)}
             </menuitem>
         );
     }

@@ -11,13 +11,13 @@ const Aside = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </aside>
         );
     } else {
         return (
             <aside {...props}>
-                {props.children}
+                {props.render(props.children)}
             </aside>
         );
     }

@@ -11,13 +11,13 @@ const Dir = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </dir>
         );
     } else {
         return (
             <dir {...props}>
-                {props.children}
+                {props.render(props.children)}
             </dir>
         );
     }

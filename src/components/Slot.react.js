@@ -11,13 +11,13 @@ const Slot = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </slot>
         );
     } else {
         return (
             <slot {...props}>
-                {props.children}
+                {props.render(props.children)}
             </slot>
         );
     }

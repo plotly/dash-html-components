@@ -11,13 +11,13 @@ const Link = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </link>
         );
     } else {
         return (
             <link {...props}>
-                {props.children}
+                {props.render(props.children)}
             </link>
         );
     }

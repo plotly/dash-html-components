@@ -11,13 +11,13 @@ const Listing = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </listing>
         );
     } else {
         return (
             <listing {...props}>
-                {props.children}
+                {props.render(props.children)}
             </listing>
         );
     }

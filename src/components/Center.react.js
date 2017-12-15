@@ -11,13 +11,13 @@ const Center = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </center>
         );
     } else {
         return (
             <center {...props}>
-                {props.children}
+                {props.render(props.children)}
             </center>
         );
     }

@@ -11,13 +11,13 @@ const Header = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </header>
         );
     } else {
         return (
             <header {...props}>
-                {props.children}
+                {props.render(props.children)}
             </header>
         );
     }

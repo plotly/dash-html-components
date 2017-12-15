@@ -11,13 +11,13 @@ const Track = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </track>
         );
     } else {
         return (
             <track {...props}>
-                {props.children}
+                {props.render(props.children)}
             </track>
         );
     }

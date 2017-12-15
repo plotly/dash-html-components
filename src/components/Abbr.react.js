@@ -11,13 +11,13 @@ const Abbr = (props) => {
                 }}
                 {...props}
             >
-                {props.children}
+                {props.render(props.children)}
             </abbr>
         );
     } else {
         return (
             <abbr {...props}>
-                {props.children}
+                {props.render(props.children)}
             </abbr>
         );
     }
