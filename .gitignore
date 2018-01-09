@@ -1,7 +1,7 @@
 build/
 dist/
+lib/
 dash_html_components/metadata.json
-dash_html_components/bundle.js*
 node_modules/
 .npm
 vv/
@@ -10,6 +10,4 @@ venv/
 *.egg-info
 *.log
 .DS_Store
-lib/bundle.js
 
-lib/bundle.js.map
