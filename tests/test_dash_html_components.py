@@ -10,7 +10,7 @@ class TestDashHtmlComponents(unittest.TestCase):
                 f.read().split('\n')
             )
             elements += ['MapEl', 'ObjectEl', 'component', 'version']
-            for s in ['Map', 'Object']:
+            for s in ['Map', 'Object', 'Base']:
                 elements.remove(s)
 
         self.assertEqual(
