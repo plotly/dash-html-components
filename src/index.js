@@ -8,6 +8,7 @@ import Article from './components/Article.react';
 import Aside from './components/Aside.react';
 import Audio from './components/Audio.react';
 import B from './components/B.react';
+import Base from './components/Base.react';
 import Basefont from './components/Basefont.react';
 import Bdi from './components/Bdi.react';
 import Bdo from './components/Bdo.react';
@@ -132,4 +133,4 @@ import Video from './components/Video.react';
 import Wbr from './components/Wbr.react';
 import Xmp from './components/Xmp.react';
 
-export {A,Abbr,Acronym,Address,Applet,Area,Article,Aside,Audio,B,Basefont,Bdi,Bdo,Big,Blink,Blockquote,Br,Button,Canvas,Caption,Center,Cite,Code,Col,Colgroup,Command,Content,Data,Datalist,Dd,Del,Details,Dfn,Dialog,Dir,Div,Dl,Dt,Element,Em,Embed,Fieldset,Figcaption,Figure,Font,Footer,Form,Frame,Frameset,H1,H2,H3,H4,H5,H6,Header,Hgroup,Hr,I,Iframe,Img,Ins,Isindex,Kbd,Keygen,Label,Legend,Li,Link,Listing,Main,MapEl,Mark,Marquee,Menu,Menuitem,Meta,Meter,Multicol,Nav,Nextid,Noembed,Noscript,ObjectEl,Ol,Optgroup,Option,Output,P,Param,Plaintext,Pre,Progress,Q,Rp,Rt,Rtc,Ruby,S,Samp,Script,Section,Select,Shadow,Slot,Small,Source,Spacer,Span,Strike,Strong,Sub,Summary,Sup,Table,Tbody,Td,Template,Textarea,Tfoot,Th,Thead,Time,Title,Tr,Track,Tt,U,Ul,Var,Video,Wbr,Xmp};
+export {A,Abbr,Acronym,Address,Applet,Area,Article,Aside,Audio,B,Base,Basefont,Bdi,Bdo,Big,Blink,Blockquote,Br,Button,Canvas,Caption,Center,Cite,Code,Col,Colgroup,Command,Content,Data,Datalist,Dd,Del,Details,Dfn,Dialog,Dir,Div,Dl,Dt,Element,Em,Embed,Fieldset,Figcaption,Figure,Font,Footer,Form,Frame,Frameset,H1,H2,H3,H4,H5,H6,Header,Hgroup,Hr,I,Iframe,Img,Ins,Isindex,Kbd,Keygen,Label,Legend,Li,Link,Listing,Main,MapEl,Mark,Marquee,Menu,Menuitem,Meta,Meter,Multicol,Nav,Nextid,Noembed,Noscript,ObjectEl,Ol,Optgroup,Option,Output,P,Param,Plaintext,Pre,Progress,Q,Rp,Rt,Rtc,Ruby,S,Samp,Script,Section,Select,Shadow,Slot,Small,Source,Spacer,Span,Strike,Strong,Sub,Summary,Sup,Table,Tbody,Td,Template,Textarea,Tfoot,Th,Thead,Time,Title,Tr,Track,Tt,U,Ul,Var,Video,Wbr,Xmp};
