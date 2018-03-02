@@ -10,6 +10,8 @@ venv/
 *.egg-info
 *.log
 .DS_Store
-
 .Rproj.user
 .Rhistory
+lib/bundle.js
+lib/bundle.js.map
+.idea

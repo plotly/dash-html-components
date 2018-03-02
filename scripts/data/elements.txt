@@ -1,4 +1,3 @@
-base
 link
 meta
 title
@@ -7,6 +6,12 @@ article
 aside
 footer
 header
+h1
+h2
+h3
+h4
+h5
+h6
 hgroup
 nav
 section
@@ -38,6 +43,7 @@ em
 i
 kbd
 mark
+nobr
 q
 rp
 rt
@@ -63,6 +69,7 @@ video
 embed
 object
 param
+picture
 source
 canvas
 noscript
@@ -94,8 +101,6 @@ select
 textarea
 details
 dialog
-menu
-menuitem
 summary
 content
 element
@@ -103,14 +108,12 @@ shadow
 slot
 template
 acronym
-applet
 basefont
 big
 blink
 center
 command
 content
-dir
 element
 font
 frame
@@ -121,13 +124,13 @@ listing
 marquee
 multicol
 nextid
-noembed
+nobr
 plaintext
 shadow
 spacer
 strike
-tt
 xmp
+base
 section
 h1
 h2

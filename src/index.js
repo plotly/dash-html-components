@@ -2,7 +2,6 @@ import A from './components/A.react';
 import Abbr from './components/Abbr.react';
 import Acronym from './components/Acronym.react';
 import Address from './components/Address.react';
-import Applet from './components/Applet.react';
 import Area from './components/Area.react';
 import Article from './components/Article.react';
 import Aside from './components/Aside.react';
@@ -33,7 +32,6 @@ import Del from './components/Del.react';
 import Details from './components/Details.react';
 import Dfn from './components/Dfn.react';
 import Dialog from './components/Dialog.react';
-import Dir from './components/Dir.react';
 import Div from './components/Div.react';
 import Dl from './components/Dl.react';
 import Dt from './components/Dt.react';
@@ -73,14 +71,12 @@ import Main from './components/Main.react';
 import MapEl from './components/MapEl.react';
 import Mark from './components/Mark.react';
 import Marquee from './components/Marquee.react';
-import Menu from './components/Menu.react';
-import Menuitem from './components/Menuitem.react';
 import Meta from './components/Meta.react';
 import Meter from './components/Meter.react';
 import Multicol from './components/Multicol.react';
 import Nav from './components/Nav.react';
 import Nextid from './components/Nextid.react';
-import Noembed from './components/Noembed.react';
+import Nobr from './components/Nobr.react';
 import Noscript from './components/Noscript.react';
 import ObjectEl from './components/ObjectEl.react';
 import Ol from './components/Ol.react';
@@ -89,6 +85,7 @@ import Option from './components/Option.react';
 import Output from './components/Output.react';
 import P from './components/P.react';
 import Param from './components/Param.react';
+import Picture from './components/Picture.react';
 import Plaintext from './components/Plaintext.react';
 import Pre from './components/Pre.react';
 import Progress from './components/Progress.react';
@@ -125,7 +122,6 @@ import Time from './components/Time.react';
 import Title from './components/Title.react';
 import Tr from './components/Tr.react';
 import Track from './components/Track.react';
-import Tt from './components/Tt.react';
 import U from './components/U.react';
 import Ul from './components/Ul.react';
 import Var from './components/Var.react';
@@ -133,4 +129,135 @@ import Video from './components/Video.react';
 import Wbr from './components/Wbr.react';
 import Xmp from './components/Xmp.react';
 
-export {A,Abbr,Acronym,Address,Applet,Area,Article,Aside,Audio,B,Base,Basefont,Bdi,Bdo,Big,Blink,Blockquote,Br,Button,Canvas,Caption,Center,Cite,Code,Col,Colgroup,Command,Content,Data,Datalist,Dd,Del,Details,Dfn,Dialog,Dir,Div,Dl,Dt,Element,Em,Embed,Fieldset,Figcaption,Figure,Font,Footer,Form,Frame,Frameset,H1,H2,H3,H4,H5,H6,Header,Hgroup,Hr,I,Iframe,Img,Ins,Isindex,Kbd,Keygen,Label,Legend,Li,Link,Listing,Main,MapEl,Mark,Marquee,Menu,Menuitem,Meta,Meter,Multicol,Nav,Nextid,Noembed,Noscript,ObjectEl,Ol,Optgroup,Option,Output,P,Param,Plaintext,Pre,Progress,Q,Rp,Rt,Rtc,Ruby,S,Samp,Script,Section,Select,Shadow,Slot,Small,Source,Spacer,Span,Strike,Strong,Sub,Summary,Sup,Table,Tbody,Td,Template,Textarea,Tfoot,Th,Thead,Time,Title,Tr,Track,Tt,U,Ul,Var,Video,Wbr,Xmp};
+export {
+    A,
+    Abbr,
+    Acronym,
+    Address,
+    Area,
+    Article,
+    Aside,
+    Audio,
+    B,
+    Base,
+    Basefont,
+    Bdi,
+    Bdo,
+    Big,
+    Blink,
+    Blockquote,
+    Br,
+    Button,
+    Canvas,
+    Caption,
+    Center,
+    Cite,
+    Code,
+    Col,
+    Colgroup,
+    Command,
+    Content,
+    Data,
+    Datalist,
+    Dd,
+    Del,
+    Details,
+    Dfn,
+    Dialog,
+    Div,
+    Dl,
+    Dt,
+    Element,
+    Em,
+    Embed,
+    Fieldset,
+    Figcaption,
+    Figure,
+    Font,
+    Footer,
+    Form,
+    Frame,
+    Frameset,
+    H1,
+    H2,
+    H3,
+    H4,
+    H5,
+    H6,
+    Header,
+    Hgroup,
+    Hr,
+    I,
+    Iframe,
+    Img,
+    Ins,
+    Isindex,
+    Kbd,
+    Keygen,
+    Label,
+    Legend,
+    Li,
+    Link,
+    Listing,
+    Main,
+    MapEl,
+    Mark,
+    Marquee,
+    Meta,
+    Meter,
+    Multicol,
+    Nav,
+    Nextid,
+    Nobr,
+    Noscript,
+    ObjectEl,
+    Ol,
+    Optgroup,
+    Option,
+    Output,
+    P,
+    Param,
+    Picture,
+    Plaintext,
+    Pre,
+    Progress,
+    Q,
+    Rp,
+    Rt,
+    Rtc,
+    Ruby,
+    S,
+    Samp,
+    Script,
+    Section,
+    Select,
+    Shadow,
+    Slot,
+    Small,
+    Source,
+    Spacer,
+    Span,
+    Strike,
+    Strong,
+    Sub,
+    Summary,
+    Sup,
+    Table,
+    Tbody,
+    Td,
+    Template,
+    Textarea,
+    Tfoot,
+    Th,
+    Thead,
+    Time,
+    Title,
+    Tr,
+    Track,
+    U,
+    Ul,
+    Var,
+    Video,
+    Wbr,
+    Xmp
+};

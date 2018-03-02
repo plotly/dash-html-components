@@ -1,10 +1,11 @@
 
-import React, {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Applet = (props) => {
+const Picture = (props) => {
     if (props.fireEvent || props.setProps) {
         return (
-            <applet
+            <picture
                 onClick={() => {
                     if (props.setProps) props.setProps({n_clicks: props.n_clicks + 1});
                     if (props.fireEvent) props.fireEvent({event: 'click'});
@@ -12,22 +13,22 @@ const Applet = (props) => {
                 {...props}
             >
                 {props.children}
-            </applet>
+            </picture>
         );
     } else {
         return (
-            <applet {...props}>
+            <picture {...props}>
                 {props.children}
-            </applet>
+            </picture>
         );
     }
 };
 
-Applet.defaultProps = {
+Picture.defaultProps = {
     n_clicks: 0
 };
 
-Applet.propTypes = {
+Picture.propTypes = {
     /**
      * The ID of this component, used to identify dash components
      * in callbacks. The ID needs to be unique across all of the
@@ -53,11 +54,6 @@ Applet.propTypes = {
      */
     'key': PropTypes.string,
     
-
-    /**
-     * Alternative text in case an image can't be displayed.
-     */
-    'alt': PropTypes.string,
 
     /**
      * Defines a keyboard shortcut to activate or add focus to the element.
@@ -128,4 +124,4 @@ Applet.propTypes = {
     
 };
 
-export default Applet;
+export default Picture;

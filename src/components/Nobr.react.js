@@ -1,10 +1,11 @@
 
-import React, {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Tt = (props) => {
+const Nobr = (props) => {
     if (props.fireEvent || props.setProps) {
         return (
-            <tt
+            <nobr
                 onClick={() => {
                     if (props.setProps) props.setProps({n_clicks: props.n_clicks + 1});
                     if (props.fireEvent) props.fireEvent({event: 'click'});
@@ -12,22 +13,22 @@ const Tt = (props) => {
                 {...props}
             >
                 {props.children}
-            </tt>
+            </nobr>
         );
     } else {
         return (
-            <tt {...props}>
+            <nobr {...props}>
                 {props.children}
-            </tt>
+            </nobr>
         );
     }
 };
 
-Tt.defaultProps = {
+Nobr.defaultProps = {
     n_clicks: 0
 };
 
-Tt.propTypes = {
+Nobr.propTypes = {
     /**
      * The ID of this component, used to identify dash components
      * in callbacks. The ID needs to be unique across all of the
@@ -123,4 +124,4 @@ Tt.propTypes = {
     
 };
 
-export default Tt;
+export default Nobr;

@@ -1,5 +1,6 @@
 
-import React, {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Audio = (props) => {
     if (props.fireEvent || props.setProps) {
@@ -73,6 +74,11 @@ Audio.propTypes = {
      * Indicates whether the media should start playing from the start when it's finished.
      */
     'loop': PropTypes.string,
+
+    /**
+     * Indicates whether the audio will be initially silenced on page load.
+     */
+    'muted': PropTypes.string,
 
     /**
      * Indicates whether the whole resource, parts of it or nothing should be preloaded.

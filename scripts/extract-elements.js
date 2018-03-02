@@ -12,10 +12,23 @@ const dataPath = './data/elements.txt';
  */
 function extractElements($) {
     const excludeElements = [
-        'html', 'head', 'body', 'style', 'h1–h6', 'input'
+        'html', 'head', 'body', 'style', 'h1–h6', 'input',
+        // obsolete, non-standard, or deprecated tags
+        'image', 'dir', 'tt', 'applet', 'noembed', 'bgsound', 'menu', 'menuitem',
+        'noframes'
     ];
     // `<section>` is for some reason missing from the reference tables.
-    const addElements = ['section', 'h1', 'h2', 'h3', 'h4','h5', 'h6', 'iframe'];
+    const addElements = [
+        'base',
+        'section',
+        'h1',
+        'h2',
+        'h3',
+        'h4',
+        'h5',
+        'h6',
+        'iframe'
+    ];
 
     return $('td:first-child')
         .toArray()
