@@ -65,6 +65,16 @@ function generatePropTypes(element, attributes) {
      * See https://reactjs.org/docs/lists-and-keys.html for more info
      */
     'key': PropTypes.string,
+
+    /**
+     * A wildcard data attribute
+     */
+    'data-*': PropTypes.string,
+
+    /**
+     * A wildcard aria attribute
+     */
+    'aria-*': PropTypes.string,
     ` +
 
     supportedAttributes.reduce((propTypes, attributeName) => {

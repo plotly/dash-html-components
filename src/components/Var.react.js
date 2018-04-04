@@ -53,6 +53,16 @@ Var.propTypes = {
      * See https://reactjs.org/docs/lists-and-keys.html for more info
      */
     'key': PropTypes.string,
+
+    /**
+     * A wildcard data attribute
+     */
+    'data-*': PropTypes.string,
+
+    /**
+     * A wildcard aria attribute
+     */
+    'aria-*': PropTypes.string,
     
 
     /**
