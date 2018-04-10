@@ -67,6 +67,11 @@ function generatePropTypes(element, attributes) {
     'key': PropTypes.string,
 
     /**
+     * The ARIA role attribute
+     */
+    'role': PropTypes.string,
+
+    /**
      * A wildcard data attribute
      */
     'data-*': PropTypes.string,
