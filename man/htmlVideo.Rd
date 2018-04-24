@@ -5,13 +5,13 @@
 \title{Video dash-html-components component}
 \usage{
 htmlVideo(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
-  autoPlay = NULL, controls = NULL, crossOrigin = NULL, height = NULL,
-  loop = NULL, muted = NULL, poster = NULL, preload = NULL,
-  src = NULL, width = NULL, accessKey = NULL, className = NULL,
-  contentEditable = NULL, contextMenu = NULL, dir = NULL,
-  draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL,
-  style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL,
-  dashEvents = NULL)
+  role = NULL, autoPlay = NULL, controls = NULL, crossOrigin = NULL,
+  height = NULL, loop = NULL, muted = NULL, poster = NULL,
+  preload = NULL, src = NULL, width = NULL, accessKey = NULL,
+  className = NULL, contentEditable = NULL, contextMenu = NULL,
+  dir = NULL, draggable = NULL, hidden = NULL, lang = NULL,
+  spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL,
+  fireEvent = NULL, dashEvents = NULL)
 }
 \arguments{
 \item{...}{(implicit) children of this component, which are combined with the more explicit `children` (a list of components)}
@@ -23,6 +23,8 @@ htmlVideo(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
 \item{n_clicks}{An integer that represents the number of times that this element has been clicked on.}
 
 \item{key}{A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info}
+
+\item{role}{The ARIA role attribute}
 
 \item{autoPlay}{The audio or video should play as soon as possible.}
 

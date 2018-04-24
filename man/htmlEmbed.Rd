@@ -5,7 +5,7 @@
 \title{Embed dash-html-components component}
 \usage{
 htmlEmbed(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
-  height = NULL, src = NULL, type = NULL, width = NULL,
+  role = NULL, height = NULL, src = NULL, type = NULL, width = NULL,
   accessKey = NULL, className = NULL, contentEditable = NULL,
   contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL,
   lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL,
@@ -21,6 +21,8 @@ htmlEmbed(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
 \item{n_clicks}{An integer that represents the number of times that this element has been clicked on.}
 
 \item{key}{A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info}
+
+\item{role}{The ARIA role attribute}
 
 \item{height}{Specifies the height of elements listed here. For all other elements, use the CSS height property.        Note: In some instances, such as <div>, this is a legacy attribute, in which case the CSS height property should be used instead.}
 

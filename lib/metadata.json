@@ -1,6 +1,7 @@
 {
   "src/components/A.react.js": {
     "description": "",
+    "displayName": "A",
     "methods": [],
     "props": {
       "id": {
@@ -35,6 +36,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "download": {
         "type": {
@@ -193,6 +215,7 @@
   },
   "src/components/Abbr.react.js": {
     "description": "",
+    "displayName": "Abbr",
     "methods": [],
     "props": {
       "id": {
@@ -227,6 +250,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -336,6 +380,7 @@
   },
   "src/components/Acronym.react.js": {
     "description": "",
+    "displayName": "Acronym",
     "methods": [],
     "props": {
       "id": {
@@ -370,6 +415,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -479,6 +545,7 @@
   },
   "src/components/Address.react.js": {
     "description": "",
+    "displayName": "Address",
     "methods": [],
     "props": {
       "id": {
@@ -513,6 +580,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -622,6 +710,7 @@
   },
   "src/components/Area.react.js": {
     "description": "",
+    "displayName": "Area",
     "methods": [],
     "props": {
       "id": {
@@ -656,6 +745,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "alt": {
         "type": {
@@ -828,6 +938,7 @@
   },
   "src/components/Article.react.js": {
     "description": "",
+    "displayName": "Article",
     "methods": [],
     "props": {
       "id": {
@@ -862,6 +973,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -971,6 +1103,7 @@
   },
   "src/components/Aside.react.js": {
     "description": "",
+    "displayName": "Aside",
     "methods": [],
     "props": {
       "id": {
@@ -1005,6 +1138,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -1114,6 +1268,7 @@
   },
   "src/components/Audio.react.js": {
     "description": "",
+    "displayName": "Audio",
     "methods": [],
     "props": {
       "id": {
@@ -1148,6 +1303,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "autoPlay": {
         "type": {
@@ -1306,6 +1482,7 @@
   },
   "src/components/B.react.js": {
     "description": "",
+    "displayName": "B",
     "methods": [],
     "props": {
       "id": {
@@ -1340,6 +1517,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -1449,6 +1647,7 @@
   },
   "src/components/Base.react.js": {
     "description": "",
+    "displayName": "Base",
     "methods": [],
     "props": {
       "id": {
@@ -1483,6 +1682,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "href": {
         "type": {
@@ -1606,6 +1826,7 @@
   },
   "src/components/Basefont.react.js": {
     "description": "",
+    "displayName": "Basefont",
     "methods": [],
     "props": {
       "id": {
@@ -1640,6 +1861,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -1749,6 +1991,7 @@
   },
   "src/components/Bdi.react.js": {
     "description": "",
+    "displayName": "Bdi",
     "methods": [],
     "props": {
       "id": {
@@ -1783,6 +2026,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -1892,6 +2156,7 @@
   },
   "src/components/Bdo.react.js": {
     "description": "",
+    "displayName": "Bdo",
     "methods": [],
     "props": {
       "id": {
@@ -1926,6 +2191,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -2035,6 +2321,7 @@
   },
   "src/components/Big.react.js": {
     "description": "",
+    "displayName": "Big",
     "methods": [],
     "props": {
       "id": {
@@ -2069,6 +2356,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -2178,6 +2486,7 @@
   },
   "src/components/Blink.react.js": {
     "description": "",
+    "displayName": "Blink",
     "methods": [],
     "props": {
       "id": {
@@ -2212,6 +2521,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -2321,6 +2651,7 @@
   },
   "src/components/Blockquote.react.js": {
     "description": "",
+    "displayName": "Blockquote",
     "methods": [],
     "props": {
       "id": {
@@ -2355,6 +2686,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "cite": {
         "type": {
@@ -2471,6 +2823,7 @@
   },
   "src/components/Br.react.js": {
     "description": "",
+    "displayName": "Br",
     "methods": [],
     "props": {
       "id": {
@@ -2505,6 +2858,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -2614,6 +2988,7 @@
   },
   "src/components/Button.react.js": {
     "description": "",
+    "displayName": "Button",
     "methods": [],
     "props": {
       "id": {
@@ -2648,6 +3023,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "autoFocus": {
         "type": {
@@ -2806,6 +3202,7 @@
   },
   "src/components/Canvas.react.js": {
     "description": "",
+    "displayName": "Canvas",
     "methods": [],
     "props": {
       "id": {
@@ -2840,6 +3237,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "height": {
         "type": {
@@ -2963,6 +3381,7 @@
   },
   "src/components/Caption.react.js": {
     "description": "",
+    "displayName": "Caption",
     "methods": [],
     "props": {
       "id": {
@@ -2997,6 +3416,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -3106,6 +3546,7 @@
   },
   "src/components/Center.react.js": {
     "description": "",
+    "displayName": "Center",
     "methods": [],
     "props": {
       "id": {
@@ -3140,6 +3581,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -3249,6 +3711,7 @@
   },
   "src/components/Cite.react.js": {
     "description": "",
+    "displayName": "Cite",
     "methods": [],
     "props": {
       "id": {
@@ -3283,6 +3746,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -3392,6 +3876,7 @@
   },
   "src/components/Code.react.js": {
     "description": "",
+    "displayName": "Code",
     "methods": [],
     "props": {
       "id": {
@@ -3426,6 +3911,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -3535,6 +4041,7 @@
   },
   "src/components/Col.react.js": {
     "description": "",
+    "displayName": "Col",
     "methods": [],
     "props": {
       "id": {
@@ -3569,6 +4076,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "span": {
         "type": {
@@ -3685,6 +4213,7 @@
   },
   "src/components/Colgroup.react.js": {
     "description": "",
+    "displayName": "Colgroup",
     "methods": [],
     "props": {
       "id": {
@@ -3719,6 +4248,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "span": {
         "type": {
@@ -3835,6 +4385,7 @@
   },
   "src/components/Command.react.js": {
     "description": "",
+    "displayName": "Command",
     "methods": [],
     "props": {
       "id": {
@@ -3869,6 +4420,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "checked": {
         "type": {
@@ -4013,6 +4585,7 @@
   },
   "src/components/Content.react.js": {
     "description": "",
+    "displayName": "Content",
     "methods": [],
     "props": {
       "id": {
@@ -4047,6 +4620,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -4156,6 +4750,7 @@
   },
   "src/components/Data.react.js": {
     "description": "",
+    "displayName": "Data",
     "methods": [],
     "props": {
       "id": {
@@ -4190,6 +4785,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -4299,6 +4915,7 @@
   },
   "src/components/Datalist.react.js": {
     "description": "",
+    "displayName": "Datalist",
     "methods": [],
     "props": {
       "id": {
@@ -4333,6 +4950,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -4442,6 +5080,7 @@
   },
   "src/components/Dd.react.js": {
     "description": "",
+    "displayName": "Dd",
     "methods": [],
     "props": {
       "id": {
@@ -4476,6 +5115,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -4585,6 +5245,7 @@
   },
   "src/components/Del.react.js": {
     "description": "",
+    "displayName": "Del",
     "methods": [],
     "props": {
       "id": {
@@ -4619,6 +5280,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "cite": {
         "type": {
@@ -4742,6 +5424,7 @@
   },
   "src/components/Details.react.js": {
     "description": "",
+    "displayName": "Details",
     "methods": [],
     "props": {
       "id": {
@@ -4776,6 +5459,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "open": {
         "type": {
@@ -4892,6 +5596,7 @@
   },
   "src/components/Dfn.react.js": {
     "description": "",
+    "displayName": "Dfn",
     "methods": [],
     "props": {
       "id": {
@@ -4926,6 +5631,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -5035,6 +5761,7 @@
   },
   "src/components/Dialog.react.js": {
     "description": "",
+    "displayName": "Dialog",
     "methods": [],
     "props": {
       "id": {
@@ -5069,6 +5796,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -5178,6 +5926,7 @@
   },
   "src/components/Div.react.js": {
     "description": "",
+    "displayName": "Div",
     "methods": [],
     "props": {
       "id": {
@@ -5212,6 +5961,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -5321,6 +6091,7 @@
   },
   "src/components/Dl.react.js": {
     "description": "",
+    "displayName": "Dl",
     "methods": [],
     "props": {
       "id": {
@@ -5355,6 +6126,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -5464,6 +6256,7 @@
   },
   "src/components/Dt.react.js": {
     "description": "",
+    "displayName": "Dt",
     "methods": [],
     "props": {
       "id": {
@@ -5498,6 +6291,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -5607,6 +6421,7 @@
   },
   "src/components/Element.react.js": {
     "description": "",
+    "displayName": "Element",
     "methods": [],
     "props": {
       "id": {
@@ -5641,6 +6456,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -5750,6 +6586,7 @@
   },
   "src/components/Em.react.js": {
     "description": "",
+    "displayName": "Em",
     "methods": [],
     "props": {
       "id": {
@@ -5784,6 +6621,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -5893,6 +6751,7 @@
   },
   "src/components/Embed.react.js": {
     "description": "",
+    "displayName": "Embed",
     "methods": [],
     "props": {
       "id": {
@@ -5927,6 +6786,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "height": {
         "type": {
@@ -6064,6 +6944,7 @@
   },
   "src/components/Fieldset.react.js": {
     "description": "",
+    "displayName": "Fieldset",
     "methods": [],
     "props": {
       "id": {
@@ -6098,6 +6979,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "disabled": {
         "type": {
@@ -6228,6 +7130,7 @@
   },
   "src/components/Figcaption.react.js": {
     "description": "",
+    "displayName": "Figcaption",
     "methods": [],
     "props": {
       "id": {
@@ -6262,6 +7165,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -6371,6 +7295,7 @@
   },
   "src/components/Figure.react.js": {
     "description": "",
+    "displayName": "Figure",
     "methods": [],
     "props": {
       "id": {
@@ -6405,6 +7330,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -6514,6 +7460,7 @@
   },
   "src/components/Font.react.js": {
     "description": "",
+    "displayName": "Font",
     "methods": [],
     "props": {
       "id": {
@@ -6548,6 +7495,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -6657,6 +7625,7 @@
   },
   "src/components/Footer.react.js": {
     "description": "",
+    "displayName": "Footer",
     "methods": [],
     "props": {
       "id": {
@@ -6691,6 +7660,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -6800,6 +7790,7 @@
   },
   "src/components/Form.react.js": {
     "description": "",
+    "displayName": "Form",
     "methods": [],
     "props": {
       "id": {
@@ -6834,6 +7825,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accept": {
         "type": {
@@ -7006,6 +8018,7 @@
   },
   "src/components/Frame.react.js": {
     "description": "",
+    "displayName": "Frame",
     "methods": [],
     "props": {
       "id": {
@@ -7040,6 +8053,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -7149,6 +8183,7 @@
   },
   "src/components/Frameset.react.js": {
     "description": "",
+    "displayName": "Frameset",
     "methods": [],
     "props": {
       "id": {
@@ -7183,6 +8218,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -7292,6 +8348,7 @@
   },
   "src/components/H1.react.js": {
     "description": "",
+    "displayName": "H1",
     "methods": [],
     "props": {
       "id": {
@@ -7326,6 +8383,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -7435,6 +8513,7 @@
   },
   "src/components/H2.react.js": {
     "description": "",
+    "displayName": "H2",
     "methods": [],
     "props": {
       "id": {
@@ -7469,6 +8548,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -7578,6 +8678,7 @@
   },
   "src/components/H3.react.js": {
     "description": "",
+    "displayName": "H3",
     "methods": [],
     "props": {
       "id": {
@@ -7612,6 +8713,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -7721,6 +8843,7 @@
   },
   "src/components/H4.react.js": {
     "description": "",
+    "displayName": "H4",
     "methods": [],
     "props": {
       "id": {
@@ -7755,6 +8878,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -7864,6 +9008,7 @@
   },
   "src/components/H5.react.js": {
     "description": "",
+    "displayName": "H5",
     "methods": [],
     "props": {
       "id": {
@@ -7898,6 +9043,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -8007,6 +9173,7 @@
   },
   "src/components/H6.react.js": {
     "description": "",
+    "displayName": "H6",
     "methods": [],
     "props": {
       "id": {
@@ -8041,6 +9208,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -8150,6 +9338,7 @@
   },
   "src/components/Header.react.js": {
     "description": "",
+    "displayName": "Header",
     "methods": [],
     "props": {
       "id": {
@@ -8184,6 +9373,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -8293,6 +9503,7 @@
   },
   "src/components/Hgroup.react.js": {
     "description": "",
+    "displayName": "Hgroup",
     "methods": [],
     "props": {
       "id": {
@@ -8327,6 +9538,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -8436,6 +9668,7 @@
   },
   "src/components/Hr.react.js": {
     "description": "",
+    "displayName": "Hr",
     "methods": [],
     "props": {
       "id": {
@@ -8470,6 +9703,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -8579,6 +9833,7 @@
   },
   "src/components/I.react.js": {
     "description": "",
+    "displayName": "I",
     "methods": [],
     "props": {
       "id": {
@@ -8613,6 +9868,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -8722,6 +9998,7 @@
   },
   "src/components/Iframe.react.js": {
     "description": "",
+    "displayName": "Iframe",
     "methods": [],
     "props": {
       "id": {
@@ -8756,6 +10033,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "height": {
         "type": {
@@ -8914,6 +10212,7 @@
   },
   "src/components/Img.react.js": {
     "description": "",
+    "displayName": "Img",
     "methods": [],
     "props": {
       "id": {
@@ -8948,6 +10247,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "alt": {
         "type": {
@@ -9113,6 +10433,7 @@
   },
   "src/components/Ins.react.js": {
     "description": "",
+    "displayName": "Ins",
     "methods": [],
     "props": {
       "id": {
@@ -9147,6 +10468,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "cite": {
         "type": {
@@ -9270,6 +10612,7 @@
   },
   "src/components/Isindex.react.js": {
     "description": "",
+    "displayName": "Isindex",
     "methods": [],
     "props": {
       "id": {
@@ -9304,6 +10647,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -9413,6 +10777,7 @@
   },
   "src/components/Kbd.react.js": {
     "description": "",
+    "displayName": "Kbd",
     "methods": [],
     "props": {
       "id": {
@@ -9447,6 +10812,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -9556,6 +10942,7 @@
   },
   "src/components/Keygen.react.js": {
     "description": "",
+    "displayName": "Keygen",
     "methods": [],
     "props": {
       "id": {
@@ -9590,6 +10977,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "autoFocus": {
         "type": {
@@ -9741,6 +11149,7 @@
   },
   "src/components/Label.react.js": {
     "description": "",
+    "displayName": "Label",
     "methods": [],
     "props": {
       "id": {
@@ -9775,6 +11184,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "htmlFor": {
         "type": {
@@ -9898,6 +11328,7 @@
   },
   "src/components/Legend.react.js": {
     "description": "",
+    "displayName": "Legend",
     "methods": [],
     "props": {
       "id": {
@@ -9932,6 +11363,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -10041,6 +11493,7 @@
   },
   "src/components/Li.react.js": {
     "description": "",
+    "displayName": "Li",
     "methods": [],
     "props": {
       "id": {
@@ -10075,6 +11528,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "value": {
         "type": {
@@ -10191,6 +11665,7 @@
   },
   "src/components/Link.react.js": {
     "description": "",
+    "displayName": "Link",
     "methods": [],
     "props": {
       "id": {
@@ -10225,6 +11700,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "crossOrigin": {
         "type": {
@@ -10383,6 +11879,7 @@
   },
   "src/components/Listing.react.js": {
     "description": "",
+    "displayName": "Listing",
     "methods": [],
     "props": {
       "id": {
@@ -10417,6 +11914,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -10526,6 +12044,7 @@
   },
   "src/components/Main.react.js": {
     "description": "",
+    "displayName": "Main",
     "methods": [],
     "props": {
       "id": {
@@ -10560,6 +12079,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -10669,6 +12209,7 @@
   },
   "src/components/MapEl.react.js": {
     "description": "",
+    "displayName": "MapEl",
     "methods": [],
     "props": {
       "id": {
@@ -10703,6 +12244,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "name": {
         "type": {
@@ -10819,6 +12381,7 @@
   },
   "src/components/Mark.react.js": {
     "description": "",
+    "displayName": "Mark",
     "methods": [],
     "props": {
       "id": {
@@ -10853,6 +12416,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -10962,6 +12546,7 @@
   },
   "src/components/Marquee.react.js": {
     "description": "",
+    "displayName": "Marquee",
     "methods": [],
     "props": {
       "id": {
@@ -10996,6 +12581,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "loop": {
         "type": {
@@ -11112,6 +12718,7 @@
   },
   "src/components/Meta.react.js": {
     "description": "",
+    "displayName": "Meta",
     "methods": [],
     "props": {
       "id": {
@@ -11146,6 +12753,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "charSet": {
         "type": {
@@ -11283,6 +12911,7 @@
   },
   "src/components/Meter.react.js": {
     "description": "",
+    "displayName": "Meter",
     "methods": [],
     "props": {
       "id": {
@@ -11317,6 +12946,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "form": {
         "type": {
@@ -11475,6 +13125,7 @@
   },
   "src/components/Multicol.react.js": {
     "description": "",
+    "displayName": "Multicol",
     "methods": [],
     "props": {
       "id": {
@@ -11509,6 +13160,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -11618,6 +13290,7 @@
   },
   "src/components/Nav.react.js": {
     "description": "",
+    "displayName": "Nav",
     "methods": [],
     "props": {
       "id": {
@@ -11652,6 +13325,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -11761,6 +13455,7 @@
   },
   "src/components/Nextid.react.js": {
     "description": "",
+    "displayName": "Nextid",
     "methods": [],
     "props": {
       "id": {
@@ -11795,6 +13490,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -11904,6 +13620,7 @@
   },
   "src/components/Nobr.react.js": {
     "description": "",
+    "displayName": "Nobr",
     "methods": [],
     "props": {
       "id": {
@@ -11938,6 +13655,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -12047,6 +13785,7 @@
   },
   "src/components/Noscript.react.js": {
     "description": "",
+    "displayName": "Noscript",
     "methods": [],
     "props": {
       "id": {
@@ -12081,6 +13820,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -12190,6 +13950,7 @@
   },
   "src/components/ObjectEl.react.js": {
     "description": "",
+    "displayName": "ObjectEl",
     "methods": [],
     "props": {
       "id": {
@@ -12224,6 +13985,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "form": {
         "type": {
@@ -12375,6 +14157,7 @@
   },
   "src/components/Ol.react.js": {
     "description": "",
+    "displayName": "Ol",
     "methods": [],
     "props": {
       "id": {
@@ -12409,6 +14192,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "reversed": {
         "type": {
@@ -12532,6 +14336,7 @@
   },
   "src/components/Optgroup.react.js": {
     "description": "",
+    "displayName": "Optgroup",
     "methods": [],
     "props": {
       "id": {
@@ -12566,6 +14371,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "disabled": {
         "type": {
@@ -12682,6 +14508,7 @@
   },
   "src/components/Option.react.js": {
     "description": "",
+    "displayName": "Option",
     "methods": [],
     "props": {
       "id": {
@@ -12716,6 +14543,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "disabled": {
         "type": {
@@ -12846,6 +14694,7 @@
   },
   "src/components/Output.react.js": {
     "description": "",
+    "displayName": "Output",
     "methods": [],
     "props": {
       "id": {
@@ -12880,6 +14729,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "htmlFor": {
         "type": {
@@ -13010,6 +14880,7 @@
   },
   "src/components/P.react.js": {
     "description": "",
+    "displayName": "P",
     "methods": [],
     "props": {
       "id": {
@@ -13044,6 +14915,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -13153,6 +15045,7 @@
   },
   "src/components/Param.react.js": {
     "description": "",
+    "displayName": "Param",
     "methods": [],
     "props": {
       "id": {
@@ -13187,6 +15080,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "name": {
         "type": {
@@ -13310,6 +15224,7 @@
   },
   "src/components/Picture.react.js": {
     "description": "",
+    "displayName": "Picture",
     "methods": [],
     "props": {
       "id": {
@@ -13344,6 +15259,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -13453,6 +15389,7 @@
   },
   "src/components/Plaintext.react.js": {
     "description": "",
+    "displayName": "Plaintext",
     "methods": [],
     "props": {
       "id": {
@@ -13487,6 +15424,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -13596,6 +15554,7 @@
   },
   "src/components/Pre.react.js": {
     "description": "",
+    "displayName": "Pre",
     "methods": [],
     "props": {
       "id": {
@@ -13630,6 +15589,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -13739,6 +15719,7 @@
   },
   "src/components/Progress.react.js": {
     "description": "",
+    "displayName": "Progress",
     "methods": [],
     "props": {
       "id": {
@@ -13773,6 +15754,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "form": {
         "type": {
@@ -13903,6 +15905,7 @@
   },
   "src/components/Q.react.js": {
     "description": "",
+    "displayName": "Q",
     "methods": [],
     "props": {
       "id": {
@@ -13937,6 +15940,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "cite": {
         "type": {
@@ -14053,6 +16077,7 @@
   },
   "src/components/Rp.react.js": {
     "description": "",
+    "displayName": "Rp",
     "methods": [],
     "props": {
       "id": {
@@ -14087,6 +16112,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -14196,6 +16242,7 @@
   },
   "src/components/Rt.react.js": {
     "description": "",
+    "displayName": "Rt",
     "methods": [],
     "props": {
       "id": {
@@ -14230,6 +16277,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -14339,6 +16407,7 @@
   },
   "src/components/Rtc.react.js": {
     "description": "",
+    "displayName": "Rtc",
     "methods": [],
     "props": {
       "id": {
@@ -14373,6 +16442,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -14482,6 +16572,7 @@
   },
   "src/components/Ruby.react.js": {
     "description": "",
+    "displayName": "Ruby",
     "methods": [],
     "props": {
       "id": {
@@ -14516,6 +16607,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -14625,6 +16737,7 @@
   },
   "src/components/S.react.js": {
     "description": "",
+    "displayName": "S",
     "methods": [],
     "props": {
       "id": {
@@ -14659,6 +16772,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -14768,6 +16902,7 @@
   },
   "src/components/Samp.react.js": {
     "description": "",
+    "displayName": "Samp",
     "methods": [],
     "props": {
       "id": {
@@ -14802,6 +16937,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -14911,6 +17067,7 @@
   },
   "src/components/Script.react.js": {
     "description": "",
+    "displayName": "Script",
     "methods": [],
     "props": {
       "id": {
@@ -14945,6 +17102,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "async": {
         "type": {
@@ -15103,6 +17281,7 @@
   },
   "src/components/Section.react.js": {
     "description": "",
+    "displayName": "Section",
     "methods": [],
     "props": {
       "id": {
@@ -15137,6 +17316,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -15246,6 +17446,7 @@
   },
   "src/components/Select.react.js": {
     "description": "",
+    "displayName": "Select",
     "methods": [],
     "props": {
       "id": {
@@ -15280,6 +17481,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "autoFocus": {
         "type": {
@@ -15438,6 +17660,7 @@
   },
   "src/components/Shadow.react.js": {
     "description": "",
+    "displayName": "Shadow",
     "methods": [],
     "props": {
       "id": {
@@ -15472,6 +17695,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -15581,6 +17825,7 @@
   },
   "src/components/Slot.react.js": {
     "description": "",
+    "displayName": "Slot",
     "methods": [],
     "props": {
       "id": {
@@ -15615,6 +17860,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -15724,6 +17990,7 @@
   },
   "src/components/Small.react.js": {
     "description": "",
+    "displayName": "Small",
     "methods": [],
     "props": {
       "id": {
@@ -15758,6 +18025,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -15867,6 +18155,7 @@
   },
   "src/components/Source.react.js": {
     "description": "",
+    "displayName": "Source",
     "methods": [],
     "props": {
       "id": {
@@ -15901,6 +18190,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "media": {
         "type": {
@@ -16038,6 +18348,7 @@
   },
   "src/components/Spacer.react.js": {
     "description": "",
+    "displayName": "Spacer",
     "methods": [],
     "props": {
       "id": {
@@ -16072,6 +18383,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -16181,6 +18513,7 @@
   },
   "src/components/Span.react.js": {
     "description": "",
+    "displayName": "Span",
     "methods": [],
     "props": {
       "id": {
@@ -16215,6 +18548,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -16324,6 +18678,7 @@
   },
   "src/components/Strike.react.js": {
     "description": "",
+    "displayName": "Strike",
     "methods": [],
     "props": {
       "id": {
@@ -16358,6 +18713,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -16467,6 +18843,7 @@
   },
   "src/components/Strong.react.js": {
     "description": "",
+    "displayName": "Strong",
     "methods": [],
     "props": {
       "id": {
@@ -16501,6 +18878,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -16610,6 +19008,7 @@
   },
   "src/components/Sub.react.js": {
     "description": "",
+    "displayName": "Sub",
     "methods": [],
     "props": {
       "id": {
@@ -16644,6 +19043,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -16753,6 +19173,7 @@
   },
   "src/components/Summary.react.js": {
     "description": "",
+    "displayName": "Summary",
     "methods": [],
     "props": {
       "id": {
@@ -16787,6 +19208,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -16896,6 +19338,7 @@
   },
   "src/components/Sup.react.js": {
     "description": "",
+    "displayName": "Sup",
     "methods": [],
     "props": {
       "id": {
@@ -16930,6 +19373,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -17039,6 +19503,7 @@
   },
   "src/components/Table.react.js": {
     "description": "",
+    "displayName": "Table",
     "methods": [],
     "props": {
       "id": {
@@ -17073,6 +19538,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "summary": {
         "type": {
@@ -17189,6 +19675,7 @@
   },
   "src/components/Tbody.react.js": {
     "description": "",
+    "displayName": "Tbody",
     "methods": [],
     "props": {
       "id": {
@@ -17223,6 +19710,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -17332,6 +19840,7 @@
   },
   "src/components/Td.react.js": {
     "description": "",
+    "displayName": "Td",
     "methods": [],
     "props": {
       "id": {
@@ -17366,6 +19875,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "colSpan": {
         "type": {
@@ -17496,6 +20026,7 @@
   },
   "src/components/Template.react.js": {
     "description": "",
+    "displayName": "Template",
     "methods": [],
     "props": {
       "id": {
@@ -17530,6 +20061,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -17639,6 +20191,7 @@
   },
   "src/components/Textarea.react.js": {
     "description": "",
+    "displayName": "Textarea",
     "methods": [],
     "props": {
       "id": {
@@ -17673,6 +20226,34 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
+      },
+      "autoComplete": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Indicates whether controls in this form can by default have their values automatically completed by the browser."
       },
       "autoFocus": {
         "type": {
@@ -17866,6 +20447,7 @@
   },
   "src/components/Tfoot.react.js": {
     "description": "",
+    "displayName": "Tfoot",
     "methods": [],
     "props": {
       "id": {
@@ -17900,6 +20482,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -18009,6 +20612,7 @@
   },
   "src/components/Th.react.js": {
     "description": "",
+    "displayName": "Th",
     "methods": [],
     "props": {
       "id": {
@@ -18043,6 +20647,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "colSpan": {
         "type": {
@@ -18180,6 +20805,7 @@
   },
   "src/components/Thead.react.js": {
     "description": "",
+    "displayName": "Thead",
     "methods": [],
     "props": {
       "id": {
@@ -18214,6 +20840,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -18323,6 +20970,7 @@
   },
   "src/components/Time.react.js": {
     "description": "",
+    "displayName": "Time",
     "methods": [],
     "props": {
       "id": {
@@ -18357,6 +21005,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "dateTime": {
         "type": {
@@ -18473,6 +21142,7 @@
   },
   "src/components/Title.react.js": {
     "description": "",
+    "displayName": "Title",
     "methods": [],
     "props": {
       "id": {
@@ -18507,6 +21177,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -18616,6 +21307,7 @@
   },
   "src/components/Tr.react.js": {
     "description": "",
+    "displayName": "Tr",
     "methods": [],
     "props": {
       "id": {
@@ -18650,6 +21342,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -18759,6 +21472,7 @@
   },
   "src/components/Track.react.js": {
     "description": "",
+    "displayName": "Track",
     "methods": [],
     "props": {
       "id": {
@@ -18793,6 +21507,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "default": {
         "type": {
@@ -18937,6 +21672,7 @@
   },
   "src/components/U.react.js": {
     "description": "",
+    "displayName": "U",
     "methods": [],
     "props": {
       "id": {
@@ -18971,6 +21707,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -19080,6 +21837,7 @@
   },
   "src/components/Ul.react.js": {
     "description": "",
+    "displayName": "Ul",
     "methods": [],
     "props": {
       "id": {
@@ -19114,6 +21872,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -19223,6 +22002,7 @@
   },
   "src/components/Var.react.js": {
     "description": "",
+    "displayName": "Var",
     "methods": [],
     "props": {
       "id": {
@@ -19257,6 +22037,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -19366,6 +22167,7 @@
   },
   "src/components/Video.react.js": {
     "description": "",
+    "displayName": "Video",
     "methods": [],
     "props": {
       "id": {
@@ -19400,6 +22202,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "autoPlay": {
         "type": {
@@ -19579,6 +22402,7 @@
   },
   "src/components/Wbr.react.js": {
     "description": "",
+    "displayName": "Wbr",
     "methods": [],
     "props": {
       "id": {
@@ -19613,6 +22437,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {
@@ -19722,6 +22567,7 @@
   },
   "src/components/Xmp.react.js": {
     "description": "",
+    "displayName": "Xmp",
     "methods": [],
     "props": {
       "id": {
@@ -19756,6 +22602,27 @@
         },
         "required": false,
         "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info"
+      },
+      "role": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ARIA role attribute"
+      },
+      "data-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard data attribute"
+      },
+      "aria-*": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A wildcard aria attribute"
       },
       "accessKey": {
         "type": {

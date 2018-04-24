@@ -5,11 +5,11 @@
 \title{Label dash-html-components component}
 \usage{
 htmlLabel(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
-  htmlFor = NULL, form = NULL, accessKey = NULL, className = NULL,
-  contentEditable = NULL, contextMenu = NULL, dir = NULL,
-  draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL,
-  style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL,
-  dashEvents = NULL)
+  role = NULL, htmlFor = NULL, form = NULL, accessKey = NULL,
+  className = NULL, contentEditable = NULL, contextMenu = NULL,
+  dir = NULL, draggable = NULL, hidden = NULL, lang = NULL,
+  spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL,
+  fireEvent = NULL, dashEvents = NULL)
 }
 \arguments{
 \item{...}{(implicit) children of this component, which are combined with the more explicit `children` (a list of components)}
@@ -21,6 +21,8 @@ htmlLabel(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
 \item{n_clicks}{An integer that represents the number of times that this element has been clicked on.}
 
 \item{key}{A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info}
+
+\item{role}{The ARIA role attribute}
 
 \item{htmlFor}{Describes elements which belongs to this one.}
 

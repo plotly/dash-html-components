@@ -5,7 +5,7 @@
 \title{Track dash-html-components component}
 \usage{
 htmlTrack(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
-  default = NULL, kind = NULL, label = NULL, src = NULL,
+  role = NULL, default = NULL, kind = NULL, label = NULL, src = NULL,
   srcLang = NULL, accessKey = NULL, className = NULL,
   contentEditable = NULL, contextMenu = NULL, dir = NULL,
   draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL,
@@ -22,6 +22,8 @@ htmlTrack(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
 \item{n_clicks}{An integer that represents the number of times that this element has been clicked on.}
 
 \item{key}{A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info}
+
+\item{role}{The ARIA role attribute}
 
 \item{default}{Indicates that the track should be enabled unless the user's preferences indicate something different.}
 
