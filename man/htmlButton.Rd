@@ -2,7 +2,7 @@
 % Please edit documentation in R/components.R
 \name{htmlButton}
 \alias{htmlButton}
-\title{Button dash-html-components component}
+\title{Button component}
 \usage{
 htmlButton(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
   role = NULL, autoFocus = NULL, disabled = NULL, form = NULL,
@@ -13,7 +13,7 @@ htmlButton(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
   title = NULL, fireEvent = NULL, dashEvents = NULL)
 }
 \arguments{
-\item{...}{(implicit) children of this component, which are combined with the more explicit `children` (a list of components)}
+\item{...}{The children of this component and/or 'wildcards' of the form: `data-*` or `aria-*`}
 
 \item{id}{The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app.}
 

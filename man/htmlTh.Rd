@@ -2,7 +2,7 @@
 % Please edit documentation in R/components.R
 \name{htmlTh}
 \alias{htmlTh}
-\title{Th dash-html-components component}
+\title{Th component}
 \usage{
 htmlTh(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
   role = NULL, colSpan = NULL, headers = NULL, rowSpan = NULL,
@@ -13,7 +13,7 @@ htmlTh(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
   dashEvents = NULL)
 }
 \arguments{
-\item{...}{(implicit) children of this component, which are combined with the more explicit `children` (a list of components)}
+\item{...}{The children of this component and/or 'wildcards' of the form: `data-*` or `aria-*`}
 
 \item{id}{The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app.}
 

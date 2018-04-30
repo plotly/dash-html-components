@@ -2,7 +2,7 @@
 % Please edit documentation in R/components.R
 \name{htmlObjectEl}
 \alias{htmlObjectEl}
-\title{ObjectEl dash-html-components component}
+\title{ObjectEl component}
 \usage{
 htmlObjectEl(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
   role = NULL, form = NULL, height = NULL, name = NULL, type = NULL,
@@ -13,7 +13,7 @@ htmlObjectEl(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
   dashEvents = NULL)
 }
 \arguments{
-\item{...}{(implicit) children of this component, which are combined with the more explicit `children` (a list of components)}
+\item{...}{The children of this component and/or 'wildcards' of the form: `data-*` or `aria-*`}
 
 \item{id}{The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app.}
 
