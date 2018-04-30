@@ -31,6 +31,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -265,6 +277,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -438,6 +462,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -621,6 +657,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -794,6 +842,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -1049,6 +1109,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -1227,6 +1299,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -1400,6 +1484,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -1639,6 +1735,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -1812,6 +1920,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -2011,6 +2131,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -2184,6 +2316,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -2367,6 +2511,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -2540,6 +2696,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -2723,6 +2891,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -2896,6 +3076,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -3087,6 +3279,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -3260,6 +3464,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -3499,6 +3715,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -3693,6 +3921,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -3866,6 +4106,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -4049,6 +4301,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -4227,6 +4491,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -4400,6 +4676,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -4591,6 +4879,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -4772,6 +5072,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -4995,6 +5307,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -5168,6 +5492,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -5351,6 +5687,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -5529,6 +5877,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -5702,6 +6062,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -5901,6 +6273,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -6087,6 +6471,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -6260,6 +6656,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -6443,6 +6851,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -6616,6 +7036,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -6799,6 +7231,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -6972,6 +7416,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -7155,6 +7611,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -7328,6 +7796,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -7543,6 +8023,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -7745,6 +8237,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -7918,6 +8422,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -8101,6 +8617,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -8279,6 +8807,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -8452,6 +8992,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -8707,6 +9259,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -8880,6 +9444,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -9063,6 +9639,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -9236,6 +9824,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -9419,6 +10019,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -9592,6 +10204,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -9775,6 +10399,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -9948,6 +10584,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -10131,6 +10779,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -10304,6 +10964,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -10487,6 +11159,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -10660,6 +11344,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -10843,6 +11539,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -10897,15 +11605,7 @@
           "raw": "PropTypes.string"
         },
         "required": false,
-        "description": ""
-      },
-      "seamless": {
-        "type": {
-          "name": "custom",
-          "raw": "PropTypes.string"
-        },
-        "required": false,
-        "description": ""
+        "description": "Stops a document loaded in an iframe from using certain features (such as submitting forms or opening new windows)."
       },
       "src": {
         "type": {
@@ -11072,6 +11772,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -11319,6 +12031,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -11513,6 +12237,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -11691,6 +12427,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -11864,6 +12612,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -12095,6 +12855,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -12289,6 +13061,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -12462,6 +13246,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -12648,6 +13444,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -12887,6 +13695,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -13065,6 +13885,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -13238,6 +14070,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -13429,6 +14273,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -13602,6 +14458,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -13788,6 +14656,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -13998,6 +14878,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -14237,6 +15129,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -14410,6 +15314,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -14593,6 +15509,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -14766,6 +15694,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -14949,6 +15889,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -15122,6 +16074,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -15353,6 +16317,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -15547,6 +16523,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -15728,6 +16716,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -15935,6 +16935,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -16137,6 +17149,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -16310,6 +17334,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -16509,6 +17545,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -16682,6 +17730,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -16865,6 +17925,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -17038,6 +18110,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -17245,6 +18329,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -17431,6 +18527,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -17604,6 +18712,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -17787,6 +18907,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -17960,6 +19092,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -18143,6 +19287,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -18321,6 +19477,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -18494,6 +19662,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -18733,6 +19913,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -18906,6 +20098,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -19145,6 +20349,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -19318,6 +20534,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -19501,6 +20729,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -19674,6 +20914,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -19889,6 +21141,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -20062,6 +21326,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -20245,6 +21521,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -20418,6 +21706,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -20601,6 +21901,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -20774,6 +22086,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -20957,6 +22281,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -21130,6 +22466,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -21321,6 +22669,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -21494,6 +22854,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -21701,6 +23073,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -21874,6 +23258,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -22161,6 +23557,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -22339,6 +23747,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -22401,7 +23821,7 @@
           "raw": "PropTypes.string"
         },
         "required": false,
-        "description": ""
+        "description": "Defines the cells that the header test (defined in the th element) relates to."
       },
       "accessKey": {
         "type": {
@@ -22544,6 +23964,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -22722,6 +24154,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -22913,6 +24357,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -23091,6 +24547,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -23264,6 +24732,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -23487,6 +24967,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -23660,6 +25152,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -23843,6 +25347,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -24016,6 +25532,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false
@@ -24279,6 +25807,18 @@
           "computed": false
         }
       },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
       "key": {
         "type": {
           "name": "custom",
@@ -24452,6 +25992,18 @@
         },
         "required": false,
         "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "n_clicks_previous": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.integer"
+        },
+        "required": false,
+        "description": "An integer that represents the number of times\nthat this element was clicked on. If this is the same as\n`n_clicks`, then the button wasn't clicked on.\nIf it is less than `n_clicks`, then the button\nwas clicked on. This is useful in callbacks that have\nmultiple buttons and you need to know _which_ button\nwas clicked on.",
         "defaultValue": {
           "value": "0",
           "computed": false

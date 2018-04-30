@@ -3,29 +3,30 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Big = (props) => {
-    if (props.fireEvent || props.setProps) {
-        return (
-            <big
-                onClick={() => {
-                    if (props.setProps) props.setProps({n_clicks: props.n_clicks + 1});
-                    if (props.fireEvent) props.fireEvent({event: 'click'});
-                }}
-                {...props}
-            >
-                {props.children}
-            </big>
-        );
-    } else {
-        return (
-            <big {...props}>
-                {props.children}
-            </big>
-        );
-    }
+    return (
+        <big
+            onClick={() => {
+                if (props.setProps) {
+                    const newProps = {
+                        n_clicks: props.n_clicks + 1
+                    }
+                    if (newProps.n_clicks > 1) {
+                        newProps.n_clicks_previous = props.n_clicks_previous + 1;
+                    }
+                    props.setProps(newProps);
+                }
+                if (props.fireEvent) props.fireEvent({event: 'click'});
+            }}
+            {...props}
+        >
+            {props.children}
+        </big>
+    );
 };
 
 Big.defaultProps = {
-    n_clicks: 0
+    n_clicks: 0,
+    n_clicks_previous: 0
 };
 
 Big.propTypes = {
@@ -46,6 +47,17 @@ Big.propTypes = {
      * that this element has been clicked on.
      */
     'n_clicks': PropTypes.integer,
+
+    /**
+     * An integer that represents the number of times
+     * that this element was clicked on. If this is the same as
+     * `n_clicks`, then the button wasn't clicked on.
+     * If it is less than `n_clicks`, then the button
+     * was clicked on. This is useful in callbacks that have
+     * multiple buttons and you need to know _which_ button
+     * was clicked on.
+     */
+    'n_clicks_previous': PropTypes.integer,
 
     /**
      * A unique identifier for the component, used to improve
