@@ -7,13 +7,10 @@ const Hr = (props) => {
         <hr
             onClick={() => {
                 if (props.setProps) {
-                    const newProps = {
-                        n_clicks: props.n_clicks + 1
-                    }
-                    if (newProps.n_clicks > 1) {
-                        newProps.n_clicks_previous = props.n_clicks_previous + 1;
-                    }
-                    props.setProps(newProps);
+                    props.setProps({
+                        n_clicks: props.n_clicks + 1,
+                        n_clicks_timestamp: Date.now()
+                    })
                 }
                 if (props.fireEvent) props.fireEvent({event: 'click'});
             }}
@@ -26,7 +23,7 @@ const Hr = (props) => {
 
 Hr.defaultProps = {
     n_clicks: 0,
-    n_clicks_previous: 0
+    n_clicks_timestamp: -1
 };
 
 Hr.propTypes = {
@@ -49,15 +46,11 @@ Hr.propTypes = {
     'n_clicks': PropTypes.integer,
 
     /**
-     * An integer that represents the number of times
-     * that this element was clicked on. If this is the same as
-     * `n_clicks`, then the button wasn't clicked on.
-     * If it is less than `n_clicks`, then the button
-     * was clicked on. This is useful in callbacks that have
-     * multiple buttons and you need to know _which_ button
-     * was clicked on.
+     * An integer that represents the time (in ms since 1970)
+     * at which n_clicks changed. This can be used to tell
+     * which button was changed most recently.
      */
-    'n_clicks_previous': PropTypes.integer,
+    'n_clicks_timestamp': PropTypes.integer,
 
     /**
      * A unique identifier for the component, used to improve
