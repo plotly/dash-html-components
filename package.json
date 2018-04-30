@@ -1,6 +1,6 @@
 {
   "name": "dash-html-components",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "Vanilla HTML components for Dash",
   "main": "lib/index.js",
   "repository": {
@@ -25,7 +25,7 @@
     "publish-cran": "npm run prepublish &&  Rscript -e 'devtools::release()'",
     "publish-all": "npm publish && python setup.py sdist upload",
     "start": "./node_modules/.bin/builder run build-dev",
-    "test": "./node_modules/.bin/builder run lint",
+    "test": "./node_modules/.bin/eslint --fix .",
     "uninstall-local": "pip uninstall dash-html-components -y",
     "uninstall-local-r": "Rscript -e \"utils::remove.packages(read.dcf('DESCRIPTION')[, 'Package'])\""
   },

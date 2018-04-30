@@ -9,9 +9,8 @@ venv/
 *.egg-info
 *.log
 .DS_Store
-.Rproj.user
-.Rhistory
 lib/bundle.js
 lib/bundle.js.map
 lib/metadata.json
 .idea
+dash_html_components/
