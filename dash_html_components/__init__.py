@@ -6,7 +6,7 @@ import sys as _sys
 import dash as _dash
 
 from .version import __version__
-npm_version = '0.11.0-rc1'
+
 
 if not hasattr(_dash, 'development'):
     print("Dash was not successfully imported. Make sure you don't have a file "
@@ -27,7 +27,7 @@ _js_dist = [{
     "external_url": (
         "https://unpkg.com/dash-html-components@{}"
         "/dash_html_components/bundle.js"
-    ).format(npm_version),
+    ).format(__version__),
     "namespace": "dash_html_components"
 }]
 
