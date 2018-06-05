@@ -6,6 +6,7 @@ import sys as _sys
 import dash as _dash
 
 from .version import __version__
+from ._to_html5 import _to_html5
 
 
 if not hasattr(_dash, 'development'):
@@ -34,3 +35,4 @@ _js_dist = [{
 for component in _components:
     setattr(_this_module, component.__name__, component)
     setattr(component, '_js_dist', _js_dist)
+    setattr(component, 'to_html5', _to_html5)

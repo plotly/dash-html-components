@@ -39,3 +39,77 @@ class TestDashHtmlComponents(unittest.TestCase):
         self.assertEqual(
             layout._namespace, 'dash_html_components'
         )
+
+    def test_to_html5(self):
+        test_cases = [
+            {
+                'name': 'None Children',
+                'input': html.Div(),
+                'output': '<div></div>'
+            },
+            {
+                'name': 'Text Children',
+                'input': html.Script('alert'),
+                'output': '<script>alert</script>'
+            },
+            {
+                'name': 'Numerical Children',
+                'input': html.Div(3),
+                'output': '<div>3</div>'
+            },
+            {
+                'name': 'Single Attribute',
+                'input': html.Script('alert', type='text/javascript'),
+                'output': '<script type="text/javascript">alert</script>'
+            },
+            {
+                'name': 'Multiple Attributes',
+                'input': html.A(href='codepen', target='_blank'),
+                'output': '<a href="codepen" target="_blank"></a>'
+            },
+            {
+                'name': 'Void Elements',
+                'input': html.Link(rel='stylesheet', type='text/css'),
+                'output': '<link rel="stylesheet" type="text/css">'
+            },
+            {
+                'name': 'Style',
+                'input': html.Div(style={'fontSize': '15px', 'color': 'blue'}),
+                'output': '<div style="font-size: 15px; color: blue"></div>'
+            },
+            {
+                'name': 'className',
+                'input': html.Div(className='container'),
+                'output': '<div class="container"></div>'
+            },
+            {
+                'name': 'Nested Children',
+                'input': html.Div([
+                    3,
+                    html.H1('header'),
+                    html.Div(),
+                    html.Div(
+                        html.P([
+                            html.Img(src='imgur', className='full-bleed')
+                        ])
+                    )
+                ], className='parent'),
+                'output': '\n'.join([
+                    '<div class="parent">',
+                    '3',
+                    '<h1>header</h1>',
+                    '<div></div>',
+                    '<div>',
+                    '<p>',
+                    '<img src="imgur" class="full-bleed">'
+                    '</p>',
+                    '</div>',
+                    '</div>'
+                ])
+            }
+        ]
+        for test_case in test_cases:
+            self.assertEqual(
+                test_case['input'].to_html5(),
+                test_case['output']
+            )
