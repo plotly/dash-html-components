@@ -1,6 +1,6 @@
 {
   "name": "dash-html-components",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Vanilla HTML components for Dash",
   "main": "lib/index.js",
   "repository": {
@@ -29,12 +29,12 @@
   "author": "Chris Parmer <chris@plot.ly>",
   "dependencies": {
     "builder": "3.2.1",
-    "dash-components-archetype": "^0.2.4",
+    "dash-components-archetype": "^0.3.0",
     "prop-types": "^15.6.0"
   },
   "devDependencies": {
     "cheerio": "^0.20.0",
-    "dash-components-archetype-dev": "^0.2.4",
+    "dash-components-archetype-dev": "^0.3.0",
     "request": "^2.72.0",
     "string": "^3.3.1"
   },
