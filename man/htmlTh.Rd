@@ -4,13 +4,13 @@
 \alias{htmlTh}
 \title{Th component}
 \usage{
-htmlTh(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
-  role = NULL, colSpan = NULL, headers = NULL, rowSpan = NULL,
-  scope = NULL, accessKey = NULL, className = NULL,
-  contentEditable = NULL, contextMenu = NULL, dir = NULL,
-  draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL,
-  style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL,
-  dashEvents = NULL)
+htmlTh(..., id = NULL, children = NULL, n_clicks = 0,
+  n_clicks_timestamp = -1, key = NULL, role = NULL, colSpan = NULL,
+  headers = NULL, rowSpan = NULL, scope = NULL, accessKey = NULL,
+  className = NULL, contentEditable = NULL, contextMenu = NULL,
+  dir = NULL, draggable = NULL, hidden = NULL, lang = NULL,
+  spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL,
+  fireEvent = NULL, dashEvents = NULL)
 }
 \arguments{
 \item{...}{The children of this component and/or 'wildcards' of the form: `data-*` or `aria-*`}
@@ -20,6 +20,8 @@ htmlTh(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
 \item{children}{The children of this component}
 
 \item{n_clicks}{An integer that represents the number of times that this element has been clicked on.}
+
+\item{n_clicks_timestamp}{An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently.}
 
 \item{key}{A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info}
 
@@ -31,7 +33,7 @@ htmlTh(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
 
 \item{rowSpan}{Defines the number of rows a table cell should span over.}
 
-\item{scope}{}
+\item{scope}{Defines the cells that the header test (defined in the th element) relates to.}
 
 \item{accessKey}{Defines a keyboard shortcut to activate or add focus to the element.}
 

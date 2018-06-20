@@ -4,13 +4,14 @@
 \alias{htmlIframe}
 \title{Iframe component}
 \usage{
-htmlIframe(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
-  role = NULL, height = NULL, name = NULL, sandbox = NULL,
-  seamless = NULL, src = NULL, srcDoc = NULL, width = NULL,
-  accessKey = NULL, className = NULL, contentEditable = NULL,
-  contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL,
-  lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL,
-  title = NULL, fireEvent = NULL, dashEvents = NULL)
+htmlIframe(..., id = NULL, children = NULL, n_clicks = 0,
+  n_clicks_timestamp = -1, key = NULL, role = NULL, height = NULL,
+  name = NULL, sandbox = NULL, src = NULL, srcDoc = NULL,
+  width = NULL, accessKey = NULL, className = NULL,
+  contentEditable = NULL, contextMenu = NULL, dir = NULL,
+  draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL,
+  style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL,
+  dashEvents = NULL)
 }
 \arguments{
 \item{...}{The children of this component and/or 'wildcards' of the form: `data-*` or `aria-*`}
@@ -21,6 +22,8 @@ htmlIframe(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
 
 \item{n_clicks}{An integer that represents the number of times that this element has been clicked on.}
 
+\item{n_clicks_timestamp}{An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently.}
+
 \item{key}{A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info}
 
 \item{role}{The ARIA role attribute}
@@ -29,9 +32,7 @@ htmlIframe(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
 
 \item{name}{Name of the element. For example used by the server to identify the fields in form submits.}
 
-\item{sandbox}{}
-
-\item{seamless}{}
+\item{sandbox}{Stops a document loaded in an iframe from using certain features (such as submitting forms or opening new windows).}
 
 \item{src}{The URL of the embeddable content.}
 

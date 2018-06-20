@@ -4,9 +4,10 @@
 \alias{htmlObjectEl}
 \title{ObjectEl component}
 \usage{
-htmlObjectEl(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
-  role = NULL, form = NULL, height = NULL, name = NULL, type = NULL,
-  useMap = NULL, width = NULL, accessKey = NULL, className = NULL,
+htmlObjectEl(..., id = NULL, children = NULL, n_clicks = 0,
+  n_clicks_timestamp = -1, key = NULL, role = NULL, form = NULL,
+  height = NULL, name = NULL, type = NULL, useMap = NULL,
+  width = NULL, accessKey = NULL, className = NULL,
   contentEditable = NULL, contextMenu = NULL, dir = NULL,
   draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL,
   style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL,
@@ -20,6 +21,8 @@ htmlObjectEl(..., id = NULL, children = NULL, n_clicks = 0, key = NULL,
 \item{children}{The children of this component}
 
 \item{n_clicks}{An integer that represents the number of times that this element has been clicked on.}
+
+\item{n_clicks_timestamp}{An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently.}
 
 \item{key}{A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info}
 

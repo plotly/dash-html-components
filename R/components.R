@@ -7,6 +7,7 @@
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param download Indicates that the hyperlink is to be used for downloading a resource. 
@@ -31,13 +32,14 @@
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlA <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, download = NULL, href = NULL, hrefLang = NULL, media = NULL, rel = NULL, shape = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlA <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, download = NULL, href = NULL, hrefLang = NULL, media = NULL, rel = NULL, shape = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				download=download, 
@@ -64,7 +66,7 @@ component <- list(
   ),
   type = 'A',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'download', 'href', 'hrefLang', 'media', 'rel', 'shape', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'download', 'href', 'hrefLang', 'media', 'rel', 'shape', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -83,6 +85,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -100,13 +103,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlAbbr <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlAbbr <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -126,7 +130,7 @@ component <- list(
   ),
   type = 'Abbr',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -145,6 +149,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -162,13 +167,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlAcronym <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlAcronym <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -188,7 +194,7 @@ component <- list(
   ),
   type = 'Acronym',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -207,6 +213,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -224,13 +231,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlAddress <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlAddress <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -250,7 +258,7 @@ component <- list(
   ),
   type = 'Address',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -269,6 +277,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param alt Alternative text in case an image can't be displayed. 
@@ -295,13 +304,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlArea <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, alt = NULL, coords = NULL, download = NULL, href = NULL, hrefLang = NULL, media = NULL, rel = NULL, shape = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlArea <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, alt = NULL, coords = NULL, download = NULL, href = NULL, hrefLang = NULL, media = NULL, rel = NULL, shape = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				alt=alt, 
@@ -330,7 +340,7 @@ component <- list(
   ),
   type = 'Area',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'alt', 'coords', 'download', 'href', 'hrefLang', 'media', 'rel', 'shape', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'alt', 'coords', 'download', 'href', 'hrefLang', 'media', 'rel', 'shape', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -349,6 +359,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -366,13 +377,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlArticle <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlArticle <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -392,7 +404,7 @@ component <- list(
   ),
   type = 'Article',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -411,6 +423,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -428,13 +441,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlAside <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlAside <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -454,7 +468,7 @@ component <- list(
   ),
   type = 'Aside',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -473,6 +487,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param autoPlay The audio or video should play as soon as possible. 
@@ -497,13 +512,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlAudio <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, autoPlay = NULL, controls = NULL, crossOrigin = NULL, loop = NULL, muted = NULL, preload = NULL, src = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlAudio <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, autoPlay = NULL, controls = NULL, crossOrigin = NULL, loop = NULL, muted = NULL, preload = NULL, src = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				autoPlay=autoPlay, 
@@ -530,7 +546,7 @@ component <- list(
   ),
   type = 'Audio',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'autoPlay', 'controls', 'crossOrigin', 'loop', 'muted', 'preload', 'src', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'autoPlay', 'controls', 'crossOrigin', 'loop', 'muted', 'preload', 'src', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -549,6 +565,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -566,13 +583,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlB <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlB <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -592,7 +610,7 @@ component <- list(
   ),
   type = 'B',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -611,6 +629,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param href The URL of a linked resource. 
@@ -630,13 +649,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlBase <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, href = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlBase <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, href = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				href=href, 
@@ -658,7 +678,7 @@ component <- list(
   ),
   type = 'Base',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'href', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'href', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -677,6 +697,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -694,13 +715,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlBasefont <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlBasefont <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -720,7 +742,7 @@ component <- list(
   ),
   type = 'Basefont',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -739,6 +761,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -756,13 +779,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlBdi <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlBdi <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -782,7 +806,7 @@ component <- list(
   ),
   type = 'Bdi',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -801,6 +825,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -818,13 +843,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlBdo <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlBdo <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -844,7 +870,7 @@ component <- list(
   ),
   type = 'Bdo',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -863,6 +889,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -880,13 +907,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlBig <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlBig <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -906,7 +934,7 @@ component <- list(
   ),
   type = 'Big',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -925,6 +953,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -942,13 +971,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlBlink <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlBlink <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -968,7 +998,7 @@ component <- list(
   ),
   type = 'Blink',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -987,6 +1017,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param cite Contains a URI which points to the source of the quote or change. 
@@ -1005,13 +1036,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlBlockquote <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, cite = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlBlockquote <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, cite = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				cite=cite, 
@@ -1032,7 +1064,7 @@ component <- list(
   ),
   type = 'Blockquote',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'cite', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'cite', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1051,6 +1083,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1068,13 +1101,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlBr <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlBr <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -1094,7 +1128,7 @@ component <- list(
   ),
   type = 'Br',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1113,6 +1147,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param autoFocus The element should be automatically focused after the page loaded. 
@@ -1137,13 +1172,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlButton <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, autoFocus = NULL, disabled = NULL, form = NULL, formAction = NULL, name = NULL, type = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlButton <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, autoFocus = NULL, disabled = NULL, form = NULL, formAction = NULL, name = NULL, type = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				autoFocus=autoFocus, 
@@ -1170,7 +1206,7 @@ component <- list(
   ),
   type = 'Button',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'autoFocus', 'disabled', 'form', 'formAction', 'name', 'type', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'autoFocus', 'disabled', 'form', 'formAction', 'name', 'type', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1189,6 +1225,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param height Specifies the height of elements listed here. For all other elements, use the CSS height property.        Note: In some instances, such as <div>, this is a legacy attribute, in which case the CSS height property should be used instead. 
@@ -1208,13 +1245,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlCanvas <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, height = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlCanvas <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, height = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				height=height, 
@@ -1236,7 +1274,7 @@ component <- list(
   ),
   type = 'Canvas',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'height', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'height', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1255,6 +1293,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1272,13 +1311,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlCaption <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlCaption <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -1298,7 +1338,7 @@ component <- list(
   ),
   type = 'Caption',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1317,6 +1357,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1334,13 +1375,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlCenter <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlCenter <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -1360,7 +1402,7 @@ component <- list(
   ),
   type = 'Center',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1379,6 +1421,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1396,13 +1439,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlCite <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlCite <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -1422,7 +1466,7 @@ component <- list(
   ),
   type = 'Cite',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1441,6 +1485,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1458,13 +1503,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlCode <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlCode <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -1484,7 +1530,7 @@ component <- list(
   ),
   type = 'Code',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1503,6 +1549,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param span  
@@ -1521,13 +1568,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlCol <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, span = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlCol <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, span = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				span=span, 
@@ -1548,7 +1596,7 @@ component <- list(
   ),
   type = 'Col',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'span', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'span', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1567,6 +1615,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param span  
@@ -1585,13 +1634,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlColgroup <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, span = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlColgroup <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, span = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				span=span, 
@@ -1612,7 +1662,7 @@ component <- list(
   ),
   type = 'Colgroup',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'span', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'span', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1631,6 +1681,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param checked Indicates whether the element should be checked on page load. 
@@ -1653,13 +1704,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlCommand <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, checked = NULL, disabled = NULL, icon = NULL, radioGroup = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlCommand <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, checked = NULL, disabled = NULL, icon = NULL, radioGroup = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				checked=checked, 
@@ -1684,7 +1736,7 @@ component <- list(
   ),
   type = 'Command',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'checked', 'disabled', 'icon', 'radioGroup', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'checked', 'disabled', 'icon', 'radioGroup', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1703,6 +1755,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1720,13 +1773,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlContent <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlContent <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -1746,7 +1800,7 @@ component <- list(
   ),
   type = 'Content',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1765,6 +1819,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1782,13 +1837,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlData <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlData <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -1808,7 +1864,7 @@ component <- list(
   ),
   type = 'Data',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1827,6 +1883,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1844,13 +1901,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlDatalist <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlDatalist <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -1870,7 +1928,7 @@ component <- list(
   ),
   type = 'Datalist',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1889,6 +1947,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -1906,13 +1965,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlDd <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlDd <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -1932,7 +1992,7 @@ component <- list(
   ),
   type = 'Dd',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -1951,6 +2011,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param cite Contains a URI which points to the source of the quote or change. 
@@ -1970,13 +2031,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlDel <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, cite = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlDel <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, cite = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				cite=cite, 
@@ -1998,7 +2060,7 @@ component <- list(
   ),
   type = 'Del',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'cite', 'dateTime', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'cite', 'dateTime', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2017,6 +2079,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param open Indicates whether the details will be shown on page load. 
@@ -2035,13 +2098,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlDetails <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, open = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlDetails <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, open = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				open=open, 
@@ -2062,7 +2126,7 @@ component <- list(
   ),
   type = 'Details',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'open', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'open', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2081,6 +2145,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2098,13 +2163,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlDfn <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlDfn <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -2124,7 +2190,7 @@ component <- list(
   ),
   type = 'Dfn',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2143,6 +2209,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2160,13 +2227,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlDialog <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlDialog <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -2186,7 +2254,7 @@ component <- list(
   ),
   type = 'Dialog',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2205,6 +2273,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2222,13 +2291,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlDiv <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlDiv <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -2248,7 +2318,7 @@ component <- list(
   ),
   type = 'Div',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2267,6 +2337,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2284,13 +2355,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlDl <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlDl <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -2310,7 +2382,7 @@ component <- list(
   ),
   type = 'Dl',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2329,6 +2401,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2346,13 +2419,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlDt <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlDt <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -2372,7 +2446,7 @@ component <- list(
   ),
   type = 'Dt',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2391,6 +2465,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2408,13 +2483,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlElement <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlElement <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -2434,7 +2510,7 @@ component <- list(
   ),
   type = 'Element',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2453,6 +2529,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2470,13 +2547,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlEm <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlEm <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -2496,7 +2574,7 @@ component <- list(
   ),
   type = 'Em',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2515,6 +2593,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param height Specifies the height of elements listed here. For all other elements, use the CSS height property.        Note: In some instances, such as <div>, this is a legacy attribute, in which case the CSS height property should be used instead. 
@@ -2536,13 +2615,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlEmbed <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, height = NULL, src = NULL, type = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlEmbed <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, height = NULL, src = NULL, type = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				height=height, 
@@ -2566,7 +2646,7 @@ component <- list(
   ),
   type = 'Embed',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'height', 'src', 'type', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'height', 'src', 'type', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2585,6 +2665,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param disabled Indicates whether the user can interact with the element. 
@@ -2605,13 +2686,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlFieldset <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, disabled = NULL, form = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlFieldset <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, disabled = NULL, form = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				disabled=disabled, 
@@ -2634,7 +2716,7 @@ component <- list(
   ),
   type = 'Fieldset',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'disabled', 'form', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'disabled', 'form', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2653,6 +2735,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2670,13 +2753,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlFigcaption <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlFigcaption <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -2696,7 +2780,7 @@ component <- list(
   ),
   type = 'Figcaption',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2715,6 +2799,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2732,13 +2817,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlFigure <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlFigure <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -2758,7 +2844,7 @@ component <- list(
   ),
   type = 'Figure',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2777,6 +2863,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2794,13 +2881,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlFont <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlFont <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -2820,7 +2908,7 @@ component <- list(
   ),
   type = 'Font',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2839,6 +2927,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2856,13 +2945,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlFooter <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlFooter <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -2882,7 +2972,7 @@ component <- list(
   ),
   type = 'Footer',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2901,6 +2991,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accept List of types the server accepts, typically a file type. 
@@ -2927,13 +3018,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlForm <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accept = NULL, acceptCharset = NULL, action = NULL, autoComplete = NULL, encType = NULL, method = NULL, name = NULL, noValidate = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlForm <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accept = NULL, acceptCharset = NULL, action = NULL, autoComplete = NULL, encType = NULL, method = NULL, name = NULL, noValidate = NULL, target = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accept=accept, 
@@ -2962,7 +3054,7 @@ component <- list(
   ),
   type = 'Form',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accept', 'acceptCharset', 'action', 'autoComplete', 'encType', 'method', 'name', 'noValidate', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accept', 'acceptCharset', 'action', 'autoComplete', 'encType', 'method', 'name', 'noValidate', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -2981,6 +3073,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -2998,13 +3091,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlFrame <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlFrame <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -3024,7 +3118,7 @@ component <- list(
   ),
   type = 'Frame',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3043,6 +3137,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3060,13 +3155,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlFrameset <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlFrameset <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -3086,7 +3182,7 @@ component <- list(
   ),
   type = 'Frameset',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3105,6 +3201,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3122,13 +3219,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlH1 <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlH1 <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -3148,7 +3246,7 @@ component <- list(
   ),
   type = 'H1',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3167,6 +3265,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3184,13 +3283,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlH2 <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlH2 <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -3210,7 +3310,7 @@ component <- list(
   ),
   type = 'H2',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3229,6 +3329,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3246,13 +3347,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlH3 <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlH3 <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -3272,7 +3374,7 @@ component <- list(
   ),
   type = 'H3',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3291,6 +3393,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3308,13 +3411,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlH4 <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlH4 <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -3334,7 +3438,7 @@ component <- list(
   ),
   type = 'H4',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3353,6 +3457,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3370,13 +3475,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlH5 <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlH5 <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -3396,7 +3502,7 @@ component <- list(
   ),
   type = 'H5',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3415,6 +3521,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3432,13 +3539,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlH6 <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlH6 <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -3458,7 +3566,7 @@ component <- list(
   ),
   type = 'H6',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3477,6 +3585,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3494,13 +3603,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlHeader <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlHeader <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -3520,7 +3630,7 @@ component <- list(
   ),
   type = 'Header',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3539,6 +3649,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3556,13 +3667,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlHgroup <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlHgroup <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -3582,7 +3694,7 @@ component <- list(
   ),
   type = 'Hgroup',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3601,6 +3713,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3618,13 +3731,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlHr <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlHr <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -3644,7 +3758,7 @@ component <- list(
   ),
   type = 'Hr',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3663,6 +3777,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3680,13 +3795,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlI <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlI <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -3706,7 +3822,7 @@ component <- list(
   ),
   type = 'I',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3725,12 +3841,12 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param height Specifies the height of elements listed here. For all other elements, use the CSS height property.        Note: In some instances, such as <div>, this is a legacy attribute, in which case the CSS height property should be used instead. 
 #' @param name Name of the element. For example used by the server to identify the fields in form submits. 
-#' @param sandbox  
-#' @param seamless  
+#' @param sandbox Stops a document loaded in an iframe from using certain features (such as submitting forms or opening new windows). 
 #' @param src The URL of the embeddable content. 
 #' @param srcDoc  
 #' @param width For the elements listed here, this establishes the element's width.        Note: For all other instances, such as <div>, this is a legacy attribute, in which case the CSS width property should be used instead. 
@@ -3749,19 +3865,19 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlIframe <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, height = NULL, name = NULL, sandbox = NULL, seamless = NULL, src = NULL, srcDoc = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlIframe <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, height = NULL, name = NULL, sandbox = NULL, src = NULL, srcDoc = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				height=height, 
 				name=name, 
 				sandbox=sandbox, 
-				seamless=seamless, 
 				src=src, 
 				srcDoc=srcDoc, 
 				width=width, 
@@ -3782,7 +3898,7 @@ component <- list(
   ),
   type = 'Iframe',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'height', 'name', 'sandbox', 'seamless', 'src', 'srcDoc', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'height', 'name', 'sandbox', 'src', 'srcDoc', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3801,6 +3917,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param alt Alternative text in case an image can't be displayed. 
@@ -3826,13 +3943,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlImg <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, alt = NULL, crossOrigin = NULL, height = NULL, sizes = NULL, src = NULL, srcSet = NULL, useMap = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlImg <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, alt = NULL, crossOrigin = NULL, height = NULL, sizes = NULL, src = NULL, srcSet = NULL, useMap = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				alt=alt, 
@@ -3860,7 +3978,7 @@ component <- list(
   ),
   type = 'Img',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'alt', 'crossOrigin', 'height', 'sizes', 'src', 'srcSet', 'useMap', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'alt', 'crossOrigin', 'height', 'sizes', 'src', 'srcSet', 'useMap', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3879,6 +3997,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param cite Contains a URI which points to the source of the quote or change. 
@@ -3898,13 +4017,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlIns <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, cite = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlIns <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, cite = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				cite=cite, 
@@ -3926,7 +4046,7 @@ component <- list(
   ),
   type = 'Ins',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'cite', 'dateTime', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'cite', 'dateTime', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -3945,6 +4065,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -3962,13 +4083,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlIsindex <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlIsindex <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -3988,7 +4110,7 @@ component <- list(
   ),
   type = 'Isindex',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4007,6 +4129,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4024,13 +4147,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlKbd <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlKbd <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -4050,7 +4174,7 @@ component <- list(
   ),
   type = 'Kbd',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4069,6 +4193,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param autoFocus The element should be automatically focused after the page loaded. 
@@ -4092,13 +4217,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlKeygen <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, autoFocus = NULL, challenge = NULL, disabled = NULL, form = NULL, keyType = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlKeygen <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, autoFocus = NULL, challenge = NULL, disabled = NULL, form = NULL, keyType = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				autoFocus=autoFocus, 
@@ -4124,7 +4250,7 @@ component <- list(
   ),
   type = 'Keygen',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'autoFocus', 'challenge', 'disabled', 'form', 'keyType', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'autoFocus', 'challenge', 'disabled', 'form', 'keyType', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4143,6 +4269,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param htmlFor Describes elements which belongs to this one. 
@@ -4162,13 +4289,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlLabel <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, htmlFor = NULL, form = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlLabel <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, htmlFor = NULL, form = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				htmlFor=htmlFor, 
@@ -4190,7 +4318,7 @@ component <- list(
   ),
   type = 'Label',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'htmlFor', 'form', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'htmlFor', 'form', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4209,6 +4337,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4226,13 +4355,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlLegend <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlLegend <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -4252,7 +4382,7 @@ component <- list(
   ),
   type = 'Legend',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4271,6 +4401,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param value Defines a default value which will be displayed in the element on page load. 
@@ -4289,13 +4420,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlLi <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlLi <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				value=value, 
@@ -4316,7 +4448,7 @@ component <- list(
   ),
   type = 'Li',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4335,6 +4467,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param crossOrigin How the element handles cross-origin requests 
@@ -4359,13 +4492,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlLink <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, crossOrigin = NULL, href = NULL, hrefLang = NULL, integrity = NULL, media = NULL, rel = NULL, sizes = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlLink <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, crossOrigin = NULL, href = NULL, hrefLang = NULL, integrity = NULL, media = NULL, rel = NULL, sizes = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				crossOrigin=crossOrigin, 
@@ -4392,7 +4526,7 @@ component <- list(
   ),
   type = 'Link',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'crossOrigin', 'href', 'hrefLang', 'integrity', 'media', 'rel', 'sizes', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'crossOrigin', 'href', 'hrefLang', 'integrity', 'media', 'rel', 'sizes', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4411,6 +4545,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4428,13 +4563,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlListing <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlListing <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -4454,7 +4590,7 @@ component <- list(
   ),
   type = 'Listing',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4473,6 +4609,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4490,13 +4627,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlMain <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlMain <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -4516,7 +4654,7 @@ component <- list(
   ),
   type = 'Main',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4535,6 +4673,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param name Name of the element. For example used by the server to identify the fields in form submits. 
@@ -4553,13 +4692,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlMapEl <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlMapEl <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				name=name, 
@@ -4580,7 +4720,7 @@ component <- list(
   ),
   type = 'MapEl',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4599,6 +4739,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4616,13 +4757,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlMark <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlMark <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -4642,7 +4784,7 @@ component <- list(
   ),
   type = 'Mark',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4661,6 +4803,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param loop Indicates whether the media should start playing from the start when it's finished. 
@@ -4679,13 +4822,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlMarquee <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, loop = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlMarquee <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, loop = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				loop=loop, 
@@ -4706,7 +4850,7 @@ component <- list(
   ),
   type = 'Marquee',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'loop', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'loop', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4725,6 +4869,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param charSet Declares the character encoding of the page or script. 
@@ -4746,13 +4891,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlMeta <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, charSet = NULL, content = NULL, httpEquiv = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlMeta <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, charSet = NULL, content = NULL, httpEquiv = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				charSet=charSet, 
@@ -4776,7 +4922,7 @@ component <- list(
   ),
   type = 'Meta',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'charSet', 'content', 'httpEquiv', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'charSet', 'content', 'httpEquiv', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4795,6 +4941,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param form Indicates the form that is the owner of the element. 
@@ -4819,13 +4966,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlMeter <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, form = NULL, high = NULL, low = NULL, max = NULL, min = NULL, optimum = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlMeter <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, form = NULL, high = NULL, low = NULL, max = NULL, min = NULL, optimum = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				form=form, 
@@ -4852,7 +5000,7 @@ component <- list(
   ),
   type = 'Meter',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'form', 'high', 'low', 'max', 'min', 'optimum', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'form', 'high', 'low', 'max', 'min', 'optimum', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4871,6 +5019,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4888,13 +5037,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlMulticol <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlMulticol <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -4914,7 +5064,7 @@ component <- list(
   ),
   type = 'Multicol',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4933,6 +5083,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -4950,13 +5101,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlNav <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlNav <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -4976,7 +5128,7 @@ component <- list(
   ),
   type = 'Nav',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -4995,6 +5147,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -5012,13 +5165,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlNextid <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlNextid <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -5038,7 +5192,7 @@ component <- list(
   ),
   type = 'Nextid',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5057,6 +5211,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -5074,13 +5229,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlNobr <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlNobr <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -5100,7 +5256,7 @@ component <- list(
   ),
   type = 'Nobr',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5119,6 +5275,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -5136,13 +5293,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlNoscript <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlNoscript <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -5162,7 +5320,7 @@ component <- list(
   ),
   type = 'Noscript',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5181,6 +5339,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param form Indicates the form that is the owner of the element. 
@@ -5204,13 +5363,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlObjectEl <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, form = NULL, height = NULL, name = NULL, type = NULL, useMap = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlObjectEl <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, form = NULL, height = NULL, name = NULL, type = NULL, useMap = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				form=form, 
@@ -5236,7 +5396,7 @@ component <- list(
   ),
   type = 'ObjectEl',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'form', 'height', 'name', 'type', 'useMap', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'form', 'height', 'name', 'type', 'useMap', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5255,6 +5415,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param reversed Indicates whether the list should be displayed in a descending order instead of a ascending. 
@@ -5274,13 +5435,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlOl <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, reversed = NULL, start = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlOl <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, reversed = NULL, start = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				reversed=reversed, 
@@ -5302,7 +5464,7 @@ component <- list(
   ),
   type = 'Ol',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'reversed', 'start', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'reversed', 'start', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5321,6 +5483,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param disabled Indicates whether the user can interact with the element. 
@@ -5339,13 +5502,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlOptgroup <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, disabled = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlOptgroup <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, disabled = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				disabled=disabled, 
@@ -5366,7 +5530,7 @@ component <- list(
   ),
   type = 'Optgroup',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'disabled', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'disabled', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5385,6 +5549,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param disabled Indicates whether the user can interact with the element. 
@@ -5405,13 +5570,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlOption <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, disabled = NULL, selected = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlOption <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, disabled = NULL, selected = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				disabled=disabled, 
@@ -5434,7 +5600,7 @@ component <- list(
   ),
   type = 'Option',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'disabled', 'selected', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'disabled', 'selected', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5453,6 +5619,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param htmlFor Describes elements which belongs to this one. 
@@ -5473,13 +5640,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlOutput <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, htmlFor = NULL, form = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlOutput <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, htmlFor = NULL, form = NULL, name = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				htmlFor=htmlFor, 
@@ -5502,7 +5670,7 @@ component <- list(
   ),
   type = 'Output',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'htmlFor', 'form', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'htmlFor', 'form', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5521,6 +5689,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -5538,13 +5707,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlP <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlP <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -5564,7 +5734,7 @@ component <- list(
   ),
   type = 'P',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5583,6 +5753,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param name Name of the element. For example used by the server to identify the fields in form submits. 
@@ -5602,13 +5773,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlParam <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, name = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlParam <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, name = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				name=name, 
@@ -5630,7 +5802,7 @@ component <- list(
   ),
   type = 'Param',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'name', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'name', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5649,6 +5821,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -5666,13 +5839,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlPicture <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlPicture <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -5692,7 +5866,7 @@ component <- list(
   ),
   type = 'Picture',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5711,6 +5885,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -5728,13 +5903,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlPlaintext <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlPlaintext <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -5754,7 +5930,7 @@ component <- list(
   ),
   type = 'Plaintext',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5773,6 +5949,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -5790,13 +5967,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlPre <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlPre <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -5816,7 +5994,7 @@ component <- list(
   ),
   type = 'Pre',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5835,6 +6013,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param form Indicates the form that is the owner of the element. 
@@ -5855,13 +6034,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlProgress <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, form = NULL, max = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlProgress <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, form = NULL, max = NULL, value = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				form=form, 
@@ -5884,7 +6064,7 @@ component <- list(
   ),
   type = 'Progress',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'form', 'max', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'form', 'max', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5903,6 +6083,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param cite Contains a URI which points to the source of the quote or change. 
@@ -5921,13 +6102,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlQ <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, cite = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlQ <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, cite = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				cite=cite, 
@@ -5948,7 +6130,7 @@ component <- list(
   ),
   type = 'Q',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'cite', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'cite', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -5967,6 +6149,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -5984,13 +6167,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlRp <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlRp <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -6010,7 +6194,7 @@ component <- list(
   ),
   type = 'Rp',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6029,6 +6213,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6046,13 +6231,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlRt <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlRt <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -6072,7 +6258,7 @@ component <- list(
   ),
   type = 'Rt',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6091,6 +6277,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6108,13 +6295,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlRtc <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlRtc <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -6134,7 +6322,7 @@ component <- list(
   ),
   type = 'Rtc',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6153,6 +6341,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6170,13 +6359,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlRuby <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlRuby <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -6196,7 +6386,7 @@ component <- list(
   ),
   type = 'Ruby',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6215,6 +6405,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6232,13 +6423,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlS <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlS <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -6258,7 +6450,7 @@ component <- list(
   ),
   type = 'S',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6277,6 +6469,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6294,13 +6487,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlSamp <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlSamp <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -6320,7 +6514,7 @@ component <- list(
   ),
   type = 'Samp',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6339,6 +6533,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param async Indicates that the script should be executed asynchronously. 
@@ -6363,13 +6558,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlScript <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, async = NULL, charSet = NULL, crossOrigin = NULL, defer = NULL, integrity = NULL, src = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlScript <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, async = NULL, charSet = NULL, crossOrigin = NULL, defer = NULL, integrity = NULL, src = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				async=async, 
@@ -6396,7 +6592,7 @@ component <- list(
   ),
   type = 'Script',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'async', 'charSet', 'crossOrigin', 'defer', 'integrity', 'src', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'async', 'charSet', 'crossOrigin', 'defer', 'integrity', 'src', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6415,6 +6611,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6432,13 +6629,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlSection <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlSection <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -6458,7 +6656,7 @@ component <- list(
   ),
   type = 'Section',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6477,6 +6675,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param autoFocus The element should be automatically focused after the page loaded. 
@@ -6501,13 +6700,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlSelect <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, autoFocus = NULL, disabled = NULL, form = NULL, multiple = NULL, name = NULL, required = NULL, size = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlSelect <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, autoFocus = NULL, disabled = NULL, form = NULL, multiple = NULL, name = NULL, required = NULL, size = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				autoFocus=autoFocus, 
@@ -6534,7 +6734,7 @@ component <- list(
   ),
   type = 'Select',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'autoFocus', 'disabled', 'form', 'multiple', 'name', 'required', 'size', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'autoFocus', 'disabled', 'form', 'multiple', 'name', 'required', 'size', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6553,6 +6753,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6570,13 +6771,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlShadow <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlShadow <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -6596,7 +6798,7 @@ component <- list(
   ),
   type = 'Shadow',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6615,6 +6817,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6632,13 +6835,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlSlot <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlSlot <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -6658,7 +6862,7 @@ component <- list(
   ),
   type = 'Slot',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6677,6 +6881,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6694,13 +6899,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlSmall <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlSmall <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -6720,7 +6926,7 @@ component <- list(
   ),
   type = 'Small',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6739,6 +6945,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param media Specifies a hint of the media for which the linked resource was designed. 
@@ -6760,13 +6967,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlSource <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, media = NULL, sizes = NULL, src = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlSource <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, media = NULL, sizes = NULL, src = NULL, type = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				media=media, 
@@ -6790,7 +6998,7 @@ component <- list(
   ),
   type = 'Source',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'media', 'sizes', 'src', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'media', 'sizes', 'src', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6809,6 +7017,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6826,13 +7035,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlSpacer <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlSpacer <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -6852,7 +7062,7 @@ component <- list(
   ),
   type = 'Spacer',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6871,6 +7081,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6888,13 +7099,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlSpan <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlSpan <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -6914,7 +7126,7 @@ component <- list(
   ),
   type = 'Span',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6933,6 +7145,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -6950,13 +7163,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlStrike <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlStrike <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -6976,7 +7190,7 @@ component <- list(
   ),
   type = 'Strike',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -6995,6 +7209,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -7012,13 +7227,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlStrong <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlStrong <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -7038,7 +7254,7 @@ component <- list(
   ),
   type = 'Strong',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7057,6 +7273,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -7074,13 +7291,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlSub <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlSub <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -7100,7 +7318,7 @@ component <- list(
   ),
   type = 'Sub',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7119,6 +7337,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -7136,13 +7355,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlSummary <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlSummary <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -7162,7 +7382,7 @@ component <- list(
   ),
   type = 'Summary',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7181,6 +7401,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -7198,13 +7419,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlSup <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlSup <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -7224,7 +7446,7 @@ component <- list(
   ),
   type = 'Sup',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7243,6 +7465,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param summary  
@@ -7261,13 +7484,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlTable <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, summary = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlTable <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, summary = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				summary=summary, 
@@ -7288,7 +7512,7 @@ component <- list(
   ),
   type = 'Table',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'summary', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'summary', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7307,6 +7531,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -7324,13 +7549,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlTbody <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlTbody <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -7350,7 +7576,7 @@ component <- list(
   ),
   type = 'Tbody',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7369,6 +7595,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param colSpan The colspan attribute defines the number of columns a cell should span. 
@@ -7389,13 +7616,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlTd <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, colSpan = NULL, headers = NULL, rowSpan = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlTd <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, colSpan = NULL, headers = NULL, rowSpan = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				colSpan=colSpan, 
@@ -7418,7 +7646,7 @@ component <- list(
   ),
   type = 'Td',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'colSpan', 'headers', 'rowSpan', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'colSpan', 'headers', 'rowSpan', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7437,6 +7665,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -7454,13 +7683,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlTemplate <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlTemplate <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -7480,7 +7710,7 @@ component <- list(
   ),
   type = 'Template',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7499,6 +7729,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param autoComplete Indicates whether controls in this form can by default have their values automatically completed by the browser. 
@@ -7529,13 +7760,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlTextarea <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, autoComplete = NULL, autoFocus = NULL, cols = NULL, disabled = NULL, form = NULL, maxLength = NULL, minLength = NULL, name = NULL, placeholder = NULL, readOnly = NULL, required = NULL, rows = NULL, wrap = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlTextarea <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, autoComplete = NULL, autoFocus = NULL, cols = NULL, disabled = NULL, form = NULL, maxLength = NULL, minLength = NULL, name = NULL, placeholder = NULL, readOnly = NULL, required = NULL, rows = NULL, wrap = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				autoComplete=autoComplete, 
@@ -7568,7 +7800,7 @@ component <- list(
   ),
   type = 'Textarea',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'autoComplete', 'autoFocus', 'cols', 'disabled', 'form', 'maxLength', 'minLength', 'name', 'placeholder', 'readOnly', 'required', 'rows', 'wrap', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'autoComplete', 'autoFocus', 'cols', 'disabled', 'form', 'maxLength', 'minLength', 'name', 'placeholder', 'readOnly', 'required', 'rows', 'wrap', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7587,6 +7819,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -7604,13 +7837,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlTfoot <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlTfoot <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -7630,7 +7864,7 @@ component <- list(
   ),
   type = 'Tfoot',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7649,12 +7883,13 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param colSpan The colspan attribute defines the number of columns a cell should span. 
 #' @param headers IDs of the <th> elements which applies to this element. 
 #' @param rowSpan Defines the number of rows a table cell should span over. 
-#' @param scope  
+#' @param scope Defines the cells that the header test (defined in the th element) relates to. 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
 #' @param className Often used with CSS to style elements with common properties. 
 #' @param contentEditable Indicates whether the element's content is editable. 
@@ -7670,13 +7905,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlTh <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, colSpan = NULL, headers = NULL, rowSpan = NULL, scope = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlTh <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, colSpan = NULL, headers = NULL, rowSpan = NULL, scope = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				colSpan=colSpan, 
@@ -7700,7 +7936,7 @@ component <- list(
   ),
   type = 'Th',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'colSpan', 'headers', 'rowSpan', 'scope', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'colSpan', 'headers', 'rowSpan', 'scope', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7719,6 +7955,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -7736,13 +7973,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlThead <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlThead <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -7762,7 +8000,7 @@ component <- list(
   ),
   type = 'Thead',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7781,6 +8019,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param dateTime Indicates the date and time associated with the element. 
@@ -7799,13 +8038,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlTime <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlTime <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, dateTime = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				dateTime=dateTime, 
@@ -7826,7 +8066,7 @@ component <- list(
   ),
   type = 'Time',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'dateTime', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'dateTime', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7845,6 +8085,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -7862,13 +8103,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlTitle <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlTitle <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -7888,7 +8130,7 @@ component <- list(
   ),
   type = 'Title',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7907,6 +8149,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -7924,13 +8167,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlTr <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlTr <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -7950,7 +8194,7 @@ component <- list(
   ),
   type = 'Tr',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -7969,6 +8213,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param default Indicates that the track should be enabled unless the user's preferences indicate something different. 
@@ -7991,13 +8236,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlTrack <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, default = NULL, kind = NULL, label = NULL, src = NULL, srcLang = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlTrack <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, default = NULL, kind = NULL, label = NULL, src = NULL, srcLang = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				default=default, 
@@ -8022,7 +8268,7 @@ component <- list(
   ),
   type = 'Track',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'default', 'kind', 'label', 'src', 'srcLang', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'default', 'kind', 'label', 'src', 'srcLang', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8041,6 +8287,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -8058,13 +8305,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlU <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlU <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -8084,7 +8332,7 @@ component <- list(
   ),
   type = 'U',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8103,6 +8351,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -8120,13 +8369,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlUl <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlUl <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -8146,7 +8396,7 @@ component <- list(
   ),
   type = 'Ul',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8165,6 +8415,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -8182,13 +8433,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlVar <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlVar <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -8208,7 +8460,7 @@ component <- list(
   ),
   type = 'Var',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8227,6 +8479,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param autoPlay The audio or video should play as soon as possible. 
@@ -8254,13 +8507,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlVideo <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, autoPlay = NULL, controls = NULL, crossOrigin = NULL, height = NULL, loop = NULL, muted = NULL, poster = NULL, preload = NULL, src = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlVideo <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, autoPlay = NULL, controls = NULL, crossOrigin = NULL, height = NULL, loop = NULL, muted = NULL, poster = NULL, preload = NULL, src = NULL, width = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				autoPlay=autoPlay, 
@@ -8290,7 +8544,7 @@ component <- list(
   ),
   type = 'Video',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'autoPlay', 'controls', 'crossOrigin', 'height', 'loop', 'muted', 'poster', 'preload', 'src', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'autoPlay', 'controls', 'crossOrigin', 'height', 'loop', 'muted', 'poster', 'preload', 'src', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8309,6 +8563,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -8326,13 +8581,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlWbr <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlWbr <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -8352,7 +8608,7 @@ component <- list(
   ),
   type = 'Wbr',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8371,6 +8627,7 @@ structure(component, class = c('dash_component', 'list'))
 #' @param id The ID of this component, used to identify dash components in callbacks. The ID needs to be unique across all of the components in an app. 
 #' @param children The children of this component 
 #' @param n_clicks An integer that represents the number of times that this element has been clicked on. 
+#' @param n_clicks_timestamp An integer that represents the time (in ms since 1970) at which n_clicks changed. This can be used to tell which button was changed most recently. 
 #' @param key A unique identifier for the component, used to improve performance by React.js while rendering components See https://reactjs.org/docs/lists-and-keys.html for more info 
 #' @param role The ARIA role attribute 
 #' @param accessKey Defines a keyboard shortcut to activate or add focus to the element. 
@@ -8388,13 +8645,14 @@ structure(component, class = c('dash_component', 'list'))
 #' @param fireEvent A callback for firing events to dash. 
 #' @param dashEvents  
 
-htmlXmp <- function(..., id = NULL, children = NULL, n_clicks = 0, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
+htmlXmp <- function(..., id = NULL, children = NULL, n_clicks = 0, n_clicks_timestamp = -1, key = NULL, role = NULL, accessKey = NULL, className = NULL, contentEditable = NULL, contextMenu = NULL, dir = NULL, draggable = NULL, hidden = NULL, lang = NULL, spellCheck = NULL, style = NULL, tabIndex = NULL, title = NULL, fireEvent = NULL, dashEvents = NULL) {
 
 component <- list(
   props = list(
     id=id, 
 				children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), 
 				n_clicks=n_clicks, 
+				n_clicks_timestamp=n_clicks_timestamp, 
 				key=key, 
 				role=role, 
 				accessKey=accessKey, 
@@ -8414,7 +8672,7 @@ component <- list(
   ),
   type = 'Xmp',
   namespace = 'dash_html_components',
-  propNames = c('id', 'children', 'n_clicks', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
+  propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
   package = 'dashHtmlComponents'
 )
 
@@ -8457,14 +8715,12 @@ names2 <- function(x) names(x) %||% rep('', length(x))
 
 assert_no_names <- function(x) {
   nms <- names(x)
-  if (!is.null(nms)) {
-    stop(
-      sprintf(
-        "Didn't recognize the following named arguments: '%s'",
-         paste(nms, collapse = "', '")
-       ), call. = FALSE
-    )
-  }
-  names(x) <- NULL
-  x
+  if (is.null(nms)) return(x)
+  if (identical('', unique(nms))) return(setNames(x, NULL))
+  stop(
+    sprintf(
+      "Didn't recognize the following named arguments: '%s'",
+      paste(nms, collapse = "', '")
+    ), call. = FALSE
+  )
 }
