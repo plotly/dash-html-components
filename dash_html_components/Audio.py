@@ -47,7 +47,7 @@ Available events: 'click'"""
     def __init__(self, children=None, **kwargs):
         self._prop_names = ['children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'aria-*', 'autoPlay', 'controls', 'crossOrigin', 'loop', 'muted', 'preload', 'src', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title']
         self._type = 'Audio'
-        self._namespace = 'lib'
+        self._namespace = 'dash_html_components'
         self._valid_wildcard_attributes =            ['data-', 'aria-']
         self.available_events = ['click']
         self.available_properties = ['children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'aria-*', 'autoPlay', 'controls', 'crossOrigin', 'loop', 'muted', 'preload', 'src', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title']
