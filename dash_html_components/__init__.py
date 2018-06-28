@@ -1,3 +1,5 @@
+"""Vanilla HTML components for Dash"""
+
 from __future__ import print_function as _
 
 import os as _os
