@@ -30,10 +30,10 @@ class TestDashHtmlComponents(unittest.TestCase):
 
         self.assertEqual(
             repr(layout),
-            ''.join([
-                "Div(children=Div(Img(src='https://plot.ly/~chris/1638.png')), "
-                "style={'color': 'red'})"
-            ])
+            """Div(children=Div(children=Img(n_clicks=0, n_clicks_timestamp=-1, 
+            src='https://plot.ly/~chris/1638.png'), n_clicks=0, 
+            n_clicks_timestamp=-1), n_clicks=0, n_clicks_timestamp=-1, 
+            style={'color': 'red'})""".replace('    ', '').replace('\n', '')
         )
 
         self.assertEqual(

@@ -38,7 +38,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info
 
 Available events: 'click'"""
     @_explicitize_args
-    def __init__(self, children=None, id=None, n_clicks=None, n_clicks_timestamp=None, key=None, role=None, accessKey=None, className=None, contentEditable=None, contextMenu=None, dir=None, draggable=None, hidden=None, lang=None, spellCheck=None, style=None, tabIndex=None, title=None, fireEvent=None, dashEvents=None, **kwargs):
+    def __init__(self, children=None, id=None, n_clicks=0, n_clicks_timestamp=-1, key=None, role=None, accessKey=None, className=None, contentEditable=None, contextMenu=None, dir=None, draggable=None, hidden=None, lang=None, spellCheck=None, style=None, tabIndex=None, title=None, fireEvent=None, dashEvents=None, **kwargs):
         self._prop_names = ['children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'aria-*', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title']
         self._type = 'H1'
         self._namespace = 'dash_html_components'
@@ -49,11 +49,12 @@ Available events: 'click'"""
 
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()
-        _locals.update(kwargs)  # For wildcard attrs
-        args = {k: _locals[k] for k in _explicit_args if k != 'children'}
+        args = {k: _locals[k] for k in self._prop_names
+                 if k != 'children' and not k.endswith("-*")}
+        args.update(kwargs)
 
         for k in []:
-            if k not in args:
+            if k not in _explicit_args:
                 raise TypeError(
                     'Required argument `' + k + '` was not specified.')
         super(H1, self).__init__(children=children, **args)
