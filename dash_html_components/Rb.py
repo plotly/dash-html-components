@@ -3,8 +3,8 @@
 from dash.development.base_component import Component, _explicitize_args
 
 
-class Slot(Component):
-    """A Slot component.
+class Rb(Component):
+    """A Rb component.
 
 
 Keyword arguments:
@@ -40,7 +40,7 @@ Available events: 'click'"""
     @_explicitize_args
     def __init__(self, children=None, id=Component._NO_DEFAULT_ARG, n_clicks=0, n_clicks_timestamp=-1, key=Component._NO_DEFAULT_ARG, role=Component._NO_DEFAULT_ARG, accessKey=Component._NO_DEFAULT_ARG, className=Component._NO_DEFAULT_ARG, contentEditable=Component._NO_DEFAULT_ARG, contextMenu=Component._NO_DEFAULT_ARG, dir=Component._NO_DEFAULT_ARG, draggable=Component._NO_DEFAULT_ARG, hidden=Component._NO_DEFAULT_ARG, lang=Component._NO_DEFAULT_ARG, spellCheck=Component._NO_DEFAULT_ARG, style=Component._NO_DEFAULT_ARG, tabIndex=Component._NO_DEFAULT_ARG, title=Component._NO_DEFAULT_ARG, fireEvent=Component._NO_DEFAULT_ARG, dashEvents=Component._NO_DEFAULT_ARG, **kwargs):
         self._prop_names = ['children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'aria-*', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title']
-        self._type = 'Slot'
+        self._type = 'Rb'
         self._namespace = 'dash_html_components'
         self._valid_wildcard_attributes =            ['data-', 'aria-']
         self.available_events = ['click']
@@ -57,7 +57,7 @@ Available events: 'click'"""
             if k not in _explicit_args:
                 raise TypeError(
                     'Required argument `' + k + '` was not specified.')
-        super(Slot, self).__init__(children=children, **args)
+        super(Rb, self).__init__(children=children, **args)
 
     def __repr__(self):
         if(any(getattr(self, c, None) is not None
@@ -75,9 +75,9 @@ Available events: 'click'"""
                                       if any([c.startswith(wc_attr)
                                       for wc_attr in
                                       self._valid_wildcard_attributes])])
-            return ('Slot(' + props_string +
+            return ('Rb(' + props_string +
                    (', ' + wilds_string if wilds_string != '' else '') + ')')
         else:
             return (
-                'Slot(' +
+                'Rb(' +
                 repr(getattr(self, self._prop_names[0], None)) + ')')
