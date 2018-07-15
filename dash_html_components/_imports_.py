@@ -90,6 +90,7 @@ from .Plaintext import Plaintext
 from .Pre import Pre
 from .Progress import Progress
 from .Q import Q
+from .Rb import Rb
 from .Rp import Rp
 from .Rt import Rt
 from .Rtc import Rtc
@@ -223,6 +224,7 @@ __all__ = [
     "Pre",
     "Progress",
     "Q",
+    "Rb",
     "Rp",
     "Rt",
     "Rtc",

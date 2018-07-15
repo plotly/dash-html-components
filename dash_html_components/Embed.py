@@ -42,7 +42,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info
 
 Available events: 'click'"""
     @_explicitize_args
-    def __init__(self, children=None, id=None, n_clicks=None, n_clicks_timestamp=None, key=None, role=None, height=None, src=None, type=None, width=None, accessKey=None, className=None, contentEditable=None, contextMenu=None, dir=None, draggable=None, hidden=None, lang=None, spellCheck=None, style=None, tabIndex=None, title=None, fireEvent=None, dashEvents=None, **kwargs):
+    def __init__(self, children=None, id=Component.UNDEFINED, n_clicks=Component.UNDEFINED, n_clicks_timestamp=Component.UNDEFINED, key=Component.UNDEFINED, role=Component.UNDEFINED, height=Component.UNDEFINED, src=Component.UNDEFINED, type=Component.UNDEFINED, width=Component.UNDEFINED, accessKey=Component.UNDEFINED, className=Component.UNDEFINED, contentEditable=Component.UNDEFINED, contextMenu=Component.UNDEFINED, dir=Component.UNDEFINED, draggable=Component.UNDEFINED, hidden=Component.UNDEFINED, lang=Component.UNDEFINED, spellCheck=Component.UNDEFINED, style=Component.UNDEFINED, tabIndex=Component.UNDEFINED, title=Component.UNDEFINED, **kwargs):
         self._prop_names = ['children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'aria-*', 'height', 'src', 'type', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title']
         self._type = 'Embed'
         self._namespace = 'dash_html_components'
