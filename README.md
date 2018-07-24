@@ -71,8 +71,6 @@ See the [contributing guide](CONTRIBUTING.md) for guidelines on contributing to 
 
 ## Publishing
 
-See the [publishing section](CONTRIBUTING.md#publishing-new-features) of the contributing guide for a how-to on releasing a new feature.
-
 ## Builder / Archetype
 
 We use [Builder][] to centrally manage build configuration, dependencies, and
