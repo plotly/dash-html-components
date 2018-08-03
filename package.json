@@ -30,12 +30,12 @@
   "author": "Chris Parmer <chris@plot.ly>",
   "dependencies": {
     "builder": "3.2.1",
-    "dash-components-archetype": "^0.3.0",
+    "dash-components-archetype": "^0.3.0-rc1",
     "prop-types": "^15.6.0"
   },
   "devDependencies": {
     "cheerio": "^0.20.0",
-    "dash-components-archetype-dev": "^0.3.0",
+    "dash-components-archetype-dev": "^0.3.0-rc1",
     "request": "^2.72.0",
     "string": "^3.3.1"
   },
