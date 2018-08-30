@@ -3,6 +3,9 @@
 from dash.development.base_component import Component, _explicitize_args
 
 
+
+schema = {'async': {'type': 'string', 'nullable': True}, 'className': {'type': 'string', 'nullable': True}, 'id': {'type': 'string', 'nullable': True}, 'dir': {'type': 'string', 'nullable': True}, 'style': {'type': 'dict', 'nullable': True}, 'defer': {'type': 'string', 'nullable': True}, 'key': {'type': 'string', 'nullable': True}, 'n_clicks_timestamp': {'nullable': True}, 'fireEvent': {'nullable': True}, 'lang': {'type': 'string', 'nullable': True}, 'dashEvents': {'nullable': True, 'allowed': [None, 'click']}, 'spellCheck': {'type': 'string', 'nullable': True}, 'crossOrigin': {'type': 'string', 'nullable': True}, 'contextMenu': {'type': 'string', 'nullable': True}, 'integrity': {'type': 'string', 'nullable': True}, 'hidden': {'type': 'string', 'nullable': True}, 'tabIndex': {'type': 'string', 'nullable': True}, 'charSet': {'type': 'string', 'nullable': True}, 'n_clicks': {'nullable': True}, 'draggable': {'type': 'string', 'nullable': True}, 'accessKey': {'type': 'string', 'nullable': True}, 'type': {'type': 'string', 'nullable': True}, 'contentEditable': {'type': 'string', 'nullable': True}, 'title': {'type': 'string', 'nullable': True}, 'src': {'type': 'string', 'nullable': True}, 'children': {'nullable': True, 'anyof': [{'type': 'component'}, {'type': 'boolean'}, {'type': 'number'}, {'type': 'string'}, {'type': 'list', 'schema': {'anyof': [{'type': 'component'}, {'type': 'boolean'}, {'type': 'number'}, {'type': 'string'}]}, 'nullable': True}]}, 'role': {'type': 'string', 'nullable': True}}
+
 class Script(Component):
     """A Script component.
 
@@ -44,6 +47,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info
 - title (string; optional): Text to be displayed in a tooltip when hovering over the element.
 
 Available events: 'click'"""
+    _schema = schema
     @_explicitize_args
     def __init__(self, children=None, id=Component.UNDEFINED, n_clicks=Component.UNDEFINED, n_clicks_timestamp=Component.UNDEFINED, key=Component.UNDEFINED, role=Component.UNDEFINED, async=Component.UNDEFINED, charSet=Component.UNDEFINED, crossOrigin=Component.UNDEFINED, defer=Component.UNDEFINED, integrity=Component.UNDEFINED, src=Component.UNDEFINED, type=Component.UNDEFINED, accessKey=Component.UNDEFINED, className=Component.UNDEFINED, contentEditable=Component.UNDEFINED, contextMenu=Component.UNDEFINED, dir=Component.UNDEFINED, draggable=Component.UNDEFINED, hidden=Component.UNDEFINED, lang=Component.UNDEFINED, spellCheck=Component.UNDEFINED, style=Component.UNDEFINED, tabIndex=Component.UNDEFINED, title=Component.UNDEFINED, **kwargs):
         self._prop_names = ['children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'aria-*', 'async', 'charSet', 'crossOrigin', 'defer', 'integrity', 'src', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title']
