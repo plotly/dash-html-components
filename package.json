@@ -20,6 +20,7 @@
     "generate-python-classes": "python -c 'import dash; dash.development.component_loader.generate_classes(\"dash_html_components\", \"dash_html_components/metadata.json\")'",
     "generate-components": "cd scripts && sh generate-all.sh && cd -",
     "install-local": "npm run copy-lib && python setup.py install",
+    "prepublish": "npm run clean && npm run generate-components && npm test && npm run build:js && npm run build:py",
     "publish-all": "npm publish && python setup.py sdist upload",
     "start": "./node_modules/.bin/builder run build-dev",
     "test": "./node_modules/.bin/eslint --fix src",
