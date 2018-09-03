@@ -51,7 +51,22 @@ function generatePropTypes(element, attributes) {
     /**
      * The children of this component
      */
-    'children': PropTypes.node,
+    children: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+      PropTypes.bool,
+      PropTypes.element,
+      PropTypes.oneOf([null]),
+      PropTypes.arrayOf(
+        PropTypes.oneOfType([
+          PropTypes.string,
+          PropTypes.number,
+          PropTypes.bool,
+        PropTypes.element,
+          PropTypes.oneOf([null])
+        ])
+      )
+    ]),
 
     /**
      * An integer that represents the number of times

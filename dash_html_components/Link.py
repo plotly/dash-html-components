@@ -4,14 +4,14 @@ from dash.development.base_component import Component, _explicitize_args
 
 
 
-schema = {'media': {'type': 'string'}, 'spellCheck': {'type': 'string'}, 'n_clicks_timestamp': {}, 'className': {'type': 'string'}, 'contextMenu': {'type': 'string'}, 'dashEvents': {'type': ('string', 'number'), 'allowed': ['click']}, 'key': {'type': 'string'}, 'hidden': {'type': 'string'}, 'href': {'type': 'string'}, 'id': {'type': 'string'}, 'style': {'type': 'dict'}, 'dir': {'type': 'string'}, 'draggable': {'type': 'string'}, 'integrity': {'type': 'string'}, 'n_clicks': {}, 'children': {'anyof': [{'type': 'component'}, {'type': 'boolean'}, {'type': 'number'}, {'type': 'string'}, {'type': 'list', 'schema': {'type': ('component', 'boolean', 'number', 'string')}}]}, 'fireEvent': {}, 'accessKey': {'type': 'string'}, 'title': {'type': 'string'}, 'hrefLang': {'type': 'string'}, 'crossOrigin': {'type': 'string'}, 'sizes': {'type': 'string'}, 'lang': {'type': 'string'}, 'role': {'type': 'string'}, 'tabIndex': {'type': 'string'}, 'rel': {'type': 'string'}, 'contentEditable': {'type': 'string'}}
+schema = {'role': {'type': 'string'}, 'integrity': {'type': 'string'}, 'className': {'type': 'string'}, 'href': {'type': 'string'}, 'dashEvents': {'allowed': ['click'], 'type': ('string', 'number')}, 'hidden': {'type': 'string'}, 'spellCheck': {'type': 'string'}, 'lang': {'type': 'string'}, 'key': {'type': 'string'}, 'media': {'type': 'string'}, 'style': {'type': 'dict'}, 'fireEvent': {}, 'rel': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'crossOrigin': {'type': 'string'}, 'tabIndex': {'type': 'string'}, 'dir': {'type': 'string'}, 'n_clicks': {}, 'hrefLang': {'type': 'string'}, 'contextMenu': {'type': 'string'}, 'n_clicks_timestamp': {}, 'draggable': {'type': 'string'}, 'children': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}, {'schema': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}]}, 'type': 'list'}]}, 'id': {'type': 'string'}, 'accessKey': {'type': 'string'}, 'title': {'type': 'string'}, 'sizes': {'type': 'string'}}
 
 class Link(Component):
     """A Link component.
 
 
 Keyword arguments:
-- children (a list of or a singular dash component, string or number; optional): The children of this component
+- children (string | number | boolean | dash component | a value equal to: null | list; optional): The children of this component
 - id (string; optional): The ID of this component, used to identify dash components
 in callbacks. The ID needs to be unique across all of the
 components in an app.
@@ -29,7 +29,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info
 - crossOrigin (string; optional): How the element handles cross-origin requests
 - href (string; optional): The URL of a linked resource.
 - hrefLang (string; optional): Specifies the language of the linked resource.
-- integrity (string; optional): Security Feature that allows browsers to verify what they fetch.     MDN Link
+- integrity (string; optional): Security Feature that allows browsers to verify what they fetch.    MDN Link
 - media (string; optional): Specifies a hint of the media for which the linked resource was designed.
 - rel (string; optional): Specifies the relationship of the target object to the link object.
 - sizes (string; optional)

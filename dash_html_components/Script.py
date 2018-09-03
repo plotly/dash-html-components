@@ -4,14 +4,14 @@ from dash.development.base_component import Component, _explicitize_args
 
 
 
-schema = {'dashEvents': {'type': ('string', 'number'), 'allowed': ['click']}, 'n_clicks_timestamp': {}, 'className': {'type': 'string'}, 'contextMenu': {'type': 'string'}, 'charSet': {'type': 'string'}, 'hidden': {'type': 'string'}, 'src': {'type': 'string'}, 'id': {'type': 'string'}, 'style': {'type': 'dict'}, 'dir': {'type': 'string'}, 'draggable': {'type': 'string'}, 'type': {'type': 'string'}, 'defer': {'type': 'string'}, 'integrity': {'type': 'string'}, 'n_clicks': {}, 'children': {'anyof': [{'type': 'component'}, {'type': 'boolean'}, {'type': 'number'}, {'type': 'string'}, {'type': 'list', 'schema': {'type': ('component', 'boolean', 'number', 'string')}}]}, 'fireEvent': {}, 'accessKey': {'type': 'string'}, 'title': {'type': 'string'}, 'key': {'type': 'string'}, 'crossOrigin': {'type': 'string'}, 'lang': {'type': 'string'}, 'role': {'type': 'string'}, 'tabIndex': {'type': 'string'}, 'spellCheck': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'async': {'type': 'string'}}
+schema = {'role': {'type': 'string'}, 'async': {'type': 'string'}, 'className': {'type': 'string'}, 'dashEvents': {'allowed': ['click'], 'type': ('string', 'number')}, 'hidden': {'type': 'string'}, 'spellCheck': {'type': 'string'}, 'type': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'integrity': {'type': 'string'}, 'key': {'type': 'string'}, 'style': {'type': 'dict'}, 'fireEvent': {}, 'lang': {'type': 'string'}, 'src': {'type': 'string'}, 'id': {'type': 'string'}, 'tabIndex': {'type': 'string'}, 'dir': {'type': 'string'}, 'n_clicks': {}, 'contextMenu': {'type': 'string'}, 'n_clicks_timestamp': {}, 'draggable': {'type': 'string'}, 'charSet': {'type': 'string'}, 'children': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}, {'schema': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}]}, 'type': 'list'}]}, 'defer': {'type': 'string'}, 'accessKey': {'type': 'string'}, 'title': {'type': 'string'}, 'crossOrigin': {'type': 'string'}}
 
 class Script(Component):
     """A Script component.
 
 
 Keyword arguments:
-- children (a list of or a singular dash component, string or number; optional): The children of this component
+- children (string | number | boolean | dash component | a value equal to: null | list; optional): The children of this component
 - id (string; optional): The ID of this component, used to identify dash components
 in callbacks. The ID needs to be unique across all of the
 components in an app.
@@ -30,7 +30,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info
 - charSet (string; optional): Declares the character encoding of the page or script.
 - crossOrigin (string; optional): How the element handles cross-origin requests
 - defer (string; optional): Indicates that the script should be executed after the page has been parsed.
-- integrity (string; optional): Security Feature that allows browsers to verify what they fetch.     MDN Link
+- integrity (string; optional): Security Feature that allows browsers to verify what they fetch.    MDN Link
 - src (string; optional): The URL of the embeddable content.
 - type (string; optional): Defines the type of the element.
 - accessKey (string; optional): Defines a keyboard shortcut to activate or add focus to the element.

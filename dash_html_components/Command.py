@@ -4,14 +4,14 @@ from dash.development.base_component import Component, _explicitize_args
 
 
 
-schema = {'type': {'type': 'string'}, 'disabled': {'type': 'string'}, 'radioGroup': {'type': 'string'}, 'dashEvents': {'type': ('string', 'number'), 'allowed': ['click']}, 'n_clicks_timestamp': {}, 'style': {'type': 'dict'}, 'checked': {'type': 'string'}, 'hidden': {'type': 'string'}, 'fireEvent': {}, 'contextMenu': {'type': 'string'}, 'id': {'type': 'string'}, 'dir': {'type': 'string'}, 'draggable': {'type': 'string'}, 'icon': {'type': 'string'}, 'className': {'type': 'string'}, 'n_clicks': {}, 'children': {'anyof': [{'type': 'component'}, {'type': 'boolean'}, {'type': 'number'}, {'type': 'string'}, {'type': 'list', 'schema': {'type': ('component', 'boolean', 'number', 'string')}}]}, 'accessKey': {'type': 'string'}, 'title': {'type': 'string'}, 'key': {'type': 'string'}, 'spellCheck': {'type': 'string'}, 'lang': {'type': 'string'}, 'role': {'type': 'string'}, 'tabIndex': {'type': 'string'}, 'contentEditable': {'type': 'string'}}
+schema = {'role': {'type': 'string'}, 'className': {'type': 'string'}, 'dashEvents': {'allowed': ['click'], 'type': ('string', 'number')}, 'hidden': {'type': 'string'}, 'spellCheck': {'type': 'string'}, 'type': {'type': 'string'}, 'checked': {'type': 'string'}, 'key': {'type': 'string'}, 'style': {'type': 'dict'}, 'tabIndex': {'type': 'string'}, 'fireEvent': {}, 'lang': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'icon': {'type': 'string'}, 'radioGroup': {'type': 'string'}, 'dir': {'type': 'string'}, 'n_clicks': {}, 'contextMenu': {'type': 'string'}, 'n_clicks_timestamp': {}, 'draggable': {'type': 'string'}, 'disabled': {'type': 'string'}, 'children': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}, {'schema': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}]}, 'type': 'list'}]}, 'id': {'type': 'string'}, 'accessKey': {'type': 'string'}, 'title': {'type': 'string'}}
 
 class Command(Component):
     """A Command component.
 
 
 Keyword arguments:
-- children (a list of or a singular dash component, string or number; optional): The children of this component
+- children (string | number | boolean | dash component | a value equal to: null | list; optional): The children of this component
 - id (string; optional): The ID of this component, used to identify dash components
 in callbacks. The ID needs to be unique across all of the
 components in an app.

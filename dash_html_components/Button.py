@@ -4,14 +4,14 @@ from dash.development.base_component import Component, _explicitize_args
 
 
 
-schema = {'value': {'type': 'string'}, 'dashEvents': {'type': ('string', 'number'), 'allowed': ['click']}, 'n_clicks_timestamp': {}, 'spellCheck': {'type': 'string'}, 'autoFocus': {'type': 'string'}, 'contextMenu': {'type': 'string'}, 'hidden': {'type': 'string'}, 'fireEvent': {}, 'disabled': {'type': 'string'}, 'form': {'type': 'string'}, 'id': {'type': 'string'}, 'style': {'type': 'dict'}, 'dir': {'type': 'string'}, 'draggable': {'type': 'string'}, 'type': {'type': 'string'}, 'className': {'type': 'string'}, 'n_clicks': {}, 'children': {'anyof': [{'type': 'component'}, {'type': 'boolean'}, {'type': 'number'}, {'type': 'string'}, {'type': 'list', 'schema': {'type': ('component', 'boolean', 'number', 'string')}}]}, 'accessKey': {'type': 'string'}, 'title': {'type': 'string'}, 'key': {'type': 'string'}, 'name': {'type': 'string'}, 'lang': {'type': 'string'}, 'role': {'type': 'string'}, 'tabIndex': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'formAction': {'type': 'string'}}
+schema = {'role': {'type': 'string'}, 'spellCheck': {'type': 'string'}, 'autoFocus': {'type': 'string'}, 'className': {'type': 'string'}, 'value': {'type': 'string'}, 'dashEvents': {'allowed': ['click'], 'type': ('string', 'number')}, 'hidden': {'type': 'string'}, 'formAction': {'type': 'string'}, 'lang': {'type': 'string'}, 'key': {'type': 'string'}, 'style': {'type': 'dict'}, 'fireEvent': {}, 'type': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'tabIndex': {'type': 'string'}, 'name': {'type': 'string'}, 'dir': {'type': 'string'}, 'n_clicks': {}, 'n_clicks_timestamp': {}, 'contextMenu': {'type': 'string'}, 'form': {'type': 'string'}, 'draggable': {'type': 'string'}, 'disabled': {'type': 'string'}, 'children': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}, {'schema': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}]}, 'type': 'list'}]}, 'id': {'type': 'string'}, 'accessKey': {'type': 'string'}, 'title': {'type': 'string'}}
 
 class Button(Component):
     """A Button component.
 
 
 Keyword arguments:
-- children (a list of or a singular dash component, string or number; optional): The children of this component
+- children (string | number | boolean | dash component | a value equal to: null | list; optional): The children of this component
 - id (string; optional): The ID of this component, used to identify dash components
 in callbacks. The ID needs to be unique across all of the
 components in an app.

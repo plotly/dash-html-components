@@ -4,14 +4,14 @@ from dash.development.base_component import Component, _explicitize_args
 
 
 
-schema = {'autoPlay': {'type': 'string'}, 'dashEvents': {'type': ('string', 'number'), 'allowed': ['click']}, 'loop': {'type': 'string'}, 'n_clicks_timestamp': {}, 'spellCheck': {'type': 'string'}, 'contextMenu': {'type': 'string'}, 'muted': {'type': 'string'}, 'hidden': {'type': 'string'}, 'fireEvent': {}, 'src': {'type': 'string'}, 'id': {'type': 'string'}, 'style': {'type': 'dict'}, 'dir': {'type': 'string'}, 'draggable': {'type': 'string'}, 'className': {'type': 'string'}, 'n_clicks': {}, 'children': {'anyof': [{'type': 'component'}, {'type': 'boolean'}, {'type': 'number'}, {'type': 'string'}, {'type': 'list', 'schema': {'type': ('component', 'boolean', 'number', 'string')}}]}, 'accessKey': {'type': 'string'}, 'title': {'type': 'string'}, 'key': {'type': 'string'}, 'crossOrigin': {'type': 'string'}, 'lang': {'type': 'string'}, 'role': {'type': 'string'}, 'controls': {'type': 'string'}, 'tabIndex': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'preload': {'type': 'string'}}
+schema = {'role': {'type': 'string'}, 'autoPlay': {'type': 'string'}, 'crossOrigin': {'type': 'string'}, 'className': {'type': 'string'}, 'preload': {'type': 'string'}, 'dashEvents': {'allowed': ['click'], 'type': ('string', 'number')}, 'hidden': {'type': 'string'}, 'spellCheck': {'type': 'string'}, 'lang': {'type': 'string'}, 'key': {'type': 'string'}, 'children': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}, {'schema': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}]}, 'type': 'list'}]}, 'style': {'type': 'dict'}, 'fireEvent': {}, 'src': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'tabIndex': {'type': 'string'}, 'dir': {'type': 'string'}, 'n_clicks': {}, 'contextMenu': {'type': 'string'}, 'controls': {'type': 'string'}, 'n_clicks_timestamp': {}, 'muted': {'type': 'string'}, 'loop': {'type': 'string'}, 'id': {'type': 'string'}, 'accessKey': {'type': 'string'}, 'title': {'type': 'string'}, 'draggable': {'type': 'string'}}
 
 class Audio(Component):
     """A Audio component.
 
 
 Keyword arguments:
-- children (a list of or a singular dash component, string or number; optional): The children of this component
+- children (string | number | boolean | dash component | a value equal to: null | list; optional): The children of this component
 - id (string; optional): The ID of this component, used to identify dash components
 in callbacks. The ID needs to be unique across all of the
 components in an app.

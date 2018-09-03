@@ -4,14 +4,14 @@ from dash.development.base_component import Component, _explicitize_args
 
 
 
-schema = {'className': {'type': 'string'}, 'n_clicks': {}, 'value': {'type': 'string'}, 'fireEvent': {}, 'title': {'type': 'string'}, 'dashEvents': {'type': ('string', 'number'), 'allowed': ['click']}, 'accessKey': {'type': 'string'}, 'n_clicks_timestamp': {}, 'style': {'type': 'dict'}, 'key': {'type': 'string'}, 'contextMenu': {'type': 'string'}, 'lang': {'type': 'string'}, 'hidden': {'type': 'string'}, 'role': {'type': 'string'}, 'tabIndex': {'type': 'string'}, 'children': {'anyof': [{'type': 'component'}, {'type': 'boolean'}, {'type': 'number'}, {'type': 'string'}, {'type': 'list', 'schema': {'type': ('component', 'boolean', 'number', 'string')}}]}, 'spellCheck': {'type': 'string'}, 'id': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'dir': {'type': 'string'}, 'draggable': {'type': 'string'}}
+schema = {'role': {'type': 'string'}, 'spellCheck': {'type': 'string'}, 'tabIndex': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'dir': {'type': 'string'}, 'n_clicks': {}, 'dashEvents': {'allowed': ['click'], 'type': ('string', 'number')}, 'hidden': {'type': 'string'}, 'value': {'type': 'string'}, 'contextMenu': {'type': 'string'}, 'n_clicks_timestamp': {}, 'key': {'type': 'string'}, 'draggable': {'type': 'string'}, 'lang': {'type': 'string'}, 'style': {'type': 'dict'}, 'children': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}, {'schema': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}]}, 'type': 'list'}]}, 'fireEvent': {}, 'id': {'type': 'string'}, 'accessKey': {'type': 'string'}, 'title': {'type': 'string'}, 'className': {'type': 'string'}}
 
 class Li(Component):
     """A Li component.
 
 
 Keyword arguments:
-- children (a list of or a singular dash component, string or number; optional): The children of this component
+- children (string | number | boolean | dash component | a value equal to: null | list; optional): The children of this component
 - id (string; optional): The ID of this component, used to identify dash components
 in callbacks. The ID needs to be unique across all of the
 components in an app.

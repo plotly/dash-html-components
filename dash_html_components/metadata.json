@@ -13,7 +13,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -239,7 +291,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -416,7 +520,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -593,7 +749,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -770,7 +978,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -1010,7 +1270,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -1187,7 +1499,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -1364,7 +1728,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -1590,7 +2006,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -1767,7 +2235,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -1958,7 +2478,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -2135,7 +2707,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -2312,7 +2936,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -2489,7 +3165,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -2666,7 +3394,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -2843,7 +3623,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -3027,7 +3859,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -3204,7 +4088,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -3430,7 +4366,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -3621,7 +4609,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -3798,7 +4838,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -3975,7 +5067,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -4152,7 +5296,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -4329,7 +5525,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -4513,7 +5761,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -4697,7 +5997,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -4909,7 +6261,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -5086,7 +6490,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -5263,7 +6719,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -5440,7 +6948,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -5617,7 +7177,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -5808,7 +7420,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -5992,7 +7656,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -6169,7 +7885,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -6346,7 +8114,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -6523,7 +8343,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -6700,7 +8572,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -6877,7 +8801,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -7054,7 +9030,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -7231,7 +9259,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -7436,7 +9516,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -7634,7 +9766,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -7811,7 +9995,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -7988,7 +10224,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -8165,7 +10453,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -8342,7 +10682,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -8582,7 +10974,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -8759,7 +11203,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -8936,7 +11432,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -9113,7 +11661,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -9290,7 +11890,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -9467,7 +12119,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -9644,7 +12348,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -9821,7 +12577,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -9998,7 +12806,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -10175,7 +13035,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -10352,7 +13264,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -10529,7 +13493,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -10706,7 +13722,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -10925,7 +13993,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -11158,7 +14278,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -11349,7 +14521,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -11526,7 +14750,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -11703,7 +14979,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -11922,7 +15250,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -12113,7 +15493,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -12290,7 +15722,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -12474,7 +15958,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -12557,7 +16093,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Security Feature that allows browsers to verify what they fetch.     MDN Link"
+        "description": "Security Feature that allows browsers to verify what they fetch.    MDN Link"
       },
       "media": {
         "type": {
@@ -12700,7 +16236,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -12877,7 +16465,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -13054,7 +16694,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -13238,7 +16930,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -13415,7 +17159,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -13599,7 +17395,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -13804,7 +17652,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -14030,7 +17930,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -14207,7 +18159,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -14384,7 +18388,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -14561,7 +18617,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -14738,7 +18846,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -14915,7 +19075,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -15134,7 +19346,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -15325,7 +19589,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -15509,7 +19825,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -15707,7 +20075,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -15905,7 +20325,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -16082,7 +20554,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -16273,7 +20797,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -16450,7 +21026,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -16627,7 +21255,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -16804,7 +21484,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -17002,7 +21734,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -17186,7 +21970,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -17363,7 +22199,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -17540,7 +22428,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -17717,7 +22657,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -17894,7 +22886,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -18071,7 +23115,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -18248,7 +23344,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -18425,7 +23573,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -18515,7 +23715,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Security Feature that allows browsers to verify what they fetch.     MDN Link"
+        "description": "Security Feature that allows browsers to verify what they fetch.    MDN Link"
       },
       "src": {
         "type": {
@@ -18651,7 +23851,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -18828,7 +24080,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -19054,7 +24358,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -19231,7 +24587,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -19408,7 +24816,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -19585,7 +25045,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -19790,7 +25302,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -19967,7 +25531,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -20144,7 +25760,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -20321,7 +25989,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -20498,7 +26218,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -20675,7 +26447,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -20852,7 +26676,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -21029,7 +26905,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -21213,7 +27141,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -21390,7 +27370,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -21588,7 +27620,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -21765,7 +27849,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -22033,7 +28169,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -22210,7 +28398,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -22415,7 +28655,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -22592,7 +28884,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -22776,7 +29120,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -22953,7 +29349,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -23130,7 +29578,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -23342,7 +29842,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -23519,7 +30071,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -23696,7 +30300,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -23873,7 +30529,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -24120,7 +30828,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"
@@ -24297,7 +31057,59 @@
       },
       "children": {
         "type": {
-          "name": "node"
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "bool"
+            },
+            {
+              "name": "element"
+            },
+            {
+              "name": "enum",
+              "value": [
+                {
+                  "value": "null",
+                  "computed": false
+                }
+              ]
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "bool"
+                  },
+                  {
+                    "name": "element"
+                  },
+                  {
+                    "name": "enum",
+                    "value": [
+                      {
+                        "value": "null",
+                        "computed": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         },
         "required": false,
         "description": "The children of this component"

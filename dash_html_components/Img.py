@@ -4,14 +4,14 @@ from dash.development.base_component import Component, _explicitize_args
 
 
 
-schema = {'srcSet': {'type': 'string'}, 'width': {'type': 'string'}, 'dashEvents': {'type': ('string', 'number'), 'allowed': ['click']}, 'n_clicks_timestamp': {}, 'spellCheck': {'type': 'string'}, 'contextMenu': {'type': 'string'}, 'key': {'type': 'string'}, 'alt': {'type': 'string'}, 'hidden': {'type': 'string'}, 'src': {'type': 'string'}, 'id': {'type': 'string'}, 'style': {'type': 'dict'}, 'dir': {'type': 'string'}, 'draggable': {'type': 'string'}, 'className': {'type': 'string'}, 'n_clicks': {}, 'children': {'anyof': [{'type': 'component'}, {'type': 'boolean'}, {'type': 'number'}, {'type': 'string'}, {'type': 'list', 'schema': {'type': ('component', 'boolean', 'number', 'string')}}]}, 'fireEvent': {}, 'accessKey': {'type': 'string'}, 'title': {'type': 'string'}, 'useMap': {'type': 'string'}, 'crossOrigin': {'type': 'string'}, 'sizes': {'type': 'string'}, 'lang': {'type': 'string'}, 'role': {'type': 'string'}, 'tabIndex': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'height': {'type': 'string'}}
+schema = {'role': {'type': 'string'}, 'className': {'type': 'string'}, 'dashEvents': {'allowed': ['click'], 'type': ('string', 'number')}, 'hidden': {'type': 'string'}, 'spellCheck': {'type': 'string'}, 'id': {'type': 'string'}, 'lang': {'type': 'string'}, 'style': {'type': 'dict'}, 'useMap': {'type': 'string'}, 'alt': {'type': 'string'}, 'sizes': {'type': 'string'}, 'children': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}, {'schema': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}]}, 'type': 'list'}]}, 'height': {'type': 'string'}, 'fireEvent': {}, 'width': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'tabIndex': {'type': 'string'}, 'dir': {'type': 'string'}, 'n_clicks': {}, 'src': {'type': 'string'}, 'contextMenu': {'type': 'string'}, 'n_clicks_timestamp': {}, 'draggable': {'type': 'string'}, 'key': {'type': 'string'}, 'srcSet': {'type': 'string'}, 'accessKey': {'type': 'string'}, 'title': {'type': 'string'}, 'crossOrigin': {'type': 'string'}}
 
 class Img(Component):
     """A Img component.
 
 
 Keyword arguments:
-- children (a list of or a singular dash component, string or number; optional): The children of this component
+- children (string | number | boolean | dash component | a value equal to: null | list; optional): The children of this component
 - id (string; optional): The ID of this component, used to identify dash components
 in callbacks. The ID needs to be unique across all of the
 components in an app.
