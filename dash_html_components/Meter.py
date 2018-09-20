@@ -4,7 +4,7 @@ from dash.development.base_component import Component, _explicitize_args
 
 
 
-schema = {'role': {'type': 'string'}, 'low': {'type': 'string'}, 'max': {'type': 'string'}, 'value': {'type': 'string'}, 'dashEvents': {'allowed': ['click'], 'type': ('string', 'number')}, 'hidden': {'type': 'string'}, 'spellCheck': {'type': 'string'}, 'lang': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'min': {'type': 'string'}, 'key': {'type': 'string'}, 'optimum': {'type': 'string'}, 'style': {'type': 'dict'}, 'fireEvent': {}, 'className': {'type': 'string'}, 'tabIndex': {'type': 'string'}, 'dir': {'type': 'string'}, 'n_clicks': {}, 'n_clicks_timestamp': {}, 'contextMenu': {'type': 'string'}, 'title': {'type': 'string'}, 'form': {'type': 'string'}, 'draggable': {'type': 'string'}, 'children': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}, {'schema': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}]}, 'type': 'list'}]}, 'id': {'type': 'string'}, 'accessKey': {'type': 'string'}, 'high': {'type': 'string'}}
+schema = {'id': {'type': 'string'}, 'children': {'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'allowed': [None], 'type': ('string', 'number'), 'nullable': True}, {'type': 'list', 'schema': {'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'allowed': [None], 'type': ('string', 'number'), 'nullable': True}], 'nullable': True}}], 'nullable': True}, 'n_clicks': {}, 'n_clicks_timestamp': {}, 'key': {'type': 'string'}, 'role': {'type': 'string'}, 'form': {'type': 'string'}, 'high': {'type': 'string'}, 'low': {'type': 'string'}, 'max': {'type': 'string'}, 'min': {'type': 'string'}, 'optimum': {'type': 'string'}, 'value': {'type': 'string'}, 'accessKey': {'type': 'string'}, 'className': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'contextMenu': {'type': 'string'}, 'dir': {'type': 'string'}, 'draggable': {'type': 'string'}, 'hidden': {'type': 'string'}, 'lang': {'type': 'string'}, 'spellCheck': {'type': 'string'}, 'style': {'type': 'dict'}, 'tabIndex': {'type': 'string'}, 'title': {'type': 'string'}, 'fireEvent': {}, 'dashEvents': {'allowed': ['click'], 'type': ('string', 'number')}}
 
 class Meter(Component):
     """A Meter component.
@@ -61,12 +61,13 @@ Available events: 'click'"""
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()
         _locals.update(kwargs)  # For wildcard attrs
-        args = {k: _locals[k] for k in _explicit_args if k != 'children'}
+        args = {k: _locals[k] for k in _explicit_args}
 
         for k in []:
             if k not in args:
                 raise TypeError(
                     'Required argument `' + k + '` was not specified.')
+        args.pop('children', None)
         super(Meter, self).__init__(children=children, **args)
 
     def __repr__(self):

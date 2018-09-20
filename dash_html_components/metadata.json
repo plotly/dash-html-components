@@ -17523,7 +17523,7 @@
           "name": "string"
         },
         "required": false,
-        "description": ""
+        "description": "Defines a pragma directive."
       },
       "name": {
         "type": {

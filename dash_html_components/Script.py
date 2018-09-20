@@ -4,7 +4,7 @@ from dash.development.base_component import Component, _explicitize_args
 
 
 
-schema = {'role': {'type': 'string'}, 'async': {'type': 'string'}, 'className': {'type': 'string'}, 'dashEvents': {'allowed': ['click'], 'type': ('string', 'number')}, 'hidden': {'type': 'string'}, 'spellCheck': {'type': 'string'}, 'type': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'integrity': {'type': 'string'}, 'key': {'type': 'string'}, 'style': {'type': 'dict'}, 'fireEvent': {}, 'lang': {'type': 'string'}, 'src': {'type': 'string'}, 'id': {'type': 'string'}, 'tabIndex': {'type': 'string'}, 'dir': {'type': 'string'}, 'n_clicks': {}, 'contextMenu': {'type': 'string'}, 'n_clicks_timestamp': {}, 'draggable': {'type': 'string'}, 'charSet': {'type': 'string'}, 'children': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}, {'schema': {'nullable': True, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'allowed': [None], 'type': ('string', 'number')}]}, 'type': 'list'}]}, 'defer': {'type': 'string'}, 'accessKey': {'type': 'string'}, 'title': {'type': 'string'}, 'crossOrigin': {'type': 'string'}}
+schema = {'id': {'type': 'string'}, 'children': {'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'allowed': [None], 'type': ('string', 'number'), 'nullable': True}, {'type': 'list', 'schema': {'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'allowed': [None], 'type': ('string', 'number'), 'nullable': True}], 'nullable': True}}], 'nullable': True}, 'n_clicks': {}, 'n_clicks_timestamp': {}, 'key': {'type': 'string'}, 'role': {'type': 'string'}, 'async': {'type': 'string'}, 'charSet': {'type': 'string'}, 'crossOrigin': {'type': 'string'}, 'defer': {'type': 'string'}, 'integrity': {'type': 'string'}, 'src': {'type': 'string'}, 'type': {'type': 'string'}, 'accessKey': {'type': 'string'}, 'className': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'contextMenu': {'type': 'string'}, 'dir': {'type': 'string'}, 'draggable': {'type': 'string'}, 'hidden': {'type': 'string'}, 'lang': {'type': 'string'}, 'spellCheck': {'type': 'string'}, 'style': {'type': 'dict'}, 'tabIndex': {'type': 'string'}, 'title': {'type': 'string'}, 'fireEvent': {}, 'dashEvents': {'allowed': ['click'], 'type': ('string', 'number')}}
 
 class Script(Component):
     """A Script component.
@@ -49,7 +49,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info
 Available events: 'click'"""
     _schema = schema
     @_explicitize_args
-    def __init__(self, children=None, id=Component.UNDEFINED, n_clicks=Component.UNDEFINED, n_clicks_timestamp=Component.UNDEFINED, key=Component.UNDEFINED, role=Component.UNDEFINED, async=Component.UNDEFINED, charSet=Component.UNDEFINED, crossOrigin=Component.UNDEFINED, defer=Component.UNDEFINED, integrity=Component.UNDEFINED, src=Component.UNDEFINED, type=Component.UNDEFINED, accessKey=Component.UNDEFINED, className=Component.UNDEFINED, contentEditable=Component.UNDEFINED, contextMenu=Component.UNDEFINED, dir=Component.UNDEFINED, draggable=Component.UNDEFINED, hidden=Component.UNDEFINED, lang=Component.UNDEFINED, spellCheck=Component.UNDEFINED, style=Component.UNDEFINED, tabIndex=Component.UNDEFINED, title=Component.UNDEFINED, **kwargs):
+    def __init__(self, children=None, id=Component.UNDEFINED, n_clicks=Component.UNDEFINED, n_clicks_timestamp=Component.UNDEFINED, key=Component.UNDEFINED, role=Component.UNDEFINED, charSet=Component.UNDEFINED, crossOrigin=Component.UNDEFINED, defer=Component.UNDEFINED, integrity=Component.UNDEFINED, src=Component.UNDEFINED, type=Component.UNDEFINED, accessKey=Component.UNDEFINED, className=Component.UNDEFINED, contentEditable=Component.UNDEFINED, contextMenu=Component.UNDEFINED, dir=Component.UNDEFINED, draggable=Component.UNDEFINED, hidden=Component.UNDEFINED, lang=Component.UNDEFINED, spellCheck=Component.UNDEFINED, style=Component.UNDEFINED, tabIndex=Component.UNDEFINED, title=Component.UNDEFINED, **kwargs):
         self._prop_names = ['children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'aria-*', 'async', 'charSet', 'crossOrigin', 'defer', 'integrity', 'src', 'type', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title']
         self._type = 'Script'
         self._namespace = 'dash_html_components'
@@ -61,12 +61,13 @@ Available events: 'click'"""
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()
         _locals.update(kwargs)  # For wildcard attrs
-        args = {k: _locals[k] for k in _explicit_args if k != 'children'}
+        args = {k: _locals[k] for k in _explicit_args}
 
         for k in []:
             if k not in args:
                 raise TypeError(
                     'Required argument `' + k + '` was not specified.')
+        args.pop('children', None)
         super(Script, self).__init__(children=children, **args)
 
     def __repr__(self):

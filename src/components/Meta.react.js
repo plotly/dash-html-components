@@ -101,7 +101,7 @@ Meta.propTypes = {
     'content': PropTypes.string,
 
     /**
-     *
+     * Defines a pragma directive.
      */
     'httpEquiv': PropTypes.string,
 

@@ -295,7 +295,7 @@
             "elements": [
                 "meta"
             ],
-            "description": ""
+            "description": "Defines a pragma directive."
         },
         "icon": {
             "elements": [
