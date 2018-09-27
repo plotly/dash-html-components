@@ -4,7 +4,7 @@ from dash.development.base_component import Component, _explicitize_args
 
 
 
-schema = {'id': {'type': 'string'}, 'children': {'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'allowed': [None], 'type': ('string', 'number'), 'nullable': True}, {'type': 'list', 'schema': {'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'allowed': [None], 'type': ('string', 'number'), 'nullable': True}], 'nullable': True}}], 'nullable': True}, 'n_clicks': {}, 'n_clicks_timestamp': {}, 'key': {'type': 'string'}, 'role': {'type': 'string'}, 'accessKey': {'type': 'string'}, 'className': {'type': 'string'}, 'contentEditable': {'type': 'string'}, 'contextMenu': {'type': 'string'}, 'dir': {'type': 'string'}, 'draggable': {'type': 'string'}, 'hidden': {'type': 'string'}, 'lang': {'type': 'string'}, 'spellCheck': {'type': 'string'}, 'style': {'type': 'dict'}, 'tabIndex': {'type': 'string'}, 'title': {'type': 'string'}, 'fireEvent': {}, 'dashEvents': {'allowed': ['click'], 'type': ('string', 'number')}}
+schema = {'children': {'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'allowed': [None], 'type': ('string', 'number'), 'nullable': True}, {'type': 'list', 'schema': {'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'allowed': [None], 'type': ('string', 'number'), 'nullable': True}], 'nullable': True}}], 'nullable': True}}
 
 class Br(Component):
     """A Br component.
