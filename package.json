@@ -28,7 +28,7 @@
     "test": "./node_modules/.bin/eslint --fix src",
     "uninstall-local": "pip uninstall dash-html-components -y",
     "build:js": "webpack --mode production",
-    "build:py": "node ./extract-meta src/components > dash_html_components/metadata.json && copyfiles package.json dash_html_components"
+    "build:py": "node ./extract-meta src/components > dash_html_components/metadata.json && copyfiles package.json dash_html_components && npm run generate-python-classes"
   },
   "author": "Chris Parmer <chris@plot.ly>",
   "dependencies": {
