@@ -111,7 +111,7 @@ Script.propTypes = {
     'defer': PropTypes.string,
 
     /**
-     * Security Feature that allows browsers to verify what they fetch.    MDN Link
+     * Security Feature that allows browsers to verify what they fetch.
      */
     'integrity': PropTypes.string,
 
@@ -190,7 +190,9 @@ Script.propTypes = {
      */
     'fireEvent': PropTypes.func,
 
-    'dashEvents': PropTypes.oneOf(['click'])
+    'dashEvents': PropTypes.oneOf(['click']),
+    
+    'setProps': PropTypes.func
     
 };
 

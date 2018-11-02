@@ -274,6 +274,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -500,6 +507,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -732,6 +746,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -958,6 +979,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -1253,6 +1281,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -1482,6 +1517,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -1708,6 +1750,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -1989,6 +2038,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -2215,6 +2271,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -2461,6 +2524,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -2687,6 +2757,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -2919,6 +2996,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -3145,6 +3229,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -3377,6 +3468,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -3603,6 +3701,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -3842,6 +3947,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -4068,6 +4180,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -4349,6 +4468,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -4592,6 +4718,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -4818,6 +4951,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -5050,6 +5190,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -5279,6 +5426,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -5505,6 +5659,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -5744,6 +5905,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -5977,6 +6145,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -6244,6 +6419,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -6470,6 +6652,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -6702,6 +6891,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -6931,6 +7127,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -7157,6 +7360,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -7403,6 +7613,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -7639,6 +7856,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -7865,6 +8089,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -8097,6 +8328,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -8323,6 +8561,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -8555,6 +8800,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -8781,6 +9033,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -9013,6 +9272,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -9239,6 +9505,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -9499,6 +9772,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -9749,6 +10029,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -9975,6 +10262,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -10207,6 +10501,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -10436,6 +10737,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -10662,6 +10970,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -10957,6 +11272,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -11183,6 +11505,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -11415,6 +11744,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -11641,6 +11977,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -11873,6 +12216,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -12099,6 +12449,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -12331,6 +12688,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -12557,6 +12921,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -12789,6 +13160,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -13015,6 +13393,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -13247,6 +13632,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -13476,6 +13868,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -13702,6 +14101,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -13976,6 +14382,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -14142,7 +14555,7 @@
           "name": "string"
         },
         "required": false,
-        "description": ""
+        "description": "One or more responsive image candidates."
       },
       "useMap": {
         "type": {
@@ -14258,6 +14671,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -14504,6 +14924,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -14733,6 +15160,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -14959,6 +15393,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -15233,6 +15674,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -15476,6 +15924,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -15702,6 +16157,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -15941,6 +16403,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -16093,7 +16562,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Security Feature that allows browsers to verify what they fetch.    MDN Link"
+        "description": "Security Feature that allows browsers to verify what they fetch."
       },
       "media": {
         "type": {
@@ -16216,6 +16685,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -16448,6 +16924,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -16674,6 +17157,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -16913,6 +17403,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -17139,6 +17636,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -17375,6 +17879,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -17632,6 +18143,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -17913,6 +18431,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -18139,6 +18664,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -18371,6 +18903,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -18597,6 +19136,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -18829,6 +19375,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -19055,6 +19608,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -19329,6 +19889,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -19572,6 +20139,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -19805,6 +20379,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -20058,6 +20639,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -20308,6 +20896,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -20534,6 +21129,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -20780,6 +21382,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -21006,6 +21615,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -21238,6 +21854,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -21464,6 +22087,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -21717,6 +22347,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -21953,6 +22590,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -22179,6 +22823,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -22411,6 +23062,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -22637,6 +23295,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -22869,6 +23534,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -23095,6 +23767,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -23327,6 +24006,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -23556,6 +24242,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -23715,7 +24408,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Security Feature that allows browsers to verify what they fetch.    MDN Link"
+        "description": "Security Feature that allows browsers to verify what they fetch."
       },
       "src": {
         "type": {
@@ -23831,6 +24524,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -24060,6 +24760,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -24341,6 +25048,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -24567,6 +25281,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -24799,6 +25520,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -25028,6 +25756,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -25175,6 +25910,13 @@
         "required": false,
         "description": "The URL of the embeddable content."
       },
+      "srcSet": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "One or more responsive image candidates."
+      },
       "type": {
         "type": {
           "name": "string"
@@ -25282,6 +26024,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -25514,6 +26263,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -25740,6 +26496,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -25972,6 +26735,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -26198,6 +26968,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -26430,6 +27207,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -26659,6 +27443,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -26885,6 +27676,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -27124,6 +27922,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -27350,6 +28155,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -27603,6 +28415,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -27829,6 +28648,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -28152,6 +28978,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -28378,6 +29211,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -28638,6 +29478,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -28864,6 +29711,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -29103,6 +29957,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -29332,6 +30193,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -29558,6 +30426,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -29825,6 +30700,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -30051,6 +30933,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -30283,6 +31172,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -30509,6 +31405,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""
@@ -30811,6 +31714,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -31040,6 +31950,13 @@
         },
         "required": false,
         "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
       }
     }
   },
@@ -31266,6 +32183,13 @@
               "computed": false
             }
           ]
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
         },
         "required": false,
         "description": ""

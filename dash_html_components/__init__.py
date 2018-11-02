@@ -36,10 +36,11 @@ _this_module = _sys.modules[__name__]
 
 _js_dist = [
     {
-        "relative_package_path": "bundle.js",
+        "relative_package_path": '{}.min.js'.format(__name__),
+        "dev_package_path": '{}.dev.js'.format(__name__),
         "external_url": (
             "https://unpkg.com/dash-html-components@{}"
-            "/dash_html_components/bundle.js"
+            "/dash_html_components/dash_html_components.min.js"
         ).format(__version__),
         "namespace": "dash_html_components"
     }

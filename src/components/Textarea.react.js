@@ -220,7 +220,9 @@ Textarea.propTypes = {
      */
     'fireEvent': PropTypes.func,
 
-    'dashEvents': PropTypes.oneOf(['click'])
+    'dashEvents': PropTypes.oneOf(['click']),
+    
+    'setProps': PropTypes.func
     
 };
 
