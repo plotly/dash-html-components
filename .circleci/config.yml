@@ -24,17 +24,17 @@ jobs:
               python -m venv venv || virtualenv venv
 
       - restore_cache:
-          key: deps1-{{ .Branch }}-{{ checksum ".circleci/requirements/dev-requirements.txt" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "circlejob.txt" }}
+          key: deps1-{{ .Branch }}-{{ checksum "dev-requirements.txt" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "circlejob.txt" }}
 
       - run:
           name: Install dependencies
           command: |
               . venv/bin/activate
-              pip install -r .circleci/requirements/dev-requirements.txt
+              pip install -r dev-requirements.txt
               npm install --ignore-scripts
 
       - save_cache:
-          key: deps1-{{ .Branch }}-{{ checksum ".circleci/requirements/dev-requirements.txt" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "circlejob.txt" }}
+          key: deps1-{{ .Branch }}-{{ checksum "dev-requirements.txt" }}-{{ checksum "package.json" }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "circlejob.txt" }}
           paths:
               - "venv"
               - "node_modules"
