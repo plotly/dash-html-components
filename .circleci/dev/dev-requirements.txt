@@ -1,0 +1,5 @@
+pandas
+selenium
+dash
+dash-core-components
+percy
