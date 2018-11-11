@@ -2,7 +2,27 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.13.2] - 2018-09-21
+### Fixed
+- Fixes Python3.7 incompatibility with `0.13.0` and `0.13.1`.
+
+### Changed
+- Regenerated classes with Python3.7 to remove `async` keyword.
+
+## [0.13.1] - 2018-09-20
+### Fixed
+- Renamed `__init__.py` external_path to dash_html_components.min.js
+
+## [0.13.0] - 2018-09-20
+### Added
+- Unminified dev bundle support. [#64](https://github.com/plotly/dash-html-components/pull/64)
+
 ## Unreleased
+
+## [0.12.0] - 2018-06-01
+### Changed
+- `dash_html_components/__init__.py` now imports from python class files rather than generating classes at runtime,
+adding support for IDE auto complete etc.
 
 ## [0.11.0] - 2018-06-01
 ### Added
