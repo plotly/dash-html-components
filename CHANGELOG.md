@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.0-rc1] - 2018-11-12
+### Changed
+- Updated `react` and `react-dom` to version `16.6.1`. Upgrading to React 16 includes some small breaking changes, discussed [here](https://reactjs.org/blog/2017/09/26/react-v16.0.html#breaking-changes)
+
 ## [0.13.2] - 2018-09-21
 ### Fixed
 - Fixes Python3.7 incompatibility with `0.13.0` and `0.13.1`.
