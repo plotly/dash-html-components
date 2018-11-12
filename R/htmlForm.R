@@ -1,6 +1,6 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-htmlForm <- function(..., children=NULL, id=NULL, n_clicks=0, n_clicks_timestamp=-1, key=NULL, role=NULL, accept=NULL, acceptCharset=NULL, action=NULL, autoComplete=NULL, encType=NULL, method=NULL, name=NULL, noValidate=NULL, target=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, fireEvent=NULL, dashEvents=NULL) {
+htmlForm <- function(..., id=NULL, children=NULL, n_clicks=0, n_clicks_timestamp=-1, key=NULL, role=NULL, accept=NULL, acceptCharset=NULL, action=NULL, autoComplete=NULL, encType=NULL, method=NULL, name=NULL, noValidate=NULL, target=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, fireEvent=NULL, dashEvents=NULL) {
 
     component <- list(
       props = list(
@@ -8,7 +8,7 @@ htmlForm <- function(..., children=NULL, id=NULL, n_clicks=0, n_clicks_timestamp
       ),
       type = 'Form',
       namespace = 'dash_html_components',
-      propNames = c('children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'aria-*', 'accept', 'acceptCharset', 'action', 'autoComplete', 'encType', 'method', 'name', 'noValidate', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title'),
+      propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accept', 'acceptCharset', 'action', 'autoComplete', 'encType', 'method', 'name', 'noValidate', 'target', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
       package = 'dashHtmlComponents'
     )
 

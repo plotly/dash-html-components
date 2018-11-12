@@ -1,6 +1,6 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-htmlAudio <- function(..., children=NULL, id=NULL, n_clicks=0, n_clicks_timestamp=-1, key=NULL, role=NULL, autoPlay=NULL, controls=NULL, crossOrigin=NULL, loop=NULL, muted=NULL, preload=NULL, src=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, fireEvent=NULL, dashEvents=NULL) {
+htmlAudio <- function(..., id=NULL, children=NULL, n_clicks=0, n_clicks_timestamp=-1, key=NULL, role=NULL, autoPlay=NULL, controls=NULL, crossOrigin=NULL, loop=NULL, muted=NULL, preload=NULL, src=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, fireEvent=NULL, dashEvents=NULL) {
 
     component <- list(
       props = list(
@@ -8,7 +8,7 @@ htmlAudio <- function(..., children=NULL, id=NULL, n_clicks=0, n_clicks_timestam
       ),
       type = 'Audio',
       namespace = 'dash_html_components',
-      propNames = c('children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'aria-*', 'autoPlay', 'controls', 'crossOrigin', 'loop', 'muted', 'preload', 'src', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title'),
+      propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'autoPlay', 'controls', 'crossOrigin', 'loop', 'muted', 'preload', 'src', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
       package = 'dashHtmlComponents'
     )
 

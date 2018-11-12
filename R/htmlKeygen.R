@@ -1,6 +1,6 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-htmlKeygen <- function(..., children=NULL, id=NULL, n_clicks=0, n_clicks_timestamp=-1, key=NULL, role=NULL, autoFocus=NULL, challenge=NULL, disabled=NULL, form=NULL, keyType=NULL, name=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, fireEvent=NULL, dashEvents=NULL) {
+htmlKeygen <- function(..., id=NULL, children=NULL, n_clicks=0, n_clicks_timestamp=-1, key=NULL, role=NULL, autoFocus=NULL, challenge=NULL, disabled=NULL, form=NULL, keyType=NULL, name=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, fireEvent=NULL, dashEvents=NULL) {
 
     component <- list(
       props = list(
@@ -8,7 +8,7 @@ htmlKeygen <- function(..., children=NULL, id=NULL, n_clicks=0, n_clicks_timesta
       ),
       type = 'Keygen',
       namespace = 'dash_html_components',
-      propNames = c('children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'aria-*', 'autoFocus', 'challenge', 'disabled', 'form', 'keyType', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title'),
+      propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'autoFocus', 'challenge', 'disabled', 'form', 'keyType', 'name', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
       package = 'dashHtmlComponents'
     )
 
