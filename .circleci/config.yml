@@ -52,7 +52,6 @@ jobs:
       - run:
           name: Run tests
           command: |
-              npm run test
               . venv/bin/activate
               python --version
               python -m unittest tests.test_dash_html_components
