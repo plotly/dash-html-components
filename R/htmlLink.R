@@ -1,19 +1,17 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-htmlLink <- function(..., id=NULL, children=NULL, n_clicks=0, n_clicks_timestamp=-1, key=NULL, role=NULL, crossOrigin=NULL, href=NULL, hrefLang=NULL, integrity=NULL, media=NULL, rel=NULL, sizes=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, fireEvent=NULL, dashEvents=NULL) {
+htmlLink <- function(..., contentEditable=NULL, href=NULL, draggable=NULL, integrity=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, crossOrigin=NULL, title=NULL, media=NULL, accessKey=NULL, id=NULL, role=NULL, rel=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, sizes=NULL, hrefLang=NULL, className=NULL, dir=NULL) {
 
     component <- list(
-      props = list(
-         id=id, children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), n_clicks=n_clicks, n_clicks_timestamp=n_clicks_timestamp, key=key, role=role, crossOrigin=crossOrigin, href=href, hrefLang=hrefLang, integrity=integrity, media=media, rel=rel, sizes=sizes, accessKey=accessKey, className=className, contentEditable=contentEditable, contextMenu=contextMenu, dir=dir, draggable=draggable, hidden=hidden, lang=lang, spellCheck=spellCheck, style=style, tabIndex=tabIndex, title=title, fireEvent=fireEvent, dashEvents=dashEvents
-      ),
-      type = 'Link',
-      namespace = 'dash_html_components',
-      propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'crossOrigin', 'href', 'hrefLang', 'integrity', 'media', 'rel', 'sizes', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
-      package = 'dashHtmlComponents'
-    )
+        props = list(contentEditable=contentEditable, href=href, draggable=draggable, integrity=integrity, children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), tabIndex=tabIndex, n_clicks_timestamp=n_clicks_timestamp, style=style, crossOrigin=crossOrigin, title=title, media=media, accessKey=accessKey, id=id, role=role, rel=rel, hidden=hidden, spellCheck=spellCheck, contextMenu=contextMenu, key=key, n_clicks=n_clicks, lang=lang, sizes=sizes, hrefLang=hrefLang, className=className, dir=dir),
+        type = 'Link',
+        namespace = 'dash_html_components',
+        propNames = c('contentEditable', 'href', 'draggable', 'integrity', 'children', 'tabIndex', 'n_clicks_timestamp', 'style', 'crossOrigin', 'title', 'media', 'accessKey', 'id', 'role', 'rel', 'hidden', 'spellCheck', 'contextMenu', 'key', 'n_clicks', 'lang', 'sizes', 'hrefLang', 'className', 'dir'),
+        package = 'dashHtmlComponents'
+        )
 
     component$props <- filter_null(component$props)
     component <- append_wildcard_props(component, wildcards = c('data-*', 'aria-*'), ...)
 
     structure(component, class = c('dash_component', 'list'))
-    }
+}

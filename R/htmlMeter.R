@@ -1,19 +1,17 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-htmlMeter <- function(..., id=NULL, children=NULL, n_clicks=0, n_clicks_timestamp=-1, key=NULL, role=NULL, form=NULL, high=NULL, low=NULL, max=NULL, min=NULL, optimum=NULL, value=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, fireEvent=NULL, dashEvents=NULL) {
+htmlMeter <- function(..., contentEditable=NULL, high=NULL, draggable=NULL, optimum=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, min=NULL, accessKey=NULL, id=NULL, role=NULL, low=NULL, hidden=NULL, spellCheck=NULL, form=NULL, contextMenu=NULL, max=NULL, key=NULL, n_clicks=NULL, lang=NULL, title=NULL, value=NULL, className=NULL, dir=NULL) {
 
     component <- list(
-      props = list(
-         id=id, children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), n_clicks=n_clicks, n_clicks_timestamp=n_clicks_timestamp, key=key, role=role, form=form, high=high, low=low, max=max, min=min, optimum=optimum, value=value, accessKey=accessKey, className=className, contentEditable=contentEditable, contextMenu=contextMenu, dir=dir, draggable=draggable, hidden=hidden, lang=lang, spellCheck=spellCheck, style=style, tabIndex=tabIndex, title=title, fireEvent=fireEvent, dashEvents=dashEvents
-      ),
-      type = 'Meter',
-      namespace = 'dash_html_components',
-      propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'form', 'high', 'low', 'max', 'min', 'optimum', 'value', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
-      package = 'dashHtmlComponents'
-    )
+        props = list(contentEditable=contentEditable, high=high, draggable=draggable, optimum=optimum, children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), tabIndex=tabIndex, n_clicks_timestamp=n_clicks_timestamp, style=style, min=min, accessKey=accessKey, id=id, role=role, low=low, hidden=hidden, spellCheck=spellCheck, form=form, contextMenu=contextMenu, max=max, key=key, n_clicks=n_clicks, lang=lang, title=title, value=value, className=className, dir=dir),
+        type = 'Meter',
+        namespace = 'dash_html_components',
+        propNames = c('contentEditable', 'high', 'draggable', 'optimum', 'children', 'tabIndex', 'n_clicks_timestamp', 'style', 'min', 'accessKey', 'id', 'role', 'low', 'hidden', 'spellCheck', 'form', 'contextMenu', 'max', 'key', 'n_clicks', 'lang', 'title', 'value', 'className', 'dir'),
+        package = 'dashHtmlComponents'
+        )
 
     component$props <- filter_null(component$props)
     component <- append_wildcard_props(component, wildcards = c('data-*', 'aria-*'), ...)
 
     structure(component, class = c('dash_component', 'list'))
-    }
+}

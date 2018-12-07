@@ -1,19 +1,17 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-htmlTextarea <- function(..., id=NULL, children=NULL, n_clicks=0, n_clicks_timestamp=-1, key=NULL, role=NULL, autoComplete=NULL, autoFocus=NULL, cols=NULL, disabled=NULL, form=NULL, maxLength=NULL, minLength=NULL, name=NULL, placeholder=NULL, readOnly=NULL, required=NULL, rows=NULL, wrap=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, fireEvent=NULL, dashEvents=NULL) {
+htmlTextarea <- function(..., contentEditable=NULL, n_clicks=NULL, cols=NULL, disabled=NULL, draggable=NULL, wrap=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, rows=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, spellCheck=NULL, form=NULL, contextMenu=NULL, minLength=NULL, readOnly=NULL, key=NULL, maxLength=NULL, autoFocus=NULL, placeholder=NULL, lang=NULL, autoComplete=NULL, name=NULL, required=NULL, className=NULL, dir=NULL) {
 
     component <- list(
-      props = list(
-         id=id, children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), n_clicks=n_clicks, n_clicks_timestamp=n_clicks_timestamp, key=key, role=role, autoComplete=autoComplete, autoFocus=autoFocus, cols=cols, disabled=disabled, form=form, maxLength=maxLength, minLength=minLength, name=name, placeholder=placeholder, readOnly=readOnly, required=required, rows=rows, wrap=wrap, accessKey=accessKey, className=className, contentEditable=contentEditable, contextMenu=contextMenu, dir=dir, draggable=draggable, hidden=hidden, lang=lang, spellCheck=spellCheck, style=style, tabIndex=tabIndex, title=title, fireEvent=fireEvent, dashEvents=dashEvents
-      ),
-      type = 'Textarea',
-      namespace = 'dash_html_components',
-      propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'autoComplete', 'autoFocus', 'cols', 'disabled', 'form', 'maxLength', 'minLength', 'name', 'placeholder', 'readOnly', 'required', 'rows', 'wrap', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
-      package = 'dashHtmlComponents'
-    )
+        props = list(contentEditable=contentEditable, n_clicks=n_clicks, cols=cols, disabled=disabled, draggable=draggable, wrap=wrap, children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), tabIndex=tabIndex, n_clicks_timestamp=n_clicks_timestamp, style=style, rows=rows, title=title, accessKey=accessKey, id=id, role=role, hidden=hidden, spellCheck=spellCheck, form=form, contextMenu=contextMenu, minLength=minLength, readOnly=readOnly, key=key, maxLength=maxLength, autoFocus=autoFocus, placeholder=placeholder, lang=lang, autoComplete=autoComplete, name=name, required=required, className=className, dir=dir),
+        type = 'Textarea',
+        namespace = 'dash_html_components',
+        propNames = c('contentEditable', 'n_clicks', 'cols', 'disabled', 'draggable', 'wrap', 'children', 'tabIndex', 'n_clicks_timestamp', 'style', 'rows', 'title', 'accessKey', 'id', 'role', 'hidden', 'spellCheck', 'form', 'contextMenu', 'minLength', 'readOnly', 'key', 'maxLength', 'autoFocus', 'placeholder', 'lang', 'autoComplete', 'name', 'required', 'className', 'dir'),
+        package = 'dashHtmlComponents'
+        )
 
     component$props <- filter_null(component$props)
     component <- append_wildcard_props(component, wildcards = c('data-*', 'aria-*'), ...)
 
     structure(component, class = c('dash_component', 'list'))
-    }
+}

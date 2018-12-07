@@ -1,19 +1,17 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-htmlAudio <- function(..., id=NULL, children=NULL, n_clicks=0, n_clicks_timestamp=-1, key=NULL, role=NULL, autoPlay=NULL, controls=NULL, crossOrigin=NULL, loop=NULL, muted=NULL, preload=NULL, src=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, fireEvent=NULL, dashEvents=NULL) {
+htmlAudio <- function(..., contentEditable=NULL, draggable=NULL, children=NULL, autoPlay=NULL, n_clicks_timestamp=NULL, style=NULL, crossOrigin=NULL, title=NULL, muted=NULL, accessKey=NULL, controls=NULL, id=NULL, role=NULL, hidden=NULL, tabIndex=NULL, preload=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, src=NULL, className=NULL, loop=NULL, dir=NULL) {
 
     component <- list(
-      props = list(
-         id=id, children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), n_clicks=n_clicks, n_clicks_timestamp=n_clicks_timestamp, key=key, role=role, autoPlay=autoPlay, controls=controls, crossOrigin=crossOrigin, loop=loop, muted=muted, preload=preload, src=src, accessKey=accessKey, className=className, contentEditable=contentEditable, contextMenu=contextMenu, dir=dir, draggable=draggable, hidden=hidden, lang=lang, spellCheck=spellCheck, style=style, tabIndex=tabIndex, title=title, fireEvent=fireEvent, dashEvents=dashEvents
-      ),
-      type = 'Audio',
-      namespace = 'dash_html_components',
-      propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'autoPlay', 'controls', 'crossOrigin', 'loop', 'muted', 'preload', 'src', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
-      package = 'dashHtmlComponents'
-    )
+        props = list(contentEditable=contentEditable, draggable=draggable, children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), autoPlay=autoPlay, n_clicks_timestamp=n_clicks_timestamp, style=style, crossOrigin=crossOrigin, title=title, muted=muted, accessKey=accessKey, controls=controls, id=id, role=role, hidden=hidden, tabIndex=tabIndex, preload=preload, spellCheck=spellCheck, contextMenu=contextMenu, key=key, n_clicks=n_clicks, lang=lang, src=src, className=className, loop=loop, dir=dir),
+        type = 'Audio',
+        namespace = 'dash_html_components',
+        propNames = c('contentEditable', 'draggable', 'children', 'autoPlay', 'n_clicks_timestamp', 'style', 'crossOrigin', 'title', 'muted', 'accessKey', 'controls', 'id', 'role', 'hidden', 'tabIndex', 'preload', 'spellCheck', 'contextMenu', 'key', 'n_clicks', 'lang', 'src', 'className', 'loop', 'dir'),
+        package = 'dashHtmlComponents'
+        )
 
     component$props <- filter_null(component$props)
     component <- append_wildcard_props(component, wildcards = c('data-*', 'aria-*'), ...)
 
     structure(component, class = c('dash_component', 'list'))
-    }
+}

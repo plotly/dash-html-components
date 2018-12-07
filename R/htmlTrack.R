@@ -1,19 +1,17 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-htmlTrack <- function(..., id=NULL, children=NULL, n_clicks=0, n_clicks_timestamp=-1, key=NULL, role=NULL, default=NULL, kind=NULL, label=NULL, src=NULL, srcLang=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, fireEvent=NULL, dashEvents=NULL) {
+htmlTrack <- function(..., contentEditable=NULL, draggable=NULL, id=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, accessKey=NULL, label=NULL, role=NULL, srcLang=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, src=NULL, kind=NULL, default=NULL, className=NULL, dir=NULL) {
 
     component <- list(
-      props = list(
-         id=id, children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), n_clicks=n_clicks, n_clicks_timestamp=n_clicks_timestamp, key=key, role=role, default=default, kind=kind, label=label, src=src, srcLang=srcLang, accessKey=accessKey, className=className, contentEditable=contentEditable, contextMenu=contextMenu, dir=dir, draggable=draggable, hidden=hidden, lang=lang, spellCheck=spellCheck, style=style, tabIndex=tabIndex, title=title, fireEvent=fireEvent, dashEvents=dashEvents
-      ),
-      type = 'Track',
-      namespace = 'dash_html_components',
-      propNames = c('id', 'children', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'default', 'kind', 'label', 'src', 'srcLang', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', 'fireEvent', 'dashEvents'),
-      package = 'dashHtmlComponents'
-    )
+        props = list(contentEditable=contentEditable, draggable=draggable, id=id, children=c(children, assert_valid_children(..., wildcards = c('data-*', 'aria-*'))), tabIndex=tabIndex, n_clicks_timestamp=n_clicks_timestamp, style=style, title=title, accessKey=accessKey, label=label, role=role, srcLang=srcLang, hidden=hidden, spellCheck=spellCheck, contextMenu=contextMenu, key=key, n_clicks=n_clicks, lang=lang, src=src, kind=kind, default=default, className=className, dir=dir),
+        type = 'Track',
+        namespace = 'dash_html_components',
+        propNames = c('contentEditable', 'draggable', 'id', 'children', 'tabIndex', 'n_clicks_timestamp', 'style', 'title', 'accessKey', 'label', 'role', 'srcLang', 'hidden', 'spellCheck', 'contextMenu', 'key', 'n_clicks', 'lang', 'src', 'kind', 'default', 'className', 'dir'),
+        package = 'dashHtmlComponents'
+        )
 
     component$props <- filter_null(component$props)
     component <- append_wildcard_props(component, wildcards = c('data-*', 'aria-*'), ...)
 
     structure(component, class = c('dash_component', 'list'))
-    }
+}

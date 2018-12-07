@@ -2,72 +2,68 @@
 \name{htmlMeter}
 \alias{htmlMeter}
 \title{Meter component}
+\description{
+
+}
 \usage{
-htmlMeter(..., id=NULL, children=NULL, n_clicks=0, n_clicks_timestamp=-1, key=NULL, role=NULL, form=NULL, high=NULL, low=NULL, max=NULL, min=NULL, optimum=NULL, value=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, fireEvent=NULL, dashEvents=NULL)
+htmlMeter(..., contentEditable=NULL, high=NULL, draggable=NULL, optimum=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, min=NULL, accessKey=NULL, id=NULL, role=NULL, low=NULL, hidden=NULL, spellCheck=NULL, form=NULL, contextMenu=NULL, max=NULL, key=NULL, n_clicks=NULL, lang=NULL, title=NULL, value=NULL, className=NULL, dir=NULL)
 }
 \arguments{
-\item{id}{The ID of this component, used to identify dash components
-in callbacks. The ID needs to be unique across all of the
-components in an app.}
+\item{contentEditable}{Indicates whether the element's content is editable.}
+
+\item{high}{Indicates the lower bound of the upper range.}
+
+\item{draggable}{Defines whether the element can be dragged.}
+
+\item{optimum}{Indicates the optimal numeric value.}
 
 \item{children}{The children of this component}
 
-\item{n_clicks}{An integer that represents the number of times
-that this element has been clicked on.}
+\item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
 \item{n_clicks_timestamp}{An integer that represents the time (in ms since 1970)
 at which n_clicks changed. This can be used to tell
 which button was changed most recently.}
 
+\item{style}{Defines CSS styles which will override styles previously set.}
+
+\item{min}{Indicates the minimum value allowed.}
+
+\item{accessKey}{Defines a keyboard shortcut to activate or add focus to the element.}
+
+\item{id}{The ID of this component, used to identify dash components
+in callbacks. The ID needs to be unique across all of the
+components in an app.}
+
+\item{role}{The ARIA role attribute}
+
+\item{low}{Indicates the upper bound of the lower range.}
+
+\item{hidden}{Prevents rendering of given element, while keeping child elements, e.g. script elements, active.}
+
+\item{spellCheck}{Indicates whether spell checking is allowed for the element.}
+
+\item{form}{Indicates the form that is the owner of the element.}
+
+\item{contextMenu}{Defines the ID of a <menu> element which will serve as the element's context menu.}
+
+\item{max}{Indicates the maximum value allowed.}
+
 \item{key}{A unique identifier for the component, used to improve
 performance by React.js while rendering components
 See https://reactjs.org/docs/lists-and-keys.html for more info}
 
-\item{role}{The ARIA role attribute}
-
-\item{form}{Indicates the form that is the owner of the element.}
-
-\item{high}{Indicates the lower bound of the upper range.}
-
-\item{low}{Indicates the upper bound of the lower range.}
-
-\item{max}{Indicates the maximum value allowed.}
-
-\item{min}{Indicates the minimum value allowed.}
-
-\item{optimum}{Indicates the optimal numeric value.}
-
-\item{value}{Defines a default value which will be displayed in the element on page load.}
-
-\item{accessKey}{Defines a keyboard shortcut to activate or add focus to the element.}
-
-\item{className}{Often used with CSS to style elements with common properties.}
-
-\item{contentEditable}{Indicates whether the element's content is editable.}
-
-\item{contextMenu}{Defines the ID of a <menu> element which will serve as the element's context menu.}
-
-\item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
-
-\item{draggable}{Defines whether the element can be dragged.}
-
-\item{hidden}{Prevents rendering of given element, while keeping child elements, e.g. script elements, active.}
+\item{n_clicks}{An integer that represents the number of times
+that this element has been clicked on.}
 
 \item{lang}{Defines the language used in the element.}
 
-\item{spellCheck}{Indicates whether spell checking is allowed for the element.}
-
-\item{style}{Defines CSS styles which will override styles previously set.}
-
-\item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
-
 \item{title}{Text to be displayed in a tooltip when hovering over the element.}
 
-\item{fireEvent}{A callback for firing events to dash.}
+\item{value}{Defines a default value which will be displayed in the element on page load.}
 
-\item{dashEvents}{}
-}
-\description{
-Meter component
+\item{className}{Often used with CSS to style elements with common properties.}
+
+\item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
 }
     
