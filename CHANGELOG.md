@@ -5,6 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [1.0.0a1] - 2018-12-17
 ### Changed
  - Initial Dash 1.0 alpha release [#5](https://github.com/plotly/dash-core/issues/5)
+ 
+## [0.13.3] - 2018-12-17
+### Fixed
+- `n_clicks`/`n_clicks_timestamp` PropType changed from invalid `integer` to `number`.
+- omit `n_clicks`/`n_clicks_timestamp` from wrapped element props.
 
 ## [0.13.2] - 2018-09-21
 ### Fixed
