@@ -9,6 +9,7 @@ setup(
     author='Chris Parmer',
     author_email='chris@plot.ly',
     packages=['dash_html_components'],
+    url='https://github.com/plotly/dash-html-components',
     include_package_data=True,
     license='MIT',
     description='Dash UI HTML component suite',
