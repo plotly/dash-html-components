@@ -1,3 +1,4 @@
+import io
 from setuptools import setup
 
 main_ns = {}
@@ -13,5 +14,7 @@ setup(
     include_package_data=True,
     license='MIT',
     description='Dash UI HTML component suite',
+    long_description=io.open('README.md', encoding='utf-8').read(),
+    long_description_content_type='text/markdown',
     install_requires=['dash']
 )

@@ -5,7 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [UNRELEASED] - 2018-12-17
 ### Changed
 - Added `.idea`, `tests`, `dist`, `.circleci` to npmignore.
-- Added repository url to setup.py
+- Added repository url and long_description to setup.py
 
 ## [0.13.4] - 2018-12-17
 ### Fixed
