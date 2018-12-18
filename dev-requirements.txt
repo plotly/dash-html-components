@@ -1,6 +1,6 @@
 pandas
 selenium
-dash>=0.32.2
-dash-core-components
+dash==0.35.0rc1
+dash-core-components==0.42.0rc1
 percy
 pandas
