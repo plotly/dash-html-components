@@ -15,9 +15,9 @@ def main():
                 schema.pop(key)
         with open('dash_html_components/{}.py'.format(name), 'w') as f:
             f.write('\n'.join(
-                class_lines[:6] +
+                class_lines[:5] +
                 ['schema = {}'.format(schema)] +
-                class_lines[7:]
+                class_lines[6:]
             ))
 
 if __name__ == '__main__':
