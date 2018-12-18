@@ -1,6 +1,6 @@
 {
   "name": "dash-html-components",
-  "version": "0.13.3",
+  "version": "1.0.0-alpha1",
   "description": "Vanilla HTML components for Dash",
   "main": "lib/index.js",
   "repository": {
@@ -54,7 +54,7 @@
     "string": "^3.3.1"
   },
   "peerDependencies": {
-    "react": "^15.4.0 || ^16.0.0",
-    "react-dom": "^15.4.0 || ^16.0.0"
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
   }
 }
