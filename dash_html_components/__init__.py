@@ -5,6 +5,7 @@ from __future__ import print_function as _
 import os as _os
 import sys as _sys
 import dash as _dash
+import json
 
 from .version import __version__
 
@@ -33,16 +34,23 @@ _current_path = _os.path.dirname(_os.path.abspath(__file__))
 
 _this_module = _sys.modules[__name__]
 
+_basepath = _os.path.dirname(__file__)
+_filepath = _os.path.abspath(_os.path.join(_basepath, 'package.json'))
+with open(_filepath) as f:
+    package = json.load(f)
+
+js_package_name = package['name']
+py_package_name = __name__
+js_version = package['version']
 
 _js_dist = [
     {
-        "relative_package_path": '{}.min.js'.format(__name__),
-        "dev_package_path": '{}.dev.js'.format(__name__),
+        "relative_package_path": '{}.min.js'.format(py_package_name),
+        "dev_package_path": '{}.dev.js'.format(py_package_name),
         "external_url": (
-            "https://unpkg.com/dash-html-components@{}"
-            "/dash_html_components/dash_html_components.min.js"
-        ).format(__version__),
-        "namespace": "dash_html_components"
+            "https://unpkg.com/{}@{}/{}/{}.min.js"
+        ).format(js_package_name, js_version, py_package_name, py_package_name),
+        "namespace": py_package_name
     }
 ]
 

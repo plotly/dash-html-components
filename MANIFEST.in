@@ -2,5 +2,6 @@ include dash_html_components/dash_html_components.min.js
 include dash_html_components/dash_html_components.dev.js
 include dash_html_components/bundle.js.map
 include dash_html_components/metadata.json
+include dash_html_components/package.json
 include README.md
 include LICENSE.txt
