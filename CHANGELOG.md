@@ -2,6 +2,20 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [UNRELEASED] - 2018-12-17
+### Changed
+- Added `.idea`, `tests`, `dist`, `.circleci` to npmignore.
+- Added repository url and long_description to setup.py
+
+## [0.13.4] - 2018-12-17
+### Fixed
+- Fix build from wrong dash version.
+
+## [0.13.3] - 2018-12-17
+### Fixed
+- `n_clicks`/`n_clicks_timestamp` PropType changed from invalid `integer` to `number`.
+- omit `n_clicks`/`n_clicks_timestamp` from wrapped element props.
+
 ## [0.13.2] - 2018-09-21
 ### Fixed
 - Fixes Python3.7 incompatibility with `0.13.0` and `0.13.1`.

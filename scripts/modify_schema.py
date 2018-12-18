@@ -9,7 +9,7 @@ def main():
         name = componentPath.split('/').pop().split('.')[0]
         with open('dash_html_components/{}.py'.format(name), 'r') as f:
             class_lines = f.read().split('\n')
-        schema = eval(class_lines[6][9:])
+        schema = eval(class_lines[5][9:])
         for key in schema.copy().keys():
             if key != 'children':
                 schema.pop(key)

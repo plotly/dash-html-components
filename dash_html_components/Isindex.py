@@ -3,9 +3,8 @@
 from dash.development.base_component import Component, _explicitize_args
 
 
-
+schema = {'lang': {'required': False, 'type': 'string', 'nullable': False}, 'n_clicks_timestamp': {'required': False, 'type': 'number', 'nullable': False}, 'style': {'required': False, 'type': 'dict', 'nullable': False}, 'hidden': {'required': False, 'type': 'string', 'nullable': False}, 'contentEditable': {'required': False, 'type': 'string', 'nullable': False}, 'fireEvent': {'required': False, 'nullable': False}, 'contextMenu': {'required': False, 'type': 'string', 'nullable': False}, 'setProps': {'required': False, 'nullable': False}, 'accessKey': {'required': False, 'type': 'string', 'nullable': False}, 'title': {'required': False, 'type': 'string', 'nullable': False}, 'dashEvents': {'required': False, 'nullable': False, 'type': ('string', 'number'), 'allowed': ['click']}, 'children': {'required': False, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'type': ('string', 'number'), 'allowed': [None]}, {'type': 'list', 'schema': {'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'nullable': True, 'type': ('string', 'number'), 'allowed': [None]}], 'nullable': True}}], 'nullable': True}, 'className': {'required': False, 'type': 'string', 'nullable': False}, 'role': {'required': False, 'type': 'string', 'nullable': False}, 'draggable': {'required': False, 'type': 'string', 'nullable': False}, 'key': {'required': False, 'type': 'string', 'nullable': False}, 'spellCheck': {'required': False, 'type': 'string', 'nullable': False}, 'n_clicks': {'required': False, 'type': 'number', 'nullable': False}, 'id': {'required': False, 'type': 'string', 'nullable': False}, 'dir': {'required': False, 'type': 'string', 'nullable': False}, 'tabIndex': {'required': False, 'type': 'string', 'nullable': False}}
 schema = {'children': {'required': False, 'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'allowed': [None], 'type': ('string', 'number'), 'nullable': True}, {'type': 'list', 'schema': {'anyof': [{'type': 'string'}, {'type': 'number'}, {'type': 'boolean'}, {'type': 'component'}, {'allowed': [None], 'type': ('string', 'number'), 'nullable': True}], 'nullable': True}}], 'nullable': True}}
-
 class Isindex(Component):
     """A Isindex component.
 
@@ -15,9 +14,9 @@ Keyword arguments:
 - id (string; optional): The ID of this component, used to identify dash components
 in callbacks. The ID needs to be unique across all of the
 components in an app.
-- n_clicks (optional): An integer that represents the number of times
+- n_clicks (number; optional): An integer that represents the number of times
 that this element has been clicked on.
-- n_clicks_timestamp (optional): An integer that represents the time (in ms since 1970)
+- n_clicks_timestamp (number; optional): An integer that represents the time (in ms since 1970)
 at which n_clicks changed. This can be used to tell
 which button was changed most recently.
 - key (string; optional): A unique identifier for the component, used to improve
@@ -50,19 +49,12 @@ Available events: 'click'"""
         self.available_events = ['click']
         self.available_properties = ['children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'aria-*', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title']
         self.available_wildcard_properties =            ['data-', 'aria-']
-
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()
         _locals.update(kwargs)  # For wildcard attrs
         args = {k: _locals[k] for k in _explicit_args}
-
-        for k in []:
-            if k not in args:
-                raise TypeError(
-                    'Required argument `' + k + '` was not specified.')
         args.pop('children', None)
         super(Isindex, self).__init__(children=children, **args)
-
     def __repr__(self):
         if(any(getattr(self, c, None) is not None
                for c in self._prop_names
