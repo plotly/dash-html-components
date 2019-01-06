@@ -109,7 +109,7 @@ function generatePropTypes(element, attributes) {
     'fireEvent': PropTypes.func,
 
     'dashEvents': PropTypes.oneOf(['click']),
-    
+
     'setProps': PropTypes.func
     `
 }
@@ -174,7 +174,7 @@ function generateComponents(list, attributes) {
 function writeComponents(components, destination) {
     console.log(`Writing ${Object.keys(components).length} component files to ${srcPath}.`);
     let componentPath;
-    for (let Component in components) {
+    for (const Component in components) {
         componentPath = path.join(destination, `${Component}.react.js`);
         fs.writeFileSync(componentPath, components[Component]);
     }
@@ -192,7 +192,7 @@ if (!listPath) {
 const list = fs
     .readFileSync(listPath, 'utf8')
     .split('\n')
-    .filter(item => !!item);
+    .filter(item => Boolean(item));
 
 // Get the mapping of attributes to elements
 const attributes = JSON.parse(fs.readFileSync(attributesPath, 'utf-8'));
