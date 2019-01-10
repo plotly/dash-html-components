@@ -86,8 +86,7 @@ function generatePropTypes(element, attributes) {
     /**
      * A wildcard aria attribute
      */
-    'aria-*': PropTypes.string,
-    ` +
+    'aria-*': PropTypes.string,` +
 
     supportedAttributes.reduce((propTypes, attributeName) => {
         const attribute = attributes.attributes[attributeName];
@@ -103,15 +102,7 @@ function generatePropTypes(element, attributes) {
     '${attributeName}': PropTypes.${propType},`;
     }, '') + `
 
-    /**
-     * A callback for firing events to dash.
-     */
-    'fireEvent': PropTypes.func,
-
-    'dashEvents': PropTypes.oneOf(['click']),
-
-    'setProps': PropTypes.func
-    `
+    'setProps': PropTypes.func`
 }
 
 function generateComponent(Component, element, attributes) {
@@ -132,7 +123,6 @@ const ${Component} = (props) => {
                         n_clicks_timestamp: Date.now()
                     })
                 }
-                if (props.fireEvent) props.fireEvent({event: 'click'});
             }}
             {...omit(['n_clicks', 'n_clicks_timestamp'], props)}
         >
