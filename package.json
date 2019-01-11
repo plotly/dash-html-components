@@ -21,7 +21,7 @@
     "prepare": "npm run clean && npm run generate-components",
     "prepublishOnly": "npm run build:all",
     "publish-all": "node scripts/publish.js",
-    "lint": "eslint src",
+    "lint": "eslint src scripts",
     "build:js": "webpack --mode production",
     "build:js-dev": "webpack --mode development",
     "build:py": "node ./extract-meta src/components > dash_html_components/metadata.json && cp package.json dash_html_components && npm run generate-python-classes",
