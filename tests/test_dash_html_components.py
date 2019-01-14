@@ -39,5 +39,3 @@ class TestDashHtmlComponents(unittest.TestCase):
         self.assertEqual(
             layout._namespace, 'dash_html_components'
         )
-
-        self.assertEqual('error', 'test that we see this AND lint error')
