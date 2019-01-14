@@ -54,10 +54,7 @@ jobs:
           command: |
               . venv/bin/activate
               python --version
-              set +e
-              set +o pipefail
               npm run test
-              npm run lint
 
   "python-3.6":
     <<: *test-template
