@@ -2,9 +2,25 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+### Changed
+- Included 0.13.4 and 0.13.5 in v1
+
 ## [1.0.0a1] - 2018-12-17
 ### Changed
- - Initial Dash 1.0 alpha release [#5](https://github.com/plotly/dash-core/issues/5)
+- Initial Dash 1.0 alpha release [#5](https://github.com/plotly/dash-core/issues/5)
+
+## [0.13.5] - 2019-01-11
+### Changed
+- Added `.idea`, `tests`, `dist`, `.circleci` to npmignore.
+- Added repository url and long_description to setup.py
+
+### Removed
+- Removed click events - these have been obsolete since 0.7.0 [#89](https://github.com/plotly/dash-html-components/pull/89)
+
+## [0.13.4] - 2018-12-17
+### Fixed
+- Fix build from wrong dash version.
 
 ## [0.13.3] - 2018-12-17
 ### Fixed
