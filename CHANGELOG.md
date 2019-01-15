@@ -2,9 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+### Changed
+- Included 0.13.4 and 0.13.5 in v1
+
 ## [1.0.0a1] - 2018-12-17
 ### Changed
- - Initial Dash 1.0 alpha release [#5](https://github.com/plotly/dash-core/issues/5)
+- Initial Dash 1.0 alpha release [#5](https://github.com/plotly/dash-core/issues/5)
 
 ## [0.13.5] - 2019-01-11
 ### Changed
