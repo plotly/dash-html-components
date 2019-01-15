@@ -6,6 +6,18 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
  - Initial Dash 1.0 alpha release [#5](https://github.com/plotly/dash-core/issues/5)
 
+## [0.13.5] - 2019-01-11
+### Changed
+- Added `.idea`, `tests`, `dist`, `.circleci` to npmignore.
+- Added repository url and long_description to setup.py
+
+### Removed
+- Removed click events - these have been obsolete since 0.7.0 [#89](https://github.com/plotly/dash-html-components/pull/89)
+
+## [0.13.4] - 2018-12-17
+### Fixed
+- Fix build from wrong dash version.
+
 ## [0.13.3] - 2018-12-17
 ### Fixed
 - `n_clicks`/`n_clicks_timestamp` PropType changed from invalid `integer` to `number`.
