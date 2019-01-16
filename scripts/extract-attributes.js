@@ -3,7 +3,7 @@
 const fs = require('fs');
 const cheerio = require('cheerio');
 const request = require('request');
-const str = require('string');
+const S = require('string');
 
 const htmlURL = 'https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes';
 const dataPath = './data/attributes.json';
@@ -71,7 +71,7 @@ function extractAttributes($) {
             .replace(' ', ' ')
             .trim();
 
-        const htmlAttribute = str(attribute)
+        const htmlAttribute = S(attribute)
             .trim()
             // Convert e.g. `accept-charset` to `acceptCharset`
             .camelize()
@@ -79,12 +79,12 @@ function extractAttributes($) {
 
         // Skip `data-*` attributes
         if (htmlAttribute.indexOf('data') === 0) {
-            return;
+            return true;
         }
 
         // Ensure attribute is supported by React
         if (!attributeMap[htmlAttribute]) {
-            return;
+            return true;
         }
 
         // maxlength -> maxLength; class -> className
@@ -134,6 +134,5 @@ request(htmlURL, (error, response, html) => {
 
     // Print out JSON with 4-space indentation formatting.
     // http://stackoverflow.com/a/11276104
-    const tabWidth = 4;
-    fs.writeFileSync(dataPath, JSON.stringify(out, null, tabWidth));
+    fs.writeFileSync(dataPath, JSON.stringify(out, null, 4));
 });

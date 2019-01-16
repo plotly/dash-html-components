@@ -40,14 +40,7 @@ function extractElements($) {
             return list.concat(subList);
         }, [])
         .filter(element => excludeElements.indexOf(element) === -1)
-        .concat(addElements)
-        .sort()
-        .reduce((list, element) => {
-            if(!list.length || element !== list[list.length - 1]) {
-                list.push(element);
-            }
-            return list;
-        }, []);
+        .concat(addElements);
 }
 
 request(refUrl, (error, response, html) => {

@@ -295,7 +295,7 @@
             "elements": [
                 "meta"
             ],
-            "description": "Defines a pragma directive."
+            "description": ""
         },
         "icon": {
             "elements": [
@@ -314,7 +314,7 @@
                 "link",
                 "script"
             ],
-            "description": "Security Feature that allows browsers to verify what they fetch."
+            "description": "Security Feature that allows browsers to verify what they fetch.     MDN Link"
         },
         "keyType": {
             "elements": [
@@ -623,10 +623,9 @@
         },
         "srcSet": {
             "elements": [
-                "img",
-                "source"
+                "img"
             ],
-            "description": "One or more responsive image candidates."
+            "description": ""
         },
         "start": {
             "elements": [
@@ -1022,7 +1021,6 @@
             "media",
             "sizes",
             "src",
-            "srcSet",
             "type"
         ],
         "style": [

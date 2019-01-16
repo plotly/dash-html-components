@@ -1,7 +1,6 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import {omit} from 'ramda';
 
 const H2 = (props) => {
     return (
@@ -13,8 +12,9 @@ const H2 = (props) => {
                         n_clicks_timestamp: Date.now()
                     })
                 }
+                if (props.fireEvent) props.fireEvent({event: 'click'});
             }}
-            {...omit(['n_clicks', 'n_clicks_timestamp'], props)}
+            {...props}
         >
             {props.children}
         </h2>
@@ -43,14 +43,14 @@ H2.propTypes = {
      * An integer that represents the number of times
      * that this element has been clicked on.
      */
-    'n_clicks': PropTypes.number,
+    'n_clicks': PropTypes.integer,
 
     /**
      * An integer that represents the time (in ms since 1970)
      * at which n_clicks changed. This can be used to tell
      * which button was changed most recently.
      */
-    'n_clicks_timestamp': PropTypes.number,
+    'n_clicks_timestamp': PropTypes.integer,
 
     /**
      * A unique identifier for the component, used to improve
@@ -73,6 +73,7 @@ H2.propTypes = {
      * A wildcard aria attribute
      */
     'aria-*': PropTypes.string,
+    
 
     /**
      * Defines a keyboard shortcut to activate or add focus to the element.
@@ -134,7 +135,13 @@ H2.propTypes = {
      */
     'title': PropTypes.string,
 
-    'setProps': PropTypes.func
+    /**
+     * A callback for firing events to dash.
+     */
+    'fireEvent': PropTypes.func,
+
+    'dashEvents': PropTypes.oneOf(['click'])
+    
 };
 
 export default H2;

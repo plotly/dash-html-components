@@ -6,7 +6,4 @@ venv/
 *.pyc
 *.log
 .DS_Store
-.idea
-tests
-dist
-.circleci
+

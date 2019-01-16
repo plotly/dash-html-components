@@ -1,7 +1,6 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import {omit} from 'ramda';
 
 const Optgroup = (props) => {
     return (
@@ -13,8 +12,9 @@ const Optgroup = (props) => {
                         n_clicks_timestamp: Date.now()
                     })
                 }
+                if (props.fireEvent) props.fireEvent({event: 'click'});
             }}
-            {...omit(['n_clicks', 'n_clicks_timestamp'], props)}
+            {...props}
         >
             {props.children}
         </optgroup>
@@ -43,14 +43,14 @@ Optgroup.propTypes = {
      * An integer that represents the number of times
      * that this element has been clicked on.
      */
-    'n_clicks': PropTypes.number,
+    'n_clicks': PropTypes.integer,
 
     /**
      * An integer that represents the time (in ms since 1970)
      * at which n_clicks changed. This can be used to tell
      * which button was changed most recently.
      */
-    'n_clicks_timestamp': PropTypes.number,
+    'n_clicks_timestamp': PropTypes.integer,
 
     /**
      * A unique identifier for the component, used to improve
@@ -73,6 +73,7 @@ Optgroup.propTypes = {
      * A wildcard aria attribute
      */
     'aria-*': PropTypes.string,
+    
 
     /**
      * Indicates whether the user can interact with the element.
@@ -139,7 +140,13 @@ Optgroup.propTypes = {
      */
     'title': PropTypes.string,
 
-    'setProps': PropTypes.func
+    /**
+     * A callback for firing events to dash.
+     */
+    'fireEvent': PropTypes.func,
+
+    'dashEvents': PropTypes.oneOf(['click'])
+    
 };
 
 export default Optgroup;
