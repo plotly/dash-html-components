@@ -1,6 +1,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import {omit} from 'ramda';
 
 const Time = (props) => {
     return (
@@ -12,9 +13,8 @@ const Time = (props) => {
                         n_clicks_timestamp: Date.now()
                     })
                 }
-                if (props.fireEvent) props.fireEvent({event: 'click'});
             }}
-            {...props}
+            {...omit(['n_clicks', 'n_clicks_timestamp'], props)}
         >
             {props.children}
         </time>
@@ -43,14 +43,14 @@ Time.propTypes = {
      * An integer that represents the number of times
      * that this element has been clicked on.
      */
-    'n_clicks': PropTypes.integer,
+    'n_clicks': PropTypes.number,
 
     /**
      * An integer that represents the time (in ms since 1970)
      * at which n_clicks changed. This can be used to tell
      * which button was changed most recently.
      */
-    'n_clicks_timestamp': PropTypes.integer,
+    'n_clicks_timestamp': PropTypes.number,
 
     /**
      * A unique identifier for the component, used to improve
@@ -73,7 +73,6 @@ Time.propTypes = {
      * A wildcard aria attribute
      */
     'aria-*': PropTypes.string,
-    
 
     /**
      * Indicates the date and time associated with the element.
@@ -140,13 +139,7 @@ Time.propTypes = {
      */
     'title': PropTypes.string,
 
-    /**
-     * A callback for firing events to dash.
-     */
-    'fireEvent': PropTypes.func,
-
-    'dashEvents': PropTypes.oneOf(['click'])
-    
+    'setProps': PropTypes.func
 };
 
 export default Time;

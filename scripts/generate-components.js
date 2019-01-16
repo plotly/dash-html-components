@@ -57,14 +57,14 @@ function generatePropTypes(element, attributes) {
      * An integer that represents the number of times
      * that this element has been clicked on.
      */
-    'n_clicks': PropTypes.integer,
+    'n_clicks': PropTypes.number,
 
     /**
      * An integer that represents the time (in ms since 1970)
      * at which n_clicks changed. This can be used to tell
      * which button was changed most recently.
      */
-    'n_clicks_timestamp': PropTypes.integer,
+    'n_clicks_timestamp': PropTypes.number,
 
     /**
      * A unique identifier for the component, used to improve
@@ -86,8 +86,7 @@ function generatePropTypes(element, attributes) {
     /**
      * A wildcard aria attribute
      */
-    'aria-*': PropTypes.string,
-    ` +
+    'aria-*': PropTypes.string,` +
 
     supportedAttributes.reduce((propTypes, attributeName) => {
         const attribute = attributes.attributes[attributeName];
@@ -103,15 +102,7 @@ function generatePropTypes(element, attributes) {
     '${attributeName}': PropTypes.${propType},`;
     }, '') + `
 
-    /**
-     * A callback for firing events to dash.
-     */
-    'fireEvent': PropTypes.func,
-
-    'dashEvents': PropTypes.oneOf(['click']),
-    
-    'setProps': PropTypes.func
-    `
+    'setProps': PropTypes.func`
 }
 
 function generateComponent(Component, element, attributes) {
@@ -120,6 +111,7 @@ function generateComponent(Component, element, attributes) {
     return `
 import React from 'react';
 import PropTypes from 'prop-types';
+import {omit} from 'ramda';
 
 const ${Component} = (props) => {
     return (
@@ -131,9 +123,8 @@ const ${Component} = (props) => {
                         n_clicks_timestamp: Date.now()
                     })
                 }
-                if (props.fireEvent) props.fireEvent({event: 'click'});
             }}
-            {...props}
+            {...omit(['n_clicks', 'n_clicks_timestamp'], props)}
         >
             {props.children}
         </${element}>
@@ -173,7 +164,7 @@ function generateComponents(list, attributes) {
 function writeComponents(components, destination) {
     console.log(`Writing ${Object.keys(components).length} component files to ${srcPath}.`);
     let componentPath;
-    for (let Component in components) {
+    for (const Component in components) {
         componentPath = path.join(destination, `${Component}.react.js`);
         fs.writeFileSync(componentPath, components[Component]);
     }
@@ -191,7 +182,7 @@ if (!listPath) {
 const list = fs
     .readFileSync(listPath, 'utf8')
     .split('\n')
-    .filter(item => !!item);
+    .filter(item => Boolean(item));
 
 // Get the mapping of attributes to elements
 const attributes = JSON.parse(fs.readFileSync(attributesPath, 'utf-8'));
