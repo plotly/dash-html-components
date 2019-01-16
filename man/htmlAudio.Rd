@@ -1,19 +1,22 @@
 % Auto-generated: do not edit by hand
 \name{htmlAudio}
+
 \alias{htmlAudio}
+
 \title{Audio component}
+
 \description{
 
 }
+
 \usage{
-htmlAudio(..., contentEditable=NULL, draggable=NULL, children=NULL, autoPlay=NULL, n_clicks_timestamp=NULL, style=NULL, crossOrigin=NULL, title=NULL, muted=NULL, accessKey=NULL, controls=NULL, id=NULL, role=NULL, hidden=NULL, tabIndex=NULL, preload=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, src=NULL, className=NULL, loop=NULL, dir=NULL)
+htmlAudio(contentEditable=NULL, draggable=NULL, autoPlay=NULL, n_clicks_timestamp=NULL, style=NULL, crossOrigin=NULL, title=NULL, muted=NULL, accessKey=NULL, controls=NULL, id=NULL, role=NULL, hidden=NULL, tabIndex=NULL, preload=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, src=NULL, className=NULL, loop=NULL, dir=NULL, ...)
 }
+
 \arguments{
 \item{contentEditable}{Indicates whether the element's content is editable.}
 
 \item{draggable}{Defines whether the element can be dragged.}
-
-\item{children}{The children of this component}
 
 \item{autoPlay}{The audio or video should play as soon as possible.}
 
@@ -65,5 +68,6 @@ that this element has been clicked on.}
 \item{loop}{Indicates whether the media should start playing from the start when it's finished.}
 
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    

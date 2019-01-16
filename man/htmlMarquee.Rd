@@ -1,19 +1,22 @@
 % Auto-generated: do not edit by hand
 \name{htmlMarquee}
+
 \alias{htmlMarquee}
+
 \title{Marquee component}
+
 \description{
 
 }
+
 \usage{
-htmlMarquee(..., contentEditable=NULL, draggable=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, className=NULL, loop=NULL, dir=NULL)
+htmlMarquee(contentEditable=NULL, draggable=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, className=NULL, loop=NULL, dir=NULL, ...)
 }
+
 \arguments{
 \item{contentEditable}{Indicates whether the element's content is editable.}
 
 \item{draggable}{Defines whether the element can be dragged.}
-
-\item{children}{The children of this component}
 
 \item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
@@ -53,5 +56,6 @@ that this element has been clicked on.}
 \item{loop}{Indicates whether the media should start playing from the start when it's finished.}
 
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    

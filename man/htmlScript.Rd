@@ -1,13 +1,18 @@
 % Auto-generated: do not edit by hand
 \name{htmlScript}
+
 \alias{htmlScript}
+
 \title{Script component}
+
 \description{
 
 }
+
 \usage{
-htmlScript(..., defer=NULL, contentEditable=NULL, draggable=NULL, integrity=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, crossOrigin=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, type=NULL, spellCheck=NULL, contextMenu=NULL, charSet=NULL, key=NULL, n_clicks=NULL, lang=NULL, src=NULL, className=NULL, async=NULL, dir=NULL)
+htmlScript(defer=NULL, contentEditable=NULL, draggable=NULL, integrity=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, crossOrigin=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, type=NULL, spellCheck=NULL, contextMenu=NULL, charSet=NULL, key=NULL, n_clicks=NULL, lang=NULL, src=NULL, className=NULL, async=NULL, dir=NULL, ...)
 }
+
 \arguments{
 \item{defer}{Indicates that the script should be executed after the page has been parsed.}
 
@@ -16,8 +21,6 @@ htmlScript(..., defer=NULL, contentEditable=NULL, draggable=NULL, integrity=NULL
 \item{draggable}{Defines whether the element can be dragged.}
 
 \item{integrity}{Security Feature that allows browsers to verify what they fetch.     MDN Link}
-
-\item{children}{The children of this component}
 
 \item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
@@ -65,5 +68,6 @@ that this element has been clicked on.}
 \item{async}{Indicates that the script should be executed asynchronously.}
 
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    

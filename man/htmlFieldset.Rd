@@ -1,21 +1,24 @@
 % Auto-generated: do not edit by hand
 \name{htmlFieldset}
+
 \alias{htmlFieldset}
+
 \title{Fieldset component}
+
 \description{
 
 }
+
 \usage{
-htmlFieldset(..., contentEditable=NULL, disabled=NULL, draggable=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, spellCheck=NULL, form=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, name=NULL, className=NULL, dir=NULL)
+htmlFieldset(contentEditable=NULL, disabled=NULL, draggable=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, spellCheck=NULL, form=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, name=NULL, className=NULL, dir=NULL, ...)
 }
+
 \arguments{
 \item{contentEditable}{Indicates whether the element's content is editable.}
 
 \item{disabled}{Indicates whether the user can interact with the element.}
 
 \item{draggable}{Defines whether the element can be dragged.}
-
-\item{children}{The children of this component}
 
 \item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
@@ -57,5 +60,6 @@ that this element has been clicked on.}
 \item{className}{Often used with CSS to style elements with common properties.}
 
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    

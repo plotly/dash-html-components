@@ -1,13 +1,18 @@
 % Auto-generated: do not edit by hand
 \name{htmlArea}
+
 \alias{htmlArea}
+
 \title{Area component}
+
 \description{
 
 }
+
 \usage{
-htmlArea(..., contentEditable=NULL, shape=NULL, href=NULL, draggable=NULL, download=NULL, alt=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, media=NULL, accessKey=NULL, id=NULL, role=NULL, rel=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, target=NULL, hrefLang=NULL, className=NULL, coords=NULL, dir=NULL)
+htmlArea(contentEditable=NULL, shape=NULL, href=NULL, draggable=NULL, download=NULL, alt=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, media=NULL, accessKey=NULL, id=NULL, role=NULL, rel=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, target=NULL, hrefLang=NULL, className=NULL, coords=NULL, dir=NULL, ...)
 }
+
 \arguments{
 \item{contentEditable}{Indicates whether the element's content is editable.}
 
@@ -20,8 +25,6 @@ htmlArea(..., contentEditable=NULL, shape=NULL, href=NULL, draggable=NULL, downl
 \item{download}{Indicates that the hyperlink is to be used for downloading a resource.}
 
 \item{alt}{Alternative text in case an image can't be displayed.}
-
-\item{children}{The children of this component}
 
 \item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
@@ -69,5 +72,6 @@ that this element has been clicked on.}
 \item{coords}{A set of values specifying the coordinates of the hot-spot region.}
 
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    

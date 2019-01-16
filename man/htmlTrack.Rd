@@ -1,13 +1,18 @@
 % Auto-generated: do not edit by hand
 \name{htmlTrack}
+
 \alias{htmlTrack}
+
 \title{Track component}
+
 \description{
 
 }
+
 \usage{
-htmlTrack(..., contentEditable=NULL, draggable=NULL, id=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, accessKey=NULL, label=NULL, role=NULL, srcLang=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, src=NULL, kind=NULL, default=NULL, className=NULL, dir=NULL)
+htmlTrack(contentEditable=NULL, draggable=NULL, id=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, accessKey=NULL, label=NULL, role=NULL, srcLang=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, src=NULL, kind=NULL, default=NULL, className=NULL, dir=NULL, ...)
 }
+
 \arguments{
 \item{contentEditable}{Indicates whether the element's content is editable.}
 
@@ -16,8 +21,6 @@ htmlTrack(..., contentEditable=NULL, draggable=NULL, id=NULL, children=NULL, tab
 \item{id}{The ID of this component, used to identify dash components
 in callbacks. The ID needs to be unique across all of the
 components in an app.}
-
-\item{children}{The children of this component}
 
 \item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
@@ -61,5 +64,6 @@ that this element has been clicked on.}
 \item{className}{Often used with CSS to style elements with common properties.}
 
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    

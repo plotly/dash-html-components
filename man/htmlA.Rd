@@ -1,13 +1,18 @@
 % Auto-generated: do not edit by hand
 \name{htmlA}
+
 \alias{htmlA}
+
 \title{A component}
+
 \description{
 
 }
+
 \usage{
-htmlA(..., contentEditable=NULL, shape=NULL, href=NULL, draggable=NULL, download=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, media=NULL, accessKey=NULL, id=NULL, role=NULL, rel=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, target=NULL, hrefLang=NULL, className=NULL, dir=NULL)
+htmlA(contentEditable=NULL, shape=NULL, href=NULL, draggable=NULL, download=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, media=NULL, accessKey=NULL, id=NULL, role=NULL, rel=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, target=NULL, hrefLang=NULL, className=NULL, dir=NULL, ...)
 }
+
 \arguments{
 \item{contentEditable}{Indicates whether the element's content is editable.}
 
@@ -18,8 +23,6 @@ htmlA(..., contentEditable=NULL, shape=NULL, href=NULL, draggable=NULL, download
 \item{draggable}{Defines whether the element can be dragged.}
 
 \item{download}{Indicates that the hyperlink is to be used for downloading a resource.}
-
-\item{children}{The children of this component}
 
 \item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
@@ -65,5 +68,6 @@ that this element has been clicked on.}
 \item{className}{Often used with CSS to style elements with common properties.}
 
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    

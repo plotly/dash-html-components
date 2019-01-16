@@ -1,13 +1,18 @@
 % Auto-generated: do not edit by hand
 \name{htmlLink}
+
 \alias{htmlLink}
+
 \title{Link component}
+
 \description{
 
 }
+
 \usage{
-htmlLink(..., contentEditable=NULL, href=NULL, draggable=NULL, integrity=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, crossOrigin=NULL, title=NULL, media=NULL, accessKey=NULL, id=NULL, role=NULL, rel=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, sizes=NULL, hrefLang=NULL, className=NULL, dir=NULL)
+htmlLink(contentEditable=NULL, href=NULL, draggable=NULL, integrity=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, crossOrigin=NULL, title=NULL, media=NULL, accessKey=NULL, id=NULL, role=NULL, rel=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, sizes=NULL, hrefLang=NULL, className=NULL, dir=NULL, ...)
 }
+
 \arguments{
 \item{contentEditable}{Indicates whether the element's content is editable.}
 
@@ -16,8 +21,6 @@ htmlLink(..., contentEditable=NULL, href=NULL, draggable=NULL, integrity=NULL, c
 \item{draggable}{Defines whether the element can be dragged.}
 
 \item{integrity}{Security Feature that allows browsers to verify what they fetch.     MDN Link}
-
-\item{children}{The children of this component}
 
 \item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
@@ -65,5 +68,6 @@ that this element has been clicked on.}
 \item{className}{Often used with CSS to style elements with common properties.}
 
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    

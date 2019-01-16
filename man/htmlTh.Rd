@@ -1,21 +1,24 @@
 % Auto-generated: do not edit by hand
 \name{htmlTh}
+
 \alias{htmlTh}
+
 \title{Th component}
+
 \description{
 
 }
+
 \usage{
-htmlTh(..., contentEditable=NULL, rowSpan=NULL, draggable=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, colSpan=NULL, accessKey=NULL, id=NULL, role=NULL, scope=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, className=NULL, headers=NULL, dir=NULL)
+htmlTh(contentEditable=NULL, rowSpan=NULL, draggable=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, colSpan=NULL, accessKey=NULL, id=NULL, role=NULL, scope=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, className=NULL, headers=NULL, dir=NULL, ...)
 }
+
 \arguments{
 \item{contentEditable}{Indicates whether the element's content is editable.}
 
 \item{rowSpan}{Defines the number of rows a table cell should span over.}
 
 \item{draggable}{Defines whether the element can be dragged.}
-
-\item{children}{The children of this component}
 
 \item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
@@ -59,5 +62,6 @@ that this element has been clicked on.}
 \item{headers}{IDs of the <th> elements which applies to this element.}
 
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    

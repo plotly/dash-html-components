@@ -1,21 +1,24 @@
 % Auto-generated: do not edit by hand
 \name{htmlVideo}
+
 \alias{htmlVideo}
+
 \title{Video component}
+
 \description{
 
 }
+
 \usage{
-htmlVideo(..., contentEditable=NULL, height=NULL, draggable=NULL, children=NULL, autoPlay=NULL, n_clicks_timestamp=NULL, style=NULL, crossOrigin=NULL, title=NULL, muted=NULL, accessKey=NULL, controls=NULL, id=NULL, width=NULL, role=NULL, hidden=NULL, tabIndex=NULL, preload=NULL, spellCheck=NULL, contextMenu=NULL, poster=NULL, key=NULL, n_clicks=NULL, lang=NULL, src=NULL, className=NULL, dir=NULL, loop=NULL)
+htmlVideo(contentEditable=NULL, height=NULL, draggable=NULL, autoPlay=NULL, n_clicks_timestamp=NULL, style=NULL, crossOrigin=NULL, title=NULL, muted=NULL, accessKey=NULL, controls=NULL, id=NULL, width=NULL, role=NULL, hidden=NULL, tabIndex=NULL, preload=NULL, spellCheck=NULL, contextMenu=NULL, poster=NULL, key=NULL, n_clicks=NULL, lang=NULL, src=NULL, className=NULL, dir=NULL, loop=NULL, ...)
 }
+
 \arguments{
 \item{contentEditable}{Indicates whether the element's content is editable.}
 
 \item{height}{Specifies the height of elements listed here. For all other elements, use the CSS height property.        Note: In some instances, such as <div>, this is a legacy attribute, in which case the CSS height property should be used instead.}
 
 \item{draggable}{Defines whether the element can be dragged.}
-
-\item{children}{The children of this component}
 
 \item{autoPlay}{The audio or video should play as soon as possible.}
 
@@ -71,5 +74,6 @@ that this element has been clicked on.}
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
 
 \item{loop}{Indicates whether the media should start playing from the start when it's finished.}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    

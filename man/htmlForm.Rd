@@ -1,13 +1,18 @@
 % Auto-generated: do not edit by hand
 \name{htmlForm}
+
 \alias{htmlForm}
+
 \title{Form component}
+
 \description{
 
 }
+
 \usage{
-htmlForm(..., contentEditable=NULL, accept=NULL, autoComplete=NULL, draggable=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, method=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, target=NULL, lang=NULL, name=NULL, className=NULL, noValidate=NULL, action=NULL, acceptCharset=NULL, dir=NULL, encType=NULL)
+htmlForm(contentEditable=NULL, accept=NULL, autoComplete=NULL, draggable=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, method=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, target=NULL, lang=NULL, name=NULL, className=NULL, noValidate=NULL, action=NULL, acceptCharset=NULL, dir=NULL, encType=NULL, ...)
 }
+
 \arguments{
 \item{contentEditable}{Indicates whether the element's content is editable.}
 
@@ -16,8 +21,6 @@ htmlForm(..., contentEditable=NULL, accept=NULL, autoComplete=NULL, draggable=NU
 \item{autoComplete}{Indicates whether controls in this form can by default have their values automatically completed by the browser.}
 
 \item{draggable}{Defines whether the element can be dragged.}
-
-\item{children}{The children of this component}
 
 \item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
@@ -69,5 +72,6 @@ that this element has been clicked on.}
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
 
 \item{encType}{Defines the content type of the form date when the method is POST.}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    

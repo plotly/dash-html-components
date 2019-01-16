@@ -1,13 +1,18 @@
 % Auto-generated: do not edit by hand
 \name{htmlSelect}
+
 \alias{htmlSelect}
+
 \title{Select component}
+
 \description{
 
 }
+
 \usage{
-htmlSelect(..., contentEditable=NULL, n_clicks=NULL, disabled=NULL, draggable=NULL, spellCheck=NULL, children=NULL, size=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, tabIndex=NULL, multiple=NULL, form=NULL, contextMenu=NULL, key=NULL, autoFocus=NULL, lang=NULL, name=NULL, required=NULL, className=NULL, dir=NULL)
+htmlSelect(contentEditable=NULL, n_clicks=NULL, disabled=NULL, draggable=NULL, spellCheck=NULL, size=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, tabIndex=NULL, multiple=NULL, form=NULL, contextMenu=NULL, key=NULL, autoFocus=NULL, lang=NULL, name=NULL, required=NULL, className=NULL, dir=NULL, ...)
 }
+
 \arguments{
 \item{contentEditable}{Indicates whether the element's content is editable.}
 
@@ -19,8 +24,6 @@ that this element has been clicked on.}
 \item{draggable}{Defines whether the element can be dragged.}
 
 \item{spellCheck}{Indicates whether spell checking is allowed for the element.}
-
-\item{children}{The children of this component}
 
 \item{size}{Defines the width of the element (in pixels). If the element's type attribute is text or password then it's the number of characters.}
 
@@ -65,5 +68,6 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 \item{className}{Often used with CSS to style elements with common properties.}
 
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    

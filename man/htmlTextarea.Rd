@@ -1,13 +1,18 @@
 % Auto-generated: do not edit by hand
 \name{htmlTextarea}
+
 \alias{htmlTextarea}
+
 \title{Textarea component}
+
 \description{
 
 }
+
 \usage{
-htmlTextarea(..., contentEditable=NULL, n_clicks=NULL, cols=NULL, disabled=NULL, draggable=NULL, wrap=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, rows=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, spellCheck=NULL, form=NULL, contextMenu=NULL, minLength=NULL, readOnly=NULL, key=NULL, maxLength=NULL, autoFocus=NULL, placeholder=NULL, lang=NULL, autoComplete=NULL, name=NULL, required=NULL, className=NULL, dir=NULL)
+htmlTextarea(contentEditable=NULL, n_clicks=NULL, cols=NULL, disabled=NULL, draggable=NULL, wrap=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, rows=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, spellCheck=NULL, form=NULL, contextMenu=NULL, minLength=NULL, readOnly=NULL, key=NULL, maxLength=NULL, autoFocus=NULL, placeholder=NULL, lang=NULL, autoComplete=NULL, name=NULL, required=NULL, className=NULL, dir=NULL, ...)
 }
+
 \arguments{
 \item{contentEditable}{Indicates whether the element's content is editable.}
 
@@ -21,8 +26,6 @@ that this element has been clicked on.}
 \item{draggable}{Defines whether the element can be dragged.}
 
 \item{wrap}{Indicates whether the text should be wrapped.}
-
-\item{children}{The children of this component}
 
 \item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
@@ -77,5 +80,6 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 \item{className}{Often used with CSS to style elements with common properties.}
 
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    

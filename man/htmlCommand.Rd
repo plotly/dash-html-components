@@ -1,21 +1,24 @@
 % Auto-generated: do not edit by hand
 \name{htmlCommand}
+
 \alias{htmlCommand}
+
 \title{Command component}
+
 \description{
 
 }
+
 \usage{
-htmlCommand(..., contentEditable=NULL, disabled=NULL, className=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, checked=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, type=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, icon=NULL, lang=NULL, draggable=NULL, radioGroup=NULL, dir=NULL)
+htmlCommand(contentEditable=NULL, disabled=NULL, className=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, checked=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, type=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, icon=NULL, lang=NULL, draggable=NULL, radioGroup=NULL, dir=NULL, ...)
 }
+
 \arguments{
 \item{contentEditable}{Indicates whether the element's content is editable.}
 
 \item{disabled}{Indicates whether the user can interact with the element.}
 
 \item{className}{Often used with CSS to style elements with common properties.}
-
-\item{children}{The children of this component}
 
 \item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
@@ -61,5 +64,6 @@ that this element has been clicked on.}
 \item{radioGroup}{}
 
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    

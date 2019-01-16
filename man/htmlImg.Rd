@@ -1,13 +1,18 @@
 % Auto-generated: do not edit by hand
 \name{htmlImg}
+
 \alias{htmlImg}
+
 \title{Img component}
+
 \description{
 
 }
+
 \usage{
-htmlImg(..., contentEditable=NULL, height=NULL, draggable=NULL, alt=NULL, srcSet=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, crossOrigin=NULL, title=NULL, accessKey=NULL, id=NULL, width=NULL, role=NULL, useMap=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, src=NULL, sizes=NULL, className=NULL, dir=NULL)
+htmlImg(contentEditable=NULL, height=NULL, draggable=NULL, alt=NULL, srcSet=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, crossOrigin=NULL, title=NULL, accessKey=NULL, id=NULL, width=NULL, role=NULL, useMap=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, src=NULL, sizes=NULL, className=NULL, dir=NULL, ...)
 }
+
 \arguments{
 \item{contentEditable}{Indicates whether the element's content is editable.}
 
@@ -18,8 +23,6 @@ htmlImg(..., contentEditable=NULL, height=NULL, draggable=NULL, alt=NULL, srcSet
 \item{alt}{Alternative text in case an image can't be displayed.}
 
 \item{srcSet}{}
-
-\item{children}{The children of this component}
 
 \item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
@@ -67,5 +70,6 @@ that this element has been clicked on.}
 \item{className}{Often used with CSS to style elements with common properties.}
 
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    

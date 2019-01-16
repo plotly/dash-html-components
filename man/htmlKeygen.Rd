@@ -1,13 +1,18 @@
 % Auto-generated: do not edit by hand
 \name{htmlKeygen}
+
 \alias{htmlKeygen}
+
 \title{Keygen component}
+
 \description{
 
 }
+
 \usage{
-htmlKeygen(..., contentEditable=NULL, n_clicks=NULL, disabled=NULL, draggable=NULL, children=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, spellCheck=NULL, form=NULL, contextMenu=NULL, key=NULL, autoFocus=NULL, lang=NULL, name=NULL, challenge=NULL, className=NULL, keyType=NULL, dir=NULL)
+htmlKeygen(contentEditable=NULL, n_clicks=NULL, disabled=NULL, draggable=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, spellCheck=NULL, form=NULL, contextMenu=NULL, key=NULL, autoFocus=NULL, lang=NULL, name=NULL, challenge=NULL, className=NULL, keyType=NULL, dir=NULL, ...)
 }
+
 \arguments{
 \item{contentEditable}{Indicates whether the element's content is editable.}
 
@@ -17,8 +22,6 @@ that this element has been clicked on.}
 \item{disabled}{Indicates whether the user can interact with the element.}
 
 \item{draggable}{Defines whether the element can be dragged.}
-
-\item{children}{The children of this component}
 
 \item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
@@ -63,5 +66,6 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 \item{keyType}{Specifies the type of key generated.}
 
 \item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
+
+\item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
-    
