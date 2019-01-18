@@ -1,14 +1,14 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-htmlImg <- function(children=NULL, contentEditable=NULL, height=NULL, draggable=NULL, alt=NULL, srcSet=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, crossOrigin=NULL, title=NULL, accessKey=NULL, id=NULL, width=NULL, role=NULL, useMap=NULL, hidden=NULL, spellCheck=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, src=NULL, sizes=NULL, className=NULL, dir=NULL, ...) {
+htmlImg <- function(children=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL, role=NULL, aria-*=NULL, alt=NULL, crossOrigin=NULL, height=NULL, sizes=NULL, src=NULL, srcSet=NULL, useMap=NULL, width=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, dashEvents=NULL, ...) {
 
     wildcard_names = names(list(...))
     
     component <- list(
-        props = list(children=children, contentEditable=contentEditable, height=height, draggable=draggable, alt=alt, srcSet=srcSet, tabIndex=tabIndex, n_clicks_timestamp=n_clicks_timestamp, style=style, crossOrigin=crossOrigin, title=title, accessKey=accessKey, id=id, width=width, role=role, useMap=useMap, hidden=hidden, spellCheck=spellCheck, contextMenu=contextMenu, key=key, n_clicks=n_clicks, lang=lang, src=src, sizes=sizes, className=className, dir=dir, ...),
+        props = list(children=children, id=id, n_clicks=n_clicks, n_clicks_timestamp=n_clicks_timestamp, key=key, role=role, aria-*=aria-*, alt=alt, crossOrigin=crossOrigin, height=height, sizes=sizes, src=src, srcSet=srcSet, useMap=useMap, width=width, accessKey=accessKey, className=className, contentEditable=contentEditable, contextMenu=contextMenu, dir=dir, draggable=draggable, hidden=hidden, lang=lang, spellCheck=spellCheck, style=style, tabIndex=tabIndex, title=title, dashEvents=dashEvents, ...),
         type = 'Img',
         namespace = 'dash_html_components',
-        propNames = c('children', 'contentEditable', 'height', 'draggable', 'alt', 'srcSet', 'tabIndex', 'n_clicks_timestamp', 'style', 'crossOrigin', 'title', 'accessKey', 'id', 'width', 'role', 'useMap', 'hidden', 'spellCheck', 'contextMenu', 'key', 'n_clicks', 'lang', 'src', 'sizes', 'className', 'dir', wildcard_names),
+        propNames = c('children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'alt', 'crossOrigin', 'height', 'sizes', 'src', 'srcSet', 'useMap', 'width', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', wildcard_names),
         package = 'dashHtmlComponents'
         )
 

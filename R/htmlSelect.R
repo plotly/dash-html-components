@@ -1,14 +1,14 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-htmlSelect <- function(children=NULL, contentEditable=NULL, n_clicks=NULL, disabled=NULL, draggable=NULL, spellCheck=NULL, size=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, accessKey=NULL, id=NULL, role=NULL, hidden=NULL, tabIndex=NULL, multiple=NULL, form=NULL, contextMenu=NULL, key=NULL, autoFocus=NULL, lang=NULL, name=NULL, required=NULL, className=NULL, dir=NULL, ...) {
+htmlSelect <- function(children=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL, role=NULL, aria-*=NULL, autoFocus=NULL, disabled=NULL, form=NULL, multiple=NULL, name=NULL, required=NULL, size=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, dashEvents=NULL, ...) {
 
     wildcard_names = names(list(...))
     
     component <- list(
-        props = list(children=children, contentEditable=contentEditable, n_clicks=n_clicks, disabled=disabled, draggable=draggable, spellCheck=spellCheck, size=size, n_clicks_timestamp=n_clicks_timestamp, style=style, title=title, accessKey=accessKey, id=id, role=role, hidden=hidden, tabIndex=tabIndex, multiple=multiple, form=form, contextMenu=contextMenu, key=key, autoFocus=autoFocus, lang=lang, name=name, required=required, className=className, dir=dir, ...),
+        props = list(children=children, id=id, n_clicks=n_clicks, n_clicks_timestamp=n_clicks_timestamp, key=key, role=role, aria-*=aria-*, autoFocus=autoFocus, disabled=disabled, form=form, multiple=multiple, name=name, required=required, size=size, accessKey=accessKey, className=className, contentEditable=contentEditable, contextMenu=contextMenu, dir=dir, draggable=draggable, hidden=hidden, lang=lang, spellCheck=spellCheck, style=style, tabIndex=tabIndex, title=title, dashEvents=dashEvents, ...),
         type = 'Select',
         namespace = 'dash_html_components',
-        propNames = c('children', 'contentEditable', 'n_clicks', 'disabled', 'draggable', 'spellCheck', 'size', 'n_clicks_timestamp', 'style', 'title', 'accessKey', 'id', 'role', 'hidden', 'tabIndex', 'multiple', 'form', 'contextMenu', 'key', 'autoFocus', 'lang', 'name', 'required', 'className', 'dir', wildcard_names),
+        propNames = c('children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'autoFocus', 'disabled', 'form', 'multiple', 'name', 'required', 'size', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', wildcard_names),
         package = 'dashHtmlComponents'
         )
 
