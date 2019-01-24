@@ -10,64 +10,62 @@
 }
 
 \usage{
-htmlObjectEl(id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL, role=NULL, aria-*=NULL, form=NULL, height=NULL, name=NULL, type=NULL, useMap=NULL, width=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, ...)
+htmlObjectEl(contentEditable=NULL, height=NULL, draggable=NULL, tabIndex=NULL, n_clicks_timestamp=NULL, style=NULL, title=NULL, accessKey=NULL, id=NULL, width=NULL, role=NULL, useMap=NULL, hidden=NULL, type=NULL, spellCheck=NULL, form=NULL, contextMenu=NULL, key=NULL, n_clicks=NULL, lang=NULL, name=NULL, className=NULL, dir=NULL, ...)
 }
 
 \arguments{
-\item{id}{The ID of this component, used to identify dash components
-in callbacks. The ID needs to be unique across all of the
-components in an app.}
+\item{contentEditable}{Indicates whether the element's content is editable.}
 
-\item{n_clicks}{An integer that represents the number of times
-that this element has been clicked on.}
+\item{height}{Specifies the height of elements listed here. For all other elements, use the CSS height property.        Note: In some instances, such as <div>, this is a legacy attribute, in which case the CSS height property should be used instead.}
+
+\item{draggable}{Defines whether the element can be dragged.}
+
+\item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
 \item{n_clicks_timestamp}{An integer that represents the time (in ms since 1970)
 at which n_clicks changed. This can be used to tell
 which button was changed most recently.}
 
+\item{style}{Defines CSS styles which will override styles previously set.}
+
+\item{title}{Text to be displayed in a tooltip when hovering over the element.}
+
+\item{accessKey}{Defines a keyboard shortcut to activate or add focus to the element.}
+
+\item{id}{The ID of this component, used to identify dash components
+in callbacks. The ID needs to be unique across all of the
+components in an app.}
+
+\item{width}{For the elements listed here, this establishes the element's width.        Note: For all other instances, such as <div>, this is a legacy attribute, in which case the CSS width property should be used instead.}
+
+\item{role}{The ARIA role attribute}
+
+\item{useMap}{}
+
+\item{hidden}{Prevents rendering of given element, while keeping child elements, e.g. script elements, active.}
+
+\item{type}{Defines the type of the element.}
+
+\item{spellCheck}{Indicates whether spell checking is allowed for the element.}
+
+\item{form}{Indicates the form that is the owner of the element.}
+
+\item{contextMenu}{Defines the ID of a <menu> element which will serve as the element's context menu.}
+
 \item{key}{A unique identifier for the component, used to improve
 performance by React.js while rendering components
 See https://reactjs.org/docs/lists-and-keys.html for more info}
 
-\item{role}{The ARIA role attribute}
-
-\item{aria-*}{A wildcard aria attribute}
-
-\item{form}{Indicates the form that is the owner of the element.}
-
-\item{height}{Specifies the height of elements listed here. For all other elements, use the CSS height property.        Note: In some instances, such as <div>, this is a legacy attribute, in which case the CSS height property should be used instead.}
-
-\item{name}{Name of the element. For example used by the server to identify the fields in form submits.}
-
-\item{type}{Defines the type of the element.}
-
-\item{useMap}{}
-
-\item{width}{For the elements listed here, this establishes the element's width.        Note: For all other instances, such as <div>, this is a legacy attribute, in which case the CSS width property should be used instead.}
-
-\item{accessKey}{Defines a keyboard shortcut to activate or add focus to the element.}
-
-\item{className}{Often used with CSS to style elements with common properties.}
-
-\item{contentEditable}{Indicates whether the element's content is editable.}
-
-\item{contextMenu}{Defines the ID of a <menu> element which will serve as the element's context menu.}
-
-\item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
-
-\item{draggable}{Defines whether the element can be dragged.}
-
-\item{hidden}{Prevents rendering of given element, while keeping child elements, e.g. script elements, active.}
+\item{n_clicks}{An integer that represents the number of times
+that this element has been clicked on.}
 
 \item{lang}{Defines the language used in the element.}
 
-\item{spellCheck}{Indicates whether spell checking is allowed for the element.}
+\item{name}{Name of the element. For example used by the server to identify the fields in form submits.}
 
-\item{style}{Defines CSS styles which will override styles previously set.}
+\item{className}{Often used with CSS to style elements with common properties.}
 
-\item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
-
-\item{title}{Text to be displayed in a tooltip when hovering over the element.}
+\item{dir}{Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)}
 
 \item{...}{wildcards of the form: `data-*` or `aria-*`}
 }
