@@ -1,265 +1,265 @@
-from .Canvas import Canvas
-from .Plaintext import Plaintext
-from .Hr import Hr
-from .Fieldset import Fieldset
-from .B import B
-from .S import S
-from .Ruby import Ruby
-from .Audio import Audio
-from .Q import Q
-from .Section import Section
-from .Param import Param
-from .Td import Td
-from .Bdo import Bdo
-from .Button import Button
-from .Select import Select
-from .Dialog import Dialog
-from .Template import Template
-from .Blink import Blink
-from .Pre import Pre
-from .MapEl import MapEl
-from .Embed import Embed
-from .Noscript import Noscript
-from .Header import Header
-from .Element import Element
-from .Shadow import Shadow
-from .Table import Table
-from .Picture import Picture
-from .Isindex import Isindex
-from .Strike import Strike
-from .Ol import Ol
-from .Footer import Footer
-from .Optgroup import Optgroup
-from .Div import Div
-from .Kbd import Kbd
-from .H5 import H5
-from .Data import Data
-from .Hgroup import Hgroup
-from .Nav import Nav
-from .Link import Link
-from .Dl import Dl
+from .A import A
 from .Abbr import Abbr
-from .I import I
-from .Datalist import Datalist
-from .Br import Br
-from .Keygen import Keygen
-from .ObjectEl import ObjectEl
-from .P import P
-from .Script import Script
-from .H2 import H2
-from .U import U
-from .Rp import Rp
-from .Wbr import Wbr
-from .Li import Li
-from .Rtc import Rtc
-from .H4 import H4
-from .Base import Base
-from .Bdi import Bdi
-from .Frameset import Frameset
-from .Samp import Samp
-from .Details import Details
-from .H3 import H3
 from .Acronym import Acronym
-from .Form import Form
-from .Video import Video
-from .H1 import H1
-from .Meta import Meta
 from .Address import Address
+from .Area import Area
+from .Article import Article
+from .Aside import Aside
+from .Audio import Audio
+from .B import B
+from .Base import Base
+from .Basefont import Basefont
+from .Bdi import Bdi
+from .Bdo import Bdo
+from .Big import Big
+from .Blink import Blink
 from .Blockquote import Blockquote
-from .Figure import Figure
-from .Tr import Tr
-from .Multicol import Multicol
-from .Progress import Progress
-from .Font import Font
-from .Summary import Summary
-from .Track import Track
+from .Br import Br
+from .Button import Button
+from .Canvas import Canvas
+from .Caption import Caption
+from .Center import Center
+from .Cite import Cite
 from .Code import Code
-from .Xmp import Xmp
+from .Col import Col
+from .Colgroup import Colgroup
+from .Command import Command
+from .Content import Content
+from .Data import Data
+from .Datalist import Datalist
+from .Dd import Dd
 from .Del import Del
-from .Th import Th
-from .Var import Var
+from .Details import Details
+from .Dfn import Dfn
+from .Dialog import Dialog
+from .Div import Div
+from .Dl import Dl
+from .Dt import Dt
+from .Element import Element
+from .Em import Em
+from .Embed import Embed
+from .Fieldset import Fieldset
+from .Figcaption import Figcaption
+from .Figure import Figure
+from .Font import Font
+from .Footer import Footer
+from .Form import Form
 from .Frame import Frame
-from .Nextid import Nextid
-from .Rt import Rt
-from .Time import Time
-from .Meter import Meter
+from .Frameset import Frameset
+from .H1 import H1
+from .H2 import H2
+from .H3 import H3
+from .H4 import H4
+from .H5 import H5
+from .H6 import H6
+from .Header import Header
+from .Hgroup import Hgroup
+from .Hr import Hr
+from .I import I
+from .Iframe import Iframe
 from .Img import Img
 from .Ins import Ins
-from .Dd import Dd
-from .Big import Big
-from .Tbody import Tbody
-from .Em import Em
-from .Marquee import Marquee
-from .Dt import Dt
-from .A import A
-from .Basefont import Basefont
-from .Textarea import Textarea
-from .Dfn import Dfn
-from .Colgroup import Colgroup
-from .Figcaption import Figcaption
-from .Tfoot import Tfoot
-from .Cite import Cite
-from .Aside import Aside
-from .Command import Command
-from .Iframe import Iframe
-from .Ul import Ul
-from .H6 import H6
-from .Mark import Mark
-from .Sup import Sup
-from .Small import Small
-from .Content import Content
-from .Col import Col
-from .Nobr import Nobr
-from .Caption import Caption
-from .Title import Title
-from .Span import Span
-from .Rb import Rb
-from .Output import Output
-from .Sub import Sub
-from .Slot import Slot
-from .Center import Center
-from .Article import Article
-from .Listing import Listing
+from .Isindex import Isindex
+from .Kbd import Kbd
+from .Keygen import Keygen
 from .Label import Label
 from .Legend import Legend
-from .Strong import Strong
-from .Spacer import Spacer
-from .Thead import Thead
+from .Li import Li
+from .Link import Link
+from .Listing import Listing
 from .Main import Main
+from .MapEl import MapEl
+from .Mark import Mark
+from .Marquee import Marquee
+from .Meta import Meta
+from .Meter import Meter
+from .Multicol import Multicol
+from .Nav import Nav
+from .Nextid import Nextid
+from .Nobr import Nobr
+from .Noscript import Noscript
+from .ObjectEl import ObjectEl
+from .Ol import Ol
+from .Optgroup import Optgroup
 from .Option import Option
-from .Area import Area
+from .Output import Output
+from .P import P
+from .Param import Param
+from .Picture import Picture
+from .Plaintext import Plaintext
+from .Pre import Pre
+from .Progress import Progress
+from .Q import Q
+from .Rb import Rb
+from .Rp import Rp
+from .Rt import Rt
+from .Rtc import Rtc
+from .Ruby import Ruby
+from .S import S
+from .Samp import Samp
+from .Script import Script
+from .Section import Section
+from .Select import Select
+from .Shadow import Shadow
+from .Slot import Slot
+from .Small import Small
 from .Source import Source
+from .Spacer import Spacer
+from .Span import Span
+from .Strike import Strike
+from .Strong import Strong
+from .Sub import Sub
+from .Summary import Summary
+from .Sup import Sup
+from .Table import Table
+from .Tbody import Tbody
+from .Td import Td
+from .Template import Template
+from .Textarea import Textarea
+from .Tfoot import Tfoot
+from .Th import Th
+from .Thead import Thead
+from .Time import Time
+from .Title import Title
+from .Tr import Tr
+from .Track import Track
+from .U import U
+from .Ul import Ul
+from .Var import Var
+from .Video import Video
+from .Wbr import Wbr
+from .Xmp import Xmp
 
 __all__ = [
-    "Canvas",
-    "Plaintext",
-    "Hr",
-    "Fieldset",
-    "B",
-    "S",
-    "Ruby",
-    "Audio",
-    "Q",
-    "Section",
-    "Param",
-    "Td",
-    "Bdo",
-    "Button",
-    "Select",
-    "Dialog",
-    "Template",
-    "Blink",
-    "Pre",
-    "MapEl",
-    "Embed",
-    "Noscript",
-    "Header",
-    "Element",
-    "Shadow",
-    "Table",
-    "Picture",
-    "Isindex",
-    "Strike",
-    "Ol",
-    "Footer",
-    "Optgroup",
-    "Div",
-    "Kbd",
-    "H5",
-    "Data",
-    "Hgroup",
-    "Nav",
-    "Link",
-    "Dl",
+    "A",
     "Abbr",
-    "I",
-    "Datalist",
-    "Br",
-    "Keygen",
-    "ObjectEl",
-    "P",
-    "Script",
-    "H2",
-    "U",
-    "Rp",
-    "Wbr",
-    "Li",
-    "Rtc",
-    "H4",
-    "Base",
-    "Bdi",
-    "Frameset",
-    "Samp",
-    "Details",
-    "H3",
     "Acronym",
-    "Form",
-    "Video",
-    "H1",
-    "Meta",
     "Address",
+    "Area",
+    "Article",
+    "Aside",
+    "Audio",
+    "B",
+    "Base",
+    "Basefont",
+    "Bdi",
+    "Bdo",
+    "Big",
+    "Blink",
     "Blockquote",
-    "Figure",
-    "Tr",
-    "Multicol",
-    "Progress",
-    "Font",
-    "Summary",
-    "Track",
+    "Br",
+    "Button",
+    "Canvas",
+    "Caption",
+    "Center",
+    "Cite",
     "Code",
-    "Xmp",
+    "Col",
+    "Colgroup",
+    "Command",
+    "Content",
+    "Data",
+    "Datalist",
+    "Dd",
     "Del",
-    "Th",
-    "Var",
+    "Details",
+    "Dfn",
+    "Dialog",
+    "Div",
+    "Dl",
+    "Dt",
+    "Element",
+    "Em",
+    "Embed",
+    "Fieldset",
+    "Figcaption",
+    "Figure",
+    "Font",
+    "Footer",
+    "Form",
     "Frame",
-    "Nextid",
-    "Rt",
-    "Time",
-    "Meter",
+    "Frameset",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "Header",
+    "Hgroup",
+    "Hr",
+    "I",
+    "Iframe",
     "Img",
     "Ins",
-    "Dd",
-    "Big",
-    "Tbody",
-    "Em",
-    "Marquee",
-    "Dt",
-    "A",
-    "Basefont",
-    "Textarea",
-    "Dfn",
-    "Colgroup",
-    "Figcaption",
-    "Tfoot",
-    "Cite",
-    "Aside",
-    "Command",
-    "Iframe",
-    "Ul",
-    "H6",
-    "Mark",
-    "Sup",
-    "Small",
-    "Content",
-    "Col",
-    "Nobr",
-    "Caption",
-    "Title",
-    "Span",
-    "Rb",
-    "Output",
-    "Sub",
-    "Slot",
-    "Center",
-    "Article",
-    "Listing",
+    "Isindex",
+    "Kbd",
+    "Keygen",
     "Label",
     "Legend",
-    "Strong",
-    "Spacer",
-    "Thead",
+    "Li",
+    "Link",
+    "Listing",
     "Main",
+    "MapEl",
+    "Mark",
+    "Marquee",
+    "Meta",
+    "Meter",
+    "Multicol",
+    "Nav",
+    "Nextid",
+    "Nobr",
+    "Noscript",
+    "ObjectEl",
+    "Ol",
+    "Optgroup",
     "Option",
-    "Area",
-    "Source"
+    "Output",
+    "P",
+    "Param",
+    "Picture",
+    "Plaintext",
+    "Pre",
+    "Progress",
+    "Q",
+    "Rb",
+    "Rp",
+    "Rt",
+    "Rtc",
+    "Ruby",
+    "S",
+    "Samp",
+    "Script",
+    "Section",
+    "Select",
+    "Shadow",
+    "Slot",
+    "Small",
+    "Source",
+    "Spacer",
+    "Span",
+    "Strike",
+    "Strong",
+    "Sub",
+    "Summary",
+    "Sup",
+    "Table",
+    "Tbody",
+    "Td",
+    "Template",
+    "Textarea",
+    "Tfoot",
+    "Th",
+    "Thead",
+    "Time",
+    "Title",
+    "Tr",
+    "Track",
+    "U",
+    "Ul",
+    "Var",
+    "Video",
+    "Wbr",
+    "Xmp"
 ]

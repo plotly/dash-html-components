@@ -1,14 +1,14 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-htmlVar <- function(children=NULL, lang=NULL, n_clicks_timestamp=NULL, style=NULL, contentEditable=NULL, contextMenu=NULL, accessKey=NULL, title=NULL, hidden=NULL, className=NULL, role=NULL, draggable=NULL, key=NULL, spellCheck=NULL, n_clicks=NULL, id=NULL, dir=NULL, tabIndex=NULL, ...) {
-
-    wildcard_names = names(list(...))
+htmlVar <- function(children=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL, role=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, ...) {
     
+    wildcard_names = names(assert_valid_wildcards(...))
+
     component <- list(
-        props = list(children=children, lang=lang, n_clicks_timestamp=n_clicks_timestamp, style=style, contentEditable=contentEditable, contextMenu=contextMenu, accessKey=accessKey, title=title, hidden=hidden, className=className, role=role, draggable=draggable, key=key, spellCheck=spellCheck, n_clicks=n_clicks, id=id, dir=dir, tabIndex=tabIndex, ...),
+        props = list(children=children, id=id, n_clicks=n_clicks, n_clicks_timestamp=n_clicks_timestamp, key=key, role=role, accessKey=accessKey, className=className, contentEditable=contentEditable, contextMenu=contextMenu, dir=dir, draggable=draggable, hidden=hidden, lang=lang, spellCheck=spellCheck, style=style, tabIndex=tabIndex, title=title, ...),
         type = 'Var',
         namespace = 'dash_html_components',
-        propNames = c('children', 'lang', 'n_clicks_timestamp', 'style', 'contentEditable', 'contextMenu', 'accessKey', 'title', 'hidden', 'className', 'role', 'draggable', 'key', 'spellCheck', 'n_clicks', 'id', 'dir', 'tabIndex', wildcard_names),
+        propNames = c('children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title', wildcard_names),
         package = 'dashHtmlComponents'
         )
 

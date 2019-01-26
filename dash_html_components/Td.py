@@ -9,45 +9,42 @@ class Td(Component):
 
 Keyword arguments:
 - children (a list of or a singular dash component, string or number; optional): The children of this component
-- rowSpan (string; optional): Defines the number of rows a table cell should span over.
-- contentEditable (string; optional): Indicates whether the element's content is editable.
-- aria-* (string; optional): A wildcard aria attribute
-- className (string; optional): Often used with CSS to style elements with common properties.
-- data-* (string; optional): A wildcard data attribute
 - id (string; optional): The ID of this component, used to identify dash components
 in callbacks. The ID needs to be unique across all of the
 components in an app.
-- tabIndex (string; optional): Overrides the browser's default tab order and follows the one specified instead.
+- n_clicks (number; optional): An integer that represents the number of times
+that this element has been clicked on.
 - n_clicks_timestamp (number; optional): An integer that represents the time (in ms since 1970)
 at which n_clicks changed. This can be used to tell
 which button was changed most recently.
-- style (dict; optional): Defines CSS styles which will override styles previously set.
-- title (string; optional): Text to be displayed in a tooltip when hovering over the element.
-- colSpan (string; optional): The colspan attribute defines the number of columns a cell should span.
-- accessKey (string; optional): Defines a keyboard shortcut to activate or add focus to the element.
-- role (string; optional): The ARIA role attribute
-- hidden (string; optional): Prevents rendering of given element, while keeping child elements, e.g. script elements, active.
-- spellCheck (string; optional): Indicates whether spell checking is allowed for the element.
-- contextMenu (string; optional): Defines the ID of a <menu> element which will serve as the element's context menu.
 - key (string; optional): A unique identifier for the component, used to improve
 performance by React.js while rendering components
 See https://reactjs.org/docs/lists-and-keys.html for more info
-- n_clicks (number; optional): An integer that represents the number of times
-that this element has been clicked on.
-- lang (string; optional): Defines the language used in the element.
-- draggable (string; optional): Defines whether the element can be dragged.
+- role (string; optional): The ARIA role attribute
+- data-* (string; optional): A wildcard data attribute
+- aria-* (string; optional): A wildcard aria attribute
+- colSpan (string; optional): The colspan attribute defines the number of columns a cell should span.
 - headers (string; optional): IDs of the <th> elements which applies to this element.
+- rowSpan (string; optional): Defines the number of rows a table cell should span over.
+- accessKey (string; optional): Defines a keyboard shortcut to activate or add focus to the element.
+- className (string; optional): Often used with CSS to style elements with common properties.
+- contentEditable (string; optional): Indicates whether the element's content is editable.
+- contextMenu (string; optional): Defines the ID of a <menu> element which will serve as the element's context menu.
 - dir (string; optional): Defines the text direction. Allowed values are ltr (Left-To-Right) or rtl (Right-To-Left)
-
-Available events: """
+- draggable (string; optional): Defines whether the element can be dragged.
+- hidden (string; optional): Prevents rendering of given element, while keeping child elements, e.g. script elements, active.
+- lang (string; optional): Defines the language used in the element.
+- spellCheck (string; optional): Indicates whether spell checking is allowed for the element.
+- style (dict; optional): Defines CSS styles which will override styles previously set.
+- tabIndex (string; optional): Overrides the browser's default tab order and follows the one specified instead.
+- title (string; optional): Text to be displayed in a tooltip when hovering over the element."""
     @_explicitize_args
-    def __init__(self, children=None, contentEditable=Component.UNDEFINED, rowSpan=Component.UNDEFINED, draggable=Component.UNDEFINED, tabIndex=Component.UNDEFINED, n_clicks_timestamp=Component.UNDEFINED, style=Component.UNDEFINED, title=Component.UNDEFINED, colSpan=Component.UNDEFINED, accessKey=Component.UNDEFINED, id=Component.UNDEFINED, role=Component.UNDEFINED, hidden=Component.UNDEFINED, spellCheck=Component.UNDEFINED, contextMenu=Component.UNDEFINED, key=Component.UNDEFINED, n_clicks=Component.UNDEFINED, lang=Component.UNDEFINED, className=Component.UNDEFINED, headers=Component.UNDEFINED, dir=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'rowSpan', 'contentEditable', 'aria-*', 'className', 'data-*', 'id', 'tabIndex', 'n_clicks_timestamp', 'style', 'title', 'colSpan', 'accessKey', 'role', 'hidden', 'spellCheck', 'contextMenu', 'key', 'n_clicks', 'lang', 'draggable', 'headers', 'dir']
+    def __init__(self, children=None, id=Component.UNDEFINED, n_clicks=Component.UNDEFINED, n_clicks_timestamp=Component.UNDEFINED, key=Component.UNDEFINED, role=Component.UNDEFINED, colSpan=Component.UNDEFINED, headers=Component.UNDEFINED, rowSpan=Component.UNDEFINED, accessKey=Component.UNDEFINED, className=Component.UNDEFINED, contentEditable=Component.UNDEFINED, contextMenu=Component.UNDEFINED, dir=Component.UNDEFINED, draggable=Component.UNDEFINED, hidden=Component.UNDEFINED, lang=Component.UNDEFINED, spellCheck=Component.UNDEFINED, style=Component.UNDEFINED, tabIndex=Component.UNDEFINED, title=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'aria-*', 'colSpan', 'headers', 'rowSpan', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title']
         self._type = 'Td'
         self._namespace = 'dash_html_components'
         self._valid_wildcard_attributes =            ['data-', 'aria-']
-        self.available_events = []
-        self.available_properties = ['children', 'rowSpan', 'contentEditable', 'aria-*', 'className', 'data-*', 'id', 'tabIndex', 'n_clicks_timestamp', 'style', 'title', 'colSpan', 'accessKey', 'role', 'hidden', 'spellCheck', 'contextMenu', 'key', 'n_clicks', 'lang', 'draggable', 'headers', 'dir']
+        self.available_properties = ['children', 'id', 'n_clicks', 'n_clicks_timestamp', 'key', 'role', 'data-*', 'aria-*', 'colSpan', 'headers', 'rowSpan', 'accessKey', 'className', 'contentEditable', 'contextMenu', 'dir', 'draggable', 'hidden', 'lang', 'spellCheck', 'style', 'tabIndex', 'title']
         self.available_wildcard_properties =            ['data-', 'aria-']
 
         _explicit_args = kwargs.pop('_explicit_args')
