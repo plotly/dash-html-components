@@ -5,7 +5,7 @@
 \title{Vanilla HTML Components for Dash}
 \description{
 Dash is a web application framework that
-provides pure Python abstraction around HTML, CSS, and
+provides pure Python and R abstraction around HTML, CSS, and
 JavaScript. Instead of writing HTML or using an HTML
 templating engine, you compose your layout using R
 functions within the dashHtmlComponents package. The
