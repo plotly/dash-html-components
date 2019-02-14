@@ -6,7 +6,7 @@ import {omit} from 'ramda';
 const Main = (props) => {
     return (
         <main
-            data-dash-is-loading={props.loading_state.is_loading}
+            data-dash-is-loading={props.loading_state && props.loading_state.is_loading}
             onClick={() => {
                 if (props.setProps) {
                     props.setProps({
@@ -25,11 +25,6 @@ const Main = (props) => {
 Main.defaultProps = {
     n_clicks: 0,
     n_clicks_timestamp: -1,
-    loading_state: {
-        is_loading: false,
-        component_name: '',
-        prop_name: '',
-    }
 };
 
 Main.propTypes = {
