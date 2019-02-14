@@ -15,7 +15,7 @@ const S = (props) => {
                     })
                 }
             }}
-            {...omit(['n_clicks', 'n_clicks_timestamp'], props)}
+            {...omit(['n_clicks', 'n_clicks_timestamp', 'loading_state'], props)}
         >
             {props.children}
         </s>
