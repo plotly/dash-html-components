@@ -4,6 +4,11 @@ import PropTypes from 'prop-types';
 import {omit} from 'ramda';
 
 const Area = (props) => {
+    const dataAttributes = {};
+    if(props.loading_state && props.loading_state.is_loading) {
+        dataAttributes['data-dash-is-loading'] = true;
+    }
+
     return (
         <area
             onClick={() => {
@@ -14,7 +19,8 @@ const Area = (props) => {
                     })
                 }
             }}
-            {...omit(['n_clicks', 'n_clicks_timestamp'], props)}
+            {...omit(['n_clicks', 'n_clicks_timestamp', 'loading_state', 'setProps'], props)}
+            {...dataAttributes}
         >
             {props.children}
         </area>
