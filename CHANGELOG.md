@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.14.0] - 2019-03-04
+### Added
+- Added `data-dash-is-loading` attribute to all components, that holds the new `loading_state.is_loading` prop.
+
 ## [0.13.5] - 2019-01-11
 ### Changed
 - Added `.idea`, `tests`, `dist`, `.circleci` to npmignore.

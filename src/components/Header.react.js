@@ -19,7 +19,7 @@ const Header = (props) => {
                     })
                 }
             }}
-            {...omit(['n_clicks', 'n_clicks_timestamp', 'loading_state', 'setProps'], props)}
+            {...omit(['n_clicks', 'n_clicks_timestamp', 'loading_state'], props)}
             {...dataAttributes}
         >
             {props.children}
@@ -29,7 +29,7 @@ const Header = (props) => {
 
 Header.defaultProps = {
     n_clicks: 0,
-    n_clicks_timestamp: -1
+    n_clicks_timestamp: -1,
 };
 
 Header.propTypes = {
@@ -139,6 +139,24 @@ Header.propTypes = {
      * Text to be displayed in a tooltip when hovering over the element.
      */
     'title': PropTypes.string,
+
+    /**
+     * Object that holds the loading state object coming from dash-renderer
+     */
+    'loading_state': PropTypes.shape({
+        /**
+         * Determines if the component is loading or not
+         */
+        is_loading: PropTypes.bool,
+        /**
+         * Holds which property is loading
+         */
+        prop_name: PropTypes.string,
+        /**
+         * Holds the name of the component that is loading
+         */
+        component_name: PropTypes.string,
+    }),
 
     'setProps': PropTypes.func
 };
