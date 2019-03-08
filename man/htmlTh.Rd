@@ -10,7 +10,7 @@
 }
 
 \usage{
-htmlTh(id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL, role=NULL, colSpan=NULL, headers=NULL, rowSpan=NULL, scope=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, ...)
+htmlTh(id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL, role=NULL, colSpan=NULL, headers=NULL, rowSpan=NULL, scope=NULL, accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, loading_state=NULL, ...)
 }
 
 \arguments{
@@ -62,6 +62,8 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 \item{tabIndex}{Overrides the browser's default tab order and follows the one specified instead.}
 
 \item{title}{Text to be displayed in a tooltip when hovering over the element.}
+
+\item{loading_state}{Object that holds the loading state object coming from dash-renderer}
 
 \item{...}{wildcards: `data-*` or `aria-*`}
 }
