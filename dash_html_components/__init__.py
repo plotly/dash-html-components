@@ -4,7 +4,7 @@ from __future__ import print_function as _
 
 import os as _os
 import sys as _sys
-import dash as _dash
+import dash as _dash  # type: ignore
 
 from .version import __version__
 
@@ -46,7 +46,7 @@ _js_dist = [
     }
 ]
 
-_css_dist = []
+_css_dist = []  # type: ignore
 
 
 for _component in __all__:
