@@ -24,6 +24,7 @@
     "build:js": "webpack --mode production",
     "build:js-dev": "webpack --mode development",
     "build:py": "dash-generate-components ./src/components dash_html_components",
+    "build:dcs": "build-dash-components ./src/components dash_html_components --clean",
     "build:r": "dash-generate-components ./src/components dash_html_components --r-prefix 'html'",
     "build": "npm run build:js && npm run build:js-dev && npm run build:py",
     "build:watch": "watch 'npm run build' src",
