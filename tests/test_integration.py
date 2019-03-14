@@ -1,14 +1,6 @@
-import base64
-from datetime import datetime
-import io
-import itertools
 from multiprocessing import Value
 import os
-import pandas as pd
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 import sys
-from textwrap import dedent
 import time
 try:
     from urlparse import urlparse
@@ -18,10 +10,8 @@ except ImportError:
 import dash
 from dash.dependencies import Input, Output, State
 import dash_html_components as html
-import dash_core_components as dcc
 
 from .IntegrationTests import IntegrationTests
-from .utils import assert_clean_console
 
 
 class Tests(IntegrationTests):
