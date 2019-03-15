@@ -26,7 +26,7 @@ class Tests(IntegrationTests):
                 return self.driver.find_element_by_css_selector(selector)
             except Exception as e:
                 error = e
-            self.driver.implicitly_wait(1)
+            time.sleep(0.25)
         raise error
 
     def wait_for_text_to_equal(self, selector, assertion_text):
@@ -76,7 +76,6 @@ class Tests(IntegrationTests):
             '#container', 'You have clicked the button 1 times')
         self.assertEqual(call_count.value, 2)
         self.snapshot('button click')
-
 
     def test_click_prev(self):
         call_count = Value('i', 0)
