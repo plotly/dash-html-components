@@ -16,5 +16,7 @@ setup(
     description='Dash UI HTML component suite',
     long_description=io.open('README.md', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
-    install_requires=[]
+    install_requires=[
+        'dash-component-system==0.0.1rc1'
+    ]
 )

@@ -2,3 +2,4 @@ pandas
 selenium
 percy
 pandas
+dash-component-system==0.0.1rc1
