@@ -25,7 +25,7 @@ _js_dist = [
         "external_url": (
             "https://unpkg.com/dash-html-components@{}"
             "/dash_html_components/dash_html_components.min.js"
-        ).format(__version__),
+        ).format('0.15.0-rc1'),
         "namespace": "dash_html_components"
     }
 ]
