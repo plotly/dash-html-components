@@ -51,6 +51,7 @@
     "webpack-serve": "^2.0.2"
   },
   "devDependencies": {
+    "check-prop-types": "^1.1.2",
     "cheerio": "^0.20.0",
     "cross-env": "^5.2.0",
     "eslint": "^5.3.0",
