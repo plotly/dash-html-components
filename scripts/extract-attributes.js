@@ -33,12 +33,12 @@ const supportedAttributes = ['accept', 'accessKey', 'action',
 
 // Create a map of HTML attribute to React prop
 // e.g. {"datetime": "dateTime"}
-const attributeMap = supportedAttributes.reduce((map, reactAttribute) => {
-    const htmlAttribute = reactAttribute.toLowerCase();
-    map[htmlAttribute] = reactAttribute;
-
-    return map;
-},
+const attributeMap = supportedAttributes.reduce(
+    (map, reactAttribute) => {
+        const htmlAttribute = reactAttribute.toLowerCase();
+        map[htmlAttribute] = reactAttribute;
+        return map;
+    },
     // Start the map with two attributes that have special names in React, and
     // two attributes that already have camelCasing in HTML.
     {
@@ -120,11 +120,11 @@ function extractElements(attributes) {
 
 // A local copy of the MDN attributes web page has been saved for reference:
 // fs.readFile('./data/attributes.html', 'utf-8', (error, html) => {
-request(htmlURL, (error, response, html) => {
+request(htmlURL, (error, response, payload) => {
     if (error) {
         throw error;
     }
-    const $ = cheerio.load(html);
+    const $ = cheerio.load(payload);
     const attributes = extractAttributes($);
     const elements = extractElements(attributes);
     const out = {

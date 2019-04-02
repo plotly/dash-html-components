@@ -43,7 +43,20 @@ Spacer.propTypes = {
     /**
      * The children of this component
      */
-    'children': PropTypes.node,
+    'children': PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.null,
+        PropTypes.number,
+        PropTypes.node,
+        PropTypes.arrayOf(
+            PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.null,
+                PropTypes.number,
+                PropTypes.node,
+            ])
+        )
+    ]),
 
     /**
      * An integer that represents the number of times
