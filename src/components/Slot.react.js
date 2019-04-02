@@ -1,10 +1,14 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { assertPropTypes } from 'check-prop-types';
 import {omit} from 'ramda';
 
 const Slot = (props) => {
     const dataAttributes = {};
+
+    assertPropTypes(Slot.propTypes, props, 'component prop', 'Slot');
+
     if(props.loading_state && props.loading_state.is_loading) {
         dataAttributes['data-dash-is-loading'] = true;
     }

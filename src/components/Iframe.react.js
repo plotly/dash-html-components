@@ -1,10 +1,14 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { assertPropTypes } from 'check-prop-types';
 import {omit} from 'ramda';
 
 const Iframe = (props) => {
     const dataAttributes = {};
+
+    assertPropTypes(Iframe.propTypes, props, 'component prop', 'Iframe');
+
     if(props.loading_state && props.loading_state.is_loading) {
         dataAttributes['data-dash-is-loading'] = true;
     }

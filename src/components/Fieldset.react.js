@@ -1,10 +1,14 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { assertPropTypes } from 'check-prop-types';
 import {omit} from 'ramda';
 
 const Fieldset = (props) => {
     const dataAttributes = {};
+
+    assertPropTypes(Fieldset.propTypes, props, 'component prop', 'Fieldset');
+
     if(props.loading_state && props.loading_state.is_loading) {
         dataAttributes['data-dash-is-loading'] = true;
     }

@@ -129,10 +129,14 @@ function generateComponent(Component, element, attributes) {
     return `
 import React from 'react';
 import PropTypes from 'prop-types';
+import { assertPropTypes } from 'check-prop-types';
 import {omit} from 'ramda';
 
 const ${Component} = (props) => {
     const dataAttributes = {};
+
+    assertPropTypes(${Component}.propTypes, props, 'component prop', '${Component}');
+
     if(props.loading_state && props.loading_state.is_loading) {
         dataAttributes['data-dash-is-loading'] = true;
     }

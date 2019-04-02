@@ -1,10 +1,14 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { assertPropTypes } from 'check-prop-types';
 import {omit} from 'ramda';
 
 const Optgroup = (props) => {
     const dataAttributes = {};
+
+    assertPropTypes(Optgroup.propTypes, props, 'component prop', 'Optgroup');
+
     if(props.loading_state && props.loading_state.is_loading) {
         dataAttributes['data-dash-is-loading'] = true;
     }
