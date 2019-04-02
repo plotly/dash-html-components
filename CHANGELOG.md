@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+### Added
+- add props check in all HTML components, that any wrong type will be caught
+  and shown in dev tools with `debug=True` [#108](https://github.com/plotly/dash-html-components/pull/108)
+
 ## [0.15.0] - 2019-03-25
 ### Changed
 - Remove undefined `setProps` handling [#103](https://github.com/plotly/dash-html-components/pull/103)
