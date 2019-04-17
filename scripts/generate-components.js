@@ -10,10 +10,54 @@ const path = require('path');
 const srcPath = '../src/components';
 const attributesPath = './data/attributes.json';
 
+// Based off https://github.com/iandevlin/html-attributes/blob/master/boolean-attributes.json
+const BOOLEAN_PROPERTIES = [
+    'allowFullScreen',
+    'allowPaymentRequest',
+    'async',
+    'autoFocus',
+    'autoPlay',
+    'checked',
+    'controls',
+    'default',
+    'defer',
+    'disabled',
+    'formNoValidate',
+    'hidden',
+    'isMap',
+    'itemScope',
+    'loop',
+    'multiple',
+    'muted',
+    'noModule',
+    'noValidate',
+    'open',
+    'readonly',
+    'required',
+    'reversed',
+    'selected',
+    'typeMustMatch'
+];
+
 const PROP_TYPES = {
     _default: 'string',
-    style: 'object'
+    style: 'object',
 };
+BOOLEAN_PROPERTIES.forEach(property => {
+    let capitalizationOptions;
+    if (property.toLowerCase() !== property) {
+        capitalizationOptions = `${property}', '${property.toLowerCase()}', '${property.toUpperCase()}`
+    } else {
+        capitalizationOptions = `${property}', '${property.toUpperCase()}`
+    }
+    PROP_TYPES[property] = (
+        'oneOf([\n' +
+        `        PropTypes.oneOf('${capitalizationOptions}'),\n` +
+        '        PropTypes.bool\n' +
+        '     ])'
+    );
+})
+
 
 function bail(message) {
     console.error('Error: ' + message);
