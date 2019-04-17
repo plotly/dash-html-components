@@ -121,7 +121,10 @@ Select.propTypes = {
     /**
      * Defines the width of the element (in pixels). If the element's type attribute is text or password then it's the number of characters.
      */
-    'size': PropTypes.string,
+    'size': PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+     ]),
 
     /**
      * Defines a keyboard shortcut to activate or add focus to the element.

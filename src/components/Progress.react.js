@@ -84,7 +84,10 @@ Progress.propTypes = {
     /**
      * Indicates the maximum value allowed.
      */
-    'max': PropTypes.string,
+    'max': PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+     ]),
 
     /**
      * Defines a default value which will be displayed in the element on page load.

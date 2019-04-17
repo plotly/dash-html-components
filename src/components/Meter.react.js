@@ -94,12 +94,18 @@ Meter.propTypes = {
     /**
      * Indicates the maximum value allowed.
      */
-    'max': PropTypes.string,
+    'max': PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+     ]),
 
     /**
      * Indicates the minimum value allowed.
      */
-    'min': PropTypes.string,
+    'min': PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+     ]),
 
     /**
      * Indicates the optimal numeric value.
