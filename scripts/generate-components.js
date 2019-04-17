@@ -39,6 +39,26 @@ const BOOLEAN_PROPERTIES = [
     'typeMustMatch'
 ];
 
+// Based off reading through
+// "Some of the DOM attributes supported by React include" section in
+// https://reactjs.org/docs/dom-elements.html
+const NUMERIC_PROPERTIES = [
+    'width',
+    'height',
+    'marginWidth',
+    'marginHeight',
+    'max',
+    'maxLength',
+    'min',
+    'minLength',
+    'rows',
+    'rowSpan',
+    'cols',
+    'colSpan',
+    'size',
+    'step'
+];
+
 const PROP_TYPES = {
     _default: 'string',
     style: 'object',
@@ -57,7 +77,15 @@ BOOLEAN_PROPERTIES.forEach(property => {
         '     ])'
     );
 })
+NUMERIC_PROPERTIES.forEach(property => {
+    PROP_TYPES[property] = (
+        'oneOfType([\n' +
+        '        PropTypes.string,\n' +
+        '        PropTypes.number\n' +
+        '     ])'
+    );
 
+})
 
 function bail(message) {
     console.error('Error: ' + message);
