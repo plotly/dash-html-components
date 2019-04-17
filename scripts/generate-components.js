@@ -71,7 +71,7 @@ BOOLEAN_PROPERTIES.forEach(property => {
         capitalizationOptions = `${property}', '${property.toUpperCase()}`
     }
     PROP_TYPES[property] = (
-        'oneOf([\n' +
+        'oneOfType([\n' +
         `        PropTypes.oneOf('${capitalizationOptions}'),\n` +
         '        PropTypes.bool\n' +
         '     ])'
