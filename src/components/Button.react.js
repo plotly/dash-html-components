@@ -79,7 +79,7 @@ Button.propTypes = {
     /**
      * The element should be automatically focused after the page loaded.
      */
-    'autoFocus': PropTypes.oneOf([
+    'autoFocus': PropTypes.oneOfType([
         PropTypes.oneOf('autoFocus', 'autofocus', 'AUTOFOCUS'),
         PropTypes.bool
      ]),
@@ -87,7 +87,7 @@ Button.propTypes = {
     /**
      * Indicates whether the user can interact with the element.
      */
-    'disabled': PropTypes.oneOf([
+    'disabled': PropTypes.oneOfType([
         PropTypes.oneOf('disabled', 'DISABLED'),
         PropTypes.bool
      ]),
@@ -150,7 +150,7 @@ Button.propTypes = {
     /**
      * Prevents rendering of given element, while keeping child elements, e.g. script elements, active.
      */
-    'hidden': PropTypes.oneOf([
+    'hidden': PropTypes.oneOfType([
         PropTypes.oneOf('hidden', 'HIDDEN'),
         PropTypes.bool
      ]),

@@ -79,7 +79,7 @@ Marquee.propTypes = {
     /**
      * Indicates whether the media should start playing from the start when it's finished.
      */
-    'loop': PropTypes.oneOf([
+    'loop': PropTypes.oneOfType([
         PropTypes.oneOf('loop', 'LOOP'),
         PropTypes.bool
      ]),
@@ -117,7 +117,7 @@ Marquee.propTypes = {
     /**
      * Prevents rendering of given element, while keeping child elements, e.g. script elements, active.
      */
-    'hidden': PropTypes.oneOf([
+    'hidden': PropTypes.oneOfType([
         PropTypes.oneOf('hidden', 'HIDDEN'),
         PropTypes.bool
      ]),

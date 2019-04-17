@@ -79,7 +79,7 @@ Script.propTypes = {
     /**
      * Indicates that the script should be executed asynchronously.
      */
-    'async': PropTypes.oneOf([
+    'async': PropTypes.oneOfType([
         PropTypes.oneOf('async', 'ASYNC'),
         PropTypes.bool
      ]),
@@ -97,7 +97,7 @@ Script.propTypes = {
     /**
      * Indicates that the script should be executed after the page has been parsed.
      */
-    'defer': PropTypes.oneOf([
+    'defer': PropTypes.oneOfType([
         PropTypes.oneOf('defer', 'DEFER'),
         PropTypes.bool
      ]),
@@ -150,7 +150,7 @@ Script.propTypes = {
     /**
      * Prevents rendering of given element, while keeping child elements, e.g. script elements, active.
      */
-    'hidden': PropTypes.oneOf([
+    'hidden': PropTypes.oneOfType([
         PropTypes.oneOf('hidden', 'HIDDEN'),
         PropTypes.bool
      ]),

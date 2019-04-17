@@ -135,7 +135,7 @@ Th.propTypes = {
     /**
      * Prevents rendering of given element, while keeping child elements, e.g. script elements, active.
      */
-    'hidden': PropTypes.oneOf([
+    'hidden': PropTypes.oneOfType([
         PropTypes.oneOf('hidden', 'HIDDEN'),
         PropTypes.bool
      ]),

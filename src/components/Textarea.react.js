@@ -84,7 +84,7 @@ Textarea.propTypes = {
     /**
      * The element should be automatically focused after the page loaded.
      */
-    'autoFocus': PropTypes.oneOf([
+    'autoFocus': PropTypes.oneOfType([
         PropTypes.oneOf('autoFocus', 'autofocus', 'AUTOFOCUS'),
         PropTypes.bool
      ]),
@@ -100,7 +100,7 @@ Textarea.propTypes = {
     /**
      * Indicates whether the user can interact with the element.
      */
-    'disabled': PropTypes.oneOf([
+    'disabled': PropTypes.oneOfType([
         PropTypes.oneOf('disabled', 'DISABLED'),
         PropTypes.bool
      ]),
@@ -144,7 +144,7 @@ Textarea.propTypes = {
     /**
      * Indicates whether this element is required to fill out or not.
      */
-    'required': PropTypes.oneOf([
+    'required': PropTypes.oneOfType([
         PropTypes.oneOf('required', 'REQUIRED'),
         PropTypes.bool
      ]),
@@ -195,7 +195,7 @@ Textarea.propTypes = {
     /**
      * Prevents rendering of given element, while keeping child elements, e.g. script elements, active.
      */
-    'hidden': PropTypes.oneOf([
+    'hidden': PropTypes.oneOfType([
         PropTypes.oneOf('hidden', 'HIDDEN'),
         PropTypes.bool
      ]),
