@@ -79,7 +79,10 @@ Track.propTypes = {
     /**
      * Indicates that the track should be enabled unless the user's preferences indicate something different.
      */
-    'default': PropTypes.string,
+    'default': PropTypes.oneOf([
+        PropTypes.oneOf('default', 'DEFAULT'),
+        PropTypes.bool
+     ]),
 
     /**
      * Specifies the kind of text track.
@@ -134,7 +137,10 @@ Track.propTypes = {
     /**
      * Prevents rendering of given element, while keeping child elements, e.g. script elements, active.
      */
-    'hidden': PropTypes.string,
+    'hidden': PropTypes.oneOf([
+        PropTypes.oneOf('hidden', 'HIDDEN'),
+        PropTypes.bool
+     ]),
 
     /**
      * Defines the language used in the element.

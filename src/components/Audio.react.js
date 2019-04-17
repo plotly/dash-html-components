@@ -79,12 +79,18 @@ Audio.propTypes = {
     /**
      * The audio or video should play as soon as possible.
      */
-    'autoPlay': PropTypes.string,
+    'autoPlay': PropTypes.oneOf([
+        PropTypes.oneOf('autoPlay', 'autoplay', 'AUTOPLAY'),
+        PropTypes.bool
+     ]),
 
     /**
      * Indicates whether the browser should show playback controls to the user.
      */
-    'controls': PropTypes.string,
+    'controls': PropTypes.oneOf([
+        PropTypes.oneOf('controls', 'CONTROLS'),
+        PropTypes.bool
+     ]),
 
     /**
      * How the element handles cross-origin requests
@@ -94,12 +100,18 @@ Audio.propTypes = {
     /**
      * Indicates whether the media should start playing from the start when it's finished.
      */
-    'loop': PropTypes.string,
+    'loop': PropTypes.oneOf([
+        PropTypes.oneOf('loop', 'LOOP'),
+        PropTypes.bool
+     ]),
 
     /**
      * Indicates whether the audio will be initially silenced on page load.
      */
-    'muted': PropTypes.string,
+    'muted': PropTypes.oneOf([
+        PropTypes.oneOf('muted', 'MUTED'),
+        PropTypes.bool
+     ]),
 
     /**
      * Indicates whether the whole resource, parts of it or nothing should be preloaded.
@@ -144,7 +156,10 @@ Audio.propTypes = {
     /**
      * Prevents rendering of given element, while keeping child elements, e.g. script elements, active.
      */
-    'hidden': PropTypes.string,
+    'hidden': PropTypes.oneOf([
+        PropTypes.oneOf('hidden', 'HIDDEN'),
+        PropTypes.bool
+     ]),
 
     /**
      * Defines the language used in the element.

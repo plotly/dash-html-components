@@ -84,7 +84,10 @@ Textarea.propTypes = {
     /**
      * The element should be automatically focused after the page loaded.
      */
-    'autoFocus': PropTypes.string,
+    'autoFocus': PropTypes.oneOf([
+        PropTypes.oneOf('autoFocus', 'autofocus', 'AUTOFOCUS'),
+        PropTypes.bool
+     ]),
 
     /**
      * Defines the number of columns in a textarea.
@@ -94,7 +97,10 @@ Textarea.propTypes = {
     /**
      * Indicates whether the user can interact with the element.
      */
-    'disabled': PropTypes.string,
+    'disabled': PropTypes.oneOf([
+        PropTypes.oneOf('disabled', 'DISABLED'),
+        PropTypes.bool
+     ]),
 
     /**
      * Indicates the form that is the owner of the element.
@@ -129,7 +135,10 @@ Textarea.propTypes = {
     /**
      * Indicates whether this element is required to fill out or not.
      */
-    'required': PropTypes.string,
+    'required': PropTypes.oneOf([
+        PropTypes.oneOf('required', 'REQUIRED'),
+        PropTypes.bool
+     ]),
 
     /**
      * Defines the number of rows in a text area.
@@ -174,7 +183,10 @@ Textarea.propTypes = {
     /**
      * Prevents rendering of given element, while keeping child elements, e.g. script elements, active.
      */
-    'hidden': PropTypes.string,
+    'hidden': PropTypes.oneOf([
+        PropTypes.oneOf('hidden', 'HIDDEN'),
+        PropTypes.bool
+     ]),
 
     /**
      * Defines the language used in the element.
