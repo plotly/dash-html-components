@@ -1,6 +1,4 @@
 .tox
-build/
-dist/
 node_modules/
 .npm
 vv/
@@ -9,7 +7,8 @@ venv/
 *.egg-info
 *.log
 .DS_Store
-lib/bundle.js
-lib/bundle.js.map
-lib/metadata.json
 .idea
+
+dist/js/**
+dist/python/dist/**
+dist/python/dash_html_components.egg-info/**
