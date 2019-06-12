@@ -16,3 +16,4 @@ htmlHr <- function(children=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NUL
 
     structure(component, class = c('dash_component', 'list'))
 }
+
