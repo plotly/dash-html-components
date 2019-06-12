@@ -83,4 +83,3 @@ those elements have the following types:
 
 \item{...}{wildcards: `data-*` or `aria-*`}
 }
-

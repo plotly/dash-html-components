@@ -7,4 +7,3 @@ stylesheet = NULL, head = NULL, attachment = NULL, package = "dashHtmlComponents
 all_files = FALSE), class = "html_dependency"))
 return(deps_metadata)
 }
-
