@@ -6,7 +6,7 @@
 \title{MapEl component}
 
 \description{
-
+MapEl is a wrapper for the <map> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map
 }
 
 \usage{

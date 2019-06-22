@@ -6,7 +6,7 @@
 \title{Slot component}
 
 \description{
-
+Slot is a wrapper for the <slot> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot
 }
 
 \usage{

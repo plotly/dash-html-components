@@ -6,7 +6,7 @@
 \title{Del component}
 
 \description{
-
+Del is a wrapper for the <del> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del
 }
 
 \usage{

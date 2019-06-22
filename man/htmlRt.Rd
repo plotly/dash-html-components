@@ -6,7 +6,7 @@
 \title{Rt component}
 
 \description{
-
+Rt is a wrapper for the <rt> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rt
 }
 
 \usage{

@@ -6,7 +6,7 @@
 \title{Iframe component}
 
 \description{
-
+Iframe is a wrapper for the <iframe> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
 }
 
 \usage{

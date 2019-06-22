@@ -6,7 +6,7 @@
 \title{Span component}
 
 \description{
-
+Span is a wrapper for the <span> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span
 }
 
 \usage{

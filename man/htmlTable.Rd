@@ -6,7 +6,7 @@
 \title{Table component}
 
 \description{
-
+Table is a wrapper for the <table> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
 }
 
 \usage{

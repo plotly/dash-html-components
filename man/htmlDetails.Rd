@@ -6,7 +6,7 @@
 \title{Details component}
 
 \description{
-
+Details is a wrapper for the <details> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
 }
 
 \usage{

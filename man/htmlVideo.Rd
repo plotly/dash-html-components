@@ -6,7 +6,7 @@
 \title{Video component}
 
 \description{
-
+Video is a wrapper for the <video> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
 }
 
 \usage{

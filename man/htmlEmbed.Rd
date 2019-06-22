@@ -6,7 +6,7 @@
 \title{Embed component}
 
 \description{
-
+Embed is a wrapper for the <embed> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed
 }
 
 \usage{

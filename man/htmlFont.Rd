@@ -6,7 +6,7 @@
 \title{Font component}
 
 \description{
-
+Font is a wrapper for the <font> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font
 }
 
 \usage{

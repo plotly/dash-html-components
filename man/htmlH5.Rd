@@ -6,7 +6,7 @@
 \title{H5 component}
 
 \description{
-
+H5 is a wrapper for the <h5> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h5
 }
 
 \usage{

@@ -6,7 +6,7 @@
 \title{Ul component}
 
 \description{
-
+Ul is a wrapper for the <ul> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
 }
 
 \usage{

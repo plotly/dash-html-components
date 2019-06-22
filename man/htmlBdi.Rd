@@ -6,7 +6,7 @@
 \title{Bdi component}
 
 \description{
-
+Bdi is a wrapper for the <bdi> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi
 }
 
 \usage{

@@ -6,7 +6,7 @@
 \title{H1 component}
 
 \description{
-
+H1 is a wrapper for the <h1> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1
 }
 
 \usage{

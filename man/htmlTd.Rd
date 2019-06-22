@@ -6,7 +6,7 @@
 \title{Td component}
 
 \description{
-
+Td is a wrapper for the <td> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td
 }
 
 \usage{

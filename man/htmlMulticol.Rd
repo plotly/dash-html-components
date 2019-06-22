@@ -6,7 +6,7 @@
 \title{Multicol component}
 
 \description{
-
+Multicol is a wrapper for the <multicol> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/multicol
 }
 
 \usage{

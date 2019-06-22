@@ -6,7 +6,7 @@
 \title{Title component}
 
 \description{
-
+Title is a wrapper for the <title> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title
 }
 
 \usage{

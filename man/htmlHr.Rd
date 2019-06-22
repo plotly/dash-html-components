@@ -6,7 +6,7 @@
 \title{Hr component}
 
 \description{
-
+Hr is a wrapper for the <hr> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr
 }
 
 \usage{

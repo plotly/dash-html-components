@@ -6,7 +6,7 @@
 \title{Ins component}
 
 \description{
-
+Ins is a wrapper for the <ins> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins
 }
 
 \usage{

@@ -6,7 +6,7 @@
 \title{Col component}
 
 \description{
-
+Col is a wrapper for the <col> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col
 }
 
 \usage{

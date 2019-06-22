@@ -6,7 +6,7 @@
 \title{Strong component}
 
 \description{
-
+Strong is a wrapper for the <strong> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong
 }
 
 \usage{

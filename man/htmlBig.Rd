@@ -6,7 +6,7 @@
 \title{Big component}
 
 \description{
-
+Big is a wrapper for the <big> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/big
 }
 
 \usage{

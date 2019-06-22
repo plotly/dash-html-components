@@ -6,7 +6,7 @@
 \title{Frame component}
 
 \description{
-
+Frame is a wrapper for the <frame> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frame
 }
 
 \usage{

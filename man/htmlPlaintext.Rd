@@ -6,7 +6,7 @@
 \title{Plaintext component}
 
 \description{
-
+Plaintext is a wrapper for the <plaintext> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/plaintext
 }
 
 \usage{

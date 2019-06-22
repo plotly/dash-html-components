@@ -6,7 +6,7 @@
 \title{Br component}
 
 \description{
-
+Br is a wrapper for the <br> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br
 }
 
 \usage{

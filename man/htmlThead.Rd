@@ -6,7 +6,7 @@
 \title{Thead component}
 
 \description{
-
+Thead is a wrapper for the <thead> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead
 }
 
 \usage{

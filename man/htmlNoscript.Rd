@@ -6,7 +6,7 @@
 \title{Noscript component}
 
 \description{
-
+Noscript is a wrapper for the <noscript> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript
 }
 
 \usage{

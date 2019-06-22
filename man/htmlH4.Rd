@@ -6,7 +6,7 @@
 \title{H4 component}
 
 \description{
-
+H4 is a wrapper for the <h4> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h4
 }
 
 \usage{

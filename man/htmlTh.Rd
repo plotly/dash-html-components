@@ -6,7 +6,7 @@
 \title{Th component}
 
 \description{
-
+Th is a wrapper for the <th> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th
 }
 
 \usage{

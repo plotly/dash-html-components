@@ -6,7 +6,7 @@
 \title{Sup component}
 
 \description{
-
+Sup is a wrapper for the <sup> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup
 }
 
 \usage{

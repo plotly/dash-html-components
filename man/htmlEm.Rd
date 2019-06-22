@@ -6,7 +6,7 @@
 \title{Em component}
 
 \description{
-
+Em is a wrapper for the <em> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em
 }
 
 \usage{

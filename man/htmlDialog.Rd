@@ -6,7 +6,7 @@
 \title{Dialog component}
 
 \description{
-
+Dialog is a wrapper for the <dialog> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
 }
 
 \usage{

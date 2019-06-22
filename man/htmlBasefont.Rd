@@ -6,7 +6,7 @@
 \title{Basefont component}
 
 \description{
-
+Basefont is a wrapper for the <basefont> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/basefont
 }
 
 \usage{

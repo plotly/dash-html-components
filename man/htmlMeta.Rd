@@ -6,7 +6,7 @@
 \title{Meta component}
 
 \description{
-
+Meta is a wrapper for the <meta> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 }
 
 \usage{

@@ -6,7 +6,7 @@
 \title{Meter component}
 
 \description{
-
+Meter is a wrapper for the <meter> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter
 }
 
 \usage{

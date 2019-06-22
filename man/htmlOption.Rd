@@ -6,7 +6,7 @@
 \title{Option component}
 
 \description{
-
+Option is a wrapper for the <option> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option
 }
 
 \usage{

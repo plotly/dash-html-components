@@ -6,7 +6,7 @@
 \title{Label component}
 
 \description{
-
+Label is a wrapper for the <label> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
 }
 
 \usage{

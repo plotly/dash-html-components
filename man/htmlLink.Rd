@@ -6,7 +6,7 @@
 \title{Link component}
 
 \description{
-
+Link is a wrapper for the <link> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link
 }
 
 \usage{

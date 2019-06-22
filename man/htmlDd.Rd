@@ -6,7 +6,7 @@
 \title{Dd component}
 
 \description{
-
+Dd is a wrapper for the <dd> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd
 }
 
 \usage{

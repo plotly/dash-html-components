@@ -6,7 +6,7 @@
 \title{Img component}
 
 \description{
-
+Img is a wrapper for the <img> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
 }
 
 \usage{

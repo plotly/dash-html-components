@@ -6,7 +6,7 @@
 \title{Command component}
 
 \description{
-
+Command is a wrapper for the <command> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/command
 }
 
 \usage{

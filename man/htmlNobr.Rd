@@ -6,7 +6,7 @@
 \title{Nobr component}
 
 \description{
-
+Nobr is a wrapper for the <nobr> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nobr
 }
 
 \usage{

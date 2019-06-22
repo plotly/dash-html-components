@@ -6,7 +6,7 @@
 \title{Element component}
 
 \description{
-
+Element is a wrapper for the <element> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/element
 }
 
 \usage{

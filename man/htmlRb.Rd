@@ -6,7 +6,7 @@
 \title{Rb component}
 
 \description{
-
+Rb is a wrapper for the <rb> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rb
 }
 
 \usage{

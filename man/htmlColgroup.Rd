@@ -6,7 +6,7 @@
 \title{Colgroup component}
 
 \description{
-
+Colgroup is a wrapper for the <colgroup> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup
 }
 
 \usage{

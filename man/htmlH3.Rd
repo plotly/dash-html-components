@@ -6,7 +6,7 @@
 \title{H3 component}
 
 \description{
-
+H3 is a wrapper for the <h3> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h3
 }
 
 \usage{

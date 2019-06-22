@@ -6,7 +6,7 @@
 \title{H6 component}
 
 \description{
-
+H6 is a wrapper for the <h6> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h6
 }
 
 \usage{

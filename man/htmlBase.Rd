@@ -6,7 +6,7 @@
 \title{Base component}
 
 \description{
-
+Base is a wrapper for the <base> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 }
 
 \usage{

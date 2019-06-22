@@ -6,7 +6,7 @@
 \title{Strike component}
 
 \description{
-
+Strike is a wrapper for the <strike> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike
 }
 
 \usage{

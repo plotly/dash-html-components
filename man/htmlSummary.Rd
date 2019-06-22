@@ -6,7 +6,7 @@
 \title{Summary component}
 
 \description{
-
+Summary is a wrapper for the <summary> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary
 }
 
 \usage{

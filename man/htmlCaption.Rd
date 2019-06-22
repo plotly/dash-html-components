@@ -6,7 +6,7 @@
 \title{Caption component}
 
 \description{
-
+Caption is a wrapper for the <caption> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption
 }
 
 \usage{

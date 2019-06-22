@@ -6,7 +6,7 @@
 \title{Canvas component}
 
 \description{
-
+Canvas is a wrapper for the <canvas> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas
 }
 
 \usage{

@@ -6,7 +6,7 @@
 \title{Tfoot component}
 
 \description{
-
+Tfoot is a wrapper for the <tfoot> HTML5 element. For detailed attribute info see: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot
 }
 
 \usage{
