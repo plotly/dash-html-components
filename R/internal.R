@@ -3,13 +3,13 @@ deps_metadata <- list(`dash_html_components` = structure(list(name = "dash_html_
 version = "1.0.0", src = list(href = NULL,
 file = "deps"), meta = NULL,
 script = 'dash_html_components.min.js',
-stylesheet = "NULL", head = NULL, attachment = NULL, package = "dashHtmlComponents",
+stylesheet = NULL, head = NULL, attachment = NULL, package = "dashHtmlComponents",
 all_files = FALSE), class = "html_dependency"),
 `dash_html_components` = structure(list(name = "dash_html_components",
 version = "1.0.0", src = list(href = NULL,
 file = "deps"), meta = NULL,
 script = 'dash_html_components.min.js.map',
-stylesheet = "NULL", head = NULL, attachment = NULL, package = "dashHtmlComponents",
+stylesheet = NULL, head = NULL, attachment = NULL, package = "dashHtmlComponents",
 all_files = FALSE), class = "html_dependency"))
 return(deps_metadata)
 }
