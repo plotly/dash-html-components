@@ -221,7 +221,7 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                 
+                 # TODO
                 )
               )
             )
@@ -286,7 +286,7 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                 
+                 # TODO
                 )
               )
             )
@@ -304,7 +304,7 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                 
+                # TODO 
                 )
               )
             )
@@ -342,7 +342,7 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                 
+                # TODO 
                 )
               )
             )
@@ -360,7 +360,7 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                 
+                # TODO 
                 )
               )
             )
@@ -650,7 +650,7 @@ r_examples:
               htmlDiv(list(
                 htmlTextarea(
                   rows = 4, cols = 50,
-                  children = "A text aread allows users to input text"
+                  children = "A text area allows users to input text"
                 )
                 )
               )
@@ -669,7 +669,27 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                 
+                "Within an htmlTable, you can create footer rows with htmlTfoot",
+                htmlBr(),
+                htmlTable(
+                  list(
+                    htmlThead(
+                      htmlTr(
+                        htmlTh("This is in the header of the table")
+                      )
+                    ),
+                    htmlTbody(
+                      htmlTr(
+                        htmlTd("This is in the body of the table")
+                      )
+                    ),
+                    htmlTfoot(
+                      htmlTr(
+                        htmlTd("This is in the footer of the table")
+                      )
+                    )
+                  )
+                )
                 )
               )
             )
@@ -687,7 +707,17 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                 
+                htmlTable(
+                  list(
+                    # the following row contains headers
+                    htmlTr( 
+                      list(
+                        htmlTh("Header 1"),
+                        htmlTh("Header 2")
+                      )
+                    )
+                  )
+                )
                 )
               )
             )
@@ -767,7 +797,7 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                 
+                # TODO 
                 )
               )
             )
@@ -822,7 +852,7 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                 
+                # TODO 
                 )
               )
             )
