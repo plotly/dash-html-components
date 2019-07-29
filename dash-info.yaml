@@ -209,6 +209,753 @@ r_examples:
             )
 
             app$run_server()
-    - name: 
-      dontrun:
-      code: 
+
+    - name: htmlScript
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                 
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlSection
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlSection(
+                  children = list(
+                    htmlH1("This is a section title"),
+                    htmlDiv("This is some text within a section")
+                  ) 
+                )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlSelect
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlSelect(
+                  children = list(
+                    htmlOption("This is an option in htmlSelect"),
+                    htmlOption("But you might want to check out dccDropdown as well"),
+                    htmlOption("dccDropdown is part of the dashCoreComponents library") 
+                  ) 
+                )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlShadow 
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                 
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlSlot
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                 
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlSmall
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                "This is normal text",
+                htmlBr(),
+                htmlSmall("And this is text in an htmlSmall component")
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlSource
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                 
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlSpacer
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                 
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlSpan
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                "This is some text",
+                htmlBr(),
+                htmlSpan(
+                  children = "And some text within an italicized span", 
+                  style = list(fontStyle = "italic")
+                )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlStrike
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                "This is normal text",
+                htmlStrike("Text within an htmlStrike element will be striked")
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlStrong
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                "This is normal text",
+                htmlBr(),
+                htmlStrong("Text within an htmlStrong element will be Bold")
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlSub
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                "This is normal text ",
+                htmlSub("And this is subscript text within an htmlSub")
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlSummary
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlDetails(
+                  children = list(
+                    htmlSummary(
+                      children = "Within a details element, the summary can act as a clickable description"
+                    ),
+                    "And the rest is hidden until the summary is clicked"
+                  )
+                )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlSup
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                "This is normal text",
+                htmlSup("And this is superscript text within an htmlSup")
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlTable
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                "You can create an Table with HtmlTable",
+                htmlBr(),
+                htmlTable(
+                  list(
+                    htmlTr(
+                      list(
+                        htmlTh("Table Header 1"),
+                        htmlTh("Table Header 2")
+                      )
+                    ),
+                    htmlTr(
+                      list(
+                        htmlTd("row 1 under Header 1"),
+                        htmlTd("row 1 under Header 2")
+                      )
+                    )
+                  )
+                )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlTbody
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                "Within an htmlTable, you can specify the rows that go in the body of the table with htmlTbody",
+                htmlBr(),
+                htmlTable(
+                  list(
+                    htmlThead(
+                      htmlTr(
+                        htmlTh("This is in the header of the table")
+                      )
+                    ),
+                    htmlTbody(
+                      htmlTr(
+                        htmlTd("This is in the body of the table")
+                      )
+                    ),
+                    htmlTfoot(
+                      htmlTr(
+                        htmlTd("This is in the footer of the table")
+                      )
+                    )
+                  )
+                )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlTd
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                "Within an htmlTable, individual cells can be made with htmlTd",
+                htmlBr(),
+                htmlTable(
+                  list(
+                    htmlTr( 
+                      list(
+                        htmlTh("Header 1"),
+                        htmlTh("Header 2")
+                      )
+                    ),
+                    htmlTr( 
+                      list(
+                        htmlTd("this is a cell"),
+                        htmlTd("this is another cell")
+                      )
+                    )
+                  )
+                )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlTemplate
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                "You can create an HTML template to be populated later via js",
+                htmlBr(),
+                htmlTable(
+                  id = "myTable",
+                  htmlTr(
+                    list(
+                      htmlTh("Header 1"),
+                      htmlTh("Header 2")
+                    )
+                  )
+                ),
+                htmlTemplate(
+                  id = "myRowTemplate",
+                  htmlTr(
+                    list(
+                      htmlTd(className = "someRowValue"),
+                      htmlTd()
+                    )
+                  )
+                )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlTextarea
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlTextarea(
+                  rows = 4, cols = 50,
+                  children = "A text aread allows users to input text"
+                )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlTfoot
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                 
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlTh
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                 
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlThead
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                "Within an htmlTable, you can create a header with htmlThead",
+                htmlBr(),
+                htmlTable(
+                  list(
+                    htmlThead(
+                      htmlTr(
+                        htmlTh("This is in the header of the table")
+                      )
+                    ),
+                    htmlTbody(
+                      htmlTr(
+                        htmlTd("This is in the body of the table")
+                      )
+                    ),
+                    htmlTfoot(
+                      htmlTr(
+                        htmlTd("This is in the footer of the table")
+                      )
+                    )
+                  )
+                )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlTime
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlP(
+                  list(
+                    "It might be useful to wrap dates like ",
+                    htmlTime(dateTime = "2019-07-29", children = "July 29th"),
+                    " in an htmlTime to make your datetimes machine readable"
+                  )
+                )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlTitle
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                 
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlTr
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                "Within an htmlTable, individual rows can be made with htmlTr",
+                htmlBr(),
+                htmlTable(
+                  list(
+                    # the following row contains headers
+                    htmlTr( 
+                      list(
+                        htmlTh("Header 1"),
+                        htmlTh("Header 2")
+                      )
+                    ),
+                    # the following row contains cells
+                    htmlTr( 
+                      list(
+                        htmlTd("this is a cell"),
+                        htmlTd("this is another cell")
+                      )
+                    )
+                  )
+                )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlTrack
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                 
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlU
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlU("Wrap your text in htmlU to have it underlined")
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlUl
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                "You can make an unordered list with htmlUl",
+                htmlBr(),
+                htmlUl(
+                  children = list(
+                    htmlLi("Some item"),
+                    htmlLi("Some other item")
+                  )
+                )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlVar
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                "You can use htmlVar to represent the name of a variable",
+                htmlBr(),
+                htmlVar("myVariable")
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlVideo
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlVideo(
+                  src = "https://ia800303.us.archive.org/18/items/bacteria_friend_and_foe/bacteria_friend_and_foe_512kb.mp4",
+                  controls = TRUE,
+                  title = "Bacteria: Friend and Foe"
+                )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlWbr
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                "In a long string, it might be a good idea to add an htmlWbr to specify word breaks",
+                htmlP("Thisverylongstringwithnowhitespaceswon'tlookverygood"),
+                htmlWbr(),
+                htmlP("butatleastyoucanspecifya'natural'placeforthestringtobebrokenup")
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlXmp
+      dontrun: TRUE
+      code: | 
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlXmp("xmp elements will be rendered in monospace font"),
+                htmlXmp("Note that this element is obsolete in HTML5"),
+                htmlA(
+                  "See this for more details", 
+                  href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp"
+                )
+                )
+              )
+            )
+
+            app$run_server()
+
+
