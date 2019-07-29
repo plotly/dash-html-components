@@ -8,3 +8,207 @@ pkg_help_description: >
     plotly/dash-html-components.
 pkg_help_title: >
     Vanilla HTML Components for Dash
+
+r_examples:
+    - name: htmlA
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlA(children="Link to external site",
+                      href="https://plot.ly",
+                      target="_blank")
+                )
+              )
+            )
+
+            app$run_server()
+    - name: htmlAbbr
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+               htmlDiv(list(
+                 htmlAbbr(children="\U{1F50D} Hover over this line for a few seconds and see the text box appear...",
+                          title="Hello! htmlAbbr at work!")
+                  )
+               )
+            )
+
+            app$run_server()
+    - name: htmlAcronym
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlAcronym(children="Mouse over these words to see the acronym for \"as soon as possible\".",
+                title="ASAP")
+                  )
+              )
+            )
+
+            app$run_server()
+    - name: htmlAddress
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlAddress(children="5555 Avenue de Gasp\U{00E9}, Montréal QC H2T 2A3")
+                )
+              )
+            )
+
+            app$run_server()
+    - name: htmlArea
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlImg(src = "https://upload.wikimedia.org/wikipedia/commons/0/0c/PIA17351-ApparentSizes-MarsDeimosPhobos-EarthMoon.jpg",
+                        useMap = "#image-map"),
+                htmlMapEl(list(
+                  htmlArea(target="_blank",
+                           alt="Deimos",
+                           title="Deimos",
+                           href="https://en.wikipedia.org/wiki/Deimos_(moon)",
+                           coords="5,114,32,147",
+                           shape="rect"),
+                  htmlArea(target="_blank",
+                           alt="Phobos",
+                           title="Phobos",
+                           href="https://en.wikipedia.org/wiki/Phobos_(moon)",
+                           coords="113,196,32,103",
+                           shape="rect"),
+                  htmlArea(target="_blank",
+                           alt="Moon",
+                           title="Moon",
+                           href="https://en.wikipedia.org/wiki/Moon",
+                           coords="127,285,294,1",
+                           shape="rect")
+                  ),
+                  name = "image-map"
+                ),
+                htmlDiv(children = "Click on the image to visit a Wikipedia article",
+                        id = "object-name")
+                )
+              )
+            )
+
+            app$run_server()
+    - name: htmlArticle
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlArticle(list(
+                  htmlH2("Dash for R launched!"),
+                  htmlP("Dash is a user interface library for creating analytical web applications.\n
+                         Those who use R for data analysis, data exploration, visualization,\n
+                         modelling, instrument control, and reporting will find immediate use for Dash for R."),
+                  htmlAside("Plotly is a technical computing company with offices in Montr\U{00E9}al, Canada and Cambridge, Massachusetts.")
+                  )
+                )
+               )
+              )
+            )
+
+            app$run_server()
+    - name: htmlAside
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlArticle(list(
+                  htmlH2("Dash for R launched!"),
+                  htmlP("Dash is a user interface library for creating analytical web applications.\n
+                         Those who use R for data analysis, data exploration, visualization,\n
+                         modelling, instrument control, and reporting will find immediate use for Dash for R."),
+                  htmlAside("Plotly is a technical computing company with offices in Montr\U{00E9}al, Canada and Cambridge, Massachusetts.")
+                  )
+                )
+               )
+              )
+            )
+
+            app$run_server()    
+    - name: htmlAudio
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlAudio(src="https://www.nasa.gov/62284main_onesmall2.wav",
+                          controls=TRUE,
+                          title="Apollo 11 - July 16, 1969 - Neil Armstrong")
+                  )
+               )
+            )
+
+            app$run_server()
+    - name: htmlB
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlB(children="This is a bold statement!"),
+                htmlP(children="This is not so bold.")
+                )
+               )
+            )
+
+            app$run_server()
+    - name: 
+      dontrun:
+      code: 
