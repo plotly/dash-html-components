@@ -253,6 +253,11 @@ r_examples:
     - name: htmlListing
       dontrun: TRUE
       code: |
+            # Warning: The <listing> element was intended as a way to render HTML code on a page.
+            # It was never properly supported, and is now deprecated. Using <listing> will almost
+            # certainly result in unexpected results. Instead, use <code>, or place the content in
+            # a <div> with the appropriate CSS styling.
+            
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -261,10 +266,6 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                htmlH2("Warning: The <listing> element was intended as a way to render HTML code on a page.
-                It was never properly supported, and is now deprecated. Using <listing> will almost
-                certainly result in unexpected results. Instead, use <code>, or place the content in
-                a <div> with the appropriate CSS styling."),
                 htmlListing(list(
                   htmlUl("A"),
                   htmlUl("B"),
@@ -350,6 +351,10 @@ r_examples:
     - name: htmlMarquee
       dontrun: TRUE
       code: |
+            # This feature is obsolete. It may still work in some
+            # browsers, but could stop working at any time. Try to
+            # avoid using this component.
+
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -359,6 +364,7 @@ r_examples:
             app$layout(
               htmlDiv(list(
                 htmlMarquee("Here is a sliding text that uses htmlMarquee")
+
               ))
             )
 
@@ -409,6 +415,9 @@ r_examples:
     - name: htmlMultiCol
       dontrun: TRUE
       code: |
+            # Warning: The <multicol> tag is obsolete, it might not work as intended.
+            # Try to avoid using it.
+
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -417,8 +426,6 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                htmlH2("Warning: The <multicol> tag is obsolete, it might not work as intended.
-                      Try to avoid using it."),
                 htmlP("htmlMulticol generates newspaper like text by specifying the cols argument,
                       an example can be found below:"),
                 htmlA(href = "https://docstore.mik.ua/orelly/web2/xhtml/ch14_02.htm#html4-CHP-14-FIG-4",
@@ -464,6 +471,9 @@ r_examples:
     - name: htmlNextid
       dontrun: TRUE
       code: |
+            # Warning: The <nextid> tag is obsolete, 
+            # it is vanished since HTML Version 3.2
+
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -472,7 +482,6 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                htmlH2("Warning: The <nextid> tag is obsolete, it is vanished since HTML Version 3.2"),
                 htmlA(href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nextid",
                       "Click here for more information about this tag")
               ))
@@ -691,6 +700,10 @@ r_examples:
     - name: htmlPlainText
       dontrun: TRUE
       code: |
+            # Warning: The <plaintext> tag is obsolete,
+            # it might not work as intended.
+            # Use the <pre> tag instead.
+            
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -699,8 +712,6 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                htmlH2("Warning: The <plaintext> tag is obsolete, it might not work as intended.
-                      Use the <pre> tag instead."),
                 htmlPlaintext(),
                 htmlBr(),
                 htmlH4("The HTML Plaintext Element (<plaintext>) renders everything following
