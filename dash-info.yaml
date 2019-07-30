@@ -478,7 +478,7 @@ r_examples:
               )
             )
 
-            app$run_server() #CORRECT
+            app$run_server()
             
       - name: htmlH1
       dontrun: TRUE
