@@ -209,7 +209,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlScript
       dontrun: TRUE
       code: | 
@@ -227,7 +226,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlSection
       dontrun: TRUE
       code: | 
@@ -250,7 +248,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlSelect
       dontrun: TRUE
       code: | 
@@ -274,7 +271,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlShadow 
       dontrun: TRUE
       code: | 
@@ -292,7 +288,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlSlot
       dontrun: TRUE
       code: | 
@@ -310,7 +305,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlSmall
       dontrun: TRUE
       code: | 
@@ -330,7 +324,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlSource
       dontrun: TRUE
       code: | 
@@ -342,13 +335,24 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                # TODO 
+                  "Resize your browser window to see the image source change based based on the browser width",
+                  htmlBr(),
+                  htmlPicture(
+                    list(
+                      htmlSource(
+                        media = "(min-width: 1000px)", 
+                        srcSet = "https://apod.nasa.gov/apod/image/1907/FishheadNebula_Pham_2401.jpg"
+                      ),
+                      htmlImg(
+                        src = "https://apod.nasa.gov/apod/image/1907/ngc3576_campbell_1824.jpg"
+                      )
+                    )
+                  )
                 )
               )
             )
 
             app$run_server()
-
     - name: htmlSpacer
       dontrun: TRUE
       code: | 
@@ -366,7 +370,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlSpan
       dontrun: TRUE
       code: | 
@@ -389,7 +392,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlStrike
       dontrun: TRUE
       code: | 
@@ -408,7 +410,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlStrong
       dontrun: TRUE
       code: | 
@@ -428,7 +429,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlSub
       dontrun: TRUE
       code: | 
@@ -447,7 +447,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlSummary
       dontrun: TRUE
       code: | 
@@ -472,7 +471,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlSup
       dontrun: TRUE
       code: | 
@@ -491,7 +489,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlTable
       dontrun: TRUE
       code: | 
@@ -526,7 +523,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlTbody
       dontrun: TRUE
       code: | 
@@ -564,7 +560,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlTd
       dontrun: TRUE
       code: | 
@@ -599,7 +594,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlTemplate
       dontrun: TRUE
       code: | 
@@ -636,7 +630,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlTextarea
       dontrun: TRUE
       code: | 
@@ -657,7 +650,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlTfoot
       dontrun: TRUE
       code: | 
@@ -695,7 +687,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlTh
       dontrun: TRUE
       code: | 
@@ -723,7 +714,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlThead
       dontrun: TRUE
       code: | 
@@ -761,7 +751,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlTime
       dontrun: TRUE
       code: | 
@@ -785,7 +774,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlTitle
       dontrun: TRUE
       code: | 
@@ -803,7 +791,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlTr
       dontrun: TRUE
       code: | 
@@ -840,7 +827,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlTrack
       dontrun: TRUE
       code: | 
@@ -858,7 +844,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlU
       dontrun: TRUE
       code: | 
@@ -876,7 +861,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlUl
       dontrun: TRUE
       code: | 
@@ -901,7 +885,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlVar
       dontrun: TRUE
       code: | 
@@ -921,7 +904,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlVideo
       dontrun: TRUE
       code: | 
@@ -943,7 +925,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlWbr
       dontrun: TRUE
       code: | 
@@ -964,7 +945,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlXmp
       dontrun: TRUE
       code: | 
@@ -987,5 +967,4 @@ r_examples:
             )
 
             app$run_server()
-
 
