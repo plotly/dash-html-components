@@ -29,9 +29,18 @@ jobs:
       - run:
           name: Install dependencies (dash)
           command: |
+            if [ $CIRCLE_BRANCH = "master" ]; then
+              echo "Clone from master branch"
+              git clone -b master --depth 1 git@github.com:plotly/dash.git dash-main
+              git clone -b master --depth 1 git@github.com:plotly/dash-core-components.git
+              git clone -b master --depth 1 git@github.com:plotly/dash-table.git
+            else
+              echo "Clone from default branch"
               git clone --depth 1 git@github.com:plotly/dash.git dash-main
               git clone --depth 1 git@github.com:plotly/dash-core-components.git
               git clone --depth 1 git@github.com:plotly/dash-table.git
+            fi
+
               . venv/bin/activate
               pip install -e ./dash-main[testing,dev] --quiet
               cd dash-core-components && npm install --ignore-scripts && npm run build && pip install -e . && cd ..
