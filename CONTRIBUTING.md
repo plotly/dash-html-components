@@ -11,7 +11,7 @@ Refer to the [readme](README.md) for installation and development workflow instr
 ## Making a Contribution
 _For larger features, your contribution will have a higher likelihood of getting merged if you create an issue to discuss the changes that you'd like to make before you create a pull request._
 
-1. Create a pull request and tag the Plotly team (`@plotly/dash`) and tag / request review from [@Marc-Andre-Rivet](https://github.com/Marc-Andre-Rivet) and [@alexcjohnson ](https://github.com/alexcjohnson).
+1. Create a pull request.
 2. After a review has been done and your changes have been approved, they will be merged and included in a future release of Dash.
 
 ## Coding Style
