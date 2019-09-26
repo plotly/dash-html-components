@@ -171,7 +171,7 @@ r_examples:
               )
             )
 
-            app$run_server()    
+            app$run_server()
     - name: htmlAudio
       dontrun: TRUE
       code: |
@@ -209,9 +209,646 @@ r_examples:
             )
 
             app$run_server()
+    - name: htmlDialog
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+              htmlDialog(
+                children = htmlP('Greetings')
+                  )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlDiv
+      dontrun: TRUE
+      code: |
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlDiv('This Title is Wrapped inside an inner Div')
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlDl
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+              htmlDl(
+                children= list('Dash',
+                htmlDd('Dash is a framework for building web
+                      applications.'))
+                  )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlDt
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+              htmlDl(
+                children= list(htmlDt("Dash for R"),
+                              htmlDd('HtmlDt and htmlDD must be used
+                                      within htmlDl'))
+                  )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlElement
+      dontrun: TRUE
+      code: |
+
+            # This feature is obsolete. It may still work in some
+            # browsers, but could stop working at any time. Try to
+            # avoid using this component.
+
+    - name: htmlEm
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+              htmlH1(list('Dash is a very ',
+                          htmlEm(' important '),
+                          'framework')
+                  )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlEmbed
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+              htmlEmbed(
+                src = 'https://www.youtube.com/watch?v=njW7DmeK1Qk',
+                width = '250',
+                height = '500')
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlFieldset
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+              htmlFieldset(
+                children = list('Choose your favourite Dash HTML component',
+                dccRadioItems(
+                  options=list(
+                    list("label" = "htmlDiv", "value" = "htmlDiv"),
+                    list("label" = "htmlBase", "value" = "htmlBase"),
+                    list("label" = "htmlArticle", "value" = "htmlArticle")
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlFigcaption
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+              htmlFigure(children = list(
+                htmlImg(src = 'https://brand.plot.ly/static/images/plotly-logo-01-stripe@2x.png'),
+                htmlFigcaption(children = 'Plotly Logo')))
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlFigure
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+              htmlFigure(children = list(
+                htmlImg(src = 'https://brand.plot.ly/static/images/plotly-logo-01-stripe@2x.png',
+                        width = '400',
+                        height = '150')
+                    )
+                  )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlFont
+      dontrun: TRUE
+      code: |
+
+            Starting with HTML 4, HTML does not convey styling information
+            anymore (outside the <style> element or the style attribute of each
+            element). For any new web development, styling should be written using CSS only.
+
+    - name: htmlFooter
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+
+            app$layout(htmlDiv(list(
+              htmlFooter(list(
+                htmlH1('Dash'),
+                htmlLi('Pointer1'),
+                htmlLi('Pointer2')
+                    )
+                  )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlForm
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+
+            app$layout(htmlDiv(list(
+              htmlForm(children=list(
+                htmlP(children=list("Username: ", dccInput(type='text', id='username', placeholder='username'))),
+                htmlP(children=list("Password: ", dccInput(type='password', id='password', placeholder='password'))),
+                htmlButton(children=list('Login'), type='submit', id='login_button')
+                    )
+                  )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: HtmlFrame
+      dontrun: TRUE
+      code: |
+            HtmlFrame is now depreciated. htmlIFrame is now recommended.
+
+    - name: HtmlFrameset
+      dontrun: TRUE
+      code: |
+
+            app <- Dash$new()
+
+
+            app$layout(htmlDiv(list(
+              htmlFrameset(children =
+              htmlIframe(width = "600px", height = "600px",
+                         src = "https://dashr.plot.ly/")
+                ))
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlH1
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlH1(list(
+                  'Dash Html',
+                  htmlBr(), #We can customize
+                  htmlSpan('Dash', style = list('opacity' = '0.8')),
+                  htmlSpan(' Core')))
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlH2
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlH2(list(
+                  'Dash Html',
+                  htmlBr(), #We can customize
+                  htmlSpan('Dash', style = list('opacity' = '0.8')),
+                  htmlSpan(' Core')))
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlH3
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlH3(list(
+                  'Dash Html',
+                  htmlBr(), #We can customize
+                  htmlSpan('Dash', style = list('opacity' = '0.8')),
+                  htmlSpan(' Core')))
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlH4
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlH4(list(
+                  'Dash Html',
+                  htmlBr(), #We can customize
+                  htmlSpan('Dash', style = list('opacity' = '0.8')),
+                  htmlSpan(' Core')))
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlH5
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlH5(list(
+                  'Dash Html',
+                  htmlBr(), #We can customize
+                  htmlSpan('Dash', style = list('opacity' = '0.8')),
+                  htmlSpan(' Core')))
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlH6
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlH6(list(
+                  'Dash Html',
+                  htmlBr(), #We can customize
+                  htmlSpan('Dash', style = list('opacity' = '0.8')),
+                  htmlSpan(' Core')))
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlHgroup
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlHgroup(list(
+                  htmlH1('MultiLevel Title'),
+                  htmlHr(),
+                  htmlH2('Header')
+                    )
+                  )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlHr
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlDiv(list(
+                  htmlH1('Dash'),
+                  htmlHr(),
+                  htmlH2('Components')
+                    )
+                  )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlI
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                  htmlI('Italicized Text')
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlIFrame
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+
+            app$layout(htmlDiv(list(
+              htmlIframe(width = "600px", height = "600px",
+                        src = "https://dashr.plot.ly/")
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlImg
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+                htmlImg(src ='https://brand.plot.ly/static/images/plotly-logo-01-stripe@2x.png',
+                        height='200', width='400')
+                )
+              )
+            )
+
+
+            app$run_server()
+
+    - name: htmlIns
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlIns('This text has been inserted')
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlIsindex
+      dontrun: TRUE
+      code: |
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlIsindex(prompt = 'Search Document..')
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlKbd
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlP('Please Press: '),
+                htmlKbd(list(
+                  'Ctl + ',
+                  'Alt + ',
+                  'Delete'))
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlKeygen
+      dontrun: TRUE
+      code: |
+
+            This feature is obsolete. It may still work in some
+            browsers, but could stop working at any time. Try to
+            avoid using this component.
+
+    - name: htmlLabel
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(
+                htmlLabel(
+                  list(htmlDiv(list("Time points")),
+                      dccInput(
+                        id = "times-input",
+                        placeholder = "Enter a value...",
+                        type = "number",
+                        value = 1,
+                        min = 3,
+                        max = 999)
+                  )
+                )
+              )
+            )
+
+            app$run_server()
+
+    - name: htmlLegend
+      dontrun: TRUE
+      code: |
+
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+              htmlFieldset(
+                children = list(
+                                htmlLegend('Select your favourite component'),
+                                dccRadioItems(
+                                  options=list(
+                                    list("label" = "htmlDiv", "value" = "htmlDiv"),
+                                    list("label" = "htmlBase", "value" = "htmlBase"),
+                                    list("label" = "htmlArticle", "value" = "htmlArticle")
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+
+            app$run_server()
     - name: htmlScript
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -228,7 +865,7 @@ r_examples:
             app$run_server()
     - name: htmlSection
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -241,7 +878,7 @@ r_examples:
                   children = list(
                     htmlH1("This is a section title"),
                     htmlDiv("This is some text within a section")
-                  ) 
+                  )
                 )
                 )
               )
@@ -250,7 +887,7 @@ r_examples:
             app$run_server()
     - name: htmlSelect
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -263,17 +900,17 @@ r_examples:
                   children = list(
                     htmlOption("This is an option in htmlSelect"),
                     htmlOption("But you might want to check out dccDropdown as well"),
-                    htmlOption("dccDropdown is part of the dashCoreComponents library") 
-                  ) 
+                    htmlOption("dccDropdown is part of the dashCoreComponents library")
+                  )
                 )
                 )
               )
             )
 
             app$run_server()
-    - name: htmlShadow 
+    - name: htmlShadow
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -290,7 +927,7 @@ r_examples:
             app$run_server()
     - name: htmlSlot
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -299,7 +936,7 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                # TODO 
+                # TODO
                 )
               )
             )
@@ -307,7 +944,7 @@ r_examples:
             app$run_server()
     - name: htmlSmall
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -326,7 +963,7 @@ r_examples:
             app$run_server()
     - name: htmlSource
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -340,7 +977,7 @@ r_examples:
                   htmlPicture(
                     list(
                       htmlSource(
-                        media = "(min-width: 1000px)", 
+                        media = "(min-width: 1000px)",
                         srcSet = "https://apod.nasa.gov/apod/image/1907/FishheadNebula_Pham_2401.jpg"
                       ),
                       htmlImg(
@@ -355,7 +992,7 @@ r_examples:
             app$run_server()
     - name: htmlSpacer
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -364,7 +1001,7 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                # TODO 
+                # TODO
                 )
               )
             )
@@ -372,7 +1009,7 @@ r_examples:
             app$run_server()
     - name: htmlSpan
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -384,7 +1021,7 @@ r_examples:
                 "This is some text",
                 htmlBr(),
                 htmlSpan(
-                  children = "And some text within an italicized span", 
+                  children = "And some text within an italicized span",
                   style = list(fontStyle = "italic")
                 )
                 )
@@ -394,7 +1031,7 @@ r_examples:
             app$run_server()
     - name: htmlStrike
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -412,7 +1049,7 @@ r_examples:
             app$run_server()
     - name: htmlStrong
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -431,7 +1068,7 @@ r_examples:
             app$run_server()
     - name: htmlSub
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -449,7 +1086,7 @@ r_examples:
             app$run_server()
     - name: htmlSummary
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -473,7 +1110,7 @@ r_examples:
             app$run_server()
     - name: htmlSup
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -491,7 +1128,7 @@ r_examples:
             app$run_server()
     - name: htmlTable
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -525,7 +1162,7 @@ r_examples:
             app$run_server()
     - name: htmlTbody
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -562,7 +1199,7 @@ r_examples:
             app$run_server()
     - name: htmlTd
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -575,13 +1212,13 @@ r_examples:
                 htmlBr(),
                 htmlTable(
                   list(
-                    htmlTr( 
+                    htmlTr(
                       list(
                         htmlTh("Header 1"),
                         htmlTh("Header 2")
                       )
                     ),
-                    htmlTr( 
+                    htmlTr(
                       list(
                         htmlTd("this is a cell"),
                         htmlTd("this is another cell")
@@ -596,7 +1233,7 @@ r_examples:
             app$run_server()
     - name: htmlTemplate
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -632,7 +1269,7 @@ r_examples:
             app$run_server()
     - name: htmlTextarea
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -652,7 +1289,7 @@ r_examples:
             app$run_server()
     - name: htmlTfoot
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -689,7 +1326,7 @@ r_examples:
             app$run_server()
     - name: htmlTh
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -701,7 +1338,7 @@ r_examples:
                 htmlTable(
                   list(
                     # the following row contains headers
-                    htmlTr( 
+                    htmlTr(
                       list(
                         htmlTh("Header 1"),
                         htmlTh("Header 2")
@@ -716,7 +1353,7 @@ r_examples:
             app$run_server()
     - name: htmlThead
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -753,7 +1390,7 @@ r_examples:
             app$run_server()
     - name: htmlTime
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -776,7 +1413,7 @@ r_examples:
             app$run_server()
     - name: htmlTitle
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -785,7 +1422,7 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                # TODO 
+                # TODO
                 )
               )
             )
@@ -793,7 +1430,7 @@ r_examples:
             app$run_server()
     - name: htmlTr
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -807,14 +1444,14 @@ r_examples:
                 htmlTable(
                   list(
                     # the following row contains headers
-                    htmlTr( 
+                    htmlTr(
                       list(
                         htmlTh("Header 1"),
                         htmlTh("Header 2")
                       )
                     ),
                     # the following row contains cells
-                    htmlTr( 
+                    htmlTr(
                       list(
                         htmlTd("this is a cell"),
                         htmlTd("this is another cell")
@@ -829,7 +1466,7 @@ r_examples:
             app$run_server()
     - name: htmlTrack
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -838,7 +1475,7 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                # TODO 
+                # TODO
                 )
               )
             )
@@ -846,7 +1483,7 @@ r_examples:
             app$run_server()
     - name: htmlU
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -863,7 +1500,7 @@ r_examples:
             app$run_server()
     - name: htmlUl
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -887,7 +1524,7 @@ r_examples:
             app$run_server()
     - name: htmlVar
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -906,7 +1543,7 @@ r_examples:
             app$run_server()
     - name: htmlVideo
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -927,7 +1564,7 @@ r_examples:
             app$run_server()
     - name: htmlWbr
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -947,7 +1584,7 @@ r_examples:
             app$run_server()
     - name: htmlXmp
       dontrun: TRUE
-      code: | 
+      code: |
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -959,7 +1596,7 @@ r_examples:
                 htmlXmp("xmp elements will be rendered in monospace font"),
                 htmlXmp("Note that this element is obsolete in HTML5"),
                 htmlA(
-                  "See this for more details", 
+                  "See this for more details",
                   href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xmp"
                 )
                 )
@@ -967,4 +1604,3 @@ r_examples:
             )
 
             app$run_server()
-
