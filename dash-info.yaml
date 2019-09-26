@@ -171,962 +171,6 @@ r_examples:
               )
             )
 
-            app$run_server()    
-    - name: htmlAudio
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlAudio(src="https://www.nasa.gov/62284main_onesmall2.wav",
-                          controls=TRUE,
-                          title="Apollo 11 - July 16, 1969 - Neil Armstrong")
-                  )
-               )
-            )
-
-            app$run_server()
-    - name: htmlB
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlB(children="This is a bold statement!"),
-                htmlP(children="This is not so bold.")
-                )
-               )
-            )
-
-            app$run_server()
-    - name: htmlLi
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlOl(list(
-                  htmlLi("Montreal"),
-                  htmlLi("Toronto"),
-                  htmlLi("Halifax")
-                )),
-                htmlUl(list(
-                  htmlLi("Montreal"),
-                  htmlLi("Toronto"),
-                  htmlLi("Halifax")
-                ))
-              ))
-            )
-
-            app$run_server()
-    - name: htmlLink
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlLink(rel = "stylesheet", type = "text/css", href = "https://codepen.io/chriddyp/pen/bWLwgP.css")
-              ))
-            )
-
-            app$run_server()
-    - name: htmlListing
-      dontrun: TRUE
-      code: |
-            # Warning: The <listing> element was intended as a way to render HTML code on a page.
-            # It was never properly supported, and is now deprecated. Using <listing> will almost
-            # certainly result in unexpected results. Instead, use <code>, or place the content in
-            # a <div> with the appropriate CSS styling.
-            
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlListing(list(
-                  htmlUl("A"),
-                  htmlUl("B"),
-                  htmlUl("C")
-                ))
-              ))
-            )
-
-            app$run_server()
-    - name: htmlMain
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlMain(
-                  list(htmlH1("Benjamin Franklin"),
-                       htmlP("Benjamin Franklin was an American polymath
-                             and one of the Founding Fathers of the United States.
-                             Franklin was a leading author, printer, political theorist,
-                             politician, Freemason, postmaster, scientist, inventor,
-                             humorist, civic activist, statesman, and diplomat."))
-                )
-              ))
-            )
-
-            app$run_server()
-    - name: htmlMapEl
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlMapEl(
-                  name = "plotly",
-                  list(
-                  htmlArea(shape = "rect",
-                           coords = "0,0,240,290",
-                           href = "https://i.postimg.cc/TYp9sxV0/ronaldored.jpg",
-                           target = "_blank",
-                           alt = "HTML"),
-                  htmlArea(shape = "rect",
-                           coords = "241,0,480,290",
-                           href = "https://i.postimg.cc/htX5VxZS/ronaldogreen.jpg",
-                           target = "_blank",
-                           alt = "HTML")
-                  )
-                ),
-                htmlImg(useMap = "#plotly", src = "https://i.postimg.cc/nLqPMxMZ/Screen-Shot-2019-07-30-at-3-07-50-PM.png")
-              ))
-            )
-
-            app$run_server()
-    - name: htmlMark
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlP(list(
-                  htmlMark("Plotly"),
-                  " develops online data analytics and visualization tools."
-                ))
-              ))
-            )
-
-            app$run_server()
-    - name: htmlMarquee
-      dontrun: TRUE
-      code: |
-            # This feature is obsolete. It may still work in some
-            # browsers, but could stop working at any time. Try to
-            # avoid using this component.
-
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlMarquee("Here is a sliding text that uses htmlMarquee")
-
-              ))
-            )
-
-            app$run_server()
-    - name: htmlMeta
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlP("The <meta> tag provides metadata about the HTML document.
-                      Metadata will not be displayed on the page, but will be machine parsable.
-                      To view meta tag the content of this page can be inspected."),
-                htmlMeta(name = "author", content = "Dick Tracy")
-              ))
-            )
-
-            app$run_server()
-    - name: htmlMeter
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlLabel("Sample Level Meter: "),
-                htmlMeter(id = "sample-meter",
-                          min = 0,
-                          max = 100,
-                          low = 33,
-                          high = 66,
-                          optimum = 80,
-                          value = 80
-                          )
-              ))
-            )
-
-            app$run_server()
-    - name: htmlMultiCol
-      dontrun: TRUE
-      code: |
-            # Warning: The <multicol> tag is obsolete, it might not work as intended.
-            # Try to avoid using it.
-
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlP("htmlMulticol generates newspaper like text by specifying the cols argument,
-                      an example can be found below:"),
-                htmlA(href = "https://docstore.mik.ua/orelly/web2/xhtml/ch14_02.htm#html4-CHP-14-FIG-4",
-                      "<multicol> Example"),
-                htmlMulticol(#cols = 3,
-                             list(
-                  htmlP("Neuralink Corporation is an American neurotechnology company
-                        founded by Elon Musk and others, developing implantable brain–machine
-                        interfaces (BMIs). The company's headquarters are in San Francisco;
-                        it was started in 2016 and was first publicly reported in March 2017."),
-                  htmlP("In April 2017, a blog called Wait But Why reported that the company aims
-                        to make devices to treat serious brain diseases in the short-term,
-                        with the eventual goal of human enhancement, sometimes called transhumanism.")
-                ))
-              ))
-            )
-
-            app$run_server()
-    - name: htmlNav
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlNav(
-                  list(
-                    htmlA("Plotly", href = "https://plot.ly/"),
-                    " > ",
-                    htmlA("Dash", href = "https://plot.ly/dash"),
-                    " > ",
-                    htmlA("Request Trial", href = "https://go.plot.ly/dash-enterprise-trial")
-                  )
-                )
-              ))
-            )
-
-            app$run_server()
-    - name: htmlNextid
-      dontrun: TRUE
-      code: |
-            # Warning: The <nextid> tag is obsolete, 
-            # it is vanished since HTML Version 3.2
-
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlA(href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nextid",
-                      "Click here for more information about this tag")
-              ))
-            )
-
-            app$run_server()
-    - name: htmlNobr
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlNobr("Lorem ipsum dolor sit amet,
-                         consectetur adipiscing elit, sed do eiusmod
-                         tempor incididunt ut labore et dolore magna aliqua.
-                         Ut enim ad minim veniam, quis nostrud exercitation
-                         ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                         Duis aute irure dolor in reprehenderit in voluptate
-                         velit esse cillum dolore eu fugiat nulla pariatur.
-                         Excepteur sint occaecat cupidatat non proident,
-                         sunt in culpa qui officia deserunt mollit anim id est laborum."
-                )
-              ))
-            )
-
-            app$run_server()
-    - name: htmlNoscript
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlH2("Warning: A browser without support for JavaScript
-                      will show the text inside the noscript element.
-                      Since Dash uses Javascript internally,
-                      using this option might cause incompatibility issues."),
-                htmlNoscript("A browser without support for JavaScript
-                             will show the text inside the noscript element.")
-              ))
-            )
-
-            app$run_server()
-    - name: htmlObjectEl
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlObjectEl(
-                  width = 100,
-                  height = 97
-                  #data = "https://i.postimg.cc/tJd8PSVf/Plotly-logo-01-square.png"
-                )
-              ))
-            )
-
-            app$run_server()
-    - name: htmlOl
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlOl(list(
-                  htmlLi("Un"),
-                  htmlLi("Deux"),
-                  htmlLi("Trois")
-                ))
-              ))
-            )
-
-            app$run_server()
-    - name: htmlOptgroup
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlLabel(
-                  htmlFor = "option-select", "Please select car brand/model: "
-                ),
-                htmlSelect(id = "option-select", list(
-                htmlOptgroup("Audi"), #label = "Audi"
-                htmlOption("TT"),
-                htmlOption("A4"),
-                htmlOptgroup("BMW"), #label = "BMW"
-                htmlOption("3 Series"),
-                htmlOption("5 Series")
-                ))
-              ))
-            )
-
-            app$run_server()
-    - name: htmlOption
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlSelect(list(
-                  htmlOption("Andariel"),
-                  htmlOption("Duriel"),
-                  htmlOption("Mephisto"),
-                  htmlOption("Diablo"),
-                  htmlOption("Baal")
-                ))
-              ))
-            )
-
-            app$run_server()
-    - name: htmlOutput
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                # TODO
-              ))
-            )
-
-            app$run_server()
-    - name: htmlP
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlP("The <p> tag defines a paragraph.")
-              ))
-            )
-
-            app$run_server()
-    - name: htmlParam
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlP("The <param> element is used to specify the parameters that apply to
-                plugin-powered content embedded with an <object> element.
-                Read more: https://html.com/tags/param/#ixzz5vBNn4V00"),
-                htmlObjectEl(
-                  #data = "link-to-data-file"
-                  htmlParam(name = "controller", value = TRUE)
-                )
-              ))
-            )
-
-            app$run_server()
-    - name: htmlPicture
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlPicture(list(
-                  htmlSource(srcSet = "https://i.postimg.cc/zGSMfWDx/montreal-night.jpg",
-                             media = "(min-width: 800px)"),
-                  htmlImg(src = "https://i.postimg.cc/25Gxs7jf/montreal-day.jpg"),
-                  htmlP("Resize screen to see image changing...")
-                ))
-              ))
-            )
-
-            app$run_server()
-    - name: htmlPlainText
-      dontrun: TRUE
-      code: |
-            # Warning: The <plaintext> tag is obsolete,
-            # it might not work as intended.
-            # Use the <pre> tag instead.
-            
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlPlaintext(),
-                htmlBr(),
-                htmlH4("The HTML Plaintext Element (<plaintext>) renders everything following
-                      the start tag as raw text, ignoring any following HTML. There is no closing tag,
-                      since everything after it is considered raw text.")
-              ))
-            )
-
-            app$run_server()
-    - name: htmlPre
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlPre(
-                  "
-                  Text in a <pre> element is displayed
-                  in a fixed-width font (usually Courier),
-                  and it preserves both spaces and line breaks.
-                  "
-                )
-              ))
-            )
-
-            app$run_server()
-    - name: htmlProgress
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlP("Below is an example of htmlProgress"),
-                htmlProgress(value = 80, max = 100)
-              ))
-            )
-
-            app$run_server()
-    - name: htmlQ
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlP(list(
-                "The <q> tag defines a short quotation: ",
-                htmlQ("This example text is wrapped in htmlQ")
-                ))
-              ))
-            )
-
-            app$run_server()
-    - name: htmlRb
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlRuby(
-                  htmlRb(
-                    "\U{65e5}"
-                  )
-                )
-              ))
-            )
-
-            app$run_server()
-    - name: htmlRp
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlRuby(list(
-                    "\U{6f22}",
-                    htmlRp("("),
-                    htmlRt("kan"),
-                    htmlRp(")")
-                ))
-              ))
-            )
-
-            app$run_server()
-    - name: htmlRt
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlRuby(list(
-                  "\U{5b57}",
-                  htmlRt("ji")
-                ))
-              ))
-            )
-
-            app$run_server()
-    - name: htmlRtc
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlRuby(list(
-                  "\U2661",
-                  htmlRtc(htmlRt(" Heart"))
-                ))
-              ))
-            )
-
-            app$run_server()
-    - name: htmlRuby
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlRuby("\U{54d0}")
-              ))
-            )
-
-            app$run_server()
-    - name: htmlS
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlS("htmlS  generates bold text"),
-                htmlP("htmlS  generates striked-through text")
-              ))
-            )
-
-            app$run_server()
-    - name: htmlSamp
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlSamp("htmlSamp formats text to computer program output.")
-              ))
-            )
-
-            app$run_server()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-pkg_help_description: >
-    Dash is a web application framework that
-    provides pure Python and R abstraction around HTML, CSS, and
-    JavaScript. Instead of writing HTML or using an HTML
-    templating engine, you compose your layout using R
-    functions within the dashHtmlComponents package. The
-    source for this package is on GitHub:
-    plotly/dash-html-components.
-pkg_help_title: >
-    Vanilla HTML Components for Dash
-
-r_examples:
-    - name: htmlA
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlA(children="Link to external site",
-                      href="https://plot.ly",
-                      target="_blank")
-                )
-              )
-            )
-
-            app$run_server()
-    - name: htmlAbbr
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-               htmlDiv(list(
-                 htmlAbbr(children="\U{1F50D} Hover over this line for a few seconds and see the text box appear...",
-                          title="Hello! htmlAbbr at work!")
-                  )
-               )
-            )
-
-            app$run_server()
-    - name: htmlAcronym
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlAcronym(children="Mouse over these words to see the acronym for \"as soon as possible\".",
-                title="ASAP")
-                  )
-              )
-            )
-
-            app$run_server()
-    - name: htmlAddress
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlAddress(children="5555 Avenue de Gasp\U{00E9}, Montréal QC H2T 2A3")
-                )
-              )
-            )
-
-            app$run_server()
-    - name: htmlArea
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlImg(src = "https://upload.wikimedia.org/wikipedia/commons/0/0c/PIA17351-ApparentSizes-MarsDeimosPhobos-EarthMoon.jpg",
-                        useMap = "#image-map"),
-                htmlMapEl(list(
-                  htmlArea(target="_blank",
-                           alt="Deimos",
-                           title="Deimos",
-                           href="https://en.wikipedia.org/wiki/Deimos_(moon)",
-                           coords="5,114,32,147",
-                           shape="rect"),
-                  htmlArea(target="_blank",
-                           alt="Phobos",
-                           title="Phobos",
-                           href="https://en.wikipedia.org/wiki/Phobos_(moon)",
-                           coords="113,196,32,103",
-                           shape="rect"),
-                  htmlArea(target="_blank",
-                           alt="Moon",
-                           title="Moon",
-                           href="https://en.wikipedia.org/wiki/Moon",
-                           coords="127,285,294,1",
-                           shape="rect")
-                  ),
-                  name = "image-map"
-                ),
-                htmlDiv(children = "Click on the image to visit a Wikipedia article",
-                        id = "object-name")
-                )
-              )
-            )
-
-            app$run_server()
-    - name: htmlArticle
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlArticle(list(
-                  htmlH2("Dash for R launched!"),
-                  htmlP("Dash is a user interface library for creating analytical web applications.\n
-                         Those who use R for data analysis, data exploration, visualization,\n
-                         modelling, instrument control, and reporting will find immediate use for Dash for R."),
-                  htmlAside("Plotly is a technical computing company with offices in Montr\U{00E9}al, Canada and Cambridge, Massachusetts.")
-                  )
-                )
-               )
-              )
-            )
-
-            app$run_server()
-    - name: htmlAside
-      dontrun: TRUE
-      code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlArticle(list(
-                  htmlH2("Dash for R launched!"),
-                  htmlP("Dash is a user interface library for creating analytical web applications.\n
-                         Those who use R for data analysis, data exploration, visualization,\n
-                         modelling, instrument control, and reporting will find immediate use for Dash for R."),
-                  htmlAside("Plotly is a technical computing company with offices in Montr\U{00E9}al, Canada and Cambridge, Massachusetts.")
-                  )
-                )
-               )
-              )
-            )
-
             app$run_server()
     - name: htmlAudio
       dontrun: TRUE
@@ -1184,7 +228,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlDiv
       dontrun: TRUE
       code: |
@@ -1198,7 +241,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlDl
       dontrun: TRUE
       code: |
@@ -1220,7 +262,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlDt
       dontrun: TRUE
       code: |
@@ -1241,7 +282,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlElement
       dontrun: TRUE
       code: |
@@ -1249,7 +289,6 @@ r_examples:
             # This feature is obsolete. It may still work in some
             # browsers, but could stop working at any time. Try to
             # avoid using this component.
-
     - name: htmlEm
       dontrun: TRUE
       code: |
@@ -1269,7 +308,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlEmbed
       dontrun: TRUE
       code: |
@@ -1289,7 +327,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlFieldset
       dontrun: TRUE
       code: |
@@ -1316,7 +353,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlFigcaption
       dontrun: TRUE
       code: |
@@ -1335,7 +371,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlFigure
       dontrun: TRUE
       code: |
@@ -1357,7 +392,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlFont
       dontrun: TRUE
       code: |
@@ -1365,7 +399,6 @@ r_examples:
             Starting with HTML 4, HTML does not convey styling information
             anymore (outside the <style> element or the style attribute of each
             element). For any new web development, styling should be written using CSS only.
-
     - name: htmlFooter
       dontrun: TRUE
       code: |
@@ -1389,7 +422,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlForm
       dontrun: TRUE
       code: |
@@ -1413,12 +445,10 @@ r_examples:
             )
 
             app$run_server()
-
     - name: HtmlFrame
       dontrun: TRUE
       code: |
             HtmlFrame is now depreciated. htmlIFrame is now recommended.
-
     - name: HtmlFrameset
       dontrun: TRUE
       code: |
@@ -1435,7 +465,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlH1
       dontrun: TRUE
       code: |
@@ -1458,7 +487,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlH2
       dontrun: TRUE
       code: |
@@ -1481,7 +509,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlH3
       dontrun: TRUE
       code: |
@@ -1504,7 +531,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlH4
       dontrun: TRUE
       code: |
@@ -1527,7 +553,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlH5
       dontrun: TRUE
       code: |
@@ -1550,7 +575,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlH6
       dontrun: TRUE
       code: |
@@ -1573,7 +597,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlHgroup
       dontrun: TRUE
       code: |
@@ -1597,7 +620,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlHr
       dontrun: TRUE
       code: |
@@ -1621,7 +643,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlI
       dontrun: TRUE
       code: |
@@ -1640,7 +661,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlIFrame
       dontrun: TRUE
       code: |
@@ -1660,7 +680,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlImg
       dontrun: TRUE
       code: |
@@ -1680,7 +699,6 @@ r_examples:
 
 
             app$run_server()
-
     - name: htmlIns
       dontrun: TRUE
       code: |
@@ -1699,7 +717,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlIsindex
       dontrun: TRUE
       code: |
@@ -1714,7 +731,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlKbd
       dontrun: TRUE
       code: |
@@ -1737,7 +753,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlKeygen
       dontrun: TRUE
       code: |
@@ -1745,7 +760,6 @@ r_examples:
             This feature is obsolete. It may still work in some
             browsers, but could stop working at any time. Try to
             avoid using this component.
-
     - name: htmlLabel
       dontrun: TRUE
       code: |
@@ -1773,7 +787,6 @@ r_examples:
             )
 
             app$run_server()
-
     - name: htmlLegend
       dontrun: TRUE
       code: |
