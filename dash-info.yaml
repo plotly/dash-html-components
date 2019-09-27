@@ -209,6 +209,238 @@ r_examples:
             )
 
             app$run_server()
+    - name: htmlBase
+      dontrun: TRUE
+      code:
+    - name: htmlBasefont
+      dontrun: TRUE
+      code: |
+            # This feature is obsolete. It may still work in some
+            # browsers, but could stop working at any time. Try to
+            # avoid using this component.
+            #
+            # Instead, use CSS properties to set font, font-family,
+            # font-size and color.
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlBasefont(color="FF0000",
+                             face="Helvetica",
+                             size="+2"),
+                htmlP(children="If it works, this will be Helvetica but a couple point sizes larger.")
+                )
+               )
+            )
+
+            app$rqun_server()
+    - name: htmlBdi
+      dontrun: TRUE
+      code: |
+            app <- Dash$new()
+
+            app$layout(
+                htmlDiv(list(
+                    htmlP(children="The line below should render as 'Aladdin', but in Arabic script:"),
+                    htmlBdi(children="\U{0639}\U{0644}\U{0627}\U{0621} \U{0627}\U{0644}\U{062F}\U{064A}\U{0646}")
+                )
+                )
+            )
+
+            app$run_server()
+    - name: htmlBdo
+      dontrun: TRUE
+      code: |
+            # This element supports bidirectional text override.
+            # We can force text to render from right to left instead
+            # of left to right.
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlP(children="This text will print from left to right."),
+                htmlP(children="Below, we use bidirectional override to print right to left:"),
+                htmlBdo(children="This text will print from right to left.",
+                        dir="rtl")
+               )
+              )
+            )
+
+            app$run_server()
+    - name: htmlBig
+      dontrun: TRUE
+      code: |
+            # The <big> tag is not supported in HTML5.
+            # Instead, use the font-size property in
+            # CSS to enlarge text.
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlP(children="This text will display in standard size."),
+                htmlBig(children="This text may or may not appear slightly larger.")
+               )
+              )
+            )
+
+            app$run_server()
+    - name: htmlBlink
+      dontrun: TRUE
+      code: |
+            # The blink tag is now obsolete and deprecated.
+            # It may not function properly in all browsers,
+            # and it may cease working without warning.
+            #
+            # This element is generally unsupported on all
+            # modern browser releases.
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlP(children="Here is a bit of text."),
+                htmlBlink(children="Here is a bit of blinking text.")
+               )
+              )
+            )
+
+            app$run_server()
+    - name: htmlBlockquote
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlP("Here is some text."),
+                htmlBlockquote(children=list(
+                   htmlP("And here is a quotation in block format.")
+                   )
+                )
+               )
+              )
+            )
+
+            app$run_server()
+    - name: htmlBr
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlP("Here is some text."),
+                htmlBr(),
+                htmlP("Here is additional text."),
+                htmlBr(),
+                htmlP("See the gap in between the lines?")
+                )
+              )
+            )
+
+            app$run_server()
+    - name: htmlButton
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlButton("Click me!")
+                )
+              )
+            )
+
+            app$run_server()
+    - name: htmlCanvas
+      dontrun: TRUE
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlCanvas("Click me!")
+                )
+              )
+            )
+
+            app$run_server()
+    - name: htmlCaption
+      dontrun: TRUE
+      code: |
+    - name: htmlCenter
+      dontrun: TRUE
+      code: |
+    - name: htmlCenter
+      dontrun: TRUE
+      code: |
+    - name: htmlCite
+      dontrun: TRUE
+      code: |
+    - name: htmlCode
+      dontrun: TRUE
+      code: |
+    - name: htmlCol
+      dontrun: TRUE
+      code: |
+    - name: htmlColgroup
+      dontrun: TRUE
+      code: |
+    - name: htmlCommand
+      dontrun: TRUE
+      code: |
+    - name: htmlContent
+      dontrun: TRUE
+      code: |
+    - name: htmlData
+      dontrun: TRUE
+      code: |
+    - name: htmlDatalist
+      dontrun: TRUE
+      code: |
+    - name: htmlDd
+      dontrun: TRUE
+      code: |
+    - name: htmlDel
+      dontrun: TRUE
+      code: |
+    - name: htmlDetails
+      dontrun: TRUE
+      code: |
+    - name: htmlDfn
+      dontrun: TRUE
+      code: |
     - name: htmlDialog
       dontrun: TRUE
       code: |
@@ -448,7 +680,7 @@ r_examples:
     - name: HtmlFrame
       dontrun: TRUE
       code: |
-            HtmlFrame is now depreciated. htmlIFrame is now recommended.
+            # HtmlFrame is now deprecated. htmlIFrame is now recommended.
     - name: HtmlFrameset
       dontrun: TRUE
       code: |
@@ -465,6 +697,9 @@ r_examples:
             )
 
             app$run_server()
+    - name: htmlHeader
+      dontrun: TRUE
+      code: |
     - name: htmlH1
       dontrun: TRUE
       code: |
