@@ -20,9 +20,3 @@ lib/metadata.json
 /src
 
 /build
-/dash_html_components
-/inst
-/man
-/R
-DESCRIPTION
-NAMESPACE
