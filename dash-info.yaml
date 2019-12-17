@@ -1,4 +1,4 @@
-pkg_help_description: >
+pkg_help_description: >-
     Dash is a web application framework that
     provides pure Python and R abstraction around HTML, CSS, and
     JavaScript. Instead of writing HTML or using an HTML
@@ -6,9 +6,8 @@ pkg_help_description: >
     functions within the dashHtmlComponents package. The
     source for this package is on GitHub:
     plotly/dash-html-components.
-pkg_help_title: >
+pkg_help_title: >-
     Vanilla HTML Components for Dash
-
 r_examples:
     - name: htmlA
       dontrun: TRUE
