@@ -226,7 +226,7 @@ r_examples:
                )
             )
 
-            app$rqun_server()
+            app$run_server()
     - name: htmlBdi
       dontrun: TRUE
       code: |
@@ -588,7 +588,7 @@ r_examples:
 
             app$layout(htmlDiv(list(
               htmlFieldset(
-                children = list('Choose your favourite Dash HTML component',
+                children = list('Choose your favorite Dash HTML component',
                 dccRadioItems(
                   options=list(
                     list("label" = "htmlDiv", "value" = "htmlDiv"),
@@ -1040,7 +1040,7 @@ r_examples:
             app$layout(htmlDiv(list(
               htmlFieldset(
                 children = list(
-                                htmlLegend('Select your favourite component'),
+                                htmlLegend('Select your favorite component'),
                                 dccRadioItems(
                                   options=list(
                                     list("label" = "htmlDiv", "value" = "htmlDiv"),
