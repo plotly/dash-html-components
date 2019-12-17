@@ -84,7 +84,7 @@ app <- Dash$new()
 
 app$layout(htmlDiv(list(
   htmlFieldset(
-    children = list('Choose your favourite Dash HTML component',
+    children = list('Choose your favorite Dash HTML component',
     dccRadioItems(
       options=list(
         list("label" = "htmlDiv", "value" = "htmlDiv"),
