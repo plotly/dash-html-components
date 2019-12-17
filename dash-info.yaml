@@ -226,7 +226,7 @@ r_examples:
                )
             )
 
-            app$rqun_server()
+            app$run_server()
     - name: htmlBdi
       dontrun: TRUE
       code: |
