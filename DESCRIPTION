@@ -4,11 +4,12 @@ Version: 1.0.2
 Description: Dash is a web application framework that provides pure Python and R abstraction around HTML, CSS, and JavaScript. Instead of writing HTML or using an HTML templating engine, you compose your layout using R functions within the dashHtmlComponents package. The source for this package is on GitHub: plotly/dash-html-components.
 Depends: R (>= 3.0.2)
 Imports: 
-Suggests: 
+Suggests: knitr, rmarkdown
 License: MIT + file LICENSE
 URL: https://github.com/plotly/dash-html-components
 BugReports: https://github.com/plotly/dash-html-components/issues
 Encoding: UTF-8
 LazyData: true
+VignetteBuilder: knitr
 Author: Chris Parmer [aut]
 Maintainer: Ryan Patrick Kyle <ryan@plot.ly>

@@ -75,7 +75,7 @@ app <- Dash$new()
 
 app$layout(
   htmlDiv(list(
-    htmlAddress(children="5555 Avenue de Gasp\U{00E9}, Montréal QC H2T 2A3")
+    htmlAddress(children="5555 Avenue de Gasp\U{00E9}, Montr\U{00E9}al QC H2T 2A3")
     )
   )
 )
