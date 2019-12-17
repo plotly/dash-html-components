@@ -36,7 +36,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 
 \item{role}{Character. The ARIA role attribute}
 
-\item{accessKey}{Character. Defines a keyboard shortcut to activate or add focus to the element.}
+\item{accessKey}{Character. Keyboard shortcut to activate or add focus to the element.}
 
 \item{className}{Character. Often used with CSS to style elements with common properties.}
 

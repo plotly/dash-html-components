@@ -54,7 +54,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 
 \item{size}{Character | numeric. Defines the width of the element (in pixels). If the element's type attribute is text or password then it's the number of characters.}
 
-\item{accessKey}{Character. Defines a keyboard shortcut to activate or add focus to the element.}
+\item{accessKey}{Character. Keyboard shortcut to activate or add focus to the element.}
 
 \item{className}{Character. Often used with CSS to style elements with common properties.}
 
@@ -84,3 +84,26 @@ those elements have the following types:
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
 }
+\examples{
+\dontrun{
+library(dash)
+library(dashHtmlComponents)
+library(dashCoreComponents)
+
+app <- Dash$new()
+
+app$layout(
+  htmlDiv(list(
+    htmlSelect(
+      children = list(
+        htmlOption("This is an option in htmlSelect"),
+        htmlOption("But you might want to check out dccDropdown as well"),
+        htmlOption("dccDropdown is part of the dashCoreComponents library")
+      )
+    )
+    )
+  )
+)
+
+app$run_server()
+}}

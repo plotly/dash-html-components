@@ -38,7 +38,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 
 \item{name}{Character. Name of the element. For example used by the server to identify the fields in form submits.}
 
-\item{accessKey}{Character. Defines a keyboard shortcut to activate or add focus to the element.}
+\item{accessKey}{Character. Keyboard shortcut to activate or add focus to the element.}
 
 \item{className}{Character. Often used with CSS to style elements with common properties.}
 
@@ -68,3 +68,44 @@ those elements have the following types:
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
 }
+\examples{
+\dontrun{
+library(dash)
+library(dashHtmlComponents)
+library(dashCoreComponents)
+
+app <- Dash$new()
+
+app$layout(
+  htmlDiv(list(
+    htmlImg(src = "https://upload.wikimedia.org/wikipedia/commons/0/0c/PIA17351-ApparentSizes-MarsDeimosPhobos-EarthMoon.jpg",
+            useMap = "#image-map"),
+    htmlMapEl(list(
+      htmlArea(target="_blank",
+               alt="Deimos",
+               title="Deimos",
+               href="https://en.wikipedia.org/wiki/Deimos_(moon)",
+               coords="5,114,32,147",
+               shape="rect"),
+      htmlArea(target="_blank",
+               alt="Phobos",
+               title="Phobos",
+               href="https://en.wikipedia.org/wiki/Phobos_(moon)",
+               coords="113,196,32,103",
+               shape="rect"),
+      htmlArea(target="_blank",
+               alt="Moon",
+               title="Moon",
+               href="https://en.wikipedia.org/wiki/Moon",
+               coords="127,285,294,1",
+               shape="rect")
+      ),
+      name = "image-map"
+    ),
+    htmlDiv(children = "Click on the image to visit a Wikipedia article",
+            id = "object-name")
+    )
+  )
+)
+app$run_server()
+}}
