@@ -89,5 +89,5 @@ app$layout(
    )
 )
 
-app$rqun_server()
+app$run_server()
 }}
