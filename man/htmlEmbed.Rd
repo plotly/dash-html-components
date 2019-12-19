@@ -45,7 +45,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 
 \item{width}{Character | numeric. For the elements listed here, this establishes the element's width.        Note: For all other instances, such as <div>, this is a legacy attribute, in which case the CSS width property should be used instead.}
 
-\item{accessKey}{Character. Defines a keyboard shortcut to activate or add focus to the element.}
+\item{accessKey}{Character. Keyboard shortcut to activate or add focus to the element.}
 
 \item{className}{Character. Often used with CSS to style elements with common properties.}
 
@@ -75,3 +75,21 @@ those elements have the following types:
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
 }
+\examples{
+\dontrun{
+library(dash)
+library(dashHtmlComponents)
+
+app <- Dash$new()
+
+app$layout(htmlDiv(list(
+  htmlEmbed(
+    src = 'https://www.youtube.com/watch?v=njW7DmeK1Qk',
+    width = '250',
+    height = '500')
+    )
+  )
+)
+
+app$run_server()
+}}

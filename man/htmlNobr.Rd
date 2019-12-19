@@ -36,7 +36,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 
 \item{role}{Character. The ARIA role attribute}
 
-\item{accessKey}{Character. Defines a keyboard shortcut to activate or add focus to the element.}
+\item{accessKey}{Character. Keyboard shortcut to activate or add focus to the element.}
 
 \item{className}{Character. Often used with CSS to style elements with common properties.}
 
@@ -66,3 +66,28 @@ those elements have the following types:
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
 }
+\examples{
+\dontrun{
+library(dash)
+library(dashHtmlComponents)
+library(dashCoreComponents)
+
+app <- Dash$new()
+
+app$layout(
+  htmlDiv(list(
+    htmlNobr("Lorem ipsum dolor sit amet,
+             consectetur adipiscing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua.
+             Ut enim ad minim veniam, quis nostrud exercitation
+             ullamco laboris nisi ut aliquip ex ea commodo consequat.
+             Duis aute irure dolor in reprehenderit in voluptate
+             velit esse cillum dolore eu fugiat nulla pariatur.
+             Excepteur sint occaecat cupidatat non proident,
+             sunt in culpa qui officia deserunt mollit anim id est laborum."
+    )
+  ))
+)
+
+app$run_server()
+}}

@@ -45,7 +45,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 
 \item{name}{Character. Name of the element. For example used by the server to identify the fields in form submits.}
 
-\item{accessKey}{Character. Defines a keyboard shortcut to activate or add focus to the element.}
+\item{accessKey}{Character. Keyboard shortcut to activate or add focus to the element.}
 
 \item{className}{Character. Often used with CSS to style elements with common properties.}
 
@@ -75,3 +75,22 @@ those elements have the following types:
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
 }
+\examples{
+\dontrun{
+library(dash)
+library(dashHtmlComponents)
+library(dashCoreComponents)
+
+app <- Dash$new()
+
+app$layout(
+  htmlDiv(list(
+    htmlP("The <meta> tag provides metadata about the HTML document.
+          Metadata will not be displayed on the page, but will be machine parsable.
+          To view meta tag the content of this page can be inspected."),
+    htmlMeta(name = "author", content = "Edward Tufte")
+  ))
+)
+
+app$run_server()
+}}

@@ -38,7 +38,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 
 \item{dateTime}{Character. Indicates the date and time associated with the element.}
 
-\item{accessKey}{Character. Defines a keyboard shortcut to activate or add focus to the element.}
+\item{accessKey}{Character. Keyboard shortcut to activate or add focus to the element.}
 
 \item{className}{Character. Often used with CSS to style elements with common properties.}
 
@@ -68,3 +68,26 @@ those elements have the following types:
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
 }
+\examples{
+\dontrun{
+library(dash)
+library(dashHtmlComponents)
+library(dashCoreComponents)
+
+app <- Dash$new()
+
+app$layout(
+  htmlDiv(list(
+    htmlP(
+      list(
+        "It might be useful to wrap dates like ",
+        htmlTime(dateTime = "2019-07-29", children = "July 29th"),
+        " in an htmlTime to make your datetimes machine readable"
+      )
+    )
+    )
+  )
+)
+
+app$run_server()
+}}

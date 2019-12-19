@@ -47,7 +47,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 
 \item{type}{Character. Defines the type of the element.}
 
-\item{accessKey}{Character. Defines a keyboard shortcut to activate or add focus to the element.}
+\item{accessKey}{Character. Keyboard shortcut to activate or add focus to the element.}
 
 \item{className}{Character. Often used with CSS to style elements with common properties.}
 
@@ -77,3 +77,32 @@ those elements have the following types:
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
 }
+\examples{
+\dontrun{
+library(dash)
+library(dashHtmlComponents)
+library(dashCoreComponents)
+
+app <- Dash$new()
+
+app$layout(
+  htmlDiv(list(
+      "Resize your browser window to see the image source change based based on the browser width",
+      htmlBr(),
+      htmlPicture(
+        list(
+          htmlSource(
+            media = "(min-width: 1000px)",
+            srcSet = "https://apod.nasa.gov/apod/image/1907/FishheadNebula_Pham_2401.jpg"
+          ),
+          htmlImg(
+            src = "https://apod.nasa.gov/apod/image/1907/ngc3576_campbell_1824.jpg"
+          )
+        )
+      )
+    )
+  )
+)
+
+app$run_server()
+}}
