@@ -433,36 +433,218 @@ r_examples:
     - name: htmlCode
       dontrun: TRUE
       code: |
+            library(dash)
+            library(dashHtmlComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlCode("Text as code!")
+                )
+              )
+            )
+
+            app$run_server()
     - name: htmlCol
       dontrun: TRUE
       code: |
+            # Used within htmlColgroup to define columns.
+            library(dash)
+            library(dashHtmlComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlTable(list(
+                    htmlColgroup(
+                      list(
+                        htmlCol(span = 2, style = list("background-color" = "red"))
+                      )
+                    ),
+                    htmlTr(
+                      list(
+                        htmlTd("Cell A"),
+                        htmlTd("Cell B"),
+                        htmlTd("Cell C")
+                      )
+                    )
+                  ))
+                )
+              )
+            )
+
+            app$run_server()
     - name: htmlColgroup
       dontrun: TRUE
       code: |
+            library(dash)
+            library(dashHtmlComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlTable(list(
+                    htmlColgroup(
+                      list(
+                        htmlCol(span = 2, style = list("background-color" = "red"))
+                      )
+                    ),
+                    htmlTr(
+                      list(
+                        htmlTd("Cell A"),
+                        htmlTd("Cell B"),
+                        htmlTd("Cell C")
+                      )
+                    )
+                  ))
+                )
+              )
+            )
+
+            app$run_server()
     - name: htmlCommand
       dontrun: TRUE
       code: |
+            # This component is deprecated and its use is no longer recommended. 
+            It is recommended to use a callback for this functionality instead.
     - name: htmlContent
       dontrun: TRUE
       code: |
+            This feature is obsolete and no longer supported. It is recommended 
+            that you use the htmlSlot component instead. 
     - name: htmlData
       dontrun: TRUE
       code: |
+                        library(dash)
+            library(dashHtmlComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlUl(list(
+                    htmlLi(list(htmlData(value = 398, "First Element"))),
+                    htmlLi(list(htmlData(value = 399, "Second Element"))),
+                    htmlLi(list(htmlData(value = 400, "First Element")))
+                  ))
+                )
+              )
+            )
+            
+            # Include the following in a seperate CSS file in an
+            # `assets` directory in the root of your app.
+            # 
+            # data:hover::after {
+            #   content: ' (ID ' attr(value) ')';
+            #   font-size: .7em;
+            # }
+
+            app$run_server()
     - name: htmlDatalist
       dontrun: TRUE
       code: |
+      
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+              dccInput(
+                placeholder = 'Enter here',
+                list = 'list-of-options'),
+              htmlDatalist(id = 'list-of-options',
+                children=list(
+                  htmlOption("Option 1"),
+                  htmlOption("Option 2"),
+                  htmlOption("Option 3")
+                    )
+                  )
+                )
+              )
+            )
+
+            app$run_server()
     - name: htmlDd
       dontrun: TRUE
       code: |
+      
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+              htmlDd(
+                    children ="Description List Hello"
+                  )
+                )
+              )
+            )
+
+            app$run_server()
     - name: htmlDel
       dontrun: TRUE
       code: |
+      
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+              htmlDel(
+                    children ="Deleted Hello"
+                  )
+                )
+              )
+            )
+
+            app$run_server()
     - name: htmlDetails
       dontrun: TRUE
       code: |
+      
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+              htmlDetails(
+                    children ="Hello"
+                  )
+                )
+              )
+            )
+
+            app$run_server()
     - name: htmlDfn
       dontrun: TRUE
       code: |
+      
+            library(dash)
+            library(dashHtmlComponents)
+            library(dashCoreComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+              htmlDfn(
+                    children ="Hello"
+                  )
+                )
+              )
+            )
+
+            app$run_server()
     - name: htmlDialog
       dontrun: TRUE
       code: |
