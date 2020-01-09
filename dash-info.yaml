@@ -433,6 +433,20 @@ r_examples:
     - name: htmlCode
       dontrun: TRUE
       code: |
+            library(dash)
+            library(dashHtmlComponents)
+
+            app <- Dash$new()
+
+            app$layout(htmlDiv(list(
+              htmlCode(
+                children = 'cat("Hello world!")'
+                  )
+                )
+              )
+            )
+
+            app$run_server()
     - name: htmlCol
       dontrun: TRUE
       code: |
