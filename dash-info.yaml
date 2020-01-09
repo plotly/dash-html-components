@@ -504,7 +504,7 @@ r_examples:
                 htmlTable(list(
                     htmlColgroup(
                       list(
-                        htmlCol(span = 2, style = list("background-color'= "red"))
+                        htmlCol(span = 2, style = list("background-color"= "red"))
                       )
                     ),
                     htmlTr(
