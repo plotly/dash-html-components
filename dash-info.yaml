@@ -13,7 +13,7 @@ r_examples:
       dontrun: TRUE
       code: |
             library(dash)
-            library(dashhtmlComponents)
+            library(dashHtmlComponents)
 
             app <- Dash$new()
 
