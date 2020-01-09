@@ -382,7 +382,7 @@ r_examples:
     - name: htmlCanvas
       dontrun: TRUE
       code: |
-            # this component requires JavaScript code
+            # this component requires JavaScript code to draw on the canvas
             library(dash)
             library(dashHtmlComponents)
 
