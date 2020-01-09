@@ -13,15 +13,15 @@ r_examples:
       dontrun: TRUE
       code: |
             library(dash)
-            library(dashHtmlComponents)
+            library(dashhtmlComponents)
 
             app <- Dash$new()
 
             app$layout(
               htmlDiv(list(
-                htmlA(children="Link to external site",
-                      href="https://plot.ly",
-                      target="_blank")
+                htmlA(children='Link to external site',
+                      href='https://plot.ly',
+                      target='_blank')
                 )
               )
             )
@@ -37,8 +37,8 @@ r_examples:
 
             app$layout(
                htmlDiv(list(
-                 htmlAbbr(children="\U{1F50D} Hover over this line for a few seconds and see the text box appear...",
-                          title="Hello! htmlAbbr at work!")
+                 htmlAbbr(children='\U{1F50D} Hover over this line for a few seconds and see the text box appear...',
+                          title='Hello! htmlAbbr at work!')
                   )
                )
             )
@@ -54,8 +54,8 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                htmlAcronym(children="Mouse over these words to see the acronym for \"as soon as possible\".",
-                title="ASAP")
+                htmlAcronym(children='Mouse over these words to see the acronym for \'as soon as possible\'.',
+                title='ASAP')
                   )
               )
             )
@@ -71,7 +71,7 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                htmlAddress(children="5555 Avenue de Gasp\U{00E9}, Montr\U{00E9}al QC H2T 2A3")
+                htmlAddress(children='5555 Avenue de Gasp\U{00E9}, Montr\U{00E9}al QC H2T 2A3')
                 )
               )
             )
@@ -87,32 +87,32 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                htmlImg(src = "https://upload.wikimedia.org/wikipedia/commons/0/0c/PIA17351-ApparentSizes-MarsDeimosPhobos-EarthMoon.jpg",
-                        useMap = "#image-map"),
+                htmlImg(src = 'https://upload.wikimedia.org/wikipedia/commons/0/0c/PIA17351-ApparentSizes-MarsDeimosPhobos-EarthMoon.jpg',
+                        useMap = '#image-map'),
                 htmlMapEl(list(
-                  htmlArea(target="_blank",
-                           alt="Deimos",
-                           title="Deimos",
-                           href="https://en.wikipedia.org/wiki/Deimos_(moon)",
-                           coords="5,114,32,147",
-                           shape="rect"),
-                  htmlArea(target="_blank",
-                           alt="Phobos",
-                           title="Phobos",
-                           href="https://en.wikipedia.org/wiki/Phobos_(moon)",
-                           coords="113,196,32,103",
-                           shape="rect"),
-                  htmlArea(target="_blank",
-                           alt="Moon",
-                           title="Moon",
-                           href="https://en.wikipedia.org/wiki/Moon",
-                           coords="127,285,294,1",
-                           shape="rect")
+                  htmlArea(target='_blank',
+                           alt='Deimos',
+                           title='Deimos',
+                           href='https://en.wikipedia.org/wiki/Deimos_(moon)',
+                           coords='5,114,32,147',
+                           shape='rect'),
+                  htmlArea(target='_blank',
+                           alt='Phobos',
+                           title='Phobos',
+                           href='https://en.wikipedia.org/wiki/Phobos_(moon)',
+                           coords='113,196,32,103',
+                           shape='rect'),
+                  htmlArea(target='_blank',
+                           alt='Moon',
+                           title='Moon',
+                           href='https://en.wikipedia.org/wiki/Moon',
+                           coords='127,285,294,1',
+                           shape='rect')
                   ),
-                  name = "image-map"
+                  name = 'image-map'
                 ),
-                htmlDiv(children = "Click on the image to visit a Wikipedia article",
-                        id = "object-name")
+                htmlDiv(children = 'Click on the image to visit a Wikipedia article',
+                        id = 'object-name')
                 )
               )
             )
@@ -129,11 +129,11 @@ r_examples:
             app$layout(
               htmlDiv(list(
                 htmlArticle(list(
-                  htmlH2("Dash for R launched!"),
-                  htmlP("Dash is a user interface library for creating analytical web applications.\n
+                  htmlH2('Dash for R launched!'),
+                  htmlP('Dash is a user interface library for creating analytical web applications.\n
                          Those who use R for data analysis, data exploration, visualization,\n
-                         modelling, instrument control, and reporting will find immediate use for Dash for R."),
-                  htmlAside("Plotly is a technical computing company with offices in Montr\U{00E9}al, Canada and Cambridge, Massachusetts.")
+                         modelling, instrument control, and reporting will find immediate use for Dash for R.'),
+                  htmlAside('Plotly is a technical computing company with offices in Montr\U{00E9}al, Canada and Cambridge, Massachusetts.')
                   )
                 )
                )
@@ -152,11 +152,11 @@ r_examples:
             app$layout(
               htmlDiv(list(
                 htmlArticle(list(
-                  htmlH2("Dash for R launched!"),
-                  htmlP("Dash is a user interface library for creating analytical web applications.\n
+                  htmlH2('Dash for R launched!'),
+                  htmlP('Dash is a user interface library for creating analytical web applications.\n
                          Those who use R for data analysis, data exploration, visualization,\n
-                         modelling, instrument control, and reporting will find immediate use for Dash for R."),
-                  htmlAside("Plotly is a technical computing company with offices in Montr\U{00E9}al, Canada and Cambridge, Massachusetts.")
+                         modelling, instrument control, and reporting will find immediate use for Dash for R.'),
+                  htmlAside('Plotly is a technical computing company with offices in Montr\U{00E9}al, Canada and Cambridge, Massachusetts.')
                   )
                 )
                )
@@ -174,9 +174,9 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                htmlAudio(src="https://www.nasa.gov/62284main_onesmall2.wav",
+                htmlAudio(src='https://www.nasa.gov/62284main_onesmall2.wav',
                           controls=TRUE,
-                          title="Apollo 11 - July 16, 1969 - Neil Armstrong")
+                          title='Apollo 11 - July 16, 1969 - Neil Armstrong')
                   )
                )
             )
@@ -475,7 +475,7 @@ r_examples:
                 htmlTable(list(
                     htmlColgroup(
                       list(
-                        htmlCol(span = 2, style = list("background-color" = "red"))
+                        htmlCol(span = 2, style = list("background-color'= "red"))
                       )
                     ),
                     htmlTr(
@@ -504,7 +504,7 @@ r_examples:
                 htmlTable(list(
                     htmlColgroup(
                       list(
-                        htmlCol(span = 2, style = list("background-color" = "red"))
+                        htmlCol(span = 2, style = list("background-color'= "red"))
                       )
                     ),
                     htmlTr(
@@ -778,9 +778,9 @@ r_examples:
                 children = list('Choose your favorite Dash HTML component',
                 dccRadioItems(
                   options=list(
-                    list("label" = "htmlDiv", "value" = "htmlDiv"),
-                    list("label" = "htmlBase", "value" = "htmlBase"),
-                    list("label" = "htmlArticle", "value" = "htmlArticle")
+                    list("label'= "htmlDiv", "value'= "htmlDiv"),
+                    list("label'= "htmlBase", "value'= "htmlBase"),
+                    list("label'= "htmlArticle", "value'= "htmlArticle")
                         )
                       )
                     )
@@ -861,11 +861,10 @@ r_examples:
 
             app <- Dash$new()
 
-
             app$layout(htmlDiv(list(
               htmlForm(children=list(
-                htmlP(children=list("Username: ", dccInput(type='text', id='username', placeholder='username'))),
-                htmlP(children=list("Password: ", dccInput(type='password', id='password', placeholder='password'))),
+                htmlP(children=list('Username: ', dccInput(type='text', id='username', placeholder='username'))),
+                htmlP(children=list('Password: ', dccInput(type='password', id='password', placeholder='password'))),
                 htmlButton(children=list('Login'), type='submit', id='login_button')
                     )
                   )
@@ -874,11 +873,11 @@ r_examples:
             )
 
             app$run_server()
-    - name: HtmlFrame
+    - name: htmlFrame
       dontrun: TRUE
       code: |
-            # HtmlFrame is now deprecated. htmlIFrame is recommended instead.
-    - name: HtmlFrameset
+            # htmlFrame is now deprecated. htmlIFrame is recommended instead.
+    - name: htmlFrameset
       dontrun: TRUE
       code: |
             library(dash)
@@ -1089,7 +1088,7 @@ r_examples:
             )
 
             app$run_server()
-    - name: htmlIFrame
+    - name: htmlIframe
       dontrun: TRUE
       code: |
             library(dash)
@@ -1221,9 +1220,9 @@ r_examples:
                                 htmlLegend('Select your favorite component'),
                                 dccRadioItems(
                                   options=list(
-                                    list("label" = "htmlDiv", "value" = "htmlDiv"),
-                                    list("label" = "htmlBase", "value" = "htmlBase"),
-                                    list("label" = "htmlArticle", "value" = "htmlArticle")
+                                    list("label'= "htmlDiv", "value'= "htmlDiv"),
+                                    list("label'= "htmlBase", "value'= "htmlBase"),
+                                    list("label'= "htmlArticle", "value'= "htmlArticle")
                         )
                       )
                     )
@@ -1373,7 +1372,7 @@ r_examples:
               htmlDiv(list(
                 htmlP(list(
                   htmlMark("Plotly"),
-                  " develops online data analytics and visualization tools."
+                  'develops online data analytics and visualization tools."
                 ))
               ))
             )
@@ -1443,7 +1442,7 @@ r_examples:
             )
 
             app$run_server()
-    - name: htmlMultiCol
+    - name: htmlMulticol
       dontrun: TRUE
       code: |
             # Warning: The <multicol> tag is obsolete, it might not work as intended.
@@ -1462,9 +1461,9 @@ r_examples:
                 htmlNav(
                   list(
                     htmlA("Plotly", href = "https://plot.ly/"),
-                    " > ",
+                    '> ",
                     htmlA("Dash", href = "https://plot.ly/dash"),
-                    " > ",
+                    '> ",
                     htmlA("Request Trial", href = "https://go.plot.ly/dash-enterprise-trial")
                   )
                 )
@@ -1626,7 +1625,8 @@ r_examples:
             app$run_server()
     - name: htmlOutput
       dontrun: TRUE
-      code:
+      code: |
+            # This component works with htmlForm and htmlInput and may be used to present the result of an executed script.
     - name: htmlP
       dontrun: TRUE
       code: |
@@ -1686,7 +1686,7 @@ r_examples:
             )
 
             app$run_server()
-    - name: htmlPlainText
+    - name: htmlPlaintext
       dontrun: TRUE
       code: |
             # Warning: The <plaintext> tag is obsolete,
@@ -1841,7 +1841,7 @@ r_examples:
               htmlDiv(list(
                 htmlRuby(list(
                   "\U2661",
-                  htmlRtc(htmlRt(" Heart"))
+                  htmlRtc(htmlRt('Heart"))
                 ))
               ))
             )
@@ -1899,20 +1899,9 @@ r_examples:
     - name: htmlScript
       dontrun: TRUE
       code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                 # TODO
-                )
-              )
-            )
-
-            app$run_server()
+            # This component is retained for compatibility reasons, but we suggest
+            # using Dash's capability for embedding scripts within the assets folder
+            # instead.
     - name: htmlSection
       dontrun: TRUE
       code: |
@@ -1961,37 +1950,19 @@ r_examples:
     - name: htmlShadow
       dontrun: TRUE
       code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                 # TODO
-                )
-              )
-            )
-
-            app$run_server()
+            # The Shadow element requires a browser that supports
+            # Web Components. It is experimental and should be used
+            # with caution; it is now considered an obsolete element
+            # within the Web Components suite. It is retained here
+            # solely for backwards compatibility reasons.
+            # 
+            # For more information, please see the MDN link above.
     - name: htmlSlot
       dontrun: TRUE
       code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                # TODO
-                )
-              )
-            )
-
-            app$run_server()
+            # Please see https://mdn.github.io/web-components-examples/element-details/
+            # and https://github.com/mdn/web-components-examples/tree/master/element-details
+            # for a useful example of this element (with accompanying JavaScript) in action.
     - name: htmlSmall
       dontrun: TRUE
       code: |
@@ -2043,20 +2014,9 @@ r_examples:
     - name: htmlSpacer
       dontrun: TRUE
       code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                # TODO
-                )
-              )
-            )
-
-            app$run_server()
+            # This component provides an HTML element that is now obsolete
+            # and not supported by modern web browsers; it is retained for
+            # backwards compatibility.
     - name: htmlSpan
       dontrun: TRUE
       code: |
@@ -2091,7 +2051,7 @@ r_examples:
             app$layout(
               htmlDiv(list(
                 "This is normal text",
-                htmlStrike("Text within an htmlStrike element will be striked")
+                htmlStrike("Text within an htmlStrike element will be stricken out")
                 )
               )
             )
@@ -2453,7 +2413,7 @@ r_examples:
                   list(
                     "It might be useful to wrap dates like ",
                     htmlTime(dateTime = "2019-07-29", children = "July 29th"),
-                    " in an htmlTime to make your datetimes machine readable"
+                    'in an htmlTime to make your datetimes machine readable"
                   )
                 )
                 )
@@ -2464,20 +2424,11 @@ r_examples:
     - name: htmlTitle
       dontrun: TRUE
       code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                # TODO
-                )
-              )
-            )
-
-            app$run_server()
+            # This component's effects will be overridden by the index
+            # template in Dash for R. We suggest using Dash's API to
+            # set the page title instead:
+            # 
+            # app <- Dash$new(name = 'My page title')
     - name: htmlTr
       dontrun: TRUE
       code: |
@@ -2525,9 +2476,14 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                # TODO
-                )
+                htmlVideo(children = list(
+                  htmlSource(src = 'https://interactive-examples.mdn.mozilla.net/media/examples/friday.mp4', type = 'video/mp4'),
+                  htmlTrack(kind = 'captions', srcLang = 'en', src = 'https://interactive-examples.mdn.mozilla.net/media/examples/friday.vtt', default = 'default', label = 'English')
+                ),
+                controls = TRUE
+               )
               )
+             )
             )
 
             app$run_server()
