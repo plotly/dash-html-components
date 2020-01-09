@@ -201,7 +201,21 @@ r_examples:
             app$run_server()
     - name: htmlBase
       dontrun: TRUE
-      code:
+      code: |
+            library(dash)
+            library(dashHtmlComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlBase(href="https://www.w3schools.com/"),
+                htmlA(children="HTML base tag", href="tags/tag_base.asp")
+                )
+               )
+            )
+
+            app$run_server()      
     - name: htmlBasefont
       dontrun: TRUE
       code: |
@@ -510,16 +524,15 @@ r_examples:
       dontrun: TRUE
       code: |
             # This component is deprecated and its use is no longer recommended. 
-            It is recommended to use a callback for this functionality instead.
     - name: htmlContent
       dontrun: TRUE
       code: |
-            This feature is obsolete and no longer supported. It is recommended 
-            that you use the htmlSlot component instead. 
+            # This feature is obsolete and no longer supported. It is recommended 
+            # that you use the htmlSlot component instead. 
     - name: htmlData
       dontrun: TRUE
       code: |
-                        library(dash)
+            library(dash)
             library(dashHtmlComponents)
 
             app <- Dash$new()
@@ -547,7 +560,6 @@ r_examples:
     - name: htmlDatalist
       dontrun: TRUE
       code: |
-      
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -573,7 +585,6 @@ r_examples:
     - name: htmlDd
       dontrun: TRUE
       code: |
-      
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -592,7 +603,6 @@ r_examples:
     - name: htmlDel
       dontrun: TRUE
       code: |
-      
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -611,7 +621,6 @@ r_examples:
     - name: htmlDetails
       dontrun: TRUE
       code: |
-      
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -630,7 +639,6 @@ r_examples:
     - name: htmlDfn
       dontrun: TRUE
       code: |
-      
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -649,7 +657,6 @@ r_examples:
     - name: htmlDialog
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -680,7 +687,6 @@ r_examples:
     - name: htmlDl
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -719,7 +725,6 @@ r_examples:
     - name: htmlElement
       dontrun: TRUE
       code: |
-
             # This feature is obsolete. It may still work in some
             # browsers, but could stop working at any time. Try to
             # avoid using this component.
@@ -751,8 +756,8 @@ r_examples:
 
             app$layout(htmlDiv(list(
               htmlEmbed(
-                src = 'https://www.youtube.com/watch?v=njW7DmeK1Qk',
-                width = '250',
+                src = 'https://archive.org/embed/VintageCartoonsSet1Mp4',
+                width = '500',
                 height = '500')
                 )
               )
@@ -762,7 +767,6 @@ r_examples:
     - name: htmlFieldset
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -789,7 +793,6 @@ r_examples:
     - name: htmlFigcaption
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -827,19 +830,16 @@ r_examples:
     - name: htmlFont
       dontrun: TRUE
       code: |
-
             # Starting with HTML 4, HTML does not convey styling information
             # anymore (outside the <style> element or the style attribute of each
-            # element). For any new web development, styling should be written using CSS only.
+            # element). CSS should be used for styling instead.
     - name: htmlFooter
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
             app <- Dash$new()
-
 
             app$layout(htmlDiv(list(
               htmlFooter(list(
@@ -856,7 +856,6 @@ r_examples:
     - name: htmlForm
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -878,11 +877,10 @@ r_examples:
     - name: HtmlFrame
       dontrun: TRUE
       code: |
-            # HtmlFrame is now deprecated. htmlIFrame is now recommended.
+            # HtmlFrame is now deprecated. htmlIFrame is recommended instead.
     - name: HtmlFrameset
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
             app <- Dash$new()
@@ -899,10 +897,23 @@ r_examples:
     - name: htmlHeader
       dontrun: TRUE
       code: |
+            library(dash)
+            library(dashHtmlComponents)
+
+            app <- Dash$new()
+
+            app$layout(
+              htmlDiv(list(
+                htmlHeader(htmlH1("This is a header")),
+                htmlP("And here is some text.")
+              )
+             )
+            )
+
+            app$run_server()      
     - name: htmlH1
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -923,7 +934,6 @@ r_examples:
     - name: htmlH2
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -944,7 +954,6 @@ r_examples:
     - name: htmlH3
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -965,7 +974,6 @@ r_examples:
     - name: htmlH4
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -986,7 +994,6 @@ r_examples:
     - name: htmlH5
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -1007,7 +1014,6 @@ r_examples:
     - name: htmlH6
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -1028,7 +1034,6 @@ r_examples:
     - name: htmlHgroup
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -1050,7 +1055,6 @@ r_examples:
     - name: htmlHr
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -1072,7 +1076,6 @@ r_examples:
     - name: htmlI
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -1089,7 +1092,6 @@ r_examples:
     - name: htmlIFrame
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -1106,7 +1108,6 @@ r_examples:
     - name: htmlImg
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -1124,7 +1125,6 @@ r_examples:
     - name: htmlIns
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -1141,7 +1141,6 @@ r_examples:
     - name: htmlIsindex
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -1158,7 +1157,6 @@ r_examples:
     - name: htmlKbd
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
 
@@ -1179,14 +1177,12 @@ r_examples:
     - name: htmlKeygen
       dontrun: TRUE
       code: |
-
             # This feature is obsolete. It may still work in some
             # browsers, but could stop working at any time. Try to
             # avoid using this component.
     - name: htmlLabel
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -1213,7 +1209,6 @@ r_examples:
     - name: htmlLegend
       dontrun: TRUE
       code: |
-
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
@@ -1480,8 +1475,7 @@ r_examples:
     - name: htmlNextid
       dontrun: TRUE
       code: |
-            # Warning: The <nextid> tag is obsolete,
-            # it is vanished since HTML Version 3.2
+            # Warning: The <nextid> tag is obsolete, as of HTML Version 3.2.
 
             library(dash)
             library(dashHtmlComponents)
@@ -1535,7 +1529,7 @@ r_examples:
               htmlDiv(list(
                 htmlH2("Warning: A browser without support for JavaScript
                       will show the text inside the noscript element.
-                      Since Dash uses Javascript internally,
+                      Since Dash uses JavaScript internally,
                       using this option might cause incompatibility issues."),
                 htmlNoscript("A browser without support for JavaScript
                              will show the text inside the noscript element.")
