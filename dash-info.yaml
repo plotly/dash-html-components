@@ -37,8 +37,8 @@ r_examples:
 
             app$layout(
                htmlDiv(list(
-                 htmlAbbr(children='\U{1F50D} Hover over this line for a few seconds and see the text box appear...',
-                          title='Hello! htmlAbbr at work!')
+                 htmlAbbr(children='Hello! htmlAbbr at work!',
+                          title='\U{1F50D} Hover over this line for a few seconds and see the text box appear...')
                   )
                )
             )
@@ -54,8 +54,8 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                htmlAcronym(children='Mouse over these words to see the acronym for \'as soon as possible\'.',
-                title='ASAP')
+                htmlAcronym(children='ASAP',
+                title='Mouse over these words to see the acronym for \'as soon as possible\'.')
                   )
               )
             )
