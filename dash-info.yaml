@@ -938,7 +938,7 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                htmlHeader(htmlH1("This is a header")),
+                htmlHeader("This is a header"),
                 htmlP("And here is some text.")
               )
              )
