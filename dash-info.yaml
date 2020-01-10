@@ -1344,6 +1344,9 @@ r_examples:
     - name: htmlMapEl
       dontrun: TRUE
       code: |
+            # Note that htmlMapEl generates the <map> HTML element;
+            # for more information, please visit the link in this
+            # component's description.
             library(dash)
             library(dashHtmlComponents)
             library(dashCoreComponents)
