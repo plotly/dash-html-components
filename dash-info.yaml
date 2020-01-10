@@ -626,13 +626,14 @@ r_examples:
       code: |
             library(dash)
             library(dashHtmlComponents)
-            library(dashCoreComponents)
 
             app <- Dash$new()
 
             app$layout(htmlDiv(list(
-              htmlDd(
-                    children ="Description List Hello"
+              htmlDl(
+                children= list(htmlDt("Dash for R"),
+                              htmlDd('HtmlDt and htmlDD must be used
+                                      within htmlDl'))
                   )
                 )
               )
