@@ -927,19 +927,7 @@ r_examples:
     - name: htmlFrameset
       dontrun: TRUE
       code: |
-            library(dash)
-            library(dashHtmlComponents)
-            app <- Dash$new()
-
-            app$layout(htmlDiv(list(
-              htmlFrameset(children =
-              htmlIframe(width = "600px", height = "600px",
-                         src = "https://dashr.plot.ly/")
-                ))
-              )
-            )
-
-            app$run_server()
+            # htmlFrameset is now deprecated. htmlIFrame is recommended instead.
     - name: htmlHeader
       dontrun: TRUE
       code: |
