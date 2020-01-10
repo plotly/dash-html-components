@@ -1175,19 +1175,7 @@ r_examples:
     - name: htmlIsindex
       dontrun: TRUE
       code: |
-            library(dash)
-            library(dashHtmlComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlIsindex(prompt = 'Search Document..')
-                )
-              )
-            )
-
-            app$run_server()
+            # This component is deprecated and its use is no longer recommended. 
     - name: htmlKbd
       dontrun: TRUE
       code: |
