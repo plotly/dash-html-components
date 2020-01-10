@@ -1530,24 +1530,9 @@ r_examples:
     - name: htmlNoscript
       dontrun: TRUE
       code: |
-            library(dash)
-            library(dashHtmlComponents)
-            library(dashCoreComponents)
-
-            app <- Dash$new()
-
-            app$layout(
-              htmlDiv(list(
-                htmlH2("Warning: A browser without support for JavaScript
-                      will show the text inside the noscript element.
-                      Since Dash uses JavaScript internally,
-                      using this option might cause incompatibility issues."),
-                htmlNoscript("A browser without support for JavaScript
-                             will show the text inside the noscript element.")
-              ))
-            )
-
-            app$run_server()
+            # This component may be used in the index template to define
+            # alternate content in browsers which have disabled scripts,
+            # or in which scripts are not supported.
     - name: htmlObjectEl
       dontrun: TRUE
       code: |
