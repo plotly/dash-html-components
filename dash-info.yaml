@@ -406,9 +406,48 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                htmlCaption("This is an example of htmlCaption.")
+                htmlTable(list(
+                  htmlCaption("Elevations of a few Cascade Range volcanoes"),
+                  htmlThead(
+                    htmlTr(list(
+                      htmlTh("Mountain"),
+                      htmlTh("Elevation (m)"),
+                      htmlTh("Elevation (ft)")
+                    )
+                  )),
+                  htmlTbody(list(
+                    htmlTr(list(
+                      htmlTd("Mount Rainier"),
+                      htmlTd("4,392"),
+                      htmlTd("14,411")
+                     )
+                    ),
+                    htmlTr(list(
+                      htmlTd("Mount Hood"),
+                      htmlTd("3,429"),
+                      htmlTd("11,249")
+                    )
+                    ),
+                    htmlTr(list(
+                      htmlTd("Lassen Peak"),
+                      htmlTd("3,187"),
+                      htmlTd("10,457")
+                     )
+                    ),
+                    htmlTr(list(
+                      htmlTd("Mount St. Helens"),
+                      htmlTd("2,549"),
+                      htmlTd("8,363")
+                     )
+                    )
+                   )
+                  )
+                 ), style = list(
+                      border = "1px black solid"
+                 )
                 )
               )
+             )
             )
 
             app$run_server()
