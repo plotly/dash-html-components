@@ -1756,11 +1756,18 @@ r_examples:
 
             app$layout(
               htmlDiv(list(
-                htmlRuby(
-                  htmlRb(
-                    "\U{65e5}"
-                  )
-                )
+                htmlRuby(list(
+                  "\U{6f22}",
+                  htmlRp("("),
+                  htmlRt("kan"),
+                  htmlRp(")")
+                )),
+                htmlRuby(list(
+                  "\U{5b57}",
+                  htmlRp("("),
+                  htmlRt("ji"),
+                  htmlRp(")")
+                ))
               ))
             )
 
@@ -1770,22 +1777,27 @@ r_examples:
       code: |
             library(dash)
             library(dashHtmlComponents)
-            library(dashCoreComponents)
 
             app <- Dash$new()
 
             app$layout(
               htmlDiv(list(
                 htmlRuby(list(
-                    "\U{6f22}",
-                    htmlRp("("),
-                    htmlRt("kan"),
-                    htmlRp(")")
-                ))
-              ))
-            )
+                  "\U{6f22}",
+                  htmlRp("("),
+                  htmlRt("kan"),
+                  htmlRp(")")
+                )),  
+                htmlRuby(list(
+                  "\U{5b57}",
+                  htmlRp("("),
+                  htmlRt("ji"),
+                  htmlRp(")")
+                ))   
+              ))   
+            )    
 
-            app$run_server()
+            app$run_server()    
     - name: htmlRt
       dontrun: TRUE
       code: |
@@ -1797,11 +1809,19 @@ r_examples:
             app$layout(
               htmlDiv(list(
                 htmlRuby(list(
+                  "\U{6f22}",
+                  htmlRp("("),
+                  htmlRt("kan"),
+                  htmlRp(")")
+                )),  
+                htmlRuby(list(
                   "\U{5b57}",
-                  htmlRt("ji")
-                ))
-              ))
-            )
+                  htmlRp("("),
+                  htmlRt("ji"),
+                  htmlRp(")")
+                ))   
+              ))   
+            )    
 
             app$run_server()
     - name: htmlRtc
