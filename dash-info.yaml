@@ -2402,7 +2402,7 @@ r_examples:
             # template in Dash for R. We suggest using Dash's API to
             # set the page title instead:
             #
-            # app <- Dash$new(name = 'My page title')
+            # app$title('My page title')
     - name: htmlTr
       dontrun: TRUE
       code: |
