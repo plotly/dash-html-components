@@ -1,6 +1,8 @@
 ---
 title: "Dash HTML Components"
 output: rmarkdown::html_vignette
+html_document:
+    highlight: tango
 vignette: >
   %\VignetteIndexEntry{Dash HTML Components}
   %\VignetteEngine{knitr::knitr}
