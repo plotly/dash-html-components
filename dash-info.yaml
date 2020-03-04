@@ -1392,7 +1392,7 @@ r_examples:
               htmlDiv(list(
                 htmlP(list(
                   htmlMark("Plotly"),
-                  'develops online data analytics and visualization tools."
+                  " develops online data analytics and visualization tools."
                 ))
               ))
             )
@@ -2366,7 +2366,7 @@ r_examples:
                   list(
                     "It might be useful to wrap dates like ",
                     htmlTime(dateTime = "2019-07-29", children = "July 29th"),
-                    'in an htmlTime to make your datetimes machine readable"
+                    " in an htmlTime to make your datetime strings machine-readable."
                   )
                 )
                 )
