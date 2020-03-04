@@ -1868,7 +1868,8 @@ r_examples:
             app$layout(
               htmlDiv(list(
                 htmlS("htmlS  generates strikethrough text"),
-                htmlP("htmlB  generates bold text")
+                htmlP(),
+                htmlB("htmlB  generates bold text")
               ))
             )
 
