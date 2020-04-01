@@ -122,7 +122,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -326,7 +326,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -530,7 +530,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -734,7 +734,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -1001,7 +1001,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -1205,7 +1205,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -1409,7 +1409,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -1738,7 +1738,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -1942,7 +1942,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -2160,7 +2160,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -2364,7 +2364,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -2568,7 +2568,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -2772,7 +2772,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -2976,7 +2976,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -3180,7 +3180,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -3391,7 +3391,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -3595,7 +3595,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -3938,7 +3938,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -4172,7 +4172,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -4376,7 +4376,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -4580,7 +4580,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -4784,7 +4784,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -4988,7 +4988,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -5199,7 +5199,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -5410,7 +5410,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -5685,7 +5685,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -5889,7 +5889,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -6100,7 +6100,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -6304,7 +6304,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -6508,7 +6508,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -6726,7 +6726,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -6955,7 +6955,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -7159,7 +7159,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -7363,7 +7363,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -7567,7 +7567,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -7771,7 +7771,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -7975,7 +7975,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -8179,7 +8179,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -8383,7 +8383,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -8631,7 +8631,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -8874,7 +8874,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -9078,7 +9078,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -9282,7 +9282,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -9486,7 +9486,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -9690,7 +9690,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -9979,7 +9979,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -10183,7 +10183,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -10387,7 +10387,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -10591,7 +10591,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -10795,7 +10795,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -10999,7 +10999,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -11203,7 +11203,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -11407,7 +11407,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -11611,7 +11611,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -11815,7 +11815,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -12019,7 +12019,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -12223,7 +12223,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -12427,7 +12427,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -12689,7 +12689,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -12965,7 +12965,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -13183,7 +13183,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -13387,7 +13387,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -13591,7 +13591,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -13877,7 +13877,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -14095,7 +14095,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -14299,7 +14299,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -14510,7 +14510,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -14763,7 +14763,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -14967,7 +14967,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -15171,7 +15171,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -15382,7 +15382,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -15586,7 +15586,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -15815,7 +15815,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -16047,7 +16047,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -16316,7 +16316,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -16520,7 +16520,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -16724,7 +16724,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -16928,7 +16928,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -17132,7 +17132,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -17336,7 +17336,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -17598,7 +17598,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -17834,7 +17834,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -18070,7 +18070,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -18338,7 +18338,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -18563,7 +18563,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -18767,7 +18767,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -18985,7 +18985,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -19189,7 +19189,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -19393,7 +19393,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -19597,7 +19597,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -19830,7 +19830,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -20041,7 +20041,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -20245,7 +20245,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -20449,7 +20449,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -20653,7 +20653,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -20857,7 +20857,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -21061,7 +21061,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -21265,7 +21265,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -21469,7 +21469,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -21691,7 +21691,7 @@
           ]
         },
         "required": false,
-        "description": "Indicates that the script should be executed asynchronously."
+        "description": "Executes the script asynchronously."
       },
       "charSet": {
         "type": {
@@ -21758,7 +21758,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -21962,7 +21962,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -22306,7 +22306,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -22510,7 +22510,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -22714,7 +22714,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -22918,7 +22918,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -23157,7 +23157,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -23361,7 +23361,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -23565,7 +23565,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -23769,7 +23769,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -23973,7 +23973,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -24177,7 +24177,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -24381,7 +24381,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -24585,7 +24585,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -24796,7 +24796,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -25000,7 +25000,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -25241,7 +25241,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -25445,7 +25445,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -25837,7 +25837,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -26041,7 +26041,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -26289,7 +26289,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -26493,7 +26493,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -26704,7 +26704,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -26908,7 +26908,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -27112,7 +27112,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -27369,7 +27369,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -27573,7 +27573,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -27777,7 +27777,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -27981,7 +27981,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -28347,7 +28347,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -28551,7 +28551,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {
@@ -28755,7 +28755,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines a keyboard shortcut to activate or add focus to the element."
+        "description": "Keyboard shortcut to activate or add focus to the element."
       },
       "className": {
         "type": {

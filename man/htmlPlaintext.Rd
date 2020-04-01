@@ -66,3 +66,26 @@ those elements have the following types:
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
 }
+\examples{
+\dontrun{
+# Warning: The <plaintext> tag is obsolete,
+# it might not work as intended.
+# Use the <pre> tag instead.
+
+library(dash)
+library(dashHtmlComponents)
+
+app <- Dash$new()
+
+app$layout(
+  htmlDiv(list(
+    htmlPlaintext(),
+    htmlBr(),
+    htmlH4("The HTML Plaintext Element (<plaintext>) renders everything following
+          the start tag as raw text, ignoring any following HTML. There is no closing tag,
+          since everything after it is considered raw text.")
+  ))
+)
+
+app$run_server()
+}}

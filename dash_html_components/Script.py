@@ -25,14 +25,14 @@ See https://reactjs.org/docs/lists-and-keys.html for more info
 - role (string; optional): The ARIA role attribute
 - data-* (string; optional): A wildcard data attribute
 - aria-* (string; optional): A wildcard aria attribute
-- async (a value equal to: 'async', 'ASYNC' | boolean; optional): Indicates that the script should be executed asynchronously.
+- async (a value equal to: 'async', 'ASYNC' | boolean; optional): Executes the script asynchronously.
 - charSet (string; optional): Declares the character encoding of the page or script.
 - crossOrigin (string; optional): How the element handles cross-origin requests
 - defer (a value equal to: 'defer', 'DEFER' | boolean; optional): Indicates that the script should be executed after the page has been parsed.
 - integrity (string; optional): Specifies a Subresource Integrity value that allows browsers to verify what they fetch.
 - src (string; optional): The URL of the embeddable content.
 - type (string; optional): Defines the type of the element.
-- accessKey (string; optional): Defines a keyboard shortcut to activate or add focus to the element.
+- accessKey (string; optional): Keyboard shortcut to activate or add focus to the element.
 - className (string; optional): Often used with CSS to style elements with common properties.
 - contentEditable (string; optional): Indicates whether the element's content is editable.
 - contextMenu (string; optional): Defines the ID of a <menu> element which will serve as the element's context menu.

@@ -72,13 +72,12 @@ those elements have the following types:
 \dontrun{
 library(dash)
 library(dashHtmlComponents)
-library(dashCoreComponents)
 
 app <- Dash$new()
 
 app$layout(
   htmlDiv(list(
-    "You can create an Table with HtmlTable",
+    "You can create a table with htmlTable:",
     htmlBr(),
     htmlTable(
       list(

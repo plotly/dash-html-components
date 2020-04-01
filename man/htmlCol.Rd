@@ -70,4 +70,31 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
+# Used within htmlColgroup to define columns.
+library(dash)
+library(dashHtmlComponents)
+
+app <- Dash$new()
+
+app$layout(
+  htmlDiv(list(
+    htmlTable(list(
+        htmlColgroup(
+          list(
+            htmlCol(span = 2, style = list("background-color"= "red"))
+          )
+        ),
+        htmlTr(
+          list(
+            htmlTd("Cell A"),
+            htmlTd("Cell B"),
+            htmlTd("Cell C")
+          )
+        )
+      ))
+    )
+  )
+)
+
+app$run_server()
 }}

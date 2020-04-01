@@ -68,8 +68,7 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-
 # Starting with HTML 4, HTML does not convey styling information
 # anymore (outside the <style> element or the style attribute of each
-# element). For any new web development, styling should be written using CSS only.
+# element). CSS should be used for styling instead.
 }}

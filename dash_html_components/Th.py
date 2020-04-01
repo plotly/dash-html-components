@@ -29,7 +29,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info
 - headers (string; optional): IDs of the <th> elements which applies to this element.
 - rowSpan (string | number; optional): Defines the number of rows a table cell should span over.
 - scope (string; optional): Defines the cells that the header test (defined in the th element) relates to.
-- accessKey (string; optional): Defines a keyboard shortcut to activate or add focus to the element.
+- accessKey (string; optional): Keyboard shortcut to activate or add focus to the element.
 - className (string; optional): Often used with CSS to style elements with common properties.
 - contentEditable (string; optional): Indicates whether the element's content is editable.
 - contextMenu (string; optional): Defines the ID of a <menu> element which will serve as the element's context menu.

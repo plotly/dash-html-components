@@ -75,8 +75,8 @@ app <- Dash$new()
 
 app$layout(
   htmlDiv(list(
-    htmlAcronym(children="Mouse over these words to see the acronym for \"as soon as possible\".",
-    title="ASAP")
+    htmlAcronym(children='ASAP',
+    title='Mouse over these words to see the acronym for \'as soon as possible\'.')
       )
   )
 )

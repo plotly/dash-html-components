@@ -88,17 +88,16 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-
 library(dash)
 library(dashHtmlComponents)
+library(dashCoreComponents)
 
 app <- Dash$new()
 
-
 app$layout(htmlDiv(list(
   htmlForm(children=list(
-    htmlP(children=list("Username: ", dccInput(type='text', id='username', placeholder='username'))),
-    htmlP(children=list("Password: ", dccInput(type='password', id='password', placeholder='password'))),
+    htmlP(children=list('Username: ', dccInput(type='text', id='username', placeholder='username'))),
+    htmlP(children=list('Password: ', dccInput(type='password', id='password', placeholder='password'))),
     htmlButton(children=list('Login'), type='submit', id='login_button')
         )
       )

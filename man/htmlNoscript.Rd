@@ -68,22 +68,7 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-library(dash)
-library(dashHtmlComponents)
-library(dashCoreComponents)
-
-app <- Dash$new()
-
-app$layout(
-  htmlDiv(list(
-    htmlH2("Warning: A browser without support for JavaScript
-          will show the text inside the noscript element.
-          Since Dash uses Javascript internally,
-          using this option might cause incompatibility issues."),
-    htmlNoscript("A browser without support for JavaScript
-                 will show the text inside the noscript element.")
-  ))
-)
-
-app$run_server()
+# This component may be used in the index template to define
+# alternate content in browsers which have disabled scripts,
+# or in which scripts are not supported.
 }}

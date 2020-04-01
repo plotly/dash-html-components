@@ -79,4 +79,5 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
+# This component is deprecated and its use is no longer recommended.
 }}

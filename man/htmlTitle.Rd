@@ -68,18 +68,9 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-library(dash)
-library(dashHtmlComponents)
-library(dashCoreComponents)
-
-app <- Dash$new()
-
-app$layout(
-  htmlDiv(list(
-    # TODO
-    )
-  )
-)
-
-app$run_server()
+# This component's effects will be overridden by the index
+# template in Dash for R. We suggest using Dash's API to
+# set the page title instead:
+#
+# app$title('My page title')
 }}

@@ -90,9 +90,9 @@ app <- Dash$new()
 
 app$layout(
   htmlDiv(list(
-    htmlA(children="Link to external site",
-          href="https://plot.ly",
-          target="_blank")
+    htmlA(children='Link to external site',
+          href='https://plotly.com',
+          target='_blank')
     )
   )
 )

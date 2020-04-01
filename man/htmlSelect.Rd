@@ -88,7 +88,6 @@ those elements have the following types:
 \dontrun{
 library(dash)
 library(dashHtmlComponents)
-library(dashCoreComponents)
 
 app <- Dash$new()
 

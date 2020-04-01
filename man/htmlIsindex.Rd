@@ -68,18 +68,5 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-
-library(dash)
-library(dashHtmlComponents)
-
-app <- Dash$new()
-
-app$layout(
-  htmlDiv(list(
-    htmlIsindex(prompt = 'Search Document..')
-    )
-  )
-)
-
-app$run_server()
+# This component is deprecated and its use is no longer recommended.
 }}

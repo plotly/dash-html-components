@@ -70,14 +70,13 @@ those elements have the following types:
 \dontrun{
 library(dash)
 library(dashHtmlComponents)
-library(dashCoreComponents)
 
 app <- Dash$new()
 
 app$layout(
   htmlDiv(list(
     "This is normal text",
-    htmlStrike("Text within an htmlStrike element will be striked")
+    htmlStrike("Text within an htmlStrike element will be stricken out")
     )
   )
 )

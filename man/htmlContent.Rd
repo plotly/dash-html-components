@@ -68,4 +68,6 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
+# This feature is obsolete and no longer supported. It is recommended
+# that you use the htmlSlot component instead.
 }}

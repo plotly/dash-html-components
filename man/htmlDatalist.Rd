@@ -68,4 +68,26 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
+library(dash)
+library(dashHtmlComponents)
+library(dashCoreComponents)
+
+app <- Dash$new()
+
+app$layout(htmlDiv(list(
+  dccInput(
+    placeholder = 'Enter here',
+    list = 'list-of-options'),
+  htmlDatalist(id = 'list-of-options',
+    children=list(
+      htmlOption("Option 1"),
+      htmlOption("Option 2"),
+      htmlOption("Option 3")
+        )
+      )
+    )
+  )
+)
+
+app$run_server()
 }}

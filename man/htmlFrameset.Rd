@@ -66,3 +66,7 @@ those elements have the following types:
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
 }
+\examples{
+\dontrun{
+# htmlFrameset is now deprecated. htmlIFrame is recommended instead.
+}}

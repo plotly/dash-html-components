@@ -68,7 +68,6 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-
 library(dash)
 library(dashHtmlComponents)
 
@@ -76,9 +75,9 @@ app <- Dash$new()
 
 app$layout(htmlDiv(list(
   htmlDl(
-    children= list('Dash',
-    htmlDd('Dash is a framework for building web
-          applications.'))
+    children= list(htmlDt("Dash for R"),
+                  htmlDd('HtmlDt and htmlDD must be used
+                          within htmlDl'))
       )
     )
   )

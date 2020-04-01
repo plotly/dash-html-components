@@ -95,32 +95,32 @@ app <- Dash$new()
 
 app$layout(
   htmlDiv(list(
-    htmlImg(src = "https://upload.wikimedia.org/wikipedia/commons/0/0c/PIA17351-ApparentSizes-MarsDeimosPhobos-EarthMoon.jpg",
-            useMap = "#image-map"),
+    htmlImg(src = 'https://upload.wikimedia.org/wikipedia/commons/0/0c/PIA17351-ApparentSizes-MarsDeimosPhobos-EarthMoon.jpg',
+            useMap = '#image-map'),
     htmlMapEl(list(
-      htmlArea(target="_blank",
-               alt="Deimos",
-               title="Deimos",
-               href="https://en.wikipedia.org/wiki/Deimos_(moon)",
-               coords="5,114,32,147",
-               shape="rect"),
-      htmlArea(target="_blank",
-               alt="Phobos",
-               title="Phobos",
-               href="https://en.wikipedia.org/wiki/Phobos_(moon)",
-               coords="113,196,32,103",
-               shape="rect"),
-      htmlArea(target="_blank",
-               alt="Moon",
-               title="Moon",
-               href="https://en.wikipedia.org/wiki/Moon",
-               coords="127,285,294,1",
-               shape="rect")
+      htmlArea(target='_blank',
+               alt='Deimos',
+               title='Deimos',
+               href='https://en.wikipedia.org/wiki/Deimos_(moon)',
+               coords='5,114,32,147',
+               shape='rect'),
+      htmlArea(target='_blank',
+               alt='Phobos',
+               title='Phobos',
+               href='https://en.wikipedia.org/wiki/Phobos_(moon)',
+               coords='113,196,32,103',
+               shape='rect'),
+      htmlArea(target='_blank',
+               alt='Moon',
+               title='Moon',
+               href='https://en.wikipedia.org/wiki/Moon',
+               coords='127,285,294,1',
+               shape='rect')
       ),
-      name = "image-map"
+      name = 'image-map'
     ),
-    htmlDiv(children = "Click on the image to visit a Wikipedia article",
-            id = "object-name")
+    htmlDiv(children = 'Click on the image to visit a Wikipedia article',
+            id = 'object-name')
     )
   )
 )

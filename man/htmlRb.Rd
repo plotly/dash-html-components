@@ -70,17 +70,23 @@ those elements have the following types:
 \dontrun{
 library(dash)
 library(dashHtmlComponents)
-library(dashCoreComponents)
 
 app <- Dash$new()
 
 app$layout(
   htmlDiv(list(
-    htmlRuby(
-      htmlRb(
-        "\U{65e5}"
-      )
-    )
+    htmlRuby(list(
+      "\U{6f22}",
+      htmlRp("("),
+      htmlRt("kan"),
+      htmlRp(")")
+    )),
+    htmlRuby(list(
+      "\U{5b57}",
+      htmlRp("("),
+      htmlRt("ji"),
+      htmlRp(")")
+    ))
   ))
 )
 

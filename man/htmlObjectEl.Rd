@@ -81,9 +81,11 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
+# Note that htmlObjectEl generates the <object> HTML element;
+# for more information, please visit the link in this
+# component's description.
 library(dash)
 library(dashHtmlComponents)
-library(dashCoreComponents)
 
 app <- Dash$new()
 

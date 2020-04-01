@@ -68,18 +68,7 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-library(dash)
-library(dashHtmlComponents)
-library(dashCoreComponents)
-
-app <- Dash$new()
-
-app$layout(
-  htmlDiv(list(
-    # TODO
-    )
-  )
-)
-
-app$run_server()
+# This component provides an HTML element that is now obsolete
+# and not supported by modern web browsers; it is retained for
+# backwards compatibility.
 }}

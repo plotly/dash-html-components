@@ -68,21 +68,6 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-# Warning: The <nextid> tag is obsolete,
-# it is vanished since HTML Version 3.2
-
-library(dash)
-library(dashHtmlComponents)
-library(dashCoreComponents)
-
-app <- Dash$new()
-
-app$layout(
-  htmlDiv(list(
-    htmlA(href = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nextid",
-          "Click here for more information about this tag")
-  ))
-)
-
-app$run_server()
+# This component is deprecated and its use is no longer recommended.
+# The <nextid> tag has been obsolete since HTML Version 3.2.
 }}

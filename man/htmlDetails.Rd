@@ -70,4 +70,24 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
+library(dash)
+library(dashHtmlComponents)
+
+app <- Dash$new()
+
+app$layout(
+  htmlDiv(list(
+    htmlDetails(
+      children = list(
+        htmlSummary(
+          children = "Within a details element, the summary can act as a clickable description"
+        ),
+        "And the rest is hidden until the summary is clicked"
+      )
+    )
+    )
+  )
+)
+
+app$run_server()
 }}

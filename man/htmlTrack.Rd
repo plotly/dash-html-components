@@ -81,15 +81,19 @@ those elements have the following types:
 \dontrun{
 library(dash)
 library(dashHtmlComponents)
-library(dashCoreComponents)
 
 app <- Dash$new()
 
 app$layout(
   htmlDiv(list(
-    # TODO
-    )
+    htmlVideo(children = list(
+      htmlSource(src = 'https://interactive-examples.mdn.mozilla.net/media/examples/friday.mp4', type = 'video/mp4'),
+      htmlTrack(kind = 'captions', srcLang = 'en', src = 'https://interactive-examples.mdn.mozilla.net/media/examples/friday.vtt', default = 'default', label = 'English')
+    ),
+    controls = TRUE
+   )
   )
+ )
 )
 
 app$run_server()

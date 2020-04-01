@@ -70,4 +70,29 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
+library(dash)
+library(dashHtmlComponents)
+
+app <- Dash$new()
+
+app$layout(
+  htmlDiv(list(
+    htmlUl(list(
+        htmlLi(list(htmlData(value = 398, "First Element"))),
+        htmlLi(list(htmlData(value = 399, "Second Element"))),
+        htmlLi(list(htmlData(value = 400, "First Element")))
+      ))
+    )
+  )
+)
+
+# Include the following in a seperate CSS file in an
+# `assets` directory in the root of your app.
+#
+# data:hover::after {
+#   content: ' (ID ' attr(value) ')';
+#   font-size: .7em;
+# }
+
+app$run_server()
 }}

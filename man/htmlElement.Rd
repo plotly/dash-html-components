@@ -68,7 +68,6 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-
 # This feature is obsolete. It may still work in some
 # browsers, but could stop working at any time. Try to
 # avoid using this component.

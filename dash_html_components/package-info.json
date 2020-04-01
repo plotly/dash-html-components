@@ -1,6 +1,6 @@
 {
   "name": "dash-html-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Vanilla HTML components for Dash",
   "main": "lib/index.js",
   "repository": {
@@ -27,8 +27,8 @@
     "test:py": "python -m unittest tests.test_dash_html_components tests.test_integration",
     "test": "run-s -c test:py test:import lint"
   },
-  "author": "Chris Parmer <chris@plot.ly>",
-  "maintainer": "Ryan Patrick Kyle <ryan@plot.ly>",
+  "author": "Chris Parmer <chris@plotly.com>",
+  "maintainer": "Ryan Patrick Kyle <ryan@plotly.com>",
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",

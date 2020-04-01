@@ -68,4 +68,18 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
+library(dash)
+library(dashHtmlComponents)
+
+app <- Dash$new()
+
+app$layout(
+  htmlDiv(list(
+    htmlHeader("This is a header"),
+    htmlP("And here is some text.")
+  )
+ )
+)
+
+app$run_server()
 }}

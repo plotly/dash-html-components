@@ -76,11 +76,11 @@ app <- Dash$new()
 app$layout(
   htmlDiv(list(
     htmlArticle(list(
-      htmlH2("Dash for R launched!"),
-      htmlP("Dash is a user interface library for creating analytical web applications.\n
+      htmlH2('Dash for R launched!'),
+      htmlP('Dash is a user interface library for creating analytical web applications.\n
              Those who use R for data analysis, data exploration, visualization,\n
-             modelling, instrument control, and reporting will find immediate use for Dash for R."),
-      htmlAside("Plotly is a technical computing company with offices in Montr\U{00E9}al, Canada and Cambridge, Massachusetts.")
+             modelling, instrument control, and reporting will find immediate use for Dash for R.'),
+      htmlAside('Plotly is a technical computing company with offices in Montreal, Canada and Cambridge, Massachusetts.')
       )
     )
    )

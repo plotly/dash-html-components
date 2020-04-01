@@ -27,7 +27,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info
 - aria-* (string; optional): A wildcard aria attribute
 - disabled (a value equal to: 'disabled', 'DISABLED' | boolean; optional): Indicates whether the user can interact with the element.
 - label (string; optional): Specifies a user-readable title of the element.
-- accessKey (string; optional): Defines a keyboard shortcut to activate or add focus to the element.
+- accessKey (string; optional): Keyboard shortcut to activate or add focus to the element.
 - className (string; optional): Often used with CSS to style elements with common properties.
 - contentEditable (string; optional): Indicates whether the element's content is editable.
 - contextMenu (string; optional): Defines the ID of a <menu> element which will serve as the element's context menu.

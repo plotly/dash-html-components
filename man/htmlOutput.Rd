@@ -75,4 +75,5 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-None}}
+# This component works with htmlForm and htmlInput and may be used to present the result of an executed script.
+}}

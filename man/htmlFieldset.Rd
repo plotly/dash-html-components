@@ -75,7 +75,6 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-
 library(dash)
 library(dashHtmlComponents)
 library(dashCoreComponents)
@@ -87,9 +86,9 @@ app$layout(htmlDiv(list(
     children = list('Choose your favorite Dash HTML component',
     dccRadioItems(
       options=list(
-        list("label" = "htmlDiv", "value" = "htmlDiv"),
-        list("label" = "htmlBase", "value" = "htmlBase"),
-        list("label" = "htmlArticle", "value" = "htmlArticle")
+        list("label'= "htmlDiv", "value'= "htmlDiv"),
+        list("label'= "htmlBase", "value'= "htmlBase"),
+        list("label'= "htmlArticle", "value'= "htmlArticle")
             )
           )
         )

@@ -73,4 +73,18 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-None}}
+library(dash)
+library(dashHtmlComponents)
+
+app <- Dash$new()
+
+app$layout(
+  htmlDiv(list(
+    htmlBase(href="https://www.w3schools.com/"),
+    htmlA(children="HTML base tag", href="tags/tag_base.asp")
+    )
+   )
+)
+
+app$run_server()
+}}

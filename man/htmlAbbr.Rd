@@ -75,8 +75,8 @@ app <- Dash$new()
 
 app$layout(
    htmlDiv(list(
-     htmlAbbr(children="\U{1F50D} Hover over this line for a few seconds and see the text box appear...",
-              title="Hello! htmlAbbr at work!")
+     htmlAbbr(children='Hello! htmlAbbr at work!',
+              title='\U{1F50D} Hover over this line for a few seconds and see the text box appear...')
       )
    )
 )

@@ -73,7 +73,7 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-# this component requires JavaScript code
+# this component requires JavaScript code to draw on the canvas
 library(dash)
 library(dashHtmlComponents)
 

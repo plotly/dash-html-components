@@ -75,7 +75,6 @@ those elements have the following types:
 \dontrun{
 library(dash)
 library(dashHtmlComponents)
-library(dashCoreComponents)
 
 app <- Dash$new()
 
@@ -83,7 +82,7 @@ app$layout(
   htmlDiv(list(
     htmlP("The <param> element is used to specify the parameters that apply to
     plugin-powered content embedded with an <object> element.
-    Read more: https://html.com/tags/param/#ixzz5vBNn4V00"),
+    Read more: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param"),
     htmlObjectEl(
       #data = "link-to-data-file"
       htmlParam(name = "controller", value = TRUE)

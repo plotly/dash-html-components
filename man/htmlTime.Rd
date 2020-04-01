@@ -72,7 +72,6 @@ those elements have the following types:
 \dontrun{
 library(dash)
 library(dashHtmlComponents)
-library(dashCoreComponents)
 
 app <- Dash$new()
 
@@ -82,7 +81,7 @@ app$layout(
       list(
         "It might be useful to wrap dates like ",
         htmlTime(dateTime = "2019-07-29", children = "July 29th"),
-        " in an htmlTime to make your datetimes machine readable"
+        " in an htmlTime to make your datetime strings machine-readable."
       )
     )
     )

@@ -29,7 +29,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info
 - label (string; optional): Specifies a user-readable title of the element.
 - selected (a value equal to: 'selected', 'SELECTED' | boolean; optional): Defines a value which will be selected on page load.
 - value (string; optional): Defines a default value which will be displayed in the element on page load.
-- accessKey (string; optional): Defines a keyboard shortcut to activate or add focus to the element.
+- accessKey (string; optional): Keyboard shortcut to activate or add focus to the element.
 - className (string; optional): Often used with CSS to style elements with common properties.
 - contentEditable (string; optional): Indicates whether the element's content is editable.
 - contextMenu (string; optional): Defines the ID of a <menu> element which will serve as the element's context menu.

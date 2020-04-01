@@ -91,9 +91,9 @@ app <- Dash$new()
 
 app$layout(
   htmlDiv(list(
-    htmlAudio(src="https://www.nasa.gov/62284main_onesmall2.wav",
+    htmlAudio(src='https://www.nasa.gov/62284main_onesmall2.wav',
               controls=TRUE,
-              title="Apollo 11 - July 16, 1969 - Neil Armstrong")
+              title='Apollo 11 - July 16, 1969 - Neil Armstrong')
       )
    )
 )

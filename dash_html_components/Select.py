@@ -33,7 +33,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info
 - name (string; optional): Name of the element. For example used by the server to identify the fields in form submits.
 - required (a value equal to: 'required', 'REQUIRED' | boolean; optional): Indicates whether this element is required to fill out or not.
 - size (string | number; optional): Defines the width of the element (in pixels). If the element's type attribute is text or password then it's the number of characters.
-- accessKey (string; optional): Defines a keyboard shortcut to activate or add focus to the element.
+- accessKey (string; optional): Keyboard shortcut to activate or add focus to the element.
 - className (string; optional): Often used with CSS to style elements with common properties.
 - contentEditable (string; optional): Indicates whether the element's content is editable.
 - contextMenu (string; optional): Defines the ID of a <menu> element which will serve as the element's context menu.

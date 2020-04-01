@@ -84,8 +84,8 @@ app <- Dash$new()
 
 app$layout(htmlDiv(list(
   htmlEmbed(
-    src = 'https://www.youtube.com/watch?v=njW7DmeK1Qk',
-    width = '250',
+    src = 'https://archive.org/embed/VintageCartoonsSet1Mp4',
+    width = '500',
     height = '500')
     )
   )

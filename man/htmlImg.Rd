@@ -86,14 +86,13 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-
 library(dash)
 library(dashHtmlComponents)
 
 app <- Dash$new()
 
 app$layout(htmlDiv(list(
-    htmlImg(src ='https://brand.plot.ly/static/images/plotly-logo-01-stripe@2x.png',
+    htmlImg(src ='https://brand.plotly.com/static/images/plotly-logo-01-stripe@2x.png',
             height='200', width='400')
     )
   )

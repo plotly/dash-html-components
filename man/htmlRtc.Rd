@@ -70,7 +70,6 @@ those elements have the following types:
 \dontrun{
 library(dash)
 library(dashHtmlComponents)
-library(dashCoreComponents)
 
 app <- Dash$new()
 
@@ -78,7 +77,7 @@ app$layout(
   htmlDiv(list(
     htmlRuby(list(
       "\U2661",
-      htmlRtc(htmlRt(" Heart"))
+      htmlRtc(htmlRt('Heart"))
     ))
   ))
 )

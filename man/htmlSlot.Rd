@@ -68,18 +68,7 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-library(dash)
-library(dashHtmlComponents)
-library(dashCoreComponents)
-
-app <- Dash$new()
-
-app$layout(
-  htmlDiv(list(
-    # TODO
-    )
-  )
-)
-
-app$run_server()
+# Please see https://mdn.github.io/web-components-examples/element-details/
+# and https://github.com/mdn/web-components-examples/tree/master/element-details
+# for a useful example of this element (with accompanying JavaScript) in action.
 }}

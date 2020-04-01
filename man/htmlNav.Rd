@@ -70,7 +70,6 @@ those elements have the following types:
 \dontrun{
 library(dash)
 library(dashHtmlComponents)
-library(dashCoreComponents)
 
 app <- Dash$new()
 
@@ -78,11 +77,11 @@ app$layout(
   htmlDiv(list(
     htmlNav(
       list(
-        htmlA("Plotly", href = "https://plot.ly/"),
-        " > ",
-        htmlA("Dash", href = "https://plot.ly/dash"),
-        " > ",
-        htmlA("Request Trial", href = "https://go.plot.ly/dash-enterprise-trial")
+        htmlA("Plotly", href = "https://plotly.com/"),
+        '> ",
+        htmlA("Dash", href = "https://plotly.com/dash"),
+        '> ",
+        htmlA("Request Trial", href = "https://go.plotly.com/dash-enterprise-trial")
       )
     )
   ))

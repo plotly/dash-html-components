@@ -79,3 +79,19 @@ those elements have the following types:
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
 }
+\examples{
+\dontrun{
+library(dash)
+library(dashHtmlComponents)
+
+app <- Dash$new()
+
+app$layout(htmlDiv(list(
+  htmlIframe(width = "600px", height = "600px",
+            src = "https://dashr.plotly.com/")
+    )
+  )
+)
+
+app$run_server()
+}}

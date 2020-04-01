@@ -68,7 +68,6 @@ those elements have the following types:
 }
 \examples{
 \dontrun{
-
 library(dash)
 library(dashHtmlComponents)
 
@@ -76,7 +75,7 @@ app <- Dash$new()
 
 app$layout(htmlDiv(list(
   htmlFigure(children = list(
-    htmlImg(src = 'https://brand.plot.ly/static/images/plotly-logo-01-stripe@2x.png'),
+    htmlImg(src = 'https://brand.plotly.com/static/images/plotly-logo-01-stripe@2x.png'),
     htmlFigcaption(children = 'Plotly Logo')))
     )
   )
