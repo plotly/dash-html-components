@@ -1616,9 +1616,9 @@ r_examples:
                   htmlNav(
                     list(
                       htmlA("Plotly", href = "https://plotly.com/"),
-                      '> ",
+                      "> ",
                       htmlA("Dash", href = "https://plotly.com/dash"),
-                      '> ",
+                      "> ",
                       htmlA("Request Trial", href = "https://go.plotly.com/dash-enterprise-trial")
                     )
                   )
@@ -2007,7 +2007,7 @@ r_examples:
                 htmlDiv(list(
                   htmlRuby(list(
                     "\U2661",
-                    htmlRtc(htmlRt('Heart"))
+                    htmlRtc(htmlRt("Heart"))
                   ))
                 ))
               )
