@@ -8,6 +8,10 @@ pkg_help_description: >-
     plotly/dash-html-components.
 pkg_help_title: >-
     Vanilla HTML Components for Dash
+pkg_authors: >-
+    c(person("Chris", "Parmer", email = "chris@plotly.com", role = c("aut")), person("Ryan Patrick", "Kyle", email = "ryan@plotly.com", role = c("cre"), comment = c(ORCID = "0000-0002-4958-2844")), person(family = "Plotly Technologies, Inc.", role = "cph"))
+pkg_copyright: >-
+    Plotly Technologies, Inc.
 r_examples:
     - name: htmlA
       dontrun: FALSE
