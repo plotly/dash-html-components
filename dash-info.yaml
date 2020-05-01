@@ -36,20 +36,20 @@ r_examples:
     - name: htmlAbbr
       dontrun: FALSE
       code: |
-            if (interactive()) {      
+            if (interactive()) {
               library(dash)
               library(dashHtmlComponents)
-
+              
               app <- Dash$new()
-
+              
               app$layout(
                 htmlDiv(list(
                   htmlAbbr(children='Hello! htmlAbbr at work!',
-                            title='\U{1F50D} Hover over this line for a few seconds and see the text box appear...')
-                    )
+                  title='\U{1F50D} Hover over this line for a few seconds and see the text box appear...')
+                  )
                 )
               )
-
+              
               app$run_server()
             }
     - name: htmlAcronym
@@ -92,15 +92,19 @@ r_examples:
     - name: htmlArea
       dontrun: FALSE
       code: |
+            # The URL below has been chunked to comply with CRAN
+            # requirements; the use of file.path is optional and not required
+            # for this component.
             if (interactive()) {
               library(dash)
               library(dashHtmlComponents)
 
-              app <- Dash$new()
-
               app$layout(
                 htmlDiv(list(
-                  htmlImg(src = 'https://upload.wikimedia.org/wikipedia/commons/0/0c/PIA17351-ApparentSizes-MarsDeimosPhobos-EarthMoon.jpg',
+                  htmlImg(src = file.path('https://upload.wikimedia.org',
+                          'wikipedia/commons/0/0c',
+                          'PIA17351-ApparentSizes-MarsDeimosPhobos-EarthMoon.jpg',
+                          fsep = '/'),
                           useMap = '#image-map'),
                   htmlMapEl(list(
                     htmlArea(target='_blank',
@@ -145,10 +149,12 @@ r_examples:
                 htmlDiv(list(
                   htmlArticle(list(
                     htmlH2('Dash for R launched!'),
-                    htmlP('Dash is a user interface library for creating analytical web applications.\n
-                          Those who use R for data analysis, data exploration, visualization,\n
-                          modelling, instrument control, and reporting will find immediate use for Dash for R.'),
-                    htmlAside('Plotly is a technical computing company with offices in Montreal, Canada and Cambridge, Massachusetts.')
+                    htmlP('Dash is a user interface library for creating analytical\n
+                          web applications. Those who use R for data analysis, data\n
+                          exploration, visualization, modelling, instrument control,\n
+                          and reporting will find immediate use for Dash for R.'),
+                    htmlAside('Plotly is a technical computing company with offices\n
+                               in Montreal, Canada and Cambridge, Massachusetts.')
                     )
                   )
                 )
@@ -170,10 +176,12 @@ r_examples:
                 htmlDiv(list(
                   htmlArticle(list(
                     htmlH2('Dash for R launched!'),
-                    htmlP('Dash is a user interface library for creating analytical web applications.\n
-                          Those who use R for data analysis, data exploration, visualization,\n
-                          modelling, instrument control, and reporting will find immediate use for Dash for R.'),
-                    htmlAside('Plotly is a technical computing company with offices in Montreal, Canada and Cambridge, Massachusetts.')
+                    htmlP('Dash is a user interface library for creating analytical\n
+                          web applications. Those who use R for data analysis, data\n
+                          exploration, visualization, modelling, instrument control,\n
+                          and reporting will find immediate use for Dash for R.'),
+                    htmlAside('Plotly is a technical computing company with offices\n
+                               in Montreal, Canada and Cambridge, Massachusetts.')
                     )
                   )
                 )
@@ -278,8 +286,9 @@ r_examples:
 
               app$layout(
                   htmlDiv(list(
-                      htmlP(children="The line below should render as 'Aladdin', but in Arabic script:"),
-                      htmlBdi(children="\U{0639}\U{0644}\U{0627}\U{0621} \U{0627}\U{0644}\U{062F}\U{064A}\U{0646}")
+                      htmlP(children="This text is 'Aladdin', but in Arabic script:"),
+                      htmlBdi(children=paste0("\U{0639}\U{0644}\U{0627}\U{0621}",
+                                              "\U{0627}\U{0644}\U{062F}\U{064A}\U{0646}"))
                   )
                   )
               )
@@ -786,6 +795,9 @@ r_examples:
       dontrun: FALSE
       code: |
             if (interactive()) {
+              library(dash)
+              library(dashHtmlComponents)
+              
               app <- Dash$new()
 
               app$layout(
@@ -900,9 +912,9 @@ r_examples:
                   children = list('Choose your favorite Dash HTML component',
                   dccRadioItems(
                     options=list(
-                      list("label"= "htmlDiv", "value'= "htmlDiv"),
-                      list("label"= "htmlBase", "value'= "htmlBase"),
-                      list("label"= "htmlArticle", "value'= "htmlArticle")
+                      list("label"= "htmlDiv", "value"= "htmlDiv"),
+                      list("label"= "htmlBase", "value"= "htmlBase"),
+                      list("label"= "htmlArticle", "value"= "htmlArticle")
                           )
                         )
                       )
@@ -994,16 +1006,24 @@ r_examples:
 
               app$layout(htmlDiv(list(
                 htmlForm(children=list(
-                  htmlP(children=list('Username: ', dccInput(type='text', id='username', placeholder='username'))),
-                  htmlP(children=list('Password: ', dccInput(type='password', id='password', placeholder='password'))),
-                  htmlButton(children=list('Login'), type='submit', id='login_button')
+                  htmlP(children=list('Username: ',
+                                      dccInput(type='text', 
+                                               id='username', 
+                                               placeholder='username'))),
+                  htmlP(children=list('Password: ',
+                                      dccInput(type='password', 
+                                               id='password',
+                                               placeholder='password'))),
+                  htmlButton(children=list('Login'), 
+                             type='submit', 
+                             id='login_button')
                       )
                     )
                   )
                 )
               )
 
-              app$run_server()
+              app$run_server()              
             }
     - name: htmlFrame
       dontrun: FALSE
@@ -1359,9 +1379,9 @@ r_examples:
                                   htmlLegend('Select your favorite component'),
                                   dccRadioItems(
                                     options=list(
-                                      list("label'= "htmlDiv", "value'= "htmlDiv"),
-                                      list("label'= "htmlBase", "value'= "htmlBase"),
-                                      list("label'= "htmlArticle", "value'= "htmlArticle")
+                                      list("label"= "htmlDiv", "value"= "htmlDiv"),
+                                      list("label"= "htmlBase", "value"= "htmlBase"),
+                                      list("label"= "htmlArticle", "value"= "htmlArticle")
                           )
                         )
                       )
@@ -1409,7 +1429,9 @@ r_examples:
 
               app$layout(
                 htmlDiv(list(
-                  htmlLink(rel = "stylesheet", type = "text/css", href = "https://codepen.io/chriddyp/pen/bWLwgP.css")
+                  htmlLink(rel = "stylesheet",
+                          type = "text/css",
+                          href = "https://codepen.io/chriddyp/pen/bWLwgP.css")
                 ))
               )
 
@@ -1468,46 +1490,45 @@ r_examples:
     - name: htmlMapEl
       dontrun: FALSE
       code: |
+            # The URL below has been chunked to comply with CRAN
+            # requirements; the use of file.path is optional and not required
+            # for this component.
             if (interactive()) {
-              # Note that htmlMapEl generates the <map> HTML element;
-              # for more information, please visit the link in this
-              # component's description.
-              library(dash)
-              library(dashHtmlComponents)
-
-              app <- Dash$new()
-
               app$layout(
                 htmlDiv(list(
-                  htmlImg(src = "https://upload.wikimedia.org/wikipedia/commons/0/0c/PIA17351-ApparentSizes-MarsDeimosPhobos-EarthMoon.jpg",
-                          useMap = "#image-map"),
+                  htmlImg(src = file.path('https://upload.wikimedia.org',
+                          'wikipedia/commons/0/0c',
+                          'PIA17351-ApparentSizes-MarsDeimosPhobos-EarthMoon.jpg',
+                          fsep = '/'),
+                          useMap = '#image-map'),
                   htmlMapEl(list(
-                    htmlArea(target="_blank",
-                            alt="Deimos",
-                            title="Deimos",
-                            href="https://en.wikipedia.org/wiki/Deimos_(moon)",
-                            coords="5,114,32,147",
-                            shape="rect"),
-                    htmlArea(target="_blank",
-                            alt="Phobos",
-                            title="Phobos",
-                            href="https://en.wikipedia.org/wiki/Phobos_(moon)",
-                            coords="113,196,32,103",
-                            shape="rect"),
-                    htmlArea(target="_blank",
-                            alt="Moon",
-                            title="Moon",
-                            href="https://en.wikipedia.org/wiki/Moon",
-                            coords="127,285,294,1",
-                            shape="rect")
+                    htmlArea(target='_blank',
+                            alt='Deimos',
+                            title='Deimos',
+                            href='https://en.wikipedia.org/wiki/Deimos_(moon)',
+                            coords='5,114,32,147',
+                            shape='rect'),
+                    htmlArea(target='_blank',
+                            alt='Phobos',
+                            title='Phobos',
+                            href='https://en.wikipedia.org/wiki/Phobos_(moon)',
+                            coords='113,196,32,103',
+                            shape='rect'),
+                    htmlArea(target='_blank',
+                            alt='Moon',
+                            title='Moon',
+                            href='https://en.wikipedia.org/wiki/Moon',
+                            coords='127,285,294,1',
+                            shape='rect')
                     ),
-                    name = "image-map"
+                    name = 'image-map'
                   ),
-                  htmlDiv(children = "Click on the image to visit a Wikipedia article",
-                          id = "object-name")
+                  htmlDiv(children = 'Click on the image to visit a Wikipedia article',
+                          id = 'object-name')
                   )
                 )
               )
+
               app$run_server()
             }
     - name: htmlMark
@@ -1761,7 +1782,9 @@ r_examples:
     - name: htmlOutput
       dontrun: FALSE
       code: |
-            # This component works with htmlForm and htmlInput and may be used to present the result of an executed script.
+            # This component works with htmlForm and htmlInput 
+            # and may be used to present the result of an
+            # executed script.
     - name: htmlP
       dontrun: FALSE
       code: |
@@ -1805,6 +1828,9 @@ r_examples:
     - name: htmlPicture
       dontrun: FALSE
       code: |
+            # The URL below has been chunked to comply with CRAN
+            # requirements; the use of file.path is optional and not required
+            # for this component.
             if (interactive()) {
               library(dash)
               library(dashHtmlComponents)
@@ -1814,9 +1840,15 @@ r_examples:
               app$layout(
                 htmlDiv(list(
                   htmlPicture(list(
-                    htmlSource(srcSet = "https://upload.wikimedia.org/wikipedia/commons/a/a7/Winter_and_the_City.jpg",
+                    htmlSource(srcSet = file.path("https://upload.wikimedia.org",
+                                                  "wikipedia/commons/a/a7",
+                                                  "Winter_and_the_City.jpg",
+                                                  fsep = "/"),
                               media = "(min-width: 800px)"),
-                    htmlImg(src = "https://upload.wikimedia.org/wikipedia/commons/5/56/Summer_and_the_City.jpg"),
+                    htmlImg(src = file.path("https://upload.wikimedia.org",
+                                                  "wikipedia/commons/5/56",
+                                                  "Summer_and_the_City.jpg",
+                                                  fsep = "/")),
                     htmlP("Resize screen to see image changing...")
                   ))
                 ))
@@ -2159,6 +2191,9 @@ r_examples:
     - name: htmlSource
       dontrun: FALSE
       code: |
+            # The URL below has been chunked to comply with CRAN
+            # requirements; the use of file.path is optional and not required
+            # for this component.
             if (interactive()) {
               library(dash)
               library(dashHtmlComponents)
@@ -2167,7 +2202,7 @@ r_examples:
 
               app$layout(
                 htmlDiv(list(
-                    "Resize your browser window to see the image source change based based on the browser width",
+                    "Resize your browser window to see the image source change based on the browser width",
                     htmlBr(),
                     htmlPicture(
                       list(
@@ -2184,7 +2219,7 @@ r_examples:
                 )
               )
 
-              app$run_server()
+              app$run_server()              
             }
     - name: htmlSpacer
       dontrun: FALSE
@@ -2363,7 +2398,7 @@ r_examples:
 
               app$layout(
                 htmlDiv(list(
-                  "Within an htmlTable, you can specify the rows that go in the body of the table with htmlTbody",
+                  "Within an htmlTable, htmlTbody specifies rows for the table body",
                   htmlBr(),
                   htmlTable(
                     list(
@@ -2659,6 +2694,9 @@ r_examples:
     - name: htmlTrack
       dontrun: FALSE
       code: |
+            # The URL below has been chunked to comply with CRAN
+            # requirements; the use of file.path is optional and not required
+            # for this component.
             if (interactive()) {
               library(dash)
               library(dashHtmlComponents)
@@ -2668,8 +2706,19 @@ r_examples:
               app$layout(
                 htmlDiv(list(
                   htmlVideo(children = list(
-                    htmlSource(src = 'https://interactive-examples.mdn.mozilla.net/media/examples/friday.mp4', type = 'video/mp4'),
-                    htmlTrack(kind = 'captions', srcLang = 'en', src = 'https://interactive-examples.mdn.mozilla.net/media/examples/friday.vtt', default = 'default', label = 'English')
+                    htmlSource(src = file.path("https://interactive-examples.mdn.mozilla.net",
+                                              "media/examples",
+                                              "friday.mp4",
+                                              fsep = "/"), 
+                              type = 'video/mp4'),
+                    htmlTrack(kind = 'captions',
+                              srcLang = 'en',
+                              src = file.path("https://interactive-examples.mdn.mozilla.net",
+                                              "media/examples",
+                                              "friday.vtt",
+                                              fsep = "/"), 
+                              default = 'default',
+                              label = 'English')
                   ),
                   controls = TRUE
                 )
@@ -2754,7 +2803,10 @@ r_examples:
               app$layout(
                 htmlDiv(list(
                   htmlVideo(
-                    src = "https://ia800303.us.archive.org/18/items/bacteria_friend_and_foe/bacteria_friend_and_foe_512kb.mp4",
+                    src = file.path('https://ia800303.us.archive.org',
+                          '18/items/bacteria_friend_and_foe',
+                          'bacteria_friend_and_foe_512kb.mp4',
+                          fsep = '/'),
                     controls = TRUE,
                     title = "Bacteria: Friend and Foe"
                   )
