@@ -10,11 +10,13 @@ Source is a wrapper for the <source> HTML5 element. For detailed attribute info 
 }
 
 \usage{
-htmlSource(children=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL,
-role=NULL, media=NULL, sizes=NULL, src=NULL, srcSet=NULL, type=NULL,
-accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL,
-dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL,
-tabIndex=NULL, title=NULL, loading_state=NULL)
+htmlSource(children=NULL, id=NULL, n_clicks=NULL,
+n_clicks_timestamp=NULL, key=NULL, role=NULL, media=NULL,
+sizes=NULL, src=NULL, srcSet=NULL, type=NULL,
+accessKey=NULL, className=NULL, contentEditable=NULL,
+contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL,
+lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL,
+title=NULL, loading_state=NULL, ...)
 }
 
 \arguments{
@@ -76,32 +78,43 @@ those elements have the following types:
   - is_loading (logical; optional): determines if the component is loading or not
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
+
+
+\item{...}{wildcards allowed have the form: `'data-*', 'aria-*'`}
+
 }
+
+\value{named list of JSON elements corresponding to React.js properties and their values}
+
 \examples{
-\dontrun{
-library(dash)
-library(dashHtmlComponents)
+# The URL below has been chunked to comply with CRAN
+# requirements; the use of file.path is optional and not required
+# for this component.
+if (interactive() && require(dash)) {
+  library(dash)
+  library(dashHtmlComponents)
 
-app <- Dash$new()
+  app <- Dash$new()
 
-app$layout(
-  htmlDiv(list(
-      "Resize your browser window to see the image source change based based on the browser width",
-      htmlBr(),
-      htmlPicture(
-        list(
-          htmlSource(
-            media = "(min-width: 1000px)",
-            srcSet = "https://apod.nasa.gov/apod/image/1907/FishheadNebula_Pham_2401.jpg"
-          ),
-          htmlImg(
-            src = "https://apod.nasa.gov/apod/image/1907/ngc3576_campbell_1824.jpg"
+  app$layout(
+    htmlDiv(list(
+        "Resize your browser window to see the image source change based on the browser width",
+        htmlBr(),
+        htmlPicture(
+          list(
+            htmlSource(
+              media = "(min-width: 1000px)",
+              srcSet = "https://apod.nasa.gov/apod/image/1907/FishheadNebula_Pham_2401.jpg"
+            ),
+            htmlImg(
+              src = "https://apod.nasa.gov/apod/image/1907/ngc3576_campbell_1824.jpg"
+            )
           )
         )
       )
     )
   )
-)
 
-app$run_server()
-}}
+  app$run_server()              
+}
+}

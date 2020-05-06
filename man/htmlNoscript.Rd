@@ -10,10 +10,12 @@ Noscript is a wrapper for the <noscript> HTML5 element. For detailed attribute i
 }
 
 \usage{
-htmlNoscript(children=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL,
-role=NULL, accessKey=NULL, className=NULL, contentEditable=NULL,
-contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL,
-spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, loading_state=NULL)
+htmlNoscript(children=NULL, id=NULL, n_clicks=NULL,
+n_clicks_timestamp=NULL, key=NULL, role=NULL,
+accessKey=NULL, className=NULL, contentEditable=NULL,
+contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL,
+lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL,
+title=NULL, loading_state=NULL, ...)
 }
 
 \arguments{
@@ -65,10 +67,16 @@ those elements have the following types:
   - is_loading (logical; optional): determines if the component is loading or not
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
+
+
+\item{...}{wildcards allowed have the form: `'data-*', 'aria-*'`}
+
 }
+
+\value{named list of JSON elements corresponding to React.js properties and their values}
+
 \examples{
-\dontrun{
 # This component may be used in the index template to define
 # alternate content in browsers which have disabled scripts,
 # or in which scripts are not supported.
-}}
+}

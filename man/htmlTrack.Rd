@@ -10,11 +10,13 @@ Track is a wrapper for the <track> HTML5 element. For detailed attribute info se
 }
 
 \usage{
-htmlTrack(children=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL,
-role=NULL, default=NULL, kind=NULL, label=NULL, src=NULL, srcLang=NULL,
-accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL,
-dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL,
-tabIndex=NULL, title=NULL, loading_state=NULL)
+htmlTrack(children=NULL, id=NULL, n_clicks=NULL,
+n_clicks_timestamp=NULL, key=NULL, role=NULL, default=NULL,
+kind=NULL, label=NULL, src=NULL, srcLang=NULL,
+accessKey=NULL, className=NULL, contentEditable=NULL,
+contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL,
+lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL,
+title=NULL, loading_state=NULL, ...)
 }
 
 \arguments{
@@ -76,25 +78,47 @@ those elements have the following types:
   - is_loading (logical; optional): determines if the component is loading or not
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
+
+
+\item{...}{wildcards allowed have the form: `'data-*', 'aria-*'`}
+
 }
+
+\value{named list of JSON elements corresponding to React.js properties and their values}
+
 \examples{
-\dontrun{
-library(dash)
-library(dashHtmlComponents)
+# The URL below has been chunked to comply with CRAN
+# requirements; the use of file.path is optional and not required
+# for this component.
+if (interactive() && require(dash)) {
+  library(dash)
+  library(dashHtmlComponents)
 
-app <- Dash$new()
+  app <- Dash$new()
 
-app$layout(
-  htmlDiv(list(
-    htmlVideo(children = list(
-      htmlSource(src = 'https://interactive-examples.mdn.mozilla.net/media/examples/friday.mp4', type = 'video/mp4'),
-      htmlTrack(kind = 'captions', srcLang = 'en', src = 'https://interactive-examples.mdn.mozilla.net/media/examples/friday.vtt', default = 'default', label = 'English')
-    ),
-    controls = TRUE
-   )
+  app$layout(
+    htmlDiv(list(
+      htmlVideo(children = list(
+        htmlSource(src = file.path("https://interactive-examples.mdn.mozilla.net",
+                                  "media/examples",
+                                  "friday.mp4",
+                                  fsep = "/"), 
+                  type = 'video/mp4'),
+        htmlTrack(kind = 'captions',
+                  srcLang = 'en',
+                  src = file.path("https://interactive-examples.mdn.mozilla.net",
+                                  "media/examples",
+                                  "friday.vtt",
+                                  fsep = "/"), 
+                  default = 'default',
+                  label = 'English')
+      ),
+      controls = TRUE
+    )
+    )
   )
- )
-)
+  )
 
-app$run_server()
-}}
+  app$run_server()
+}
+}

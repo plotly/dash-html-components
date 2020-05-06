@@ -10,12 +10,14 @@ Video is a wrapper for the <video> HTML5 element. For detailed attribute info se
 }
 
 \usage{
-htmlVideo(children=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL,
-role=NULL, autoPlay=NULL, controls=NULL, crossOrigin=NULL, height=NULL,
-loop=NULL, muted=NULL, poster=NULL, preload=NULL, src=NULL, width=NULL,
-accessKey=NULL, className=NULL, contentEditable=NULL, contextMenu=NULL,
-dir=NULL, draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL,
-tabIndex=NULL, title=NULL, loading_state=NULL)
+htmlVideo(children=NULL, id=NULL, n_clicks=NULL,
+n_clicks_timestamp=NULL, key=NULL, role=NULL, autoPlay=NULL,
+controls=NULL, crossOrigin=NULL, height=NULL, loop=NULL,
+muted=NULL, poster=NULL, preload=NULL, src=NULL, width=NULL,
+accessKey=NULL, className=NULL, contentEditable=NULL,
+contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL,
+lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL,
+title=NULL, loading_state=NULL, ...)
 }
 
 \arguments{
@@ -87,24 +89,35 @@ those elements have the following types:
   - is_loading (logical; optional): determines if the component is loading or not
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
+
+
+\item{...}{wildcards allowed have the form: `'data-*', 'aria-*'`}
+
 }
+
+\value{named list of JSON elements corresponding to React.js properties and their values}
+
 \examples{
-\dontrun{
-library(dash)
-library(dashHtmlComponents)
+if (interactive() && require(dash)) {
+  library(dash)
+  library(dashHtmlComponents)
 
-app <- Dash$new()
+  app <- Dash$new()
 
-app$layout(
-  htmlDiv(list(
-    htmlVideo(
-      src = "https://ia800303.us.archive.org/18/items/bacteria_friend_and_foe/bacteria_friend_and_foe_512kb.mp4",
-      controls = TRUE,
-      title = "Bacteria: Friend and Foe"
-    )
+  app$layout(
+    htmlDiv(list(
+      htmlVideo(
+        src = file.path('https://ia800303.us.archive.org',
+              '18/items/bacteria_friend_and_foe',
+              'bacteria_friend_and_foe_512kb.mp4',
+              fsep = '/'),
+        controls = TRUE,
+        title = "Bacteria: Friend and Foe"
+      )
+      )
     )
   )
-)
 
-app$run_server()
-}}
+  app$run_server()
+}
+}
