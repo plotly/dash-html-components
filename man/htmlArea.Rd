@@ -10,12 +10,14 @@ Area is a wrapper for the <area> HTML5 element. For detailed attribute info see:
 }
 
 \usage{
-htmlArea(children=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL,
-role=NULL, alt=NULL, coords=NULL, download=NULL, href=NULL, hrefLang=NULL,
-media=NULL, rel=NULL, shape=NULL, target=NULL, accessKey=NULL, className=NULL,
-contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL,
-lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL,
-loading_state=NULL)
+htmlArea(children=NULL, id=NULL, n_clicks=NULL,
+n_clicks_timestamp=NULL, key=NULL, role=NULL, alt=NULL,
+coords=NULL, download=NULL, href=NULL, hrefLang=NULL,
+media=NULL, rel=NULL, shape=NULL, target=NULL,
+accessKey=NULL, className=NULL, contentEditable=NULL,
+contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL,
+lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL,
+title=NULL, loading_state=NULL, ...)
 }
 
 \arguments{
@@ -85,45 +87,57 @@ those elements have the following types:
   - is_loading (logical; optional): determines if the component is loading or not
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
+
+
+\item{...}{wildcards allowed have the form: `'data-*', 'aria-*'`}
+
 }
+
+\value{named list of JSON elements corresponding to React.js properties and their values}
+
 \examples{
-\dontrun{
-library(dash)
-library(dashHtmlComponents)
+# The URL below has been chunked to comply with CRAN
+# requirements; the use of file.path is optional and not required
+# for this component.
+if (interactive() && require(dash)) {
+  library(dash)
+  library(dashHtmlComponents)
 
-app <- Dash$new()
-
-app$layout(
-  htmlDiv(list(
-    htmlImg(src = 'https://upload.wikimedia.org/wikipedia/commons/0/0c/PIA17351-ApparentSizes-MarsDeimosPhobos-EarthMoon.jpg',
-            useMap = '#image-map'),
-    htmlMapEl(list(
-      htmlArea(target='_blank',
-               alt='Deimos',
-               title='Deimos',
-               href='https://en.wikipedia.org/wiki/Deimos_(moon)',
-               coords='5,114,32,147',
-               shape='rect'),
-      htmlArea(target='_blank',
-               alt='Phobos',
-               title='Phobos',
-               href='https://en.wikipedia.org/wiki/Phobos_(moon)',
-               coords='113,196,32,103',
-               shape='rect'),
-      htmlArea(target='_blank',
-               alt='Moon',
-               title='Moon',
-               href='https://en.wikipedia.org/wiki/Moon',
-               coords='127,285,294,1',
-               shape='rect')
+  app$layout(
+    htmlDiv(list(
+      htmlImg(src = file.path('https://upload.wikimedia.org',
+              'wikipedia/commons/0/0c',
+              'PIA17351-ApparentSizes-MarsDeimosPhobos-EarthMoon.jpg',
+              fsep = '/'),
+              useMap = '#image-map'),
+      htmlMapEl(list(
+        htmlArea(target='_blank',
+                alt='Deimos',
+                title='Deimos',
+                href='https://en.wikipedia.org/wiki/Deimos_(moon)',
+                coords='5,114,32,147',
+                shape='rect'),
+        htmlArea(target='_blank',
+                alt='Phobos',
+                title='Phobos',
+                href='https://en.wikipedia.org/wiki/Phobos_(moon)',
+                coords='113,196,32,103',
+                shape='rect'),
+        htmlArea(target='_blank',
+                alt='Moon',
+                title='Moon',
+                href='https://en.wikipedia.org/wiki/Moon',
+                coords='127,285,294,1',
+                shape='rect')
+        ),
+        name = 'image-map'
       ),
-      name = 'image-map'
-    ),
-    htmlDiv(children = 'Click on the image to visit a Wikipedia article',
-            id = 'object-name')
+      htmlDiv(children = 'Click on the image to visit a Wikipedia article',
+              id = 'object-name')
+      )
     )
   )
-)
 
-app$run_server()
-}}
+  app$run_server()
+}
+}

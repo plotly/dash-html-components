@@ -10,11 +10,13 @@ Del is a wrapper for the <del> HTML5 element. For detailed attribute info see: h
 }
 
 \usage{
-htmlDel(children=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL,
-role=NULL, cite=NULL, dateTime=NULL, accessKey=NULL, className=NULL,
-contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL,
-lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL,
-loading_state=NULL)
+htmlDel(children=NULL, id=NULL, n_clicks=NULL,
+n_clicks_timestamp=NULL, key=NULL, role=NULL, cite=NULL,
+dateTime=NULL, accessKey=NULL, className=NULL,
+contentEditable=NULL, contextMenu=NULL, dir=NULL,
+draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL,
+style=NULL, tabIndex=NULL, title=NULL, loading_state=NULL,
+...)
 }
 
 \arguments{
@@ -70,21 +72,29 @@ those elements have the following types:
   - is_loading (logical; optional): determines if the component is loading or not
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
+
+
+\item{...}{wildcards allowed have the form: `'data-*', 'aria-*'`}
+
 }
+
+\value{named list of JSON elements corresponding to React.js properties and their values}
+
 \examples{
-\dontrun{
-library(dash)
-library(dashHtmlComponents)
+if (interactive() && require(dash)) {
+  library(dash)
+  library(dashHtmlComponents)
 
-app <- Dash$new()
+  app <- Dash$new()
 
-app$layout(htmlDiv(list(
-  htmlDel(
-        children ="Deleted Hello"
+  app$layout(htmlDiv(list(
+    htmlDel(
+          children ="Deleted Hello"
+        )
       )
     )
   )
-)
 
-app$run_server()
-}}
+  app$run_server()
+}
+}

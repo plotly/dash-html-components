@@ -10,11 +10,13 @@ Embed is a wrapper for the <embed> HTML5 element. For detailed attribute info se
 }
 
 \usage{
-htmlEmbed(children=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL,
-role=NULL, height=NULL, src=NULL, type=NULL, width=NULL, accessKey=NULL,
-className=NULL, contentEditable=NULL, contextMenu=NULL, dir=NULL,
-draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL, style=NULL,
-tabIndex=NULL, title=NULL, loading_state=NULL)
+htmlEmbed(children=NULL, id=NULL, n_clicks=NULL,
+n_clicks_timestamp=NULL, key=NULL, role=NULL, height=NULL,
+src=NULL, type=NULL, width=NULL, accessKey=NULL,
+className=NULL, contentEditable=NULL, contextMenu=NULL,
+dir=NULL, draggable=NULL, hidden=NULL, lang=NULL,
+spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL,
+loading_state=NULL, ...)
 }
 
 \arguments{
@@ -74,22 +76,30 @@ those elements have the following types:
   - is_loading (logical; optional): determines if the component is loading or not
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
+
+
+\item{...}{wildcards allowed have the form: `'data-*', 'aria-*'`}
+
 }
+
+\value{named list of JSON elements corresponding to React.js properties and their values}
+
 \examples{
-\dontrun{
-library(dash)
-library(dashHtmlComponents)
+if (interactive() && require(dash)) {
+  library(dash)
+  library(dashHtmlComponents)
 
-app <- Dash$new()
+  app <- Dash$new()
 
-app$layout(htmlDiv(list(
-  htmlEmbed(
-    src = 'https://archive.org/embed/VintageCartoonsSet1Mp4',
-    width = '500',
-    height = '500')
+  app$layout(htmlDiv(list(
+    htmlEmbed(
+      src = 'https://archive.org/embed/VintageCartoonsSet1Mp4',
+      width = '500',
+      height = '500')
+      )
     )
   )
-)
 
-app$run_server()
-}}
+  app$run_server()
+}
+}

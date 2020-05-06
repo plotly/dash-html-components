@@ -10,12 +10,14 @@ Script is a wrapper for the <script> HTML5 element. For detailed attribute info 
 }
 
 \usage{
-htmlScript(children=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL,
-role=NULL, async=NULL, charSet=NULL, crossOrigin=NULL, defer=NULL,
-integrity=NULL, src=NULL, type=NULL, accessKey=NULL, className=NULL,
-contentEditable=NULL, contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL,
-lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL,
-loading_state=NULL)
+htmlScript(children=NULL, id=NULL, n_clicks=NULL,
+n_clicks_timestamp=NULL, key=NULL, role=NULL, async=NULL,
+charSet=NULL, crossOrigin=NULL, defer=NULL, integrity=NULL,
+src=NULL, type=NULL, accessKey=NULL, className=NULL,
+contentEditable=NULL, contextMenu=NULL, dir=NULL,
+draggable=NULL, hidden=NULL, lang=NULL, spellCheck=NULL,
+style=NULL, tabIndex=NULL, title=NULL, loading_state=NULL,
+...)
 }
 
 \arguments{
@@ -81,10 +83,16 @@ those elements have the following types:
   - is_loading (logical; optional): determines if the component is loading or not
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
+
+
+\item{...}{wildcards allowed have the form: `'data-*', 'aria-*'`}
+
 }
+
+\value{named list of JSON elements corresponding to React.js properties and their values}
+
 \examples{
-\dontrun{
 # This component is retained for compatibility reasons, but we suggest
 # using Dash's capability for embedding scripts within the assets folder
 # instead.
-}}
+}

@@ -10,10 +10,12 @@ Listing is a wrapper for the <listing> HTML5 element. For detailed attribute inf
 }
 
 \usage{
-htmlListing(children=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL,
-role=NULL, accessKey=NULL, className=NULL, contentEditable=NULL,
-contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL,
-spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, loading_state=NULL)
+htmlListing(children=NULL, id=NULL, n_clicks=NULL,
+n_clicks_timestamp=NULL, key=NULL, role=NULL,
+accessKey=NULL, className=NULL, contentEditable=NULL,
+contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL,
+lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL,
+title=NULL, loading_state=NULL, ...)
 }
 
 \arguments{
@@ -65,28 +67,36 @@ those elements have the following types:
   - is_loading (logical; optional): determines if the component is loading or not
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
+
+
+\item{...}{wildcards allowed have the form: `'data-*', 'aria-*'`}
+
 }
+
+\value{named list of JSON elements corresponding to React.js properties and their values}
+
 \examples{
-\dontrun{
-# Warning: The <listing> element was intended as a way to render HTML code on a page.
-# It was never properly supported, and is now deprecated. Using <listing> will almost
-# certainly result in unexpected results. Instead, use <code>, or place the content in
-# a <div> with the appropriate CSS styling.
+if (interactive() && require(dash)) {
+  # Warning: The <listing> element was intended as a way to render HTML code on a page.
+  # It was never properly supported, and is now deprecated. Using <listing> will almost
+  # certainly result in unexpected results. Instead, use <code>, or place the content in
+  # a <div> with the appropriate CSS styling.
 
-library(dash)
-library(dashHtmlComponents)
+  library(dash)
+  library(dashHtmlComponents)
 
-app <- Dash$new()
+  app <- Dash$new()
 
-app$layout(
-  htmlDiv(list(
-    htmlListing(list(
-      htmlUl("A"),
-      htmlUl("B"),
-      htmlUl("C")
+  app$layout(
+    htmlDiv(list(
+      htmlListing(list(
+        htmlUl("A"),
+        htmlUl("B"),
+        htmlUl("C")
+      ))
     ))
-  ))
-)
+  )
 
-app$run_server()
-}}
+  app$run_server()
+}
+}

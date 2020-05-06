@@ -10,10 +10,12 @@ Caption is a wrapper for the <caption> HTML5 element. For detailed attribute inf
 }
 
 \usage{
-htmlCaption(children=NULL, id=NULL, n_clicks=NULL, n_clicks_timestamp=NULL, key=NULL,
-role=NULL, accessKey=NULL, className=NULL, contentEditable=NULL,
-contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL, lang=NULL,
-spellCheck=NULL, style=NULL, tabIndex=NULL, title=NULL, loading_state=NULL)
+htmlCaption(children=NULL, id=NULL, n_clicks=NULL,
+n_clicks_timestamp=NULL, key=NULL, role=NULL,
+accessKey=NULL, className=NULL, contentEditable=NULL,
+contextMenu=NULL, dir=NULL, draggable=NULL, hidden=NULL,
+lang=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL,
+title=NULL, loading_state=NULL, ...)
 }
 
 \arguments{
@@ -65,59 +67,67 @@ those elements have the following types:
   - is_loading (logical; optional): determines if the component is loading or not
   - prop_name (character; optional): holds which property is loading
   - component_name (character; optional): holds the name of the component that is loading. Object that holds the loading state object coming from dash-renderer}
+
+
+\item{...}{wildcards allowed have the form: `'data-*', 'aria-*'`}
+
 }
+
+\value{named list of JSON elements corresponding to React.js properties and their values}
+
 \examples{
-\dontrun{
-library(dash)
-library(dashHtmlComponents)
+if (interactive() && require(dash)) {
+  library(dash)
+  library(dashHtmlComponents)
 
-app <- Dash$new()
+  app <- Dash$new()
 
-app$layout(
-  htmlDiv(list(
-    htmlTable(list(
-      htmlCaption("Elevations of a few Cascade Range volcanoes"),
-      htmlThead(
-        htmlTr(list(
-          htmlTh("Mountain"),
-          htmlTh("Elevation (m)"),
-          htmlTh("Elevation (ft)")
+  app$layout(
+    htmlDiv(list(
+      htmlTable(list(
+        htmlCaption("Elevations of a few Cascade Range volcanoes"),
+        htmlThead(
+          htmlTr(list(
+            htmlTh("Mountain"),
+            htmlTh("Elevation (m)"),
+            htmlTh("Elevation (ft)")
+          )
+        )),
+        htmlTbody(list(
+          htmlTr(list(
+            htmlTd("Mount Rainier"),
+            htmlTd("4,392"),
+            htmlTd("14,411")
+          )
+          ),
+          htmlTr(list(
+            htmlTd("Mount Hood"),
+            htmlTd("3,429"),
+            htmlTd("11,249")
+          )
+          ),
+          htmlTr(list(
+            htmlTd("Lassen Peak"),
+            htmlTd("3,187"),
+            htmlTd("10,457")
+          )
+          ),
+          htmlTr(list(
+            htmlTd("Mount St. Helens"),
+            htmlTd("2,549"),
+            htmlTd("8,363")
+          )
+          )
         )
-      )),
-      htmlTbody(list(
-        htmlTr(list(
-          htmlTd("Mount Rainier"),
-          htmlTd("4,392"),
-          htmlTd("14,411")
-         )
-        ),
-        htmlTr(list(
-          htmlTd("Mount Hood"),
-          htmlTd("3,429"),
-          htmlTd("11,249")
         )
-        ),
-        htmlTr(list(
-          htmlTd("Lassen Peak"),
-          htmlTd("3,187"),
-          htmlTd("10,457")
-         )
-        ),
-        htmlTr(list(
-          htmlTd("Mount St. Helens"),
-          htmlTd("2,549"),
-          htmlTd("8,363")
-         )
-        )
-       )
+      ), style = list(
+            border = "1px black solid"
       )
-     ), style = list(
-          border = "1px black solid"
-     )
+      )
     )
   )
- )
-)
+  )
 
-app$run_server()
-}}
+  app$run_server()
+}
+}
