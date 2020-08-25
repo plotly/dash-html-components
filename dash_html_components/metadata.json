@@ -115,7 +115,7 @@
           "name": "string"
         },
         "required": false,
-        "description": ""
+        "description": "Specifies where to open the linked document (in the case of an <a> element) or where to display the response recieved (in the case of a <form> element)"
       },
       "accessKey": {
         "type": {
@@ -994,7 +994,7 @@
           "name": "string"
         },
         "required": false,
-        "description": ""
+        "description": "Specifies where to open the linked document (in the case of an <a> element) or where to display the response recieved (in the case of a <form> element)"
       },
       "accessKey": {
         "type": {
@@ -2153,7 +2153,7 @@
           "name": "string"
         },
         "required": false,
-        "description": ""
+        "description": "Specifies where to open the linked document (in the case of an <a> element) or where to display the response recieved (in the case of a <form> element)"
       },
       "accessKey": {
         "type": {
@@ -9922,7 +9922,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Defines the content type of the form date when the method is POST."
+        "description": "Defines the content type of the form data when the method is POST."
       },
       "method": {
         "type": {
@@ -9972,7 +9972,7 @@
           "name": "string"
         },
         "required": false,
-        "description": ""
+        "description": "Specifies where to open the linked document (in the case of an <a> element) or where to display the response recieved (in the case of a <form> element)"
       },
       "accessKey": {
         "type": {

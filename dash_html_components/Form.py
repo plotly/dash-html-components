@@ -29,11 +29,11 @@ See https://reactjs.org/docs/lists-and-keys.html for more info
 - acceptCharset (string; optional): List of supported charsets.
 - action (string; optional): The URI of a program that processes the information submitted via the form.
 - autoComplete (string; optional): Indicates whether controls in this form can by default have their values automatically completed by the browser.
-- encType (string; optional): Defines the content type of the form date when the method is POST.
+- encType (string; optional): Defines the content type of the form data when the method is POST.
 - method (string; optional): Defines which HTTP method to use when submitting the form. Can be GET (default) or POST.
 - name (string; optional): Name of the element. For example used by the server to identify the fields in form submits.
 - noValidate (a value equal to: 'noValidate', 'novalidate', 'NOVALIDATE' | boolean; optional): This attribute indicates that the form shouldn't be validated when submitted.
-- target (string; optional)
+- target (string; optional): Specifies where to open the linked document (in the case of an <a> element) or where to display the response recieved (in the case of a <form> element)
 - accessKey (string; optional): Keyboard shortcut to activate or add focus to the element.
 - className (string; optional): Often used with CSS to style elements with common properties.
 - contentEditable (string; optional): Indicates whether the element's content is editable.

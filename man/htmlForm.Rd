@@ -49,7 +49,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 
 \item{autoComplete}{Character. Indicates whether controls in this form can by default have their values automatically completed by the browser.}
 
-\item{encType}{Character. Defines the content type of the form date when the method is POST.}
+\item{encType}{Character. Defines the content type of the form data when the method is POST.}
 
 \item{method}{Character. Defines which HTTP method to use when submitting the form. Can be GET (default) or POST.}
 
@@ -57,7 +57,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 
 \item{noValidate}{A value equal to: 'novalidate', 'novalidate', 'novalidate' | logical. This attribute indicates that the form shouldn't be validated when submitted.}
 
-\item{target}{Character. }
+\item{target}{Character. Specifies where to open the linked document (in the case of an <a> element) or where to display the response recieved (in the case of a <form> element)}
 
 \item{accessKey}{Character. Keyboard shortcut to activate or add focus to the element.}
 

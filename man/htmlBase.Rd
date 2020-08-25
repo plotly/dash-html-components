@@ -41,7 +41,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 
 \item{href}{Character. The URL of a linked resource.}
 
-\item{target}{Character. }
+\item{target}{Character. Specifies where to open the linked document (in the case of an <a> element) or where to display the response recieved (in the case of a <form> element)}
 
 \item{accessKey}{Character. Keyboard shortcut to activate or add focus to the element.}
 
