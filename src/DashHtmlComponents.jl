@@ -3,7 +3,7 @@ module DashHtmlComponents
 using DashBase
 
 const resources_path = realpath(joinpath( @__DIR__, "..", "deps"))
-const version = "1.1.0"
+const version = "1.1.1"
 
 include("html_a.jl")
 include("html_abbr.jl")
@@ -146,14 +146,14 @@ function __init__()
             [
                 DashBase.Resource(
     relative_package_path = "dash_html_components.min.js",
-    external_url = "https://unpkg.com/dash-html-components@1.1.0/dash_html_components/dash_html_components.min.js",
+    external_url = "https://unpkg.com/dash-html-components@1.1.1/dash_html_components/dash_html_components.min.js",
     dynamic = nothing,
     async = nothing,
     type = :js
 ),
 DashBase.Resource(
     relative_package_path = "dash_html_components.min.js.map",
-    external_url = "https://unpkg.com/dash-html-components@1.1.0/dash_html_components/dash_html_components.min.js.map",
+    external_url = "https://unpkg.com/dash-html-components@1.1.1/dash_html_components/dash_html_components.min.js.map",
     dynamic = true,
     async = nothing,
     type = :js
