@@ -6,6 +6,7 @@ const request = require('request');
 
 const refUrl = 'https://developer.mozilla.org/en-US/docs/Web/HTML/Element';
 const dataPath = './data/elements.txt';
+const expectedElCount = 131;
 
 /**
  * From the MDN HTML elements reference, extract a list of elements.
@@ -59,6 +60,12 @@ request(refUrl, (error, response, html) => {
     }
     const $ = cheerio.load(html);
     const elements = extractElements($);
+    if (elements.length !== expectedElCount) {
+        throw new Error(
+            'Unexpected number of elements extracted from ' + refUrl +
+            ' Check the output and edit expectedElCount if this is intended.'
+        );
+    }
     const out = elements.join('\n');
 
     fs.writeFileSync(dataPath, out);
