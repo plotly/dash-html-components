@@ -13,6 +13,9 @@ const dataPath = './data/elements.txt';
 function extractElements($) {
     const excludeElements = [
         'html', 'head', 'body', 'style', 'h1–h6', 'input',
+        // out of scope, different namespaces - but Mozilla added these to the
+        // above reference page Jan 2021 so we need to exclude them now.
+        'svg', 'math',
         // obsolete, non-standard, or deprecated tags
         'image', 'dir', 'tt', 'applet', 'noembed', 'bgsound', 'menu', 'menuitem',
         'noframes'
