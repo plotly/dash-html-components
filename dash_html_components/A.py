@@ -31,7 +31,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info
 - media (string; optional): Specifies a hint of the media for which the linked resource was designed.
 - rel (string; optional): Specifies the relationship of the target object to the link object.
 - shape (string; optional)
-- target (string; optional): Specifies where to open the linked document (in the case of an <a> element) or where to display the response recieved (in the case of a <form> element)
+- target (string; optional): Specifies where to open the linked document (in the case of an <a> element) or where to display the response received (in the case of a <form> element)
 - accessKey (string; optional): Keyboard shortcut to activate or add focus to the element.
 - className (string; optional): Often used with CSS to style elements with common properties.
 - contentEditable (string; optional): Indicates whether the element's content is editable.

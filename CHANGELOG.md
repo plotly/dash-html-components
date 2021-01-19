@@ -2,8 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.2] - 2021-01-19
+### Fixed
+- [#169](https://github.com/plotly/dash-html-components/pull/169) - part of fixing dash import bug https://github.com/plotly/dash/issues/1143
+
 ## [1.1.1] - 2020-09-03
--Dash.jl Julia component generation
+- Dash.jl Julia component generation
 
 ## [1.1.0] - 2020-08-25
 ### Added
