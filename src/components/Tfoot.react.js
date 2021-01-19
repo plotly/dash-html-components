@@ -162,6 +162,9 @@ Tfoot.propTypes = {
         component_name: PropTypes.string,
     }),
 
+    /**
+     * Dash-assigned callback that gets fired when the element is clicked.
+     */
     'setProps': PropTypes.func
 };
 

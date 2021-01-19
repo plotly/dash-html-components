@@ -57,7 +57,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info}
 
 \item{noValidate}{A value equal to: 'novalidate', 'novalidate', 'novalidate' | logical. This attribute indicates that the form shouldn't be validated when submitted.}
 
-\item{target}{Character. Specifies where to open the linked document (in the case of an <a> element) or where to display the response recieved (in the case of a <form> element)}
+\item{target}{Character. Specifies where to open the linked document (in the case of an <a> element) or where to display the response received (in the case of a <form> element)}
 
 \item{accessKey}{Character. Keyboard shortcut to activate or add focus to the element.}
 

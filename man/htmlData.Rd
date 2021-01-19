@@ -95,7 +95,7 @@ if (interactive() && require(dash)) {
     )
   )
 
-  # Include the following in a seperate CSS file in an
+  # Include the following in a separate CSS file in an
   # `assets` directory in the root of your app.
   #
   # data:hover::after {

@@ -29,7 +29,7 @@ See https://reactjs.org/docs/lists-and-keys.html for more info
 - `data-*` (String; optional): A wildcard data attribute
 - `aria-*` (String; optional): A wildcard aria attribute
 - `href` (String; optional): The URL of a linked resource.
-- `target` (String; optional): Specifies where to open the linked document (in the case of an <a> element) or where to display the response recieved (in the case of a <form> element)
+- `target` (String; optional): Specifies where to open the linked document (in the case of an <a> element) or where to display the response received (in the case of a <form> element)
 - `accessKey` (String; optional): Keyboard shortcut to activate or add focus to the element.
 - `className` (String; optional): Often used with CSS to style elements with common properties.
 - `contentEditable` (String; optional): Indicates whether the element's content is editable.
