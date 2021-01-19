@@ -112,7 +112,7 @@ A.propTypes = {
     'shape': PropTypes.string,
 
     /**
-     * Specifies where to open the linked document (in the case of an <a> element) or where to display the response recieved (in the case of a <form> element)
+     * Specifies where to open the linked document (in the case of an <a> element) or where to display the response received (in the case of a <form> element)
      */
     'target': PropTypes.string,
 
@@ -197,6 +197,9 @@ A.propTypes = {
         component_name: PropTypes.string,
     }),
 
+    /**
+     * Dash-assigned callback that gets fired when the element is clicked.
+     */
     'setProps': PropTypes.func
 };
 

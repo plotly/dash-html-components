@@ -115,7 +115,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Specifies where to open the linked document (in the case of an <a> element) or where to display the response recieved (in the case of a <form> element)"
+        "description": "Specifies where to open the linked document (in the case of an <a> element) or where to display the response received (in the case of a <form> element)"
       },
       "accessKey": {
         "type": {
@@ -248,7 +248,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -452,7 +452,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -656,7 +656,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -860,7 +860,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -994,7 +994,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Specifies where to open the linked document (in the case of an <a> element) or where to display the response recieved (in the case of a <form> element)"
+        "description": "Specifies where to open the linked document (in the case of an <a> element) or where to display the response received (in the case of a <form> element)"
       },
       "accessKey": {
         "type": {
@@ -1127,7 +1127,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -1331,7 +1331,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -1535,7 +1535,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -1864,7 +1864,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -2068,7 +2068,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -2153,7 +2153,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Specifies where to open the linked document (in the case of an <a> element) or where to display the response recieved (in the case of a <form> element)"
+        "description": "Specifies where to open the linked document (in the case of an <a> element) or where to display the response received (in the case of a <form> element)"
       },
       "accessKey": {
         "type": {
@@ -2286,7 +2286,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -2490,7 +2490,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -2694,7 +2694,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -2898,7 +2898,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -3102,7 +3102,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -3306,7 +3306,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -3517,7 +3517,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -3721,7 +3721,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -4064,7 +4064,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -4298,7 +4298,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -4502,7 +4502,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -4706,7 +4706,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -4910,7 +4910,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -5114,7 +5114,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -5325,7 +5325,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -5536,7 +5536,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -5811,7 +5811,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -6015,7 +6015,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -6226,7 +6226,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -6430,7 +6430,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -6634,7 +6634,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -6852,7 +6852,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -7081,7 +7081,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -7285,7 +7285,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -7489,7 +7489,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -7693,7 +7693,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -7897,7 +7897,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -8101,7 +8101,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -8305,7 +8305,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -8509,7 +8509,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -8757,7 +8757,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -9000,7 +9000,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -9204,7 +9204,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -9408,7 +9408,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -9612,7 +9612,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -9816,7 +9816,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -9972,7 +9972,7 @@
           "name": "string"
         },
         "required": false,
-        "description": "Specifies where to open the linked document (in the case of an <a> element) or where to display the response recieved (in the case of a <form> element)"
+        "description": "Specifies where to open the linked document (in the case of an <a> element) or where to display the response received (in the case of a <form> element)"
       },
       "accessKey": {
         "type": {
@@ -10105,7 +10105,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -10309,7 +10309,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -10513,7 +10513,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -10717,7 +10717,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -10921,7 +10921,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -11125,7 +11125,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -11329,7 +11329,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -11533,7 +11533,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -11737,7 +11737,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -11941,7 +11941,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -12145,7 +12145,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -12349,7 +12349,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -12553,7 +12553,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -12815,7 +12815,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -13091,7 +13091,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -13309,7 +13309,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -13513,7 +13513,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -13717,7 +13717,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -14003,7 +14003,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -14221,7 +14221,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -14425,7 +14425,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -14636,7 +14636,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -14889,7 +14889,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -15093,7 +15093,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -15297,7 +15297,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -15508,7 +15508,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -15712,7 +15712,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -15941,7 +15941,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -16173,7 +16173,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -16442,7 +16442,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -16646,7 +16646,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -16850,7 +16850,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -17054,7 +17054,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -17258,7 +17258,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -17462,7 +17462,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -17724,7 +17724,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -17960,7 +17960,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -18196,7 +18196,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -18464,7 +18464,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -18689,7 +18689,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -18893,7 +18893,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -19111,7 +19111,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -19315,7 +19315,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -19519,7 +19519,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -19723,7 +19723,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -19956,7 +19956,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -20167,7 +20167,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -20371,7 +20371,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -20575,7 +20575,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -20779,7 +20779,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -20983,7 +20983,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -21187,7 +21187,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -21391,7 +21391,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -21595,7 +21595,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -21884,7 +21884,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -22088,7 +22088,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -22432,7 +22432,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -22636,7 +22636,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -22840,7 +22840,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -23044,7 +23044,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -23283,7 +23283,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -23487,7 +23487,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -23691,7 +23691,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -23895,7 +23895,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -24099,7 +24099,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -24303,7 +24303,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -24507,7 +24507,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -24711,7 +24711,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -24922,7 +24922,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -25126,7 +25126,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -25367,7 +25367,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -25571,7 +25571,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -25963,7 +25963,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -26167,7 +26167,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -26415,7 +26415,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -26619,7 +26619,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -26830,7 +26830,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -27034,7 +27034,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -27238,7 +27238,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -27495,7 +27495,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -27699,7 +27699,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -27903,7 +27903,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -28107,7 +28107,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -28473,7 +28473,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -28677,7 +28677,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   },
@@ -28881,7 +28881,7 @@
           "name": "func"
         },
         "required": false,
-        "description": ""
+        "description": "Dash-assigned callback that gets fired when the element is clicked."
       }
     }
   }
