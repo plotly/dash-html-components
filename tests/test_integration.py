@@ -6,7 +6,7 @@ from dash.dependencies import Input, Output
 import dash_html_components as html
 
 
-def test_click(dash_duo):
+def test_click_simple(dash_duo):
     call_count = Value('i', 0)
 
     app = dash.Dash(__name__)
@@ -35,6 +35,8 @@ def test_click(dash_duo):
         '#container', 'clicked 1 times')
     assert call_count.value == 2
     dash_duo.percy_snapshot('button click')
+
+    assert not dash_duo.get_logs()
 
 
 def test_click_prev(dash_duo):
@@ -93,3 +95,5 @@ def test_click_prev(dash_duo):
     assert timestamp_2.value > timestamp_1.value
     assert call_count.value == 4
     dash_duo.percy_snapshot('button-2 click again')
+
+    assert not dash_duo.get_logs()
