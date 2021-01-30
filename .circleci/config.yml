@@ -86,6 +86,7 @@ jobs:
         environment:
           PYTHON_VERSION: py37
           PERCY_ENABLE: 1
+          PERCY_PARALLEL_TOTAL: -1
 
 workflows:
   version: 2
