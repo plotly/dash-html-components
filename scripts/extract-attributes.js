@@ -12,7 +12,7 @@ const htmlPath = './data/attributes.html';
 // From https://facebook.github.io/react/docs/tags-and-attributes.html#supported-attributes
 // less the special `className` and `htmlFor` props,
 // and `httpEquiv` + `acceptCharset` which are already correctly camelCased.
-const supportedAttributes = ['accept', 'accessKey', 'action',
+const supportedAttributes = ['accept', 'accessKey', 'action', 'allow',
 'allowFullScreen', 'allowTransparency', 'alt', 'async', 'autoComplete',
 'autoFocus', 'autoPlay', 'capture', 'cellPadding', 'cellSpacing', 'challenge',
 'charSet', 'checked', 'cite', 'classID', 'colSpan', 'cols', 'content',
