@@ -5,6 +5,12 @@ import {omit} from 'ramda';
 
 /**
  * Plaintext is a wrapper for the <plaintext> HTML5 element.
+ *
+ * OBSOLETE: <plaintext> is included for completeness, but should be avoided
+ * as browsers may remove it at any time, and its behavior when added
+ * dynamically by Dash is not what it would be statically on page load.
+ * Use <pre> or <code> instead.
+ *
  * For detailed attribute info see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/plaintext
  */

@@ -5,6 +5,10 @@ import {omit} from 'ramda';
 
 /**
  * Command is a wrapper for the <command> HTML5 element.
+ *
+ * OBSOLETE: <command> is included for completeness, but should be avoided
+ * as it is not supported by any modern browsers.
+ *
  * For detailed attribute info see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/command
  */

@@ -5,6 +5,10 @@ import {omit} from 'ramda';
 
 /**
  * Blink is a wrapper for the <blink> HTML5 element.
+ *
+ * OBSOLETE: <blink> is included for completeness, but should be avoided
+ * as it is not supported by any modern browsers.
+ *
  * For detailed attribute info see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink
  */

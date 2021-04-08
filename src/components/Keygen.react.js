@@ -5,6 +5,11 @@ import {omit} from 'ramda';
 
 /**
  * Keygen is a wrapper for the <keygen> HTML5 element.
+ *
+ * DEPRECATED: <keygen> is included for completeness, but should be avoided
+ * as it is not supported by all browsers and may be removed at any time from
+ * those that do support it.
+ *
  * For detailed attribute info see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/keygen
  */

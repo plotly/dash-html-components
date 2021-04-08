@@ -100,6 +100,11 @@ Img.propTypes = {
      ]),
 
     /**
+     * Specifies which referrer is sent when fetching the resource.
+     */
+    'referrerPolicy': PropTypes.string,
+
+    /**
      *
      */
     'sizes': PropTypes.string,

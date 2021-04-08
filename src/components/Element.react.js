@@ -5,6 +5,10 @@ import {omit} from 'ramda';
 
 /**
  * Element is a wrapper for the <element> HTML5 element.
+ *
+ * OBSOLETE: <element> is included for completeness, but should be avoided
+ * as it is not supported by any modern browsers.
+ *
  * For detailed attribute info see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/element
  */

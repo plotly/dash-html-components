@@ -5,6 +5,10 @@ import {omit} from 'ramda';
 
 /**
  * Nextid is a wrapper for the <nextid> HTML5 element.
+ *
+ * OBSOLETE: <nextid> is included for completeness, but should be avoided
+ * as it is not supported by any modern browsers.
+ *
  * For detailed attribute info see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nextid
  */

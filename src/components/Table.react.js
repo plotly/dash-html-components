@@ -82,11 +82,6 @@ Table.propTypes = {
     'aria-*': PropTypes.string,
 
     /**
-     *
-     */
-    'summary': PropTypes.string,
-
-    /**
      * Keyboard shortcut to activate or add focus to the element.
      */
     'accessKey': PropTypes.string,

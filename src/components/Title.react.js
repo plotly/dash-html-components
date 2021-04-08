@@ -5,6 +5,11 @@ import {omit} from 'ramda';
 
 /**
  * Title is a wrapper for the <title> HTML5 element.
+ *
+ * CAUTION: <title> is included for completeness, but is not expected to
+ * do anything outside of <head>. Dash components are always created in the
+ * <body>.
+ *
  * For detailed attribute info see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title
  */

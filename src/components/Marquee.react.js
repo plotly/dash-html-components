@@ -5,6 +5,10 @@ import {omit} from 'ramda';
 
 /**
  * Marquee is a wrapper for the <marquee> HTML5 element.
+ *
+ * DEPRECATED: <marquee> is included for completeness, but should be avoided
+ * as browsers may remove it at any time.
+ *
  * For detailed attribute info see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee
  */

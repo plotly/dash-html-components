@@ -5,6 +5,11 @@ import {omit} from 'ramda';
 
 /**
  * Script is a wrapper for the <script> HTML5 element.
+ *
+ * CAUTION: <script> is included for completeness, but you cannot execute
+ * JavaScript code by providing it to a <script> element. Use a clientside
+ * callback for this purpose instead.
+ *
  * For detailed attribute info see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script
  */
@@ -111,6 +116,11 @@ Script.propTypes = {
      * Specifies a Subresource Integrity value that allows browsers to verify what they fetch.
      */
     'integrity': PropTypes.string,
+
+    /**
+     * Specifies which referrer is sent when fetching the resource.
+     */
+    'referrerPolicy': PropTypes.string,
 
     /**
      * The URL of the embeddable content.
