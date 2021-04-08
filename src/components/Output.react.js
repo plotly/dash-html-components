@@ -5,6 +5,11 @@ import {omit} from 'ramda';
 
 /**
  * Output is a wrapper for the <output> HTML5 element.
+ *
+ * CAUTION: <output> is included for completeness, but its typical usage
+ * requires the oninput attribute of the enclosing <form> element, which
+ * is not accessible to Dash.
+ *
  * For detailed attribute info see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output
  */

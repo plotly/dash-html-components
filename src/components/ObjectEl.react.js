@@ -82,6 +82,11 @@ ObjectEl.propTypes = {
     'aria-*': PropTypes.string,
 
     /**
+     * Specifies the URL of the resource.
+     */
+    'data': PropTypes.string,
+
+    /**
      * Indicates the form that is the owner of the element.
      */
     'form': PropTypes.string,

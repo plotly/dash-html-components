@@ -96,6 +96,13 @@
         "required": false,
         "description": "Specifies a hint of the media for which the linked resource was designed."
       },
+      "referrerPolicy": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Specifies which referrer is sent when fetching the resource."
+      },
       "rel": {
         "type": {
           "name": "string"
@@ -974,6 +981,13 @@
         },
         "required": false,
         "description": "Specifies a hint of the media for which the linked resource was designed."
+      },
+      "referrerPolicy": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Specifies which referrer is sent when fetching the resource."
       },
       "rel": {
         "type": {
@@ -2291,7 +2305,7 @@
     }
   },
   "src/components/Basefont.react.js": {
-    "description": "Basefont is a wrapper for the <basefont> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/basefont",
+    "description": "Basefont is a wrapper for the <basefont> HTML5 element.\n\nOBSOLETE: <basefont> is included for completeness, but should be avoided\nas it is only supported by Internet Explorer.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/basefont",
     "displayName": "Basefont",
     "methods": [],
     "props": {
@@ -3107,7 +3121,7 @@
     }
   },
   "src/components/Blink.react.js": {
-    "description": "Blink is a wrapper for the <blink> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink",
+    "description": "Blink is a wrapper for the <blink> HTML5 element.\n\nOBSOLETE: <blink> is included for completeness, but should be avoided\nas it is not supported by any modern browsers.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink",
     "displayName": "Blink",
     "methods": [],
     "props": {
@@ -5541,7 +5555,7 @@
     }
   },
   "src/components/Command.react.js": {
-    "description": "Command is a wrapper for the <command> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/command",
+    "description": "Command is a wrapper for the <command> HTML5 element.\n\nOBSOLETE: <command> is included for completeness, but should be avoided\nas it is not supported by any modern browsers.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/command",
     "displayName": "Command",
     "methods": [],
     "props": {
@@ -8106,7 +8120,7 @@
     }
   },
   "src/components/Element.react.js": {
-    "description": "Element is a wrapper for the <element> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/element",
+    "description": "Element is a wrapper for the <element> HTML5 element.\n\nOBSOLETE: <element> is included for completeness, but should be avoided\nas it is not supported by any modern browsers.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/element",
     "displayName": "Element",
     "methods": [],
     "props": {
@@ -12626,6 +12640,13 @@
         "required": false,
         "description": "A wildcard aria attribute"
       },
+      "allow": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Specifies a feature-policy for the iframe."
+      },
       "height": {
         "type": {
           "name": "union",
@@ -12647,6 +12668,13 @@
         },
         "required": false,
         "description": "Name of the element. For example used by the server to identify the fields in form submits."
+      },
+      "referrerPolicy": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Specifies which referrer is sent when fetching the resource."
       },
       "sandbox": {
         "type": {
@@ -12916,6 +12944,13 @@
         },
         "required": false,
         "description": "Specifies the height of elements listed here. For all other elements, use the CSS height property.        Note: In some instances, such as <div>, this is a legacy attribute, in which case the CSS height property should be used instead."
+      },
+      "referrerPolicy": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Specifies which referrer is sent when fetching the resource."
       },
       "sizes": {
         "type": {
@@ -13314,7 +13349,7 @@
     }
   },
   "src/components/Isindex.react.js": {
-    "description": "Isindex is a wrapper for the <isindex> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/isindex",
+    "description": "Isindex is a wrapper for the <isindex> HTML5 element.\n\nOBSOLETE: <isindex> is included for completeness, but should be avoided\nas it is not supported by any modern browsers.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/isindex",
     "displayName": "Isindex",
     "methods": [],
     "props": {
@@ -13722,7 +13757,7 @@
     }
   },
   "src/components/Keygen.react.js": {
-    "description": "Keygen is a wrapper for the <keygen> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/keygen",
+    "description": "Keygen is a wrapper for the <keygen> HTML5 element.\n\nDEPRECATED: <keygen> is included for completeness, but should be avoided\nas it is not supported by all browsers and may be removed at any time from\nthose that do support it.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/keygen",
     "displayName": "Keygen",
     "methods": [],
     "props": {
@@ -14744,6 +14779,13 @@
         "required": false,
         "description": "Specifies a hint of the media for which the linked resource was designed."
       },
+      "referrerPolicy": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Specifies which referrer is sent when fetching the resource."
+      },
       "rel": {
         "type": {
           "name": "string"
@@ -14894,7 +14936,7 @@
     }
   },
   "src/components/Listing.react.js": {
-    "description": "Listing is a wrapper for the <listing> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/listing",
+    "description": "Listing is a wrapper for the <listing> HTML5 element.\n\nOBSOLETE: <listing> is included for completeness, but should be avoided\nas it is not supported by any modern browsers. Use <pre> or <code> instead.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/listing",
     "displayName": "Listing",
     "methods": [],
     "props": {
@@ -15717,7 +15759,7 @@
     }
   },
   "src/components/Marquee.react.js": {
-    "description": "Marquee is a wrapper for the <marquee> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee",
+    "description": "Marquee is a wrapper for the <marquee> HTML5 element.\n\nDEPRECATED: <marquee> is included for completeness, but should be avoided\nas browsers may remove it at any time.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee",
     "displayName": "Marquee",
     "methods": [],
     "props": {
@@ -15946,7 +15988,7 @@
     }
   },
   "src/components/Meta.react.js": {
-    "description": "Meta is a wrapper for the <meta> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta",
+    "description": "Meta is a wrapper for the <meta> HTML5 element.\n\nCAUTION: <meta> is included for completeness, but generally will not behave\nas expected since <meta> tags should be static HTML content in the <head> of\nthe document. Dash components are dynamic <body> content.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta",
     "displayName": "Meta",
     "methods": [],
     "props": {
@@ -16447,7 +16489,7 @@
     }
   },
   "src/components/Multicol.react.js": {
-    "description": "Multicol is a wrapper for the <multicol> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/multicol",
+    "description": "Multicol is a wrapper for the <multicol> HTML5 element.\n\nOBSOLETE: <multicol> is included for completeness, but should be avoided\nas it is not supported by any modern browsers.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/multicol",
     "displayName": "Multicol",
     "methods": [],
     "props": {
@@ -16855,7 +16897,7 @@
     }
   },
   "src/components/Nextid.react.js": {
-    "description": "Nextid is a wrapper for the <nextid> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/nextid",
+    "description": "Nextid is a wrapper for the <nextid> HTML5 element.\n\nOBSOLETE: <nextid> is included for completeness, but should be avoided\nas it is not supported by any modern browsers.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/nextid",
     "displayName": "Nextid",
     "methods": [],
     "props": {
@@ -17534,6 +17576,13 @@
         },
         "required": false,
         "description": "A wildcard aria attribute"
+      },
+      "data": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Specifies the URL of the resource."
       },
       "form": {
         "type": {
@@ -18469,7 +18518,7 @@
     }
   },
   "src/components/Output.react.js": {
-    "description": "Output is a wrapper for the <output> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/output",
+    "description": "Output is a wrapper for the <output> HTML5 element.\n\nCAUTION: <output> is included for completeness, but its typical usage\nrequires the oninput attribute of the enclosing <form> element, which\nis not accessible to Dash.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/output",
     "displayName": "Output",
     "methods": [],
     "props": {
@@ -19320,7 +19369,7 @@
     }
   },
   "src/components/Plaintext.react.js": {
-    "description": "Plaintext is a wrapper for the <plaintext> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/plaintext",
+    "description": "Plaintext is a wrapper for the <plaintext> HTML5 element.\n\nOBSOLETE: <plaintext> is included for completeness, but should be avoided\nas browsers may remove it at any time, and its behavior when added\ndynamically by Dash is not what it would be statically on page load.\nUse <pre> or <code> instead.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/plaintext",
     "displayName": "Plaintext",
     "methods": [],
     "props": {
@@ -21600,7 +21649,7 @@
     }
   },
   "src/components/Script.react.js": {
-    "description": "Script is a wrapper for the <script> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/script",
+    "description": "Script is a wrapper for the <script> HTML5 element.\n\nCAUTION: <script> is included for completeness, but you cannot execute\nJavaScript code by providing it to a <script> element. Use a clientside\ncallback for this purpose instead.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/script",
     "displayName": "Script",
     "methods": [],
     "props": {
@@ -21738,6 +21787,13 @@
         },
         "required": false,
         "description": "Specifies a Subresource Integrity value that allows browsers to verify what they fetch."
+      },
+      "referrerPolicy": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Specifies which referrer is sent when fetching the resource."
       },
       "src": {
         "type": {
@@ -22437,7 +22493,7 @@
     }
   },
   "src/components/Shadow.react.js": {
-    "description": "Shadow is a wrapper for the <shadow> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/shadow",
+    "description": "Shadow is a wrapper for the <shadow> HTML5 element.\n\nDEPRECATED: <shadow> is included for completeness, but should be avoided\nas it is not supported by all browsers and may be removed at any time from\nthose that do support it.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/shadow",
     "displayName": "Shadow",
     "methods": [],
     "props": {
@@ -23288,7 +23344,7 @@
     }
   },
   "src/components/Spacer.react.js": {
-    "description": "Spacer is a wrapper for the <spacer> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/spacer",
+    "description": "Spacer is a wrapper for the <spacer> HTML5 element.\n\nOBSOLETE: <spacer> is included for completeness, but should be avoided\nas it is not supported by any modern browsers.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/spacer",
     "displayName": "Spacer",
     "methods": [],
     "props": {
@@ -24783,13 +24839,6 @@
         },
         "required": false,
         "description": "A wildcard aria attribute"
-      },
-      "summary": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": ""
       },
       "accessKey": {
         "type": {
@@ -26835,7 +26884,7 @@
     }
   },
   "src/components/Title.react.js": {
-    "description": "Title is a wrapper for the <title> HTML5 element.\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/title",
+    "description": "Title is a wrapper for the <title> HTML5 element.\n\nCAUTION: <title> is included for completeness, but is not expected to\ndo anything outside of <head>. Dash components are always created in the\n<body>.\n\nFor detailed attribute info see:\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/title",
     "displayName": "Title",
     "methods": [],
     "props": {

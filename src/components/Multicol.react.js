@@ -5,6 +5,10 @@ import {omit} from 'ramda';
 
 /**
  * Multicol is a wrapper for the <multicol> HTML5 element.
+ *
+ * OBSOLETE: <multicol> is included for completeness, but should be avoided
+ * as it is not supported by any modern browsers.
+ *
  * For detailed attribute info see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/multicol
  */

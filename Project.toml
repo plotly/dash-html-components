@@ -2,7 +2,7 @@
 name = "DashHtmlComponents"
 uuid = "1b08a953-4be3-4667-9a23-24100242a84a"
 authors = ["Chris Parmer <chris@plotly.com>"]
-version = "1.1.2"
+version = "1.1.3"
 
 [deps]
 DashBase = "03207cf0-e2b3-4b91-9ca8-690cf0fb507e"

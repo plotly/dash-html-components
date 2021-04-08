@@ -5,6 +5,10 @@ import {omit} from 'ramda';
 
 /**
  * Listing is a wrapper for the <listing> HTML5 element.
+ *
+ * OBSOLETE: <listing> is included for completeness, but should be avoided
+ * as it is not supported by any modern browsers. Use <pre> or <code> instead.
+ *
  * For detailed attribute info see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/listing
  */

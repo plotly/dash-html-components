@@ -82,6 +82,11 @@ Iframe.propTypes = {
     'aria-*': PropTypes.string,
 
     /**
+     * Specifies a feature-policy for the iframe.
+     */
+    'allow': PropTypes.string,
+
+    /**
      * Specifies the height of elements listed here. For all other elements, use the CSS height property.        Note: In some instances, such as <div>, this is a legacy attribute, in which case the CSS height property should be used instead.
      */
     'height': PropTypes.oneOfType([
@@ -93,6 +98,11 @@ Iframe.propTypes = {
      * Name of the element. For example used by the server to identify the fields in form submits.
      */
     'name': PropTypes.string,
+
+    /**
+     * Specifies which referrer is sent when fetching the resource.
+     */
+    'referrerPolicy': PropTypes.string,
 
     /**
      * Stops a document loaded in an iframe from using certain features (such as submitting forms or opening new windows).

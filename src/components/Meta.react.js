@@ -5,6 +5,11 @@ import {omit} from 'ramda';
 
 /**
  * Meta is a wrapper for the <meta> HTML5 element.
+ *
+ * CAUTION: <meta> is included for completeness, but generally will not behave
+ * as expected since <meta> tags should be static HTML content in the <head> of
+ * the document. Dash components are dynamic <body> content.
+ *
  * For detailed attribute info see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
  */

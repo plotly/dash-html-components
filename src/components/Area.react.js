@@ -112,6 +112,11 @@ Area.propTypes = {
     'media': PropTypes.string,
 
     /**
+     * Specifies which referrer is sent when fetching the resource.
+     */
+    'referrerPolicy': PropTypes.string,
+
+    /**
      * Specifies the relationship of the target object to the link object.
      */
     'rel': PropTypes.string,

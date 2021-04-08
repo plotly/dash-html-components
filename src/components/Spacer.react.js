@@ -5,6 +5,10 @@ import {omit} from 'ramda';
 
 /**
  * Spacer is a wrapper for the <spacer> HTML5 element.
+ *
+ * OBSOLETE: <spacer> is included for completeness, but should be avoided
+ * as it is not supported by any modern browsers.
+ *
  * For detailed attribute info see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/spacer
  */
