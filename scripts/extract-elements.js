@@ -26,7 +26,7 @@ function extractElements($) {
     ];
     // `<section>` is for some reason missing from the reference tables.
     // `<command>`, `<element>`, `<isindex>`, `<listing>`, `<multicol>`, `<nextid>`
-    // are obsolete and has been removed from the reference table, but we had
+    // are obsolete and have been removed from the reference table, but we had
     // them in the past so we should wait for a major to remove
     const addElements = [
         'base',
@@ -79,8 +79,8 @@ request(refUrl, (error, response, html) => {
             const removed = prevEls.filter(n => elements.indexOf(n) === -1);
 
             throw new Error(
-                'Found extra elements: [' + added.join(',') +
-                '] and did not find elements: [' + removed.join(',') + ']'
+                'Found new elements not seen before: [' + added.join(',') +
+                '] and did not find expected elements: [' + removed.join(',') + ']'
             );
         }
         catch(e) {
