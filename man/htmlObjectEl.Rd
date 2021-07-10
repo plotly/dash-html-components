@@ -91,12 +91,11 @@ which button was changed most recently.}
 \value{named list of JSON elements corresponding to React.js properties and their values}
 
 \examples{
-if (interactive() && require(dash)) {
+if (interactive()) {
   # Note that htmlObjectEl generates the <object> HTML element;
   # for more information, please visit the link in this
   # component's description.
   library(dash)
-  library(dashHtmlComponents)
 
   app <- Dash$new()
 

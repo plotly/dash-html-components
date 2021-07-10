@@ -82,7 +82,7 @@ which button was changed most recently.}
 \value{named list of JSON elements corresponding to React.js properties and their values}
 
 \examples{
-# This component works with htmlForm and htmlInput 
+# This component works with htmlForm and htmlInput
 # and may be used to present the result of an
 # executed script.
 }

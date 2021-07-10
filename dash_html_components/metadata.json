@@ -24840,6 +24840,13 @@
         "required": false,
         "description": "A wildcard aria attribute"
       },
+      "summary": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
       "accessKey": {
         "type": {
           "name": "string"

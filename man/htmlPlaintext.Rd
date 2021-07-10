@@ -76,13 +76,12 @@ which button was changed most recently.}
 \value{named list of JSON elements corresponding to React.js properties and their values}
 
 \examples{
-if (interactive() && require(dash)) {
+if (interactive()) {
   # Warning: The <plaintext> tag is obsolete,
   # it might not work as intended.
   # Use the <pre> tag instead.
 
   library(dash)
-  library(dashHtmlComponents)
 
   app <- Dash$new()
 

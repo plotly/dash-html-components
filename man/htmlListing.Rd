@@ -76,14 +76,13 @@ which button was changed most recently.}
 \value{named list of JSON elements corresponding to React.js properties and their values}
 
 \examples{
-if (interactive() && require(dash)) {
+if (interactive()) {
   # Warning: The <listing> element was intended as a way to render HTML code on a page.
   # It was never properly supported, and is now deprecated. Using <listing> will almost
   # certainly result in unexpected results. Instead, use <code>, or place the content in
   # a <div> with the appropriate CSS styling.
 
   library(dash)
-  library(dashHtmlComponents)
 
   app <- Dash$new()
 

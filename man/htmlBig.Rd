@@ -76,12 +76,11 @@ which button was changed most recently.}
 \value{named list of JSON elements corresponding to React.js properties and their values}
 
 \examples{
-if (interactive() && require(dash)) {
+if (interactive()) {
   # The <big> tag is not supported in HTML5.
   # Instead, use the font-size property in
   # CSS to enlarge text.
   library(dash)
-  library(dashHtmlComponents)
 
   app <- Dash$new()
 

@@ -76,12 +76,11 @@ which button was changed most recently.}
 \value{named list of JSON elements corresponding to React.js properties and their values}
 
 \examples{
-if (interactive() && require(dash)) {
+if (interactive()) {
   library(dash)
-  library(dashHtmlComponents)
-  
+
   app <- Dash$new()
-  
+
   app$layout(
     htmlDiv(list(
       htmlAbbr(children='Hello! htmlAbbr at work!',
@@ -89,7 +88,7 @@ if (interactive() && require(dash)) {
       )
     )
   )
-  
+
   app$run_server()
 }
 }

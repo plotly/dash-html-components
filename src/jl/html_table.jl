@@ -43,11 +43,12 @@ which button was changed most recently.
 - `role` (String; optional): The ARIA role attribute
 - `spellCheck` (String; optional): Indicates whether spell checking is allowed for the element.
 - `style` (Dict; optional): Defines CSS styles which will override styles previously set.
+- `summary` (String; optional)
 - `tabIndex` (String; optional): Overrides the browser's default tab order and follows the one specified instead.
 - `title` (String; optional): Text to be displayed in a tooltip when hovering over the element.
 """
 function html_table(; kwargs...)
-        available_props = Symbol[:children, :id, :accessKey, :className, :contentEditable, :contextMenu, :dir, :draggable, :hidden, :key, :lang, :loading_state, :n_clicks, :n_clicks_timestamp, :role, :spellCheck, :style, :tabIndex, :title]
+        available_props = Symbol[:children, :id, :accessKey, :className, :contentEditable, :contextMenu, :dir, :draggable, :hidden, :key, :lang, :loading_state, :n_clicks, :n_clicks_timestamp, :role, :spellCheck, :style, :summary, :tabIndex, :title]
         wild_props = Symbol[Symbol("aria-"), Symbol("data-")]
         return Component("html_table", "Table", "dash_html_components", available_props, wild_props; kwargs...)
 end

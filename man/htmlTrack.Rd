@@ -90,9 +90,8 @@ which button was changed most recently.}
 # The URL below has been chunked to comply with CRAN
 # requirements; the use of file.path is optional and not required
 # for this component.
-if (interactive() && require(dash)) {
+if (interactive()) {
   library(dash)
-  library(dashHtmlComponents)
 
   app <- Dash$new()
 
@@ -102,14 +101,14 @@ if (interactive() && require(dash)) {
         htmlSource(src = file.path("https://interactive-examples.mdn.mozilla.net",
                                   "media/examples",
                                   "friday.mp4",
-                                  fsep = "/"), 
+                                  fsep = "/"),
                   type = 'video/mp4'),
         htmlTrack(kind = 'captions',
                   srcLang = 'en',
                   src = file.path("https://interactive-examples.mdn.mozilla.net",
                                   "media/examples",
                                   "friday.vtt",
-                                  fsep = "/"), 
+                                  fsep = "/"),
                   default = 'default',
                   label = 'English')
       ),

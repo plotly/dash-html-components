@@ -80,10 +80,9 @@ which button was changed most recently.}
 \value{named list of JSON elements corresponding to React.js properties and their values}
 
 \examples{
-if (interactive() && require(dash)) {
+if (interactive()) {
   # this component requires JavaScript code to draw on the canvas
   library(dash)
-  library(dashHtmlComponents)
 
   app <- Dash$new()
 

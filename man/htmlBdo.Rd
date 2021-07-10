@@ -76,12 +76,11 @@ which button was changed most recently.}
 \value{named list of JSON elements corresponding to React.js properties and their values}
 
 \examples{
-if (interactive() && require(dash)) {
+if (interactive()) {
   # This element supports bidirectional text override.
   # We can force text to render from right to left instead
   # of left to right.
   library(dash)
-  library(dashHtmlComponents)
 
   app <- Dash$new()
 
