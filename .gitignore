@@ -14,7 +14,6 @@ lib/bundle.js.map
 lib/metadata.json
 .idea
 
-/scripts/data
-!/scripts/data/elements.txt
+/scripts/data/attributes.html
 
 /build
