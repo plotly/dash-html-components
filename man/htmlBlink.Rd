@@ -76,7 +76,7 @@ which button was changed most recently.}
 \value{named list of JSON elements corresponding to React.js properties and their values}
 
 \examples{
-if (interactive() && require(dash)) {
+if (interactive()) {
   # The blink tag is now obsolete and deprecated.
   # It may not function properly in all browsers,
   # and it may cease working without warning.
@@ -84,7 +84,6 @@ if (interactive() && require(dash)) {
   # This element is generally unsupported on all
   # modern browser releases.
   library(dash)
-  library(dashHtmlComponents)
 
   app <- Dash$new()
 

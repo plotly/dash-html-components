@@ -96,25 +96,23 @@ which button was changed most recently.}
 \value{named list of JSON elements corresponding to React.js properties and their values}
 
 \examples{
-if (interactive() && require(dash)) {
+if (interactive()) {
   library(dash)
-  library(dashHtmlComponents)
-  library(dashCoreComponents)
 
   app <- Dash$new()
 
   app$layout(htmlDiv(list(
     htmlForm(children=list(
       htmlP(children=list('Username: ',
-                          dccInput(type='text', 
-                                   id='username', 
+                          dccInput(type='text',
+                                   id='username',
                                    placeholder='username'))),
       htmlP(children=list('Password: ',
-                          dccInput(type='password', 
+                          dccInput(type='password',
                                    id='password',
                                    placeholder='password'))),
-      htmlButton(children=list('Login'), 
-                 type='submit', 
+      htmlButton(children=list('Login'),
+                 type='submit',
                  id='login_button')
           )
         )
@@ -122,6 +120,6 @@ if (interactive() && require(dash)) {
     )
   )
 
-  app$run_server()              
+  app$run_server()
 }
 }

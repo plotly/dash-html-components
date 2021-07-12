@@ -14,8 +14,8 @@ htmlTable(children=NULL, id=NULL, accessKey=NULL, className=NULL,
 contentEditable=NULL, contextMenu=NULL, dir=NULL,
 draggable=NULL, hidden=NULL, key=NULL, lang=NULL,
 loading_state=NULL, n_clicks=NULL, n_clicks_timestamp=NULL,
-role=NULL, spellCheck=NULL, style=NULL, tabIndex=NULL,
-title=NULL, ...)
+role=NULL, spellCheck=NULL, style=NULL, summary=NULL,
+tabIndex=NULL, title=NULL, ...)
 }
 
 \arguments{
@@ -64,6 +64,8 @@ which button was changed most recently.}
 
 \item{style}{Named list. Defines CSS styles which will override styles previously set.}
 
+\item{summary}{Character. }
+
 \item{tabIndex}{Character. Overrides the browser's default tab order and follows the one specified instead.}
 
 \item{title}{Character. Text to be displayed in a tooltip when hovering over the element.}
@@ -76,9 +78,8 @@ which button was changed most recently.}
 \value{named list of JSON elements corresponding to React.js properties and their values}
 
 \examples{
-if (interactive() && require(dash)) {
+if (interactive()) {
   library(dash)
-  library(dashHtmlComponents)
 
   app <- Dash$new()
 

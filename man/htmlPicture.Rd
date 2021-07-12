@@ -79,9 +79,8 @@ which button was changed most recently.}
 # The URL below has been chunked to comply with CRAN
 # requirements; the use of file.path is optional and not required
 # for this component.
-if (interactive() && require(dash)) {
+if (interactive()) {
   library(dash)
-  library(dashHtmlComponents)
 
   app <- Dash$new()
 
