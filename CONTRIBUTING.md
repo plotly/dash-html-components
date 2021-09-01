@@ -1,3 +1,9 @@
+# Notice
+
+As of Dash 2, the development of dash-html-components has been moved to the [main Dash repo](https://github.com/plotly/dash)
+
+---
+
 # Contributing to dash-html-components
 
 ## Getting Started

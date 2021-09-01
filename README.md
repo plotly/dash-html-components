@@ -1,3 +1,11 @@
+# Notice
+
+As of Dash 2, the development of dash-html-components has been moved to the [main Dash repo](https://github.com/plotly/dash)
+
+This package exists for backward compatibility
+
+---
+
 # dash-html-components
 
 Vanilla HTML components for [Dash][]
