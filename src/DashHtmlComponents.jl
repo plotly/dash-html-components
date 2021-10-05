@@ -1,5 +1,5 @@
 module DashHtmlComponents
     function __init__()
-        @warn "`using DashHtmlComponents` is deprecated, all DashHtmlComponents functions have been moved to Dash package. Use `using Dash` instead"
+        @warn "The `DashHtmlComponents` package is deprecated. All DashHtmlComponents functions have been moved to the Dash package. Please switch to `using Dash` instead."
     end
 end
