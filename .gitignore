@@ -12,12 +12,11 @@ venv/
 lib/bundle.js
 lib/bundle.js.map
 lib/metadata.json
-Project.toml
+Manifest.toml
 .idea
 
 /scripts/data/attributes.html
 
-/src
 
 /build
 /deps
