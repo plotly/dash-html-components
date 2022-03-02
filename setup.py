@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="dash_html_components",
-    version="2.0.0rc1",
+    version="2.0.0",
     author="Chris Parmer <chris@plotly.com>",
     author_email="chris@plotly.com",
     packages=["dash_html_components"],
